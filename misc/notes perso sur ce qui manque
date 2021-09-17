@@ -1,0 +1,34 @@
+Ligue 1
+championship : ligue-1,
+        season : 2015-2016, 
+            leg : 15
+	season : 2007-2008, 
+            leg : 24
+
+Ligue 2
+championship : ligue-2
+	season : 2015-2016, 
+            leg : 6
+	
+
+bundesliga :
+tout ok
+
+
+Liga
+championship : liga,
+	season : 2011-2012, 
+            leg : 27
+
+championship : liga,
+	season : 2015-2016, 
+            leg : 16
+
+Premier League
+tout ok
+
+Serie-A
+championship : serie-a,
+    season : 2010-2011, 
+	    leg : 17
+

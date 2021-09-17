@@ -1,0 +1,741 @@
+,country,season,leg,team,play,goals_scored,opponent,goals_conceded,nb_points
+0,Italy,2019-2020,1,Parme,Home,0,Juventus Turin,1,0
+1,Italy,2019-2020,1,Juventus Turin,Away,1,Parme,0,3
+2,Italy,2019-2020,1,Fiorentina,Home,3,Naples,4,0
+3,Italy,2019-2020,1,Naples,Away,4,Fiorentina,3,3
+4,Italy,2019-2020,1,Udinese,Home,1,AC Milan,0,3
+5,Italy,2019-2020,1,AC Milan,Away,0,Udinese,1,0
+6,Italy,2019-2020,1,Hellas Vérone,Home,1,Bologne,1,1
+7,Italy,2019-2020,1,Bologne,Away,1,Hellas Vérone,1,1
+8,Italy,2019-2020,1,Sampdoria Gênes,Home,0,Lazio Rome,3,0
+9,Italy,2019-2020,1,Lazio Rome,Away,3,Sampdoria Gênes,0,3
+10,Italy,2019-2020,1,SPAL,Home,2,Atalanta Bergame,3,0
+11,Italy,2019-2020,1,Atalanta Bergame,Away,3,SPAL,2,3
+12,Italy,2019-2020,1,Cagliari,Home,0,Brescia,1,0
+13,Italy,2019-2020,1,Brescia,Away,1,Cagliari,0,3
+14,Italy,2019-2020,1,AS Rome,Home,3,Genoa,3,1
+15,Italy,2019-2020,1,Genoa,Away,3,AS Rome,3,1
+16,Italy,2019-2020,1,Torino,Home,2,Sassuolo,1,3
+17,Italy,2019-2020,1,Sassuolo,Away,1,Torino,2,0
+18,Italy,2019-2020,1,Inter Milan,Home,4,Lecce,0,3
+19,Italy,2019-2020,1,Lecce,Away,0,Inter Milan,4,0
+20,Italy,2019-2020,2,Bologne,Home,1,SPAL,0,3
+21,Italy,2019-2020,2,SPAL,Away,0,Bologne,1,0
+22,Italy,2019-2020,2,AC Milan,Home,1,Brescia,0,3
+23,Italy,2019-2020,2,Brescia,Away,0,AC Milan,1,0
+24,Italy,2019-2020,2,Juventus Turin,Home,4,Naples,3,3
+25,Italy,2019-2020,2,Naples,Away,3,Juventus Turin,4,0
+26,Italy,2019-2020,2,Lazio Rome,Home,1,AS Rome,1,1
+27,Italy,2019-2020,2,AS Rome,Away,1,Lazio Rome,1,1
+28,Italy,2019-2020,2,Cagliari,Home,1,Inter Milan,2,0
+29,Italy,2019-2020,2,Inter Milan,Away,2,Cagliari,1,3
+30,Italy,2019-2020,2,Atalanta Bergame,Home,2,Torino,3,0
+31,Italy,2019-2020,2,Torino,Away,3,Atalanta Bergame,2,3
+32,Italy,2019-2020,2,Udinese,Home,1,Parme,3,0
+33,Italy,2019-2020,2,Parme,Away,3,Udinese,1,3
+34,Italy,2019-2020,2,Genoa,Home,2,Fiorentina,1,3
+35,Italy,2019-2020,2,Fiorentina,Away,1,Genoa,2,0
+36,Italy,2019-2020,2,Lecce,Home,0,Hellas Vérone,1,0
+37,Italy,2019-2020,2,Hellas Vérone,Away,1,Lecce,0,3
+38,Italy,2019-2020,2,Sassuolo,Home,4,Sampdoria Gênes,1,3
+39,Italy,2019-2020,2,Sampdoria Gênes,Away,1,Sassuolo,4,0
+40,Italy,2019-2020,3,Fiorentina,Home,0,Juventus Turin,0,1
+41,Italy,2019-2020,3,Juventus Turin,Away,0,Fiorentina,0,1
+42,Italy,2019-2020,3,Naples,Home,2,Sampdoria Gênes,0,3
+43,Italy,2019-2020,3,Sampdoria Gênes,Away,0,Naples,2,0
+44,Italy,2019-2020,3,Inter Milan,Home,1,Udinese,0,3
+45,Italy,2019-2020,3,Udinese,Away,0,Inter Milan,1,0
+46,Italy,2019-2020,3,Genoa,Home,1,Atalanta Bergame,2,0
+47,Italy,2019-2020,3,Atalanta Bergame,Away,2,Genoa,1,3
+48,Italy,2019-2020,3,Brescia,Home,3,Bologne,4,0
+49,Italy,2019-2020,3,Bologne,Away,4,Brescia,3,3
+50,Italy,2019-2020,3,SPAL,Home,2,Lazio Rome,1,3
+51,Italy,2019-2020,3,Lazio Rome,Away,1,SPAL,2,0
+52,Italy,2019-2020,3,Parme,Home,1,Cagliari,3,0
+53,Italy,2019-2020,3,Cagliari,Away,3,Parme,1,3
+54,Italy,2019-2020,3,AS Rome,Home,4,Sassuolo,2,3
+55,Italy,2019-2020,3,Sassuolo,Away,2,AS Rome,4,0
+56,Italy,2019-2020,3,Hellas Vérone,Home,0,AC Milan,1,0
+57,Italy,2019-2020,3,AC Milan,Away,1,Hellas Vérone,0,3
+58,Italy,2019-2020,3,Torino,Home,1,Lecce,2,0
+59,Italy,2019-2020,3,Lecce,Away,2,Torino,1,3
+60,Italy,2019-2020,4,Cagliari,Home,3,Genoa,1,3
+61,Italy,2019-2020,4,Genoa,Away,1,Cagliari,3,0
+62,Italy,2019-2020,4,Udinese,Home,0,Brescia,1,0
+63,Italy,2019-2020,4,Brescia,Away,1,Udinese,0,3
+64,Italy,2019-2020,4,Juventus Turin,Home,2,Hellas Vérone,1,3
+65,Italy,2019-2020,4,Hellas Vérone,Away,1,Juventus Turin,2,0
+66,Italy,2019-2020,4,AC Milan,Home,0,Inter Milan,2,0
+67,Italy,2019-2020,4,Inter Milan,Away,2,AC Milan,0,3
+68,Italy,2019-2020,4,Sassuolo,Home,3,SPAL,0,3
+69,Italy,2019-2020,4,SPAL,Away,0,Sassuolo,3,0
+70,Italy,2019-2020,4,Bologne,Home,1,AS Rome,2,0
+71,Italy,2019-2020,4,AS Rome,Away,2,Bologne,1,3
+72,Italy,2019-2020,4,Sampdoria Gênes,Home,1,Torino,0,3
+73,Italy,2019-2020,4,Torino,Away,0,Sampdoria Gênes,1,0
+74,Italy,2019-2020,4,Lecce,Home,1,Naples,4,0
+75,Italy,2019-2020,4,Naples,Away,4,Lecce,1,3
+76,Italy,2019-2020,4,Atalanta Bergame,Home,2,Fiorentina,2,1
+77,Italy,2019-2020,4,Fiorentina,Away,2,Atalanta Bergame,2,1
+78,Italy,2019-2020,4,Lazio Rome,Home,2,Parme,0,3
+79,Italy,2019-2020,4,Parme,Away,0,Lazio Rome,2,0
+80,Italy,2019-2020,5,Hellas Vérone,Home,0,Udinese,0,1
+81,Italy,2019-2020,5,Udinese,Away,0,Hellas Vérone,0,1
+82,Italy,2019-2020,5,Brescia,Home,1,Juventus Turin,2,0
+83,Italy,2019-2020,5,Juventus Turin,Away,2,Brescia,1,3
+84,Italy,2019-2020,5,AS Rome,Home,0,Atalanta Bergame,2,0
+85,Italy,2019-2020,5,Atalanta Bergame,Away,2,AS Rome,0,3
+86,Italy,2019-2020,5,Inter Milan,Home,1,Lazio Rome,0,3
+87,Italy,2019-2020,5,Lazio Rome,Away,0,Inter Milan,1,0
+88,Italy,2019-2020,5,Naples,Home,0,Cagliari,1,0
+89,Italy,2019-2020,5,Cagliari,Away,1,Naples,0,3
+90,Italy,2019-2020,5,Genoa,Home,0,Bologne,0,1
+91,Italy,2019-2020,5,Bologne,Away,0,Genoa,0,1
+92,Italy,2019-2020,5,Parme,Home,1,Sassuolo,0,3
+93,Italy,2019-2020,5,Sassuolo,Away,0,Parme,1,0
+94,Italy,2019-2020,5,SPAL,Home,1,Lecce,3,0
+95,Italy,2019-2020,5,Lecce,Away,3,SPAL,1,3
+96,Italy,2019-2020,5,Fiorentina,Home,2,Sampdoria Gênes,1,3
+97,Italy,2019-2020,5,Sampdoria Gênes,Away,1,Fiorentina,2,0
+98,Italy,2019-2020,5,Torino,Home,2,AC Milan,1,3
+99,Italy,2019-2020,5,AC Milan,Away,1,Torino,2,0
+100,Italy,2019-2020,6,Juventus Turin,Home,2,SPAL,0,3
+101,Italy,2019-2020,6,SPAL,Away,0,Juventus Turin,2,0
+102,Italy,2019-2020,6,Sampdoria Gênes,Home,1,Inter Milan,3,0
+103,Italy,2019-2020,6,Inter Milan,Away,3,Sampdoria Gênes,1,3
+104,Italy,2019-2020,6,Sassuolo,Home,1,Atalanta Bergame,4,0
+105,Italy,2019-2020,6,Atalanta Bergame,Away,4,Sassuolo,1,3
+106,Italy,2019-2020,6,Naples,Home,2,Brescia,1,3
+107,Italy,2019-2020,6,Brescia,Away,1,Naples,2,0
+108,Italy,2019-2020,6,Lecce,Home,0,AS Rome,1,0
+109,Italy,2019-2020,6,AS Rome,Away,1,Lecce,0,3
+110,Italy,2019-2020,6,Udinese,Home,1,Bologne,0,3
+111,Italy,2019-2020,6,Bologne,Away,0,Udinese,1,0
+112,Italy,2019-2020,6,Lazio Rome,Home,4,Genoa,0,3
+113,Italy,2019-2020,6,Genoa,Away,0,Lazio Rome,4,0
+114,Italy,2019-2020,6,Cagliari,Home,1,Hellas Vérone,1,1
+115,Italy,2019-2020,6,Hellas Vérone,Away,1,Cagliari,1,1
+116,Italy,2019-2020,6,AC Milan,Home,1,Fiorentina,3,0
+117,Italy,2019-2020,6,Fiorentina,Away,3,AC Milan,1,3
+118,Italy,2019-2020,6,Parme,Home,3,Torino,2,3
+119,Italy,2019-2020,6,Torino,Away,2,Parme,3,0
+120,Italy,2019-2020,7,SPAL,Home,1,Parme,0,3
+121,Italy,2019-2020,7,Parme,Away,0,SPAL,1,0
+122,Italy,2019-2020,7,Hellas Vérone,Home,2,Sampdoria Gênes,0,3
+123,Italy,2019-2020,7,Sampdoria Gênes,Away,0,Hellas Vérone,2,0
+124,Italy,2019-2020,7,Genoa,Home,1,AC Milan,2,0
+125,Italy,2019-2020,7,AC Milan,Away,2,Genoa,1,3
+126,Italy,2019-2020,7,Fiorentina,Home,1,Udinese,0,3
+127,Italy,2019-2020,7,Udinese,Away,0,Fiorentina,1,0
+128,Italy,2019-2020,7,Atalanta Bergame,Home,3,Lecce,1,3
+129,Italy,2019-2020,7,Lecce,Away,1,Atalanta Bergame,3,0
+130,Italy,2019-2020,7,AS Rome,Home,1,Cagliari,1,1
+131,Italy,2019-2020,7,Cagliari,Away,1,AS Rome,1,1
+132,Italy,2019-2020,7,Bologne,Home,2,Lazio Rome,2,1
+133,Italy,2019-2020,7,Lazio Rome,Away,2,Bologne,2,1
+134,Italy,2019-2020,7,Torino,Home,0,Naples,0,1
+135,Italy,2019-2020,7,Naples,Away,0,Torino,0,1
+136,Italy,2019-2020,7,Inter Milan,Home,1,Juventus Turin,2,0
+137,Italy,2019-2020,7,Juventus Turin,Away,2,Inter Milan,1,3
+138,Italy,2019-2020,7,Brescia,Home,0,Sassuolo,2,0
+139,Italy,2019-2020,7,Sassuolo,Away,2,Brescia,0,3
+140,Italy,2019-2020,8,Lazio Rome,Home,3,Atalanta Bergame,3,1
+141,Italy,2019-2020,8,Atalanta Bergame,Away,3,Lazio Rome,3,1
+142,Italy,2019-2020,8,Naples,Home,2,Hellas Vérone,0,3
+143,Italy,2019-2020,8,Hellas Vérone,Away,0,Naples,2,0
+144,Italy,2019-2020,8,Juventus Turin,Home,2,Bologne,1,3
+145,Italy,2019-2020,8,Bologne,Away,1,Juventus Turin,2,0
+146,Italy,2019-2020,8,Sassuolo,Home,3,Inter Milan,4,0
+147,Italy,2019-2020,8,Inter Milan,Away,4,Sassuolo,3,3
+148,Italy,2019-2020,8,Sampdoria Gênes,Home,0,AS Rome,0,1
+149,Italy,2019-2020,8,AS Rome,Away,0,Sampdoria Gênes,0,1
+150,Italy,2019-2020,8,Cagliari,Home,2,SPAL,0,3
+151,Italy,2019-2020,8,SPAL,Away,0,Cagliari,2,0
+152,Italy,2019-2020,8,Udinese,Home,1,Torino,0,3
+153,Italy,2019-2020,8,Torino,Away,0,Udinese,1,0
+154,Italy,2019-2020,8,Parme,Home,5,Genoa,1,3
+155,Italy,2019-2020,8,Genoa,Away,1,Parme,5,0
+156,Italy,2019-2020,8,AC Milan,Home,2,Lecce,2,1
+157,Italy,2019-2020,8,Lecce,Away,2,AC Milan,2,1
+158,Italy,2019-2020,8,Brescia,Home,0,Fiorentina,0,1
+159,Italy,2019-2020,8,Fiorentina,Away,0,Brescia,0,1
+160,Italy,2019-2020,9,Hellas Vérone,Home,0,Sassuolo,1,0
+161,Italy,2019-2020,9,Sassuolo,Away,1,Hellas Vérone,0,3
+162,Italy,2019-2020,9,Lecce,Home,1,Juventus Turin,1,1
+163,Italy,2019-2020,9,Juventus Turin,Away,1,Lecce,1,1
+164,Italy,2019-2020,9,Inter Milan,Home,2,Parme,2,1
+165,Italy,2019-2020,9,Parme,Away,2,Inter Milan,2,1
+166,Italy,2019-2020,9,Genoa,Home,3,Brescia,1,3
+167,Italy,2019-2020,9,Brescia,Away,1,Genoa,3,0
+168,Italy,2019-2020,9,Bologne,Home,2,Sampdoria Gênes,1,3
+169,Italy,2019-2020,9,Sampdoria Gênes,Away,1,Bologne,2,0
+170,Italy,2019-2020,9,Atalanta Bergame,Home,7,Udinese,1,3
+171,Italy,2019-2020,9,Udinese,Away,1,Atalanta Bergame,7,0
+172,Italy,2019-2020,9,SPAL,Home,1,Naples,1,1
+173,Italy,2019-2020,9,Naples,Away,1,SPAL,1,1
+174,Italy,2019-2020,9,Torino,Home,1,Cagliari,1,1
+175,Italy,2019-2020,9,Cagliari,Away,1,Torino,1,1
+176,Italy,2019-2020,9,AS Rome,Home,2,AC Milan,1,3
+177,Italy,2019-2020,9,AC Milan,Away,1,AS Rome,2,0
+178,Italy,2019-2020,9,Fiorentina,Home,1,Lazio Rome,2,0
+179,Italy,2019-2020,9,Lazio Rome,Away,2,Fiorentina,1,3
+180,Italy,2019-2020,10,Parme,Home,0,Hellas Vérone,1,0
+181,Italy,2019-2020,10,Hellas Vérone,Away,1,Parme,0,3
+182,Italy,2019-2020,10,Brescia,Home,1,Inter Milan,2,0
+183,Italy,2019-2020,10,Inter Milan,Away,2,Brescia,1,3
+184,Italy,2019-2020,10,Naples,Home,2,Atalanta Bergame,2,1
+185,Italy,2019-2020,10,Atalanta Bergame,Away,2,Naples,2,1
+186,Italy,2019-2020,10,Juventus Turin,Home,2,Genoa,1,3
+187,Italy,2019-2020,10,Genoa,Away,1,Juventus Turin,2,0
+188,Italy,2019-2020,10,Udinese,Home,0,AS Rome,4,0
+189,Italy,2019-2020,10,AS Rome,Away,4,Udinese,0,3
+190,Italy,2019-2020,10,Lazio Rome,Home,4,Torino,0,3
+191,Italy,2019-2020,10,Torino,Away,0,Lazio Rome,4,0
+192,Italy,2019-2020,10,Cagliari,Home,3,Bologne,2,3
+193,Italy,2019-2020,10,Bologne,Away,2,Cagliari,3,0
+194,Italy,2019-2020,10,Sassuolo,Home,1,Fiorentina,2,0
+195,Italy,2019-2020,10,Fiorentina,Away,2,Sassuolo,1,3
+196,Italy,2019-2020,10,Sampdoria Gênes,Home,1,Lecce,1,1
+197,Italy,2019-2020,10,Lecce,Away,1,Sampdoria Gênes,1,1
+198,Italy,2019-2020,10,AC Milan,Home,1,SPAL,0,3
+199,Italy,2019-2020,10,SPAL,Away,0,AC Milan,1,0
+200,Italy,2019-2020,11,AS Rome,Home,2,Naples,1,3
+201,Italy,2019-2020,11,Naples,Away,1,AS Rome,2,0
+202,Italy,2019-2020,11,Bologne,Home,1,Inter Milan,2,0
+203,Italy,2019-2020,11,Inter Milan,Away,2,Bologne,1,3
+204,Italy,2019-2020,11,Torino,Home,0,Juventus Turin,1,0
+205,Italy,2019-2020,11,Juventus Turin,Away,1,Torino,0,3
+206,Italy,2019-2020,11,Atalanta Bergame,Home,0,Cagliari,2,0
+207,Italy,2019-2020,11,Cagliari,Away,2,Atalanta Bergame,0,3
+208,Italy,2019-2020,11,Lecce,Home,2,Sassuolo,2,1
+209,Italy,2019-2020,11,Sassuolo,Away,2,Lecce,2,1
+210,Italy,2019-2020,11,Hellas Vérone,Home,2,Brescia,1,3
+211,Italy,2019-2020,11,Brescia,Away,1,Hellas Vérone,2,0
+212,Italy,2019-2020,11,Genoa,Home,1,Udinese,3,0
+213,Italy,2019-2020,11,Udinese,Away,3,Genoa,1,3
+214,Italy,2019-2020,11,Fiorentina,Home,1,Parme,1,1
+215,Italy,2019-2020,11,Parme,Away,1,Fiorentina,1,1
+216,Italy,2019-2020,11,AC Milan,Home,1,Lazio Rome,2,0
+217,Italy,2019-2020,11,Lazio Rome,Away,2,AC Milan,1,3
+218,Italy,2019-2020,11,SPAL,Home,0,Sampdoria Gênes,1,0
+219,Italy,2019-2020,11,Sampdoria Gênes,Away,1,SPAL,0,3
+220,Italy,2019-2020,12,Sassuolo,Home,3,Bologne,1,3
+221,Italy,2019-2020,12,Bologne,Away,1,Sassuolo,3,0
+222,Italy,2019-2020,12,Brescia,Home,0,Torino,4,0
+223,Italy,2019-2020,12,Torino,Away,4,Brescia,0,3
+224,Italy,2019-2020,12,Inter Milan,Home,2,Hellas Vérone,1,3
+225,Italy,2019-2020,12,Hellas Vérone,Away,1,Inter Milan,2,0
+226,Italy,2019-2020,12,Naples,Home,0,Genoa,0,1
+227,Italy,2019-2020,12,Genoa,Away,0,Naples,0,1
+228,Italy,2019-2020,12,Cagliari,Home,5,Fiorentina,2,3
+229,Italy,2019-2020,12,Fiorentina,Away,2,Cagliari,5,0
+230,Italy,2019-2020,12,Lazio Rome,Home,4,Lecce,2,3
+231,Italy,2019-2020,12,Lecce,Away,2,Lazio Rome,4,0
+232,Italy,2019-2020,12,Sampdoria Gênes,Home,0,Atalanta Bergame,0,1
+233,Italy,2019-2020,12,Atalanta Bergame,Away,0,Sampdoria Gênes,0,1
+234,Italy,2019-2020,12,Udinese,Home,0,SPAL,0,1
+235,Italy,2019-2020,12,SPAL,Away,0,Udinese,0,1
+236,Italy,2019-2020,12,Parme,Home,2,AS Rome,0,3
+237,Italy,2019-2020,12,AS Rome,Away,0,Parme,2,0
+238,Italy,2019-2020,12,Juventus Turin,Home,1,AC Milan,0,3
+239,Italy,2019-2020,12,AC Milan,Away,0,Juventus Turin,1,0
+240,Italy,2019-2020,13,Atalanta Bergame,Home,1,Juventus Turin,3,0
+241,Italy,2019-2020,13,Juventus Turin,Away,3,Atalanta Bergame,1,3
+242,Italy,2019-2020,13,AC Milan,Home,1,Naples,1,1
+243,Italy,2019-2020,13,Naples,Away,1,AC Milan,1,1
+244,Italy,2019-2020,13,Torino,Home,0,Inter Milan,3,0
+245,Italy,2019-2020,13,Inter Milan,Away,3,Torino,0,3
+246,Italy,2019-2020,13,Bologne,Home,2,Parme,2,1
+247,Italy,2019-2020,13,Parme,Away,2,Bologne,2,1
+248,Italy,2019-2020,13,Sassuolo,Home,1,Lazio Rome,2,0
+249,Italy,2019-2020,13,Lazio Rome,Away,2,Sassuolo,1,3
+250,Italy,2019-2020,13,AS Rome,Home,3,Brescia,0,3
+251,Italy,2019-2020,13,Brescia,Away,0,AS Rome,3,0
+252,Italy,2019-2020,13,Hellas Vérone,Home,1,Fiorentina,0,3
+253,Italy,2019-2020,13,Fiorentina,Away,0,Hellas Vérone,1,0
+254,Italy,2019-2020,13,Sampdoria Gênes,Home,2,Udinese,1,3
+255,Italy,2019-2020,13,Udinese,Away,1,Sampdoria Gênes,2,0
+256,Italy,2019-2020,13,Lecce,Home,2,Cagliari,2,1
+257,Italy,2019-2020,13,Cagliari,Away,2,Lecce,2,1
+258,Italy,2019-2020,13,SPAL,Home,1,Genoa,1,1
+259,Italy,2019-2020,13,Genoa,Away,1,SPAL,1,1
+260,Italy,2019-2020,14,Brescia,Home,0,Atalanta Bergame,3,0
+261,Italy,2019-2020,14,Atalanta Bergame,Away,3,Brescia,0,3
+262,Italy,2019-2020,14,Genoa,Home,0,Torino,1,0
+263,Italy,2019-2020,14,Torino,Away,1,Genoa,0,3
+264,Italy,2019-2020,14,Fiorentina,Home,0,Lecce,1,0
+265,Italy,2019-2020,14,Lecce,Away,1,Fiorentina,0,3
+266,Italy,2019-2020,14,Juventus Turin,Home,2,Sassuolo,2,1
+267,Italy,2019-2020,14,Sassuolo,Away,2,Juventus Turin,2,1
+268,Italy,2019-2020,14,Inter Milan,Home,2,SPAL,1,3
+269,Italy,2019-2020,14,SPAL,Away,1,Inter Milan,2,0
+270,Italy,2019-2020,14,Lazio Rome,Home,3,Udinese,0,3
+271,Italy,2019-2020,14,Udinese,Away,0,Lazio Rome,3,0
+272,Italy,2019-2020,14,Parme,Home,0,AC Milan,1,0
+273,Italy,2019-2020,14,AC Milan,Away,1,Parme,0,3
+274,Italy,2019-2020,14,Naples,Home,1,Bologne,2,0
+275,Italy,2019-2020,14,Bologne,Away,2,Naples,1,3
+276,Italy,2019-2020,14,Hellas Vérone,Home,1,AS Rome,3,0
+277,Italy,2019-2020,14,AS Rome,Away,3,Hellas Vérone,1,3
+278,Italy,2019-2020,14,Cagliari,Home,4,Sampdoria Gênes,3,3
+279,Italy,2019-2020,14,Sampdoria Gênes,Away,3,Cagliari,4,0
+280,Italy,2019-2020,15,Inter Milan,Home,0,AS Rome,0,1
+281,Italy,2019-2020,15,AS Rome,Away,0,Inter Milan,0,1
+282,Italy,2019-2020,15,Atalanta Bergame,Home,3,Hellas Vérone,2,3
+283,Italy,2019-2020,15,Hellas Vérone,Away,2,Atalanta Bergame,3,0
+284,Italy,2019-2020,15,Udinese,Home,1,Naples,1,1
+285,Italy,2019-2020,15,Naples,Away,1,Udinese,1,1
+286,Italy,2019-2020,15,Lazio Rome,Home,3,Juventus Turin,1,3
+287,Italy,2019-2020,15,Juventus Turin,Away,1,Lazio Rome,3,0
+288,Italy,2019-2020,15,Lecce,Home,2,Genoa,2,1
+289,Italy,2019-2020,15,Genoa,Away,2,Lecce,2,1
+290,Italy,2019-2020,15,Sassuolo,Home,2,Cagliari,2,1
+291,Italy,2019-2020,15,Cagliari,Away,2,Sassuolo,2,1
+292,Italy,2019-2020,15,Torino,Home,2,Fiorentina,1,3
+293,Italy,2019-2020,15,Fiorentina,Away,1,Torino,2,0
+294,Italy,2019-2020,15,SPAL,Home,0,Brescia,1,0
+295,Italy,2019-2020,15,Brescia,Away,1,SPAL,0,3
+296,Italy,2019-2020,15,Sampdoria Gênes,Home,0,Parme,1,0
+297,Italy,2019-2020,15,Parme,Away,1,Sampdoria Gênes,0,3
+298,Italy,2019-2020,15,Bologne,Home,2,AC Milan,3,0
+299,Italy,2019-2020,15,AC Milan,Away,3,Bologne,2,3
+300,Italy,2019-2020,16,Brescia,Home,3,Lecce,0,3
+301,Italy,2019-2020,16,Lecce,Away,0,Brescia,3,0
+302,Italy,2019-2020,16,Naples,Home,1,Parme,2,0
+303,Italy,2019-2020,16,Parme,Away,2,Naples,1,3
+304,Italy,2019-2020,16,Genoa,Home,0,Sampdoria Gênes,1,0
+305,Italy,2019-2020,16,Sampdoria Gênes,Away,1,Genoa,0,3
+306,Italy,2019-2020,16,Hellas Vérone,Home,3,Torino,3,1
+307,Italy,2019-2020,16,Torino,Away,3,Hellas Vérone,3,1
+308,Italy,2019-2020,16,Juventus Turin,Home,3,Udinese,1,3
+309,Italy,2019-2020,16,Udinese,Away,1,Juventus Turin,3,0
+310,Italy,2019-2020,16,Bologne,Home,2,Atalanta Bergame,1,3
+311,Italy,2019-2020,16,Atalanta Bergame,Away,1,Bologne,2,0
+312,Italy,2019-2020,16,AC Milan,Home,0,Sassuolo,0,1
+313,Italy,2019-2020,16,Sassuolo,Away,0,AC Milan,0,1
+314,Italy,2019-2020,16,AS Rome,Home,3,SPAL,1,3
+315,Italy,2019-2020,16,SPAL,Away,1,AS Rome,3,0
+316,Italy,2019-2020,16,Fiorentina,Home,1,Inter Milan,1,1
+317,Italy,2019-2020,16,Inter Milan,Away,1,Fiorentina,1,1
+318,Italy,2019-2020,16,Cagliari,Home,1,Lazio Rome,2,0
+319,Italy,2019-2020,16,Lazio Rome,Away,2,Cagliari,1,3
+320,Italy,2019-2020,17,Sampdoria Gênes,Home,1,Juventus Turin,2,0
+321,Italy,2019-2020,17,Juventus Turin,Away,2,Sampdoria Gênes,1,3
+322,Italy,2019-2020,17,Fiorentina,Home,1,AS Rome,4,0
+323,Italy,2019-2020,17,AS Rome,Away,4,Fiorentina,1,3
+324,Italy,2019-2020,17,Udinese,Home,2,Cagliari,1,3
+325,Italy,2019-2020,17,Cagliari,Away,1,Udinese,2,0
+326,Italy,2019-2020,17,Inter Milan,Home,4,Genoa,0,3
+327,Italy,2019-2020,17,Genoa,Away,0,Inter Milan,4,0
+328,Italy,2019-2020,17,Torino,Home,1,SPAL,2,0
+329,Italy,2019-2020,17,SPAL,Away,2,Torino,1,3
+330,Italy,2019-2020,17,Atalanta Bergame,Home,5,AC Milan,0,3
+331,Italy,2019-2020,17,AC Milan,Away,0,Atalanta Bergame,5,0
+332,Italy,2019-2020,17,Parme,Home,1,Brescia,1,1
+333,Italy,2019-2020,17,Brescia,Away,1,Parme,1,1
+334,Italy,2019-2020,17,Lecce,Home,2,Bologne,3,0
+335,Italy,2019-2020,17,Bologne,Away,3,Lecce,2,3
+336,Italy,2019-2020,17,Sassuolo,Home,1,Naples,2,0
+337,Italy,2019-2020,17,Naples,Away,2,Sassuolo,1,3
+338,Italy,2019-2020,17,Lazio Rome,Home,0,Hellas Vérone,0,1
+339,Italy,2019-2020,17,Hellas Vérone,Away,0,Lazio Rome,0,1
+340,Italy,2019-2020,18,Brescia,Home,1,Lazio Rome,2,0
+341,Italy,2019-2020,18,Lazio Rome,Away,2,Brescia,1,3
+342,Italy,2019-2020,18,SPAL,Home,0,Hellas Vérone,2,0
+343,Italy,2019-2020,18,Hellas Vérone,Away,2,SPAL,0,3
+344,Italy,2019-2020,18,Genoa,Home,2,Sassuolo,1,3
+345,Italy,2019-2020,18,Sassuolo,Away,1,Genoa,2,0
+346,Italy,2019-2020,18,AS Rome,Home,0,Torino,2,0
+347,Italy,2019-2020,18,Torino,Away,2,AS Rome,0,3
+348,Italy,2019-2020,18,Bologne,Home,1,Fiorentina,1,1
+349,Italy,2019-2020,18,Fiorentina,Away,1,Bologne,1,1
+350,Italy,2019-2020,18,Juventus Turin,Home,4,Cagliari,0,3
+351,Italy,2019-2020,18,Cagliari,Away,0,Juventus Turin,4,0
+352,Italy,2019-2020,18,Atalanta Bergame,Home,5,Parme,0,3
+353,Italy,2019-2020,18,Parme,Away,0,Atalanta Bergame,5,0
+354,Italy,2019-2020,18,AC Milan,Home,0,Sampdoria Gênes,0,1
+355,Italy,2019-2020,18,Sampdoria Gênes,Away,0,AC Milan,0,1
+356,Italy,2019-2020,18,Lecce,Home,0,Udinese,1,0
+357,Italy,2019-2020,18,Udinese,Away,1,Lecce,0,3
+358,Italy,2019-2020,18,Naples,Home,1,Inter Milan,3,0
+359,Italy,2019-2020,18,Inter Milan,Away,3,Naples,1,3
+360,Italy,2019-2020,19,Cagliari,Home,0,AC Milan,2,0
+361,Italy,2019-2020,19,AC Milan,Away,2,Cagliari,0,3
+362,Italy,2019-2020,19,Lazio Rome,Home,1,Naples,0,3
+363,Italy,2019-2020,19,Naples,Away,0,Lazio Rome,1,0
+364,Italy,2019-2020,19,Inter Milan,Home,1,Atalanta Bergame,1,1
+365,Italy,2019-2020,19,Atalanta Bergame,Away,1,Inter Milan,1,1
+366,Italy,2019-2020,19,Udinese,Home,3,Sassuolo,0,3
+367,Italy,2019-2020,19,Sassuolo,Away,0,Udinese,3,0
+368,Italy,2019-2020,19,Torino,Home,1,Bologne,0,3
+369,Italy,2019-2020,19,Bologne,Away,0,Torino,1,0
+370,Italy,2019-2020,19,Fiorentina,Home,1,SPAL,0,3
+371,Italy,2019-2020,19,SPAL,Away,0,Fiorentina,1,0
+372,Italy,2019-2020,19,Sampdoria Gênes,Home,5,Brescia,1,3
+373,Italy,2019-2020,19,Brescia,Away,1,Sampdoria Gênes,5,0
+374,Italy,2019-2020,19,Hellas Vérone,Home,2,Genoa,1,3
+375,Italy,2019-2020,19,Genoa,Away,1,Hellas Vérone,2,0
+376,Italy,2019-2020,19,AS Rome,Home,1,Juventus Turin,2,0
+377,Italy,2019-2020,19,Juventus Turin,Away,2,AS Rome,1,3
+378,Italy,2019-2020,19,Parme,Home,2,Lecce,0,3
+379,Italy,2019-2020,19,Lecce,Away,0,Parme,2,0
+380,Italy,2019-2020,20,Lazio Rome,Home,5,Sampdoria Gênes,1,3
+381,Italy,2019-2020,20,Sampdoria Gênes,Away,1,Lazio Rome,5,0
+382,Italy,2019-2020,20,Sassuolo,Home,2,Torino,1,3
+383,Italy,2019-2020,20,Torino,Away,1,Sassuolo,2,0
+384,Italy,2019-2020,20,Naples,Home,0,Fiorentina,2,0
+385,Italy,2019-2020,20,Fiorentina,Away,2,Naples,0,3
+386,Italy,2019-2020,20,AC Milan,Home,3,Udinese,2,3
+387,Italy,2019-2020,20,Udinese,Away,2,AC Milan,3,0
+388,Italy,2019-2020,20,Brescia,Home,2,Cagliari,2,1
+389,Italy,2019-2020,20,Cagliari,Away,2,Brescia,2,1
+390,Italy,2019-2020,20,Bologne,Home,1,Hellas Vérone,1,1
+391,Italy,2019-2020,20,Hellas Vérone,Away,1,Bologne,1,1
+392,Italy,2019-2020,20,Lecce,Home,1,Inter Milan,1,1
+393,Italy,2019-2020,20,Inter Milan,Away,1,Lecce,1,1
+394,Italy,2019-2020,20,Genoa,Home,1,AS Rome,3,0
+395,Italy,2019-2020,20,AS Rome,Away,3,Genoa,1,3
+396,Italy,2019-2020,20,Juventus Turin,Home,2,Parme,1,3
+397,Italy,2019-2020,20,Parme,Away,1,Juventus Turin,2,0
+398,Italy,2019-2020,20,Atalanta Bergame,Home,1,SPAL,2,0
+399,Italy,2019-2020,20,SPAL,Away,2,Atalanta Bergame,1,3
+400,Italy,2019-2020,21,Brescia,Home,0,AC Milan,1,0
+401,Italy,2019-2020,21,AC Milan,Away,1,Brescia,0,3
+402,Italy,2019-2020,21,SPAL,Home,1,Bologne,3,0
+403,Italy,2019-2020,21,Bologne,Away,3,SPAL,1,3
+404,Italy,2019-2020,21,Fiorentina,Home,0,Genoa,0,1
+405,Italy,2019-2020,21,Genoa,Away,0,Fiorentina,0,1
+406,Italy,2019-2020,21,Torino,Home,0,Atalanta Bergame,7,0
+407,Italy,2019-2020,21,Atalanta Bergame,Away,7,Torino,0,3
+408,Italy,2019-2020,21,Inter Milan,Home,1,Cagliari,1,1
+409,Italy,2019-2020,21,Cagliari,Away,1,Inter Milan,1,1
+410,Italy,2019-2020,21,Parme,Home,2,Udinese,0,3
+411,Italy,2019-2020,21,Udinese,Away,0,Parme,2,0
+412,Italy,2019-2020,21,Hellas Vérone,Home,3,Lecce,0,3
+413,Italy,2019-2020,21,Lecce,Away,0,Hellas Vérone,3,0
+414,Italy,2019-2020,21,Sampdoria Gênes,Home,0,Sassuolo,0,1
+415,Italy,2019-2020,21,Sassuolo,Away,0,Sampdoria Gênes,0,1
+416,Italy,2019-2020,21,AS Rome,Home,1,Lazio Rome,1,1
+417,Italy,2019-2020,21,Lazio Rome,Away,1,AS Rome,1,1
+418,Italy,2019-2020,21,Naples,Home,2,Juventus Turin,1,3
+419,Italy,2019-2020,21,Juventus Turin,Away,1,Naples,2,0
+420,Italy,2019-2020,22,Bologne,Home,2,Brescia,1,3
+421,Italy,2019-2020,22,Brescia,Away,1,Bologne,2,0
+422,Italy,2019-2020,22,Cagliari,Home,2,Parme,2,1
+423,Italy,2019-2020,22,Parme,Away,2,Cagliari,2,1
+424,Italy,2019-2020,22,Sassuolo,Home,4,AS Rome,2,3
+425,Italy,2019-2020,22,AS Rome,Away,2,Sassuolo,4,0
+426,Italy,2019-2020,22,Juventus Turin,Home,3,Fiorentina,0,3
+427,Italy,2019-2020,22,Fiorentina,Away,0,Juventus Turin,3,0
+428,Italy,2019-2020,22,Lazio Rome,Home,5,SPAL,1,3
+429,Italy,2019-2020,22,SPAL,Away,1,Lazio Rome,5,0
+430,Italy,2019-2020,22,Atalanta Bergame,Home,2,Genoa,2,1
+431,Italy,2019-2020,22,Genoa,Away,2,Atalanta Bergame,2,1
+432,Italy,2019-2020,22,AC Milan,Home,1,Hellas Vérone,1,1
+433,Italy,2019-2020,22,Hellas Vérone,Away,1,AC Milan,1,1
+434,Italy,2019-2020,22,Lecce,Home,4,Torino,0,3
+435,Italy,2019-2020,22,Torino,Away,0,Lecce,4,0
+436,Italy,2019-2020,22,Udinese,Home,0,Inter Milan,2,0
+437,Italy,2019-2020,22,Inter Milan,Away,2,Udinese,0,3
+438,Italy,2019-2020,22,Sampdoria Gênes,Home,2,Naples,4,0
+439,Italy,2019-2020,22,Naples,Away,4,Sampdoria Gênes,2,3
+440,Italy,2019-2020,23,AS Rome,Home,2,Bologne,3,0
+441,Italy,2019-2020,23,Bologne,Away,3,AS Rome,2,3
+442,Italy,2019-2020,23,Fiorentina,Home,1,Atalanta Bergame,2,0
+443,Italy,2019-2020,23,Atalanta Bergame,Away,2,Fiorentina,1,3
+444,Italy,2019-2020,23,Torino,Home,1,Sampdoria Gênes,3,0
+445,Italy,2019-2020,23,Sampdoria Gênes,Away,3,Torino,1,3
+446,Italy,2019-2020,23,Hellas Vérone,Home,2,Juventus Turin,1,3
+447,Italy,2019-2020,23,Juventus Turin,Away,1,Hellas Vérone,2,0
+448,Italy,2019-2020,23,SPAL,Home,1,Sassuolo,2,0
+449,Italy,2019-2020,23,Sassuolo,Away,2,SPAL,1,3
+450,Italy,2019-2020,23,Genoa,Home,1,Cagliari,0,3
+451,Italy,2019-2020,23,Cagliari,Away,0,Genoa,1,0
+452,Italy,2019-2020,23,Naples,Home,2,Lecce,3,0
+453,Italy,2019-2020,23,Lecce,Away,3,Naples,2,3
+454,Italy,2019-2020,23,Brescia,Home,1,Udinese,1,1
+455,Italy,2019-2020,23,Udinese,Away,1,Brescia,1,1
+456,Italy,2019-2020,23,Parme,Home,0,Lazio Rome,1,0
+457,Italy,2019-2020,23,Lazio Rome,Away,1,Parme,0,3
+458,Italy,2019-2020,23,Inter Milan,Home,4,AC Milan,2,3
+459,Italy,2019-2020,23,AC Milan,Away,2,Inter Milan,4,0
+460,Italy,2019-2020,24,Lecce,Home,2,SPAL,1,3
+461,Italy,2019-2020,24,SPAL,Away,1,Lecce,2,0
+462,Italy,2019-2020,24,Bologne,Home,0,Genoa,3,0
+463,Italy,2019-2020,24,Genoa,Away,3,Bologne,0,3
+464,Italy,2019-2020,24,Atalanta Bergame,Home,2,AS Rome,1,3
+465,Italy,2019-2020,24,AS Rome,Away,1,Atalanta Bergame,2,0
+466,Italy,2019-2020,24,Udinese,Home,0,Hellas Vérone,0,1
+467,Italy,2019-2020,24,Hellas Vérone,Away,0,Udinese,0,1
+468,Italy,2019-2020,24,Juventus Turin,Home,2,Brescia,0,3
+469,Italy,2019-2020,24,Brescia,Away,0,Juventus Turin,2,0
+470,Italy,2019-2020,24,Sassuolo,Home,0,Parme,1,0
+471,Italy,2019-2020,24,Parme,Away,1,Sassuolo,0,3
+472,Italy,2019-2020,24,Sampdoria Gênes,Home,1,Fiorentina,5,0
+473,Italy,2019-2020,24,Fiorentina,Away,5,Sampdoria Gênes,1,3
+474,Italy,2019-2020,24,Cagliari,Home,0,Naples,1,0
+475,Italy,2019-2020,24,Naples,Away,1,Cagliari,0,3
+476,Italy,2019-2020,24,Lazio Rome,Home,2,Inter Milan,1,3
+477,Italy,2019-2020,24,Inter Milan,Away,1,Lazio Rome,2,0
+478,Italy,2019-2020,24,AC Milan,Home,1,Torino,0,3
+479,Italy,2019-2020,24,Torino,Away,0,AC Milan,1,0
+480,Italy,2019-2020,25,Brescia,Home,1,Naples,2,0
+481,Italy,2019-2020,25,Naples,Away,2,Brescia,1,3
+482,Italy,2019-2020,25,Bologne,Home,1,Udinese,1,1
+483,Italy,2019-2020,25,Udinese,Away,1,Bologne,1,1
+484,Italy,2019-2020,25,SPAL,Home,1,Juventus Turin,2,0
+485,Italy,2019-2020,25,Juventus Turin,Away,2,SPAL,1,3
+486,Italy,2019-2020,25,Fiorentina,Home,1,AC Milan,1,1
+487,Italy,2019-2020,25,AC Milan,Away,1,Fiorentina,1,1
+488,Italy,2019-2020,25,Genoa,Home,2,Lazio Rome,3,0
+489,Italy,2019-2020,25,Lazio Rome,Away,3,Genoa,2,3
+490,Italy,2019-2020,25,AS Rome,Home,4,Lecce,0,3
+491,Italy,2019-2020,25,Lecce,Away,0,AS Rome,4,0
+492,Italy,2019-2020,25,Torino,Home,1,Parme,1,1
+493,Italy,2019-2020,25,Parme,Away,1,Torino,1,1
+494,Italy,2019-2020,25,Hellas Vérone,Home,2,Cagliari,1,3
+495,Italy,2019-2020,25,Cagliari,Away,1,Hellas Vérone,2,0
+496,Italy,2019-2020,25,Atalanta Bergame,Home,4,Sassuolo,1,3
+497,Italy,2019-2020,25,Sassuolo,Away,1,Atalanta Bergame,4,0
+498,Italy,2019-2020,25,Inter Milan,Home,2,Sampdoria Gênes,1,3
+499,Italy,2019-2020,25,Sampdoria Gênes,Away,1,Inter Milan,2,0
+500,Italy,2019-2020,26,Lazio Rome,Home,2,Bologne,0,3
+501,Italy,2019-2020,26,Bologne,Away,0,Lazio Rome,2,0
+502,Italy,2019-2020,26,Naples,Home,2,Torino,1,3
+503,Italy,2019-2020,26,Torino,Away,1,Naples,2,0
+504,Italy,2019-2020,26,Lecce,Home,2,Atalanta Bergame,7,0
+505,Italy,2019-2020,26,Atalanta Bergame,Away,7,Lecce,2,3
+506,Italy,2019-2020,26,Cagliari,Home,3,AS Rome,4,0
+507,Italy,2019-2020,26,AS Rome,Away,4,Cagliari,3,3
+508,Italy,2019-2020,26,Parme,Home,0,SPAL,1,0
+509,Italy,2019-2020,26,SPAL,Away,1,Parme,0,3
+510,Italy,2019-2020,26,Sampdoria Gênes,Home,2,Hellas Vérone,1,3
+511,Italy,2019-2020,26,Hellas Vérone,Away,1,Sampdoria Gênes,2,0
+512,Italy,2019-2020,26,AC Milan,Home,1,Genoa,2,0
+513,Italy,2019-2020,26,Genoa,Away,2,AC Milan,1,3
+514,Italy,2019-2020,26,Udinese,Home,0,Fiorentina,0,1
+515,Italy,2019-2020,26,Fiorentina,Away,0,Udinese,0,1
+516,Italy,2019-2020,26,Juventus Turin,Home,2,Inter Milan,0,3
+517,Italy,2019-2020,26,Inter Milan,Away,0,Juventus Turin,2,0
+518,Italy,2019-2020,26,Sassuolo,Home,3,Brescia,0,3
+519,Italy,2019-2020,26,Brescia,Away,0,Sassuolo,3,0
+520,Italy,2019-2020,27,Lecce,Home,1,AC Milan,4,0
+521,Italy,2019-2020,27,AC Milan,Away,4,Lecce,1,3
+522,Italy,2019-2020,27,Fiorentina,Home,1,Brescia,1,1
+523,Italy,2019-2020,27,Brescia,Away,1,Fiorentina,1,1
+524,Italy,2019-2020,27,Bologne,Home,0,Juventus Turin,2,0
+525,Italy,2019-2020,27,Juventus Turin,Away,2,Bologne,0,3
+526,Italy,2019-2020,27,Hellas Vérone,Home,0,Naples,2,0
+527,Italy,2019-2020,27,Naples,Away,2,Hellas Vérone,0,3
+528,Italy,2019-2020,27,SPAL,Home,0,Cagliari,1,0
+529,Italy,2019-2020,27,Cagliari,Away,1,SPAL,0,3
+530,Italy,2019-2020,27,Genoa,Home,1,Parme,4,0
+531,Italy,2019-2020,27,Parme,Away,4,Genoa,1,3
+532,Italy,2019-2020,27,Torino,Home,1,Udinese,0,3
+533,Italy,2019-2020,27,Udinese,Away,0,Torino,1,0
+534,Italy,2019-2020,27,Inter Milan,Home,3,Sassuolo,3,1
+535,Italy,2019-2020,27,Sassuolo,Away,3,Inter Milan,3,1
+536,Italy,2019-2020,27,Atalanta Bergame,Home,3,Lazio Rome,2,3
+537,Italy,2019-2020,27,Lazio Rome,Away,2,Atalanta Bergame,3,0
+538,Italy,2019-2020,27,AS Rome,Home,2,Sampdoria Gênes,1,3
+539,Italy,2019-2020,27,Sampdoria Gênes,Away,1,AS Rome,2,0
+540,Italy,2019-2020,28,Juventus Turin,Home,4,Lecce,0,3
+541,Italy,2019-2020,28,Lecce,Away,0,Juventus Turin,4,0
+542,Italy,2019-2020,28,Brescia,Home,2,Genoa,2,1
+543,Italy,2019-2020,28,Genoa,Away,2,Brescia,2,1
+544,Italy,2019-2020,28,Cagliari,Home,4,Torino,2,3
+545,Italy,2019-2020,28,Torino,Away,2,Cagliari,4,0
+546,Italy,2019-2020,28,Lazio Rome,Home,2,Fiorentina,1,3
+547,Italy,2019-2020,28,Fiorentina,Away,1,Lazio Rome,2,0
+548,Italy,2019-2020,28,AC Milan,Home,2,AS Rome,0,3
+549,Italy,2019-2020,28,AS Rome,Away,0,AC Milan,2,0
+550,Italy,2019-2020,28,Udinese,Home,2,Atalanta Bergame,3,0
+551,Italy,2019-2020,28,Atalanta Bergame,Away,3,Udinese,2,3
+552,Italy,2019-2020,28,Naples,Home,3,SPAL,1,3
+553,Italy,2019-2020,28,SPAL,Away,1,Naples,3,0
+554,Italy,2019-2020,28,Sassuolo,Home,3,Hellas Vérone,3,1
+555,Italy,2019-2020,28,Hellas Vérone,Away,3,Sassuolo,3,1
+556,Italy,2019-2020,28,Sampdoria Gênes,Home,1,Bologne,2,0
+557,Italy,2019-2020,28,Bologne,Away,2,Sampdoria Gênes,1,3
+558,Italy,2019-2020,28,Parme,Home,1,Inter Milan,2,0
+559,Italy,2019-2020,28,Inter Milan,Away,2,Parme,1,3
+560,Italy,2019-2020,29,Torino,Home,1,Lazio Rome,2,0
+561,Italy,2019-2020,29,Lazio Rome,Away,2,Torino,1,3
+562,Italy,2019-2020,29,Genoa,Home,1,Juventus Turin,3,0
+563,Italy,2019-2020,29,Juventus Turin,Away,3,Genoa,1,3
+564,Italy,2019-2020,29,Inter Milan,Home,6,Brescia,0,3
+565,Italy,2019-2020,29,Brescia,Away,0,Inter Milan,6,0
+566,Italy,2019-2020,29,Bologne,Home,1,Cagliari,1,1
+567,Italy,2019-2020,29,Cagliari,Away,1,Bologne,1,1
+568,Italy,2019-2020,29,SPAL,Home,2,AC Milan,2,1
+569,Italy,2019-2020,29,AC Milan,Away,2,SPAL,2,1
+570,Italy,2019-2020,29,Hellas Vérone,Home,3,Parme,2,3
+571,Italy,2019-2020,29,Parme,Away,2,Hellas Vérone,3,0
+572,Italy,2019-2020,29,Fiorentina,Home,1,Sassuolo,3,0
+573,Italy,2019-2020,29,Sassuolo,Away,3,Fiorentina,1,3
+574,Italy,2019-2020,29,Lecce,Home,1,Sampdoria Gênes,2,0
+575,Italy,2019-2020,29,Sampdoria Gênes,Away,2,Lecce,1,3
+576,Italy,2019-2020,29,Atalanta Bergame,Home,2,Naples,0,3
+577,Italy,2019-2020,29,Naples,Away,0,Atalanta Bergame,2,0
+578,Italy,2019-2020,29,AS Rome,Home,0,Udinese,2,0
+579,Italy,2019-2020,29,Udinese,Away,2,AS Rome,0,3
+580,Italy,2019-2020,30,Juventus Turin,Home,4,Torino,1,3
+581,Italy,2019-2020,30,Torino,Away,1,Juventus Turin,4,0
+582,Italy,2019-2020,30,Sassuolo,Home,4,Lecce,2,3
+583,Italy,2019-2020,30,Lecce,Away,2,Sassuolo,4,0
+584,Italy,2019-2020,30,Lazio Rome,Home,0,AC Milan,3,0
+585,Italy,2019-2020,30,AC Milan,Away,3,Lazio Rome,0,3
+586,Italy,2019-2020,30,Inter Milan,Home,1,Bologne,2,0
+587,Italy,2019-2020,30,Bologne,Away,2,Inter Milan,1,3
+588,Italy,2019-2020,30,Cagliari,Home,0,Atalanta Bergame,1,0
+589,Italy,2019-2020,30,Atalanta Bergame,Away,1,Cagliari,0,3
+590,Italy,2019-2020,30,Brescia,Home,2,Hellas Vérone,0,3
+591,Italy,2019-2020,30,Hellas Vérone,Away,0,Brescia,2,0
+592,Italy,2019-2020,30,Parme,Home,1,Fiorentina,2,0
+593,Italy,2019-2020,30,Fiorentina,Away,2,Parme,1,3
+594,Italy,2019-2020,30,Udinese,Home,2,Genoa,2,1
+595,Italy,2019-2020,30,Genoa,Away,2,Udinese,2,1
+596,Italy,2019-2020,30,Sampdoria Gênes,Home,3,SPAL,0,3
+597,Italy,2019-2020,30,SPAL,Away,0,Sampdoria Gênes,3,0
+598,Italy,2019-2020,30,Naples,Home,2,AS Rome,1,3
+599,Italy,2019-2020,30,AS Rome,Away,1,Naples,2,0
+600,Italy,2019-2020,31,Lecce,Home,2,Lazio Rome,1,3
+601,Italy,2019-2020,31,Lazio Rome,Away,1,Lecce,2,0
+602,Italy,2019-2020,31,AC Milan,Home,4,Juventus Turin,2,3
+603,Italy,2019-2020,31,Juventus Turin,Away,2,AC Milan,4,0
+604,Italy,2019-2020,31,Genoa,Home,1,Naples,2,0
+605,Italy,2019-2020,31,Naples,Away,2,Genoa,1,3
+606,Italy,2019-2020,31,Fiorentina,Home,0,Cagliari,0,1
+607,Italy,2019-2020,31,Cagliari,Away,0,Fiorentina,0,1
+608,Italy,2019-2020,31,Atalanta Bergame,Home,2,Sampdoria Gênes,0,3
+609,Italy,2019-2020,31,Sampdoria Gênes,Away,0,Atalanta Bergame,2,0
+610,Italy,2019-2020,31,AS Rome,Home,2,Parme,1,3
+611,Italy,2019-2020,31,Parme,Away,1,AS Rome,2,0
+612,Italy,2019-2020,31,Bologne,Home,1,Sassuolo,2,0
+613,Italy,2019-2020,31,Sassuolo,Away,2,Bologne,1,3
+614,Italy,2019-2020,31,Torino,Home,3,Brescia,1,3
+615,Italy,2019-2020,31,Brescia,Away,1,Torino,3,0
+616,Italy,2019-2020,31,SPAL,Home,0,Udinese,3,0
+617,Italy,2019-2020,31,Udinese,Away,3,SPAL,0,3
+618,Italy,2019-2020,31,Hellas Vérone,Home,2,Inter Milan,2,1
+619,Italy,2019-2020,31,Inter Milan,Away,2,Hellas Vérone,2,1
+620,Italy,2019-2020,32,Lazio Rome,Home,1,Sassuolo,2,0
+621,Italy,2019-2020,32,Sassuolo,Away,2,Lazio Rome,1,3
+622,Italy,2019-2020,32,Brescia,Home,0,AS Rome,3,0
+623,Italy,2019-2020,32,AS Rome,Away,3,Brescia,0,3
+624,Italy,2019-2020,32,Juventus Turin,Home,2,Atalanta Bergame,2,1
+625,Italy,2019-2020,32,Atalanta Bergame,Away,2,Juventus Turin,2,1
+626,Italy,2019-2020,32,Genoa,Home,2,SPAL,0,3
+627,Italy,2019-2020,32,SPAL,Away,0,Genoa,2,0
+628,Italy,2019-2020,32,Fiorentina,Home,1,Hellas Vérone,1,1
+629,Italy,2019-2020,32,Hellas Vérone,Away,1,Fiorentina,1,1
+630,Italy,2019-2020,32,Parme,Home,2,Bologne,2,1
+631,Italy,2019-2020,32,Bologne,Away,2,Parme,2,1
+632,Italy,2019-2020,32,Cagliari,Home,0,Lecce,0,1
+633,Italy,2019-2020,32,Lecce,Away,0,Cagliari,0,1
+634,Italy,2019-2020,32,Udinese,Home,1,Sampdoria Gênes,3,0
+635,Italy,2019-2020,32,Sampdoria Gênes,Away,3,Udinese,1,3
+636,Italy,2019-2020,32,Naples,Home,2,AC Milan,2,1
+637,Italy,2019-2020,32,AC Milan,Away,2,Naples,2,1
+638,Italy,2019-2020,32,Inter Milan,Home,3,Torino,1,3
+639,Italy,2019-2020,32,Torino,Away,1,Inter Milan,3,0
+640,Italy,2019-2020,33,Atalanta Bergame,Home,6,Brescia,2,3
+641,Italy,2019-2020,33,Brescia,Away,2,Atalanta Bergame,6,0
+642,Italy,2019-2020,33,Bologne,Home,1,Naples,1,1
+643,Italy,2019-2020,33,Naples,Away,1,Bologne,1,1
+644,Italy,2019-2020,33,AC Milan,Home,3,Parme,1,3
+645,Italy,2019-2020,33,Parme,Away,1,AC Milan,3,0
+646,Italy,2019-2020,33,Sampdoria Gênes,Home,3,Cagliari,0,3
+647,Italy,2019-2020,33,Cagliari,Away,0,Sampdoria Gênes,3,0
+648,Italy,2019-2020,33,Sassuolo,Home,3,Juventus Turin,3,1
+649,Italy,2019-2020,33,Juventus Turin,Away,3,Sassuolo,3,1
+650,Italy,2019-2020,33,Udinese,Home,0,Lazio Rome,0,1
+651,Italy,2019-2020,33,Lazio Rome,Away,0,Udinese,0,1
+652,Italy,2019-2020,33,AS Rome,Home,2,Hellas Vérone,1,3
+653,Italy,2019-2020,33,Hellas Vérone,Away,1,AS Rome,2,0
+654,Italy,2019-2020,33,Lecce,Home,1,Fiorentina,3,0
+655,Italy,2019-2020,33,Fiorentina,Away,3,Lecce,1,3
+656,Italy,2019-2020,33,Torino,Home,3,Genoa,0,3
+657,Italy,2019-2020,33,Genoa,Away,0,Torino,3,0
+658,Italy,2019-2020,33,SPAL,Home,0,Inter Milan,4,0
+659,Italy,2019-2020,33,Inter Milan,Away,4,SPAL,0,3
+660,Italy,2019-2020,34,Hellas Vérone,Home,1,Atalanta Bergame,1,1
+661,Italy,2019-2020,34,Atalanta Bergame,Away,1,Hellas Vérone,1,1
+662,Italy,2019-2020,34,Cagliari,Home,1,Sassuolo,1,1
+663,Italy,2019-2020,34,Sassuolo,Away,1,Cagliari,1,1
+664,Italy,2019-2020,34,AC Milan,Home,5,Bologne,1,3
+665,Italy,2019-2020,34,Bologne,Away,1,AC Milan,5,0
+666,Italy,2019-2020,34,Parme,Home,2,Sampdoria Gênes,3,0
+667,Italy,2019-2020,34,Sampdoria Gênes,Away,3,Parme,2,3
+668,Italy,2019-2020,34,Naples,Home,2,Udinese,1,3
+669,Italy,2019-2020,34,Udinese,Away,1,Naples,2,0
+670,Italy,2019-2020,34,Fiorentina,Home,2,Torino,0,3
+671,Italy,2019-2020,34,Torino,Away,0,Fiorentina,2,0
+672,Italy,2019-2020,34,Genoa,Home,2,Lecce,1,3
+673,Italy,2019-2020,34,Lecce,Away,1,Genoa,2,0
+674,Italy,2019-2020,34,Brescia,Home,2,SPAL,1,3
+675,Italy,2019-2020,34,SPAL,Away,1,Brescia,2,0
+676,Italy,2019-2020,34,AS Rome,Home,2,Inter Milan,2,1
+677,Italy,2019-2020,34,Inter Milan,Away,2,AS Rome,2,1
+678,Italy,2019-2020,34,Juventus Turin,Home,2,Lazio Rome,1,3
+679,Italy,2019-2020,34,Lazio Rome,Away,1,Juventus Turin,2,0
+680,Italy,2019-2020,35,Atalanta Bergame,Home,1,Bologne,0,3
+681,Italy,2019-2020,35,Bologne,Away,0,Atalanta Bergame,1,0
+682,Italy,2019-2020,35,Sassuolo,Home,1,AC Milan,2,0
+683,Italy,2019-2020,35,AC Milan,Away,2,Sassuolo,1,3
+684,Italy,2019-2020,35,Parme,Home,2,Naples,1,3
+685,Italy,2019-2020,35,Naples,Away,1,Parme,2,0
+686,Italy,2019-2020,35,Inter Milan,Home,0,Fiorentina,0,1
+687,Italy,2019-2020,35,Fiorentina,Away,0,Inter Milan,0,1
+688,Italy,2019-2020,35,SPAL,Home,1,AS Rome,6,0
+689,Italy,2019-2020,35,AS Rome,Away,6,SPAL,1,3
+690,Italy,2019-2020,35,Torino,Home,1,Hellas Vérone,1,1
+691,Italy,2019-2020,35,Hellas Vérone,Away,1,Torino,1,1
+692,Italy,2019-2020,35,Sampdoria Gênes,Home,1,Genoa,2,0
+693,Italy,2019-2020,35,Genoa,Away,2,Sampdoria Gênes,1,3
+694,Italy,2019-2020,35,Lecce,Home,3,Brescia,1,3
+695,Italy,2019-2020,35,Brescia,Away,1,Lecce,3,0
+696,Italy,2019-2020,35,Udinese,Home,2,Juventus Turin,1,3
+697,Italy,2019-2020,35,Juventus Turin,Away,1,Udinese,2,0
+698,Italy,2019-2020,35,Lazio Rome,Home,2,Cagliari,1,3
+699,Italy,2019-2020,35,Cagliari,Away,1,Lazio Rome,2,0
+700,Italy,2019-2020,36,AC Milan,Home,1,Atalanta Bergame,1,1
+701,Italy,2019-2020,36,Atalanta Bergame,Away,1,AC Milan,1,1
+702,Italy,2019-2020,36,Brescia,Home,1,Parme,2,0
+703,Italy,2019-2020,36,Parme,Away,2,Brescia,1,3
+704,Italy,2019-2020,36,Genoa,Home,0,Inter Milan,3,0
+705,Italy,2019-2020,36,Inter Milan,Away,3,Genoa,0,3
+706,Italy,2019-2020,36,Naples,Home,2,Sassuolo,0,3
+707,Italy,2019-2020,36,Sassuolo,Away,0,Naples,2,0
+708,Italy,2019-2020,36,Bologne,Home,3,Lecce,2,3
+709,Italy,2019-2020,36,Lecce,Away,2,Bologne,3,0
+710,Italy,2019-2020,36,Hellas Vérone,Home,1,Lazio Rome,5,0
+711,Italy,2019-2020,36,Lazio Rome,Away,5,Hellas Vérone,1,3
+712,Italy,2019-2020,36,AS Rome,Home,2,Fiorentina,1,3
+713,Italy,2019-2020,36,Fiorentina,Away,1,AS Rome,2,0
+714,Italy,2019-2020,36,Cagliari,Home,0,Udinese,1,0
+715,Italy,2019-2020,36,Udinese,Away,1,Cagliari,0,3
+716,Italy,2019-2020,36,SPAL,Home,1,Torino,1,1
+717,Italy,2019-2020,36,Torino,Away,1,SPAL,1,1
+718,Italy,2019-2020,36,Juventus Turin,Home,2,Sampdoria Gênes,0,3
+719,Italy,2019-2020,36,Sampdoria Gênes,Away,0,Juventus Turin,2,0
+720,Italy,2019-2020,37,Parme,Home,1,Atalanta Bergame,2,0
+721,Italy,2019-2020,37,Atalanta Bergame,Away,2,Parme,1,3
+722,Italy,2019-2020,37,Inter Milan,Home,2,Naples,0,3
+723,Italy,2019-2020,37,Naples,Away,0,Inter Milan,2,0
+724,Italy,2019-2020,37,Lazio Rome,Home,2,Brescia,0,3
+725,Italy,2019-2020,37,Brescia,Away,0,Lazio Rome,2,0
+726,Italy,2019-2020,37,Sampdoria Gênes,Home,1,AC Milan,4,0
+727,Italy,2019-2020,37,AC Milan,Away,4,Sampdoria Gênes,1,3
+728,Italy,2019-2020,37,Sassuolo,Home,5,Genoa,0,3
+729,Italy,2019-2020,37,Genoa,Away,0,Sassuolo,5,0
+730,Italy,2019-2020,37,Hellas Vérone,Home,3,SPAL,0,3
+731,Italy,2019-2020,37,SPAL,Away,0,Hellas Vérone,3,0
+732,Italy,2019-2020,37,Udinese,Home,1,Lecce,2,0
+733,Italy,2019-2020,37,Lecce,Away,2,Udinese,1,3
+734,Italy,2019-2020,37,Cagliari,Home,2,Juventus Turin,0,3
+735,Italy,2019-2020,37,Juventus Turin,Away,0,Cagliari,2,0
+736,Italy,2019-2020,37,Torino,Home,2,AS Rome,3,0
+737,Italy,2019-2020,37,AS Rome,Away,3,Torino,2,3
+738,Italy,2019-2020,37,Fiorentina,Home,4,Bologne,0,3
+739,Italy,2019-2020,37,Bologne,Away,0,Fiorentina,4,0

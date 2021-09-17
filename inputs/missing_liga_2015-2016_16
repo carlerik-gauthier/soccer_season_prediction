@@ -1,0 +1,21 @@
+,country,season,leg,team,play,goals_scored,opponent,goals_conceded,nb_points
+0,Spain,2015-2016,16,Valence CF,Home,2,Getafe,2,1
+1,Spain,2015-2016,16,Getafe,Away,2,Valence CF,2,1
+2,Spain,2015-2016,16,Espanyol Barcelone,Home,1,Las Palmas,0,3
+3,Spain,2015-2016,16,Las Palmas,Away,0,Espanyol Barcelone,1,0
+4,Spain,2015-2016,16,Betis Séville,Home,0,Séville FC,0,1
+5,Spain,2015-2016,16,Séville FC,Away,0,Betis Séville,0,1
+6,Spain,2015-2016,16,La Corogne,Home,2,Eibar,0,3
+7,Spain,2015-2016,16,Eibar,Away,0,La Corogne,2,0
+8,Spain,2015-2016,16,Real Madrid,Home,10,Rayo Vallecano,2,3
+9,Spain,2015-2016,16,Rayo Vallecano,Away,2,Real Madrid,10,0
+10,Spain,2015-2016,16,Grenade CF,Home,0,Celta Vigo,2,0
+11,Spain,2015-2016,16,Celta Vigo,Away,2,Grenade CF,0,3
+12,Spain,2015-2016,16,Real Sociedad,Home,0,Villarreal,2,0
+13,Spain,2015-2016,16,Villarreal,Away,2,Real Sociedad,0,3
+14,Spain,2015-2016,16,Athletic Bilbao,Home,2,Levante,0,3
+15,Spain,2015-2016,16,Levante,Away,0,Athletic Bilbao,2,0
+16,Spain,2015-2016,16,Malaga,Home,1,Atlético de Madrid,0,3
+17,Spain,2015-2016,16,Atlético de Madrid,Away,0,Malaga,1,0
+18,Spain,2015-2016,16,Gijon,Home,1,FC Barcelone,3,0
+19,Spain,2015-2016,16,FC Barcelone,Away,3,Gijon,1,3

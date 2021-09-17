@@ -1,0 +1,561 @@
+,country,season,leg,team,play,goals_scored,opponent,goals_conceded,nb_points
+0,France,2019-2020,1,AC Ajaccio,Home,2,Le Havre,2,1
+1,France,2019-2020,1,Le Havre,Away,2,AC Ajaccio,2,1
+2,France,2019-2020,1,Niort,Home,0,Troyes,2,0
+3,France,2019-2020,1,Troyes,Away,2,Niort,0,3
+4,France,2019-2020,1,Sochaux,Home,0,Caen,0,1
+5,France,2019-2020,1,Caen,Away,0,Sochaux,0,1
+6,France,2019-2020,1,Guingamp,Home,3,Grenoble,3,1
+7,France,2019-2020,1,Grenoble,Away,3,Guingamp,3,1
+8,France,2019-2020,1,Chambly,Home,1,Valenciennes,0,3
+9,France,2019-2020,1,Valenciennes,Away,0,Chambly,1,0
+10,France,2019-2020,1,Rodez,Home,2,Auxerre,0,3
+11,France,2019-2020,1,Auxerre,Away,0,Rodez,2,0
+12,France,2019-2020,1,Nancy,Home,0,Orléans,0,1
+13,France,2019-2020,1,Orléans,Away,0,Nancy,0,1
+14,France,2019-2020,1,Clermont,Home,3,Châteauroux,0,3
+15,France,2019-2020,1,Châteauroux,Away,0,Clermont,3,0
+16,France,2019-2020,1,Le Mans,Home,1,Lens,2,0
+17,France,2019-2020,1,Lens,Away,2,Le Mans,1,3
+18,France,2019-2020,1,Lorient,Home,3,Paris FC,0,3
+19,France,2019-2020,1,Paris FC,Away,0,Lorient,3,0
+20,France,2019-2020,2,Troyes,Home,1,Clermont,2,0
+21,France,2019-2020,2,Clermont,Away,2,Troyes,1,3
+22,France,2019-2020,2,Châteauroux,Home,0,Rodez,0,1
+23,France,2019-2020,2,Rodez,Away,0,Châteauroux,0,1
+24,France,2019-2020,2,Orléans,Home,0,Chambly,1,0
+25,France,2019-2020,2,Chambly,Away,1,Orléans,0,3
+26,France,2019-2020,2,Grenoble,Home,0,AC Ajaccio,1,0
+27,France,2019-2020,2,AC Ajaccio,Away,1,Grenoble,0,3
+28,France,2019-2020,2,Le Havre,Home,1,Niort,1,1
+29,France,2019-2020,2,Niort,Away,1,Le Havre,1,1
+30,France,2019-2020,2,Valenciennes,Home,1,Nancy,1,1
+31,France,2019-2020,2,Nancy,Away,1,Valenciennes,1,1
+32,France,2019-2020,2,Paris FC,Home,1,Sochaux,1,1
+33,France,2019-2020,2,Sochaux,Away,1,Paris FC,1,1
+34,France,2019-2020,2,Auxerre,Home,2,Le Mans,0,3
+35,France,2019-2020,2,Le Mans,Away,0,Auxerre,2,0
+36,France,2019-2020,2,Lens,Home,2,Guingamp,0,3
+37,France,2019-2020,2,Guingamp,Away,0,Lens,2,0
+38,France,2019-2020,2,Caen,Home,1,Lorient,2,0
+39,France,2019-2020,2,Lorient,Away,2,Caen,1,3
+40,France,2019-2020,3,Nancy,Home,1,Lorient,1,1
+41,France,2019-2020,3,Lorient,Away,1,Nancy,1,1
+42,France,2019-2020,3,Chambly,Home,0,Grenoble,0,1
+43,France,2019-2020,3,Grenoble,Away,0,Chambly,0,1
+44,France,2019-2020,3,Rodez,Home,2,Paris FC,1,3
+45,France,2019-2020,3,Paris FC,Away,1,Rodez,2,0
+46,France,2019-2020,3,AC Ajaccio,Home,1,Caen,2,0
+47,France,2019-2020,3,Caen,Away,2,AC Ajaccio,1,3
+48,France,2019-2020,3,Troyes,Home,1,Le Havre,2,0
+49,France,2019-2020,3,Le Havre,Away,2,Troyes,1,3
+50,France,2019-2020,3,Sochaux,Home,1,Auxerre,0,3
+51,France,2019-2020,3,Auxerre,Away,0,Sochaux,1,0
+52,France,2019-2020,3,Le Mans,Home,1,Valenciennes,2,0
+53,France,2019-2020,3,Valenciennes,Away,2,Le Mans,1,3
+54,France,2019-2020,3,Guingamp,Home,1,Orléans,0,3
+55,France,2019-2020,3,Orléans,Away,0,Guingamp,1,0
+56,France,2019-2020,3,Niort,Home,3,Châteauroux,0,3
+57,France,2019-2020,3,Châteauroux,Away,0,Niort,3,0
+58,France,2019-2020,3,Clermont,Home,1,Lens,1,1
+59,France,2019-2020,3,Lens,Away,1,Clermont,1,1
+60,France,2019-2020,4,Lorient,Home,1,Sochaux,0,3
+61,France,2019-2020,4,Sochaux,Away,0,Lorient,1,0
+62,France,2019-2020,4,Orléans,Home,0,Clermont,1,0
+63,France,2019-2020,4,Clermont,Away,1,Orléans,0,3
+64,France,2019-2020,4,Valenciennes,Home,1,Rodez,0,3
+65,France,2019-2020,4,Rodez,Away,0,Valenciennes,1,0
+66,France,2019-2020,4,Caen,Home,0,Chambly,0,1
+67,France,2019-2020,4,Chambly,Away,0,Caen,0,1
+68,France,2019-2020,4,Paris FC,Home,0,Niort,1,0
+69,France,2019-2020,4,Niort,Away,1,Paris FC,0,3
+70,France,2019-2020,4,Châteauroux,Home,0,AC Ajaccio,1,0
+71,France,2019-2020,4,AC Ajaccio,Away,1,Châteauroux,0,3
+72,France,2019-2020,4,Grenoble,Home,1,Troyes,1,1
+73,France,2019-2020,4,Troyes,Away,1,Grenoble,1,1
+74,France,2019-2020,4,Nancy,Home,2,Le Mans,1,3
+75,France,2019-2020,4,Le Mans,Away,1,Nancy,2,0
+76,France,2019-2020,4,Lens,Home,1,Le Havre,3,0
+77,France,2019-2020,4,Le Havre,Away,3,Lens,1,3
+78,France,2019-2020,4,Auxerre,Home,2,Guingamp,2,1
+79,France,2019-2020,4,Guingamp,Away,2,Auxerre,2,1
+80,France,2019-2020,5,Clermont,Home,1,Auxerre,1,1
+81,France,2019-2020,5,Auxerre,Away,1,Clermont,1,1
+82,France,2019-2020,5,Le Mans,Home,1,Lorient,2,0
+83,France,2019-2020,5,Lorient,Away,2,Le Mans,1,3
+84,France,2019-2020,5,Le Havre,Home,3,Grenoble,1,3
+85,France,2019-2020,5,Grenoble,Away,1,Le Havre,3,0
+86,France,2019-2020,5,Chambly,Home,0,Châteauroux,0,1
+87,France,2019-2020,5,Châteauroux,Away,0,Chambly,0,1
+88,France,2019-2020,5,Niort,Home,1,Caen,1,1
+89,France,2019-2020,5,Caen,Away,1,Niort,1,1
+90,France,2019-2020,5,Rodez,Home,3,Orléans,3,1
+91,France,2019-2020,5,Orléans,Away,3,Rodez,3,1
+92,France,2019-2020,5,AC Ajaccio,Home,1,Paris FC,0,3
+93,France,2019-2020,5,Paris FC,Away,0,AC Ajaccio,1,0
+94,France,2019-2020,5,Sochaux,Home,3,Nancy,0,3
+95,France,2019-2020,5,Nancy,Away,0,Sochaux,3,0
+96,France,2019-2020,5,Troyes,Home,2,Lens,0,3
+97,France,2019-2020,5,Lens,Away,0,Troyes,2,0
+98,France,2019-2020,5,Guingamp,Home,0,Valenciennes,1,0
+99,France,2019-2020,5,Valenciennes,Away,1,Guingamp,0,3
+100,France,2019-2020,6,Caen,Home,0,Le Havre,3,0
+101,France,2019-2020,6,Le Havre,Away,3,Caen,0,3
+102,France,2019-2020,6,Valenciennes,Home,1,Clermont,0,3
+103,France,2019-2020,6,Clermont,Away,0,Valenciennes,1,0
+104,France,2019-2020,6,Auxerre,Home,3,AC Ajaccio,1,3
+105,France,2019-2020,6,AC Ajaccio,Away,1,Auxerre,3,0
+106,France,2019-2020,6,Le Mans,Home,2,Sochaux,0,3
+107,France,2019-2020,6,Sochaux,Away,0,Le Mans,2,0
+108,France,2019-2020,6,Nancy,Home,1,Rodez,1,1
+109,France,2019-2020,6,Rodez,Away,1,Nancy,1,1
+110,France,2019-2020,6,Orléans,Home,0,Niort,1,0
+111,France,2019-2020,6,Niort,Away,1,Orléans,0,3
+112,France,2019-2020,6,Châteauroux,Home,0,Troyes,1,0
+113,France,2019-2020,6,Troyes,Away,1,Châteauroux,0,3
+114,France,2019-2020,6,Lorient,Home,0,Guingamp,1,0
+115,France,2019-2020,6,Guingamp,Away,1,Lorient,0,3
+116,France,2019-2020,6,Paris FC,Home,0,Chambly,3,0
+117,France,2019-2020,6,Chambly,Away,3,Paris FC,0,3
+118,France,2019-2020,6,Grenoble,Home,2,Lens,2,1
+119,France,2019-2020,6,Lens,Away,2,Grenoble,2,1
+120,France,2019-2020,7,Le Havre,Home,0,Paris FC,0,1
+121,France,2019-2020,7,Paris FC,Away,0,Le Havre,0,1
+122,France,2019-2020,7,Sochaux,Home,0,Valenciennes,0,1
+123,France,2019-2020,7,Valenciennes,Away,0,Sochaux,0,1
+124,France,2019-2020,7,Chambly,Home,1,Auxerre,4,0
+125,France,2019-2020,7,Auxerre,Away,4,Chambly,1,3
+126,France,2019-2020,7,Niort,Home,0,Grenoble,1,0
+127,France,2019-2020,7,Grenoble,Away,1,Niort,0,3
+128,France,2019-2020,7,Troyes,Home,2,Caen,1,3
+129,France,2019-2020,7,Caen,Away,1,Troyes,2,0
+130,France,2019-2020,7,AC Ajaccio,Home,0,Orléans,0,1
+131,France,2019-2020,7,Orléans,Away,0,AC Ajaccio,0,1
+132,France,2019-2020,7,Rodez,Home,4,Le Mans,1,3
+133,France,2019-2020,7,Le Mans,Away,1,Rodez,4,0
+134,France,2019-2020,7,Guingamp,Home,1,Nancy,1,1
+135,France,2019-2020,7,Nancy,Away,1,Guingamp,1,1
+136,France,2019-2020,7,Clermont,Home,0,Lorient,2,0
+137,France,2019-2020,7,Lorient,Away,2,Clermont,0,3
+138,France,2019-2020,7,Lens,Home,1,Châteauroux,0,3
+139,France,2019-2020,7,Châteauroux,Away,0,Lens,1,0
+140,France,2019-2020,8,Orléans,Home,2,Le Havre,2,1
+141,France,2019-2020,8,Le Havre,Away,2,Orléans,2,1
+142,France,2019-2020,8,Valenciennes,Home,1,Niort,1,1
+143,France,2019-2020,8,Niort,Away,1,Valenciennes,1,1
+144,France,2019-2020,8,Auxerre,Home,1,Troyes,2,0
+145,France,2019-2020,8,Troyes,Away,2,Auxerre,1,3
+146,France,2019-2020,8,Nancy,Home,3,Chambly,0,3
+147,France,2019-2020,8,Chambly,Away,0,Nancy,3,0
+148,France,2019-2020,8,Paris FC,Home,0,Clermont,2,0
+149,France,2019-2020,8,Clermont,Away,2,Paris FC,0,3
+150,France,2019-2020,8,Le Mans,Home,2,AC Ajaccio,4,0
+151,France,2019-2020,8,AC Ajaccio,Away,4,Le Mans,2,3
+152,France,2019-2020,8,Sochaux,Home,3,Guingamp,1,3
+153,France,2019-2020,8,Guingamp,Away,1,Sochaux,3,0
+154,France,2019-2020,8,Châteauroux,Home,1,Grenoble,1,1
+155,France,2019-2020,8,Grenoble,Away,1,Châteauroux,1,1
+156,France,2019-2020,8,Caen,Home,0,Lens,2,0
+157,France,2019-2020,8,Lens,Away,2,Caen,0,3
+158,France,2019-2020,8,Lorient,Home,2,Rodez,1,3
+159,France,2019-2020,8,Rodez,Away,1,Lorient,2,0
+160,France,2019-2020,9,Chambly,Home,0,Lorient,1,0
+161,France,2019-2020,9,Lorient,Away,1,Chambly,0,3
+162,France,2019-2020,9,Le Havre,Home,0,Châteauroux,1,0
+163,France,2019-2020,9,Châteauroux,Away,1,Le Havre,0,3
+164,France,2019-2020,9,Troyes,Home,1,Orléans,2,0
+165,France,2019-2020,9,Orléans,Away,2,Troyes,1,3
+166,France,2019-2020,9,AC Ajaccio,Home,2,Valenciennes,0,3
+167,France,2019-2020,9,Valenciennes,Away,0,AC Ajaccio,2,0
+168,France,2019-2020,9,Clermont,Home,2,Nancy,2,1
+169,France,2019-2020,9,Nancy,Away,2,Clermont,2,1
+170,France,2019-2020,9,Rodez,Home,0,Sochaux,2,0
+171,France,2019-2020,9,Sochaux,Away,2,Rodez,0,3
+172,France,2019-2020,9,Niort,Home,2,Auxerre,2,1
+173,France,2019-2020,9,Auxerre,Away,2,Niort,2,1
+174,France,2019-2020,9,Grenoble,Home,1,Caen,0,3
+175,France,2019-2020,9,Caen,Away,0,Grenoble,1,0
+176,France,2019-2020,9,Lens,Home,2,Paris FC,1,3
+177,France,2019-2020,9,Paris FC,Away,1,Lens,2,0
+178,France,2019-2020,9,Guingamp,Home,3,Le Mans,0,3
+179,France,2019-2020,9,Le Mans,Away,0,Guingamp,3,0
+180,France,2019-2020,10,Lorient,Home,0,AC Ajaccio,0,1
+181,France,2019-2020,10,AC Ajaccio,Away,0,Lorient,0,1
+182,France,2019-2020,10,Paris FC,Home,1,Troyes,0,3
+183,France,2019-2020,10,Troyes,Away,0,Paris FC,1,0
+184,France,2019-2020,10,Sochaux,Home,4,Clermont,0,3
+185,France,2019-2020,10,Clermont,Away,0,Sochaux,4,0
+186,France,2019-2020,10,Valenciennes,Home,0,Grenoble,2,0
+187,France,2019-2020,10,Grenoble,Away,2,Valenciennes,0,3
+188,France,2019-2020,10,Nancy,Home,2,Niort,1,3
+189,France,2019-2020,10,Niort,Away,1,Nancy,2,0
+190,France,2019-2020,10,Guingamp,Home,4,Rodez,1,3
+191,France,2019-2020,10,Rodez,Away,1,Guingamp,4,0
+192,France,2019-2020,10,Le Mans,Home,1,Chambly,0,3
+193,France,2019-2020,10,Chambly,Away,0,Le Mans,1,0
+194,France,2019-2020,10,Caen,Home,1,Châteauroux,1,1
+195,France,2019-2020,10,Châteauroux,Away,1,Caen,1,1
+196,France,2019-2020,10,Auxerre,Home,2,Le Havre,0,3
+197,France,2019-2020,10,Le Havre,Away,0,Auxerre,2,0
+198,France,2019-2020,10,Orléans,Home,1,Lens,4,0
+199,France,2019-2020,10,Lens,Away,4,Orléans,1,3
+200,France,2019-2020,11,Chambly,Home,0,Sochaux,0,1
+201,France,2019-2020,11,Sochaux,Away,0,Chambly,0,1
+202,France,2019-2020,11,AC Ajaccio,Home,0,Nancy,0,1
+203,France,2019-2020,11,Nancy,Away,0,AC Ajaccio,0,1
+204,France,2019-2020,11,Troyes,Home,2,Le Mans,1,3
+205,France,2019-2020,11,Le Mans,Away,1,Troyes,2,0
+206,France,2019-2020,11,Niort,Home,0,Guingamp,0,1
+207,France,2019-2020,11,Guingamp,Away,0,Niort,0,1
+208,France,2019-2020,11,Clermont,Home,0,Rodez,1,0
+209,France,2019-2020,11,Rodez,Away,1,Clermont,0,3
+210,France,2019-2020,11,Caen,Home,0,Valenciennes,0,1
+211,France,2019-2020,11,Valenciennes,Away,0,Caen,0,1
+212,France,2019-2020,11,Grenoble,Home,0,Orléans,0,1
+213,France,2019-2020,11,Orléans,Away,0,Grenoble,0,1
+214,France,2019-2020,11,Châteauroux,Home,0,Paris FC,1,0
+215,France,2019-2020,11,Paris FC,Away,1,Châteauroux,0,3
+216,France,2019-2020,11,Le Havre,Home,2,Lorient,2,1
+217,France,2019-2020,11,Lorient,Away,2,Le Havre,2,1
+218,France,2019-2020,11,Lens,Home,0,Auxerre,0,1
+219,France,2019-2020,11,Auxerre,Away,0,Lens,0,1
+220,France,2019-2020,12,Nancy,Home,0,Lens,0,1
+221,France,2019-2020,12,Lens,Away,0,Nancy,0,1
+222,France,2019-2020,12,Sochaux,Home,0,AC Ajaccio,2,0
+223,France,2019-2020,12,AC Ajaccio,Away,2,Sochaux,0,3
+224,France,2019-2020,12,Auxerre,Home,0,Grenoble,1,0
+225,France,2019-2020,12,Grenoble,Away,1,Auxerre,0,3
+226,France,2019-2020,12,Guingamp,Home,1,Clermont,2,0
+227,France,2019-2020,12,Clermont,Away,2,Guingamp,1,3
+228,France,2019-2020,12,Le Mans,Home,1,Niort,0,3
+229,France,2019-2020,12,Niort,Away,0,Le Mans,1,0
+230,France,2019-2020,12,Orléans,Home,1,Châteauroux,1,1
+231,France,2019-2020,12,Châteauroux,Away,1,Orléans,1,1
+232,France,2019-2020,12,Paris FC,Home,2,Caen,4,0
+233,France,2019-2020,12,Caen,Away,4,Paris FC,2,3
+234,France,2019-2020,12,Rodez,Home,2,Chambly,0,3
+235,France,2019-2020,12,Chambly,Away,0,Rodez,2,0
+236,France,2019-2020,12,Lorient,Home,0,Troyes,1,0
+237,France,2019-2020,12,Troyes,Away,1,Lorient,0,3
+238,France,2019-2020,12,Valenciennes,Home,0,Le Havre,0,1
+239,France,2019-2020,12,Le Havre,Away,0,Valenciennes,0,1
+240,France,2019-2020,13,AC Ajaccio,Home,1,Rodez,0,3
+241,France,2019-2020,13,Rodez,Away,0,AC Ajaccio,1,0
+242,France,2019-2020,13,Troyes,Home,1,Valenciennes,0,3
+243,France,2019-2020,13,Valenciennes,Away,0,Troyes,1,0
+244,France,2019-2020,13,Châteauroux,Home,1,Auxerre,0,3
+245,France,2019-2020,13,Auxerre,Away,0,Châteauroux,1,0
+246,France,2019-2020,13,Chambly,Home,1,Guingamp,5,0
+247,France,2019-2020,13,Guingamp,Away,5,Chambly,1,3
+248,France,2019-2020,13,Caen,Home,2,Orléans,1,3
+249,France,2019-2020,13,Orléans,Away,1,Caen,2,0
+250,France,2019-2020,13,Lens,Home,1,Lorient,0,3
+251,France,2019-2020,13,Lorient,Away,0,Lens,1,0
+252,France,2019-2020,13,Niort,Home,0,Sochaux,2,0
+253,France,2019-2020,13,Sochaux,Away,2,Niort,0,3
+254,France,2019-2020,13,Grenoble,Home,0,Paris FC,0,1
+255,France,2019-2020,13,Paris FC,Away,0,Grenoble,0,1
+256,France,2019-2020,13,Clermont,Home,0,Le Mans,1,0
+257,France,2019-2020,13,Le Mans,Away,1,Clermont,0,3
+258,France,2019-2020,13,Le Havre,Home,1,Nancy,1,1
+259,France,2019-2020,13,Nancy,Away,1,Le Havre,1,1
+260,France,2019-2020,14,Nancy,Home,0,Troyes,0,1
+261,France,2019-2020,14,Troyes,Away,0,Nancy,0,1
+262,France,2019-2020,14,Lorient,Home,4,Niort,1,3
+263,France,2019-2020,14,Niort,Away,1,Lorient,4,0
+264,France,2019-2020,14,Sochaux,Home,2,Le Havre,0,3
+265,France,2019-2020,14,Le Havre,Away,0,Sochaux,2,0
+266,France,2019-2020,14,Le Mans,Home,0,Grenoble,0,1
+267,France,2019-2020,14,Grenoble,Away,0,Le Mans,0,1
+268,France,2019-2020,14,Chambly,Home,0,Clermont,1,0
+269,France,2019-2020,14,Clermont,Away,1,Chambly,0,3
+270,France,2019-2020,14,Valenciennes,Home,0,Châteauroux,1,0
+271,France,2019-2020,14,Châteauroux,Away,1,Valenciennes,0,3
+272,France,2019-2020,14,Auxerre,Home,1,Caen,1,1
+273,France,2019-2020,14,Caen,Away,1,Auxerre,1,1
+274,France,2019-2020,14,Orléans,Home,0,Paris FC,1,0
+275,France,2019-2020,14,Paris FC,Away,1,Orléans,0,3
+276,France,2019-2020,14,Guingamp,Home,1,AC Ajaccio,1,1
+277,France,2019-2020,14,AC Ajaccio,Away,1,Guingamp,1,1
+278,France,2019-2020,14,Rodez,Home,1,Lens,2,0
+279,France,2019-2020,14,Lens,Away,2,Rodez,1,3
+280,France,2019-2020,15,Châteauroux,Home,1,Lorient,3,0
+281,France,2019-2020,15,Lorient,Away,3,Châteauroux,1,3
+282,France,2019-2020,15,AC Ajaccio,Home,1,Clermont,1,1
+283,France,2019-2020,15,Clermont,Away,1,AC Ajaccio,1,1
+284,France,2019-2020,15,Troyes,Home,0,Chambly,4,0
+285,France,2019-2020,15,Chambly,Away,4,Troyes,0,3
+286,France,2019-2020,15,Grenoble,Home,1,Nancy,1,1
+287,France,2019-2020,15,Nancy,Away,1,Grenoble,1,1
+288,France,2019-2020,15,Niort,Home,2,Rodez,1,3
+289,France,2019-2020,15,Rodez,Away,1,Niort,2,0
+290,France,2019-2020,15,Paris FC,Home,2,Auxerre,0,3
+291,France,2019-2020,15,Auxerre,Away,0,Paris FC,2,0
+292,France,2019-2020,15,Orléans,Home,0,Valenciennes,1,0
+293,France,2019-2020,15,Valenciennes,Away,1,Orléans,0,3
+294,France,2019-2020,15,Caen,Home,3,Le Mans,3,1
+295,France,2019-2020,15,Le Mans,Away,3,Caen,3,1
+296,France,2019-2020,15,Lens,Home,4,Sochaux,0,3
+297,France,2019-2020,15,Sochaux,Away,0,Lens,4,0
+298,France,2019-2020,15,Le Havre,Home,4,Guingamp,0,3
+299,France,2019-2020,15,Guingamp,Away,0,Le Havre,4,0
+300,France,2019-2020,16,Valenciennes,Home,2,Lens,0,3
+301,France,2019-2020,16,Lens,Away,0,Valenciennes,2,0
+302,France,2019-2020,16,Lorient,Home,2,Grenoble,1,3
+303,France,2019-2020,16,Grenoble,Away,1,Lorient,2,0
+304,France,2019-2020,16,Chambly,Home,0,AC Ajaccio,2,0
+305,France,2019-2020,16,AC Ajaccio,Away,2,Chambly,0,3
+306,France,2019-2020,16,Rodez,Home,1,Le Havre,2,0
+307,France,2019-2020,16,Le Havre,Away,2,Rodez,1,3
+308,France,2019-2020,16,Clermont,Home,1,Niort,0,3
+309,France,2019-2020,16,Niort,Away,0,Clermont,1,0
+310,France,2019-2020,16,Nancy,Home,2,Paris FC,0,3
+311,France,2019-2020,16,Paris FC,Away,0,Nancy,2,0
+312,France,2019-2020,16,Guingamp,Home,1,Caen,1,1
+313,France,2019-2020,16,Caen,Away,1,Guingamp,1,1
+314,France,2019-2020,16,Auxerre,Home,2,Orléans,2,1
+315,France,2019-2020,16,Orléans,Away,2,Auxerre,2,1
+316,France,2019-2020,16,Le Mans,Home,1,Châteauroux,2,0
+317,France,2019-2020,16,Châteauroux,Away,2,Le Mans,1,3
+318,France,2019-2020,16,Sochaux,Home,0,Troyes,1,0
+319,France,2019-2020,16,Troyes,Away,1,Sochaux,0,3
+320,France,2019-2020,17,Caen,Home,1,Nancy,0,3
+321,France,2019-2020,17,Nancy,Away,0,Caen,1,0
+322,France,2019-2020,17,Orléans,Home,0,Lorient,4,0
+323,France,2019-2020,17,Lorient,Away,4,Orléans,0,3
+324,France,2019-2020,17,Lens,Home,3,Chambly,0,3
+325,France,2019-2020,17,Chambly,Away,0,Lens,3,0
+326,France,2019-2020,17,Niort,Home,0,AC Ajaccio,1,0
+327,France,2019-2020,17,AC Ajaccio,Away,1,Niort,0,3
+328,France,2019-2020,17,Troyes,Home,1,Rodez,0,3
+329,France,2019-2020,17,Rodez,Away,0,Troyes,1,0
+330,France,2019-2020,17,Le Havre,Home,2,Le Mans,0,3
+331,France,2019-2020,17,Le Mans,Away,0,Le Havre,2,0
+332,France,2019-2020,17,Châteauroux,Home,1,Sochaux,1,1
+333,France,2019-2020,17,Sochaux,Away,1,Châteauroux,1,1
+334,France,2019-2020,17,Grenoble,Home,1,Clermont,1,1
+335,France,2019-2020,17,Clermont,Away,1,Grenoble,1,1
+336,France,2019-2020,17,Auxerre,Home,1,Valenciennes,1,1
+337,France,2019-2020,17,Valenciennes,Away,1,Auxerre,1,1
+338,France,2019-2020,17,Paris FC,Home,0,Guingamp,3,0
+339,France,2019-2020,17,Guingamp,Away,3,Paris FC,0,3
+340,France,2019-2020,18,Lorient,Home,1,Auxerre,0,3
+341,France,2019-2020,18,Auxerre,Away,0,Lorient,1,0
+342,France,2019-2020,18,Clermont,Home,2,Le Havre,1,3
+343,France,2019-2020,18,Le Havre,Away,1,Clermont,2,0
+344,France,2019-2020,18,Sochaux,Home,1,Grenoble,1,1
+345,France,2019-2020,18,Grenoble,Away,1,Sochaux,1,1
+346,France,2019-2020,18,Valenciennes,Home,1,Paris FC,0,3
+347,France,2019-2020,18,Paris FC,Away,0,Valenciennes,1,0
+348,France,2019-2020,18,Nancy,Home,2,Châteauroux,1,3
+349,France,2019-2020,18,Châteauroux,Away,1,Nancy,2,0
+350,France,2019-2020,18,Rodez,Home,2,Caen,1,3
+351,France,2019-2020,18,Caen,Away,1,Rodez,2,0
+352,France,2019-2020,18,Le Mans,Home,3,Orléans,2,3
+353,France,2019-2020,18,Orléans,Away,2,Le Mans,3,0
+354,France,2019-2020,18,Chambly,Home,3,Niort,2,3
+355,France,2019-2020,18,Niort,Away,2,Chambly,3,0
+356,France,2019-2020,18,AC Ajaccio,Home,1,Lens,2,0
+357,France,2019-2020,18,Lens,Away,2,AC Ajaccio,1,3
+358,France,2019-2020,18,Guingamp,Home,0,Troyes,1,0
+359,France,2019-2020,18,Troyes,Away,1,Guingamp,0,3
+360,France,2019-2020,19,Valenciennes,Home,3,Lorient,0,3
+361,France,2019-2020,19,Lorient,Away,0,Valenciennes,3,0
+362,France,2019-2020,19,Caen,Home,0,Clermont,0,1
+363,France,2019-2020,19,Clermont,Away,0,Caen,0,1
+364,France,2019-2020,19,Le Havre,Home,1,Chambly,1,1
+365,France,2019-2020,19,Chambly,Away,1,Le Havre,1,1
+366,France,2019-2020,19,Orléans,Home,1,Sochaux,0,3
+367,France,2019-2020,19,Sochaux,Away,0,Orléans,1,0
+368,France,2019-2020,19,Auxerre,Home,0,Nancy,0,1
+369,France,2019-2020,19,Nancy,Away,0,Auxerre,0,1
+370,France,2019-2020,19,Châteauroux,Home,1,Guingamp,5,0
+371,France,2019-2020,19,Guingamp,Away,5,Châteauroux,1,3
+372,France,2019-2020,19,Grenoble,Home,2,Rodez,1,3
+373,France,2019-2020,19,Rodez,Away,1,Grenoble,2,0
+374,France,2019-2020,19,Lens,Home,1,Niort,0,3
+375,France,2019-2020,19,Niort,Away,0,Lens,1,0
+376,France,2019-2020,19,Paris FC,Home,0,Le Mans,3,0
+377,France,2019-2020,19,Le Mans,Away,3,Paris FC,0,3
+378,France,2019-2020,19,Troyes,Home,2,AC Ajaccio,1,3
+379,France,2019-2020,19,AC Ajaccio,Away,1,Troyes,2,0
+380,France,2019-2020,20,Niort,Home,0,Le Havre,1,0
+381,France,2019-2020,20,Le Havre,Away,1,Niort,0,3
+382,France,2019-2020,20,Rodez,Home,1,Châteauroux,2,0
+383,France,2019-2020,20,Châteauroux,Away,2,Rodez,1,3
+384,France,2019-2020,20,AC Ajaccio,Home,3,Grenoble,1,3
+385,France,2019-2020,20,Grenoble,Away,1,AC Ajaccio,3,0
+386,France,2019-2020,20,Sochaux,Home,1,Paris FC,1,1
+387,France,2019-2020,20,Paris FC,Away,1,Sochaux,1,1
+388,France,2019-2020,20,Nancy,Home,1,Valenciennes,0,3
+389,France,2019-2020,20,Valenciennes,Away,0,Nancy,1,0
+390,France,2019-2020,20,Le Mans,Home,0,Auxerre,1,0
+391,France,2019-2020,20,Auxerre,Away,1,Le Mans,0,3
+392,France,2019-2020,20,Clermont,Home,3,Troyes,2,3
+393,France,2019-2020,20,Troyes,Away,2,Clermont,3,0
+394,France,2019-2020,20,Chambly,Home,1,Orléans,0,3
+395,France,2019-2020,20,Orléans,Away,0,Chambly,1,0
+396,France,2019-2020,20,Lorient,Home,2,Caen,1,3
+397,France,2019-2020,20,Caen,Away,1,Lorient,2,0
+398,France,2019-2020,20,Guingamp,Home,1,Lens,1,1
+399,France,2019-2020,20,Lens,Away,1,Guingamp,1,1
+400,France,2019-2020,21,Lorient,Home,2,Nancy,1,3
+401,France,2019-2020,21,Nancy,Away,1,Lorient,2,0
+402,France,2019-2020,21,Caen,Home,0,AC Ajaccio,1,0
+403,France,2019-2020,21,AC Ajaccio,Away,1,Caen,0,3
+404,France,2019-2020,21,Valenciennes,Home,1,Le Mans,0,3
+405,France,2019-2020,21,Le Mans,Away,0,Valenciennes,1,0
+406,France,2019-2020,21,Orléans,Home,2,Guingamp,0,3
+407,France,2019-2020,21,Guingamp,Away,0,Orléans,2,0
+408,France,2019-2020,21,Auxerre,Home,2,Sochaux,1,3
+409,France,2019-2020,21,Sochaux,Away,1,Auxerre,2,0
+410,France,2019-2020,21,Grenoble,Home,0,Chambly,0,1
+411,France,2019-2020,21,Chambly,Away,0,Grenoble,0,1
+412,France,2019-2020,21,Paris FC,Home,0,Rodez,0,1
+413,France,2019-2020,21,Rodez,Away,0,Paris FC,0,1
+414,France,2019-2020,21,Châteauroux,Home,1,Niort,1,1
+415,France,2019-2020,21,Niort,Away,1,Châteauroux,1,1
+416,France,2019-2020,21,Lens,Home,1,Clermont,1,1
+417,France,2019-2020,21,Clermont,Away,1,Lens,1,1
+418,France,2019-2020,21,Le Havre,Home,1,Troyes,0,3
+419,France,2019-2020,21,Troyes,Away,0,Le Havre,1,0
+420,France,2019-2020,22,Le Havre,Home,0,Lens,0,1
+421,France,2019-2020,22,Lens,Away,0,Le Havre,0,1
+422,France,2019-2020,22,AC Ajaccio,Home,0,Châteauroux,1,0
+423,France,2019-2020,22,Châteauroux,Away,1,AC Ajaccio,0,3
+424,France,2019-2020,22,Troyes,Home,1,Grenoble,2,0
+425,France,2019-2020,22,Grenoble,Away,2,Troyes,1,3
+426,France,2019-2020,22,Clermont,Home,3,Orléans,1,3
+427,France,2019-2020,22,Orléans,Away,1,Clermont,3,0
+428,France,2019-2020,22,Rodez,Home,1,Valenciennes,1,1
+429,France,2019-2020,22,Valenciennes,Away,1,Rodez,1,1
+430,France,2019-2020,22,Le Mans,Home,1,Nancy,1,1
+431,France,2019-2020,22,Nancy,Away,1,Le Mans,1,1
+432,France,2019-2020,22,Guingamp,Home,1,Auxerre,0,3
+433,France,2019-2020,22,Auxerre,Away,0,Guingamp,1,0
+434,France,2019-2020,22,Chambly,Home,0,Caen,1,0
+435,France,2019-2020,22,Caen,Away,1,Chambly,0,3
+436,France,2019-2020,22,Niort,Home,4,Paris FC,4,1
+437,France,2019-2020,22,Paris FC,Away,4,Niort,4,1
+438,France,2019-2020,22,Sochaux,Home,0,Lorient,4,0
+439,France,2019-2020,22,Lorient,Away,4,Sochaux,0,3
+440,France,2019-2020,23,Grenoble,Home,1,Le Havre,1,1
+441,France,2019-2020,23,Le Havre,Away,1,Grenoble,1,1
+442,France,2019-2020,23,Lorient,Home,4,Le Mans,2,3
+443,France,2019-2020,23,Le Mans,Away,2,Lorient,4,0
+444,France,2019-2020,23,Lens,Home,1,Troyes,0,3
+445,France,2019-2020,23,Troyes,Away,0,Lens,1,0
+446,France,2019-2020,23,Paris FC,Home,2,AC Ajaccio,3,0
+447,France,2019-2020,23,AC Ajaccio,Away,3,Paris FC,2,3
+448,France,2019-2020,23,Auxerre,Home,0,Clermont,0,1
+449,France,2019-2020,23,Clermont,Away,0,Auxerre,0,1
+450,France,2019-2020,23,Valenciennes,Home,0,Guingamp,0,1
+451,France,2019-2020,23,Guingamp,Away,0,Valenciennes,0,1
+452,France,2019-2020,23,Nancy,Home,1,Sochaux,1,1
+453,France,2019-2020,23,Sochaux,Away,1,Nancy,1,1
+454,France,2019-2020,23,Châteauroux,Home,0,Chambly,3,0
+455,France,2019-2020,23,Chambly,Away,3,Châteauroux,0,3
+456,France,2019-2020,23,Caen,Home,4,Niort,3,3
+457,France,2019-2020,23,Niort,Away,3,Caen,4,0
+458,France,2019-2020,23,Orléans,Home,1,Rodez,2,0
+459,France,2019-2020,23,Rodez,Away,2,Orléans,1,3
+460,France,2019-2020,24,AC Ajaccio,Home,2,Auxerre,3,0
+461,France,2019-2020,24,Auxerre,Away,3,AC Ajaccio,2,3
+462,France,2019-2020,24,Clermont,Home,3,Valenciennes,1,3
+463,France,2019-2020,24,Valenciennes,Away,1,Clermont,3,0
+464,France,2019-2020,24,Troyes,Home,2,Châteauroux,0,3
+465,France,2019-2020,24,Châteauroux,Away,0,Troyes,2,0
+466,France,2019-2020,24,Le Havre,Home,1,Caen,1,1
+467,France,2019-2020,24,Caen,Away,1,Le Havre,1,1
+468,France,2019-2020,24,Rodez,Home,1,Nancy,1,1
+469,France,2019-2020,24,Nancy,Away,1,Rodez,1,1
+470,France,2019-2020,24,Sochaux,Home,1,Le Mans,0,3
+471,France,2019-2020,24,Le Mans,Away,0,Sochaux,1,0
+472,France,2019-2020,24,Chambly,Home,1,Paris FC,2,0
+473,France,2019-2020,24,Paris FC,Away,2,Chambly,1,3
+474,France,2019-2020,24,Niort,Home,2,Orléans,0,3
+475,France,2019-2020,24,Orléans,Away,0,Niort,2,0
+476,France,2019-2020,24,Guingamp,Home,2,Lorient,1,3
+477,France,2019-2020,24,Lorient,Away,1,Guingamp,2,0
+478,France,2019-2020,24,Lens,Home,0,Grenoble,0,1
+479,France,2019-2020,24,Grenoble,Away,0,Lens,0,1
+480,France,2019-2020,25,Orléans,Home,0,AC Ajaccio,3,0
+481,France,2019-2020,25,AC Ajaccio,Away,3,Orléans,0,3
+482,France,2019-2020,25,Caen,Home,0,Troyes,1,0
+483,France,2019-2020,25,Troyes,Away,1,Caen,0,3
+484,France,2019-2020,25,Paris FC,Home,1,Le Havre,0,3
+485,France,2019-2020,25,Le Havre,Away,0,Paris FC,1,0
+486,France,2019-2020,25,Valenciennes,Home,3,Sochaux,2,3
+487,France,2019-2020,25,Sochaux,Away,2,Valenciennes,3,0
+488,France,2019-2020,25,Grenoble,Home,3,Niort,1,3
+489,France,2019-2020,25,Niort,Away,1,Grenoble,3,0
+490,France,2019-2020,25,Auxerre,Home,0,Chambly,0,1
+491,France,2019-2020,25,Chambly,Away,0,Auxerre,0,1
+492,France,2019-2020,25,Le Mans,Home,0,Rodez,0,1
+493,France,2019-2020,25,Rodez,Away,0,Le Mans,0,1
+494,France,2019-2020,25,Lorient,Home,0,Clermont,1,0
+495,France,2019-2020,25,Clermont,Away,1,Lorient,0,3
+496,France,2019-2020,25,Nancy,Home,0,Guingamp,1,0
+497,France,2019-2020,25,Guingamp,Away,1,Nancy,0,3
+498,France,2019-2020,25,Châteauroux,Home,3,Lens,2,3
+499,France,2019-2020,25,Lens,Away,2,Châteauroux,3,0
+500,France,2019-2020,26,Rodez,Home,0,Lorient,1,0
+501,France,2019-2020,26,Lorient,Away,1,Rodez,0,3
+502,France,2019-2020,26,AC Ajaccio,Home,2,Le Mans,0,3
+503,France,2019-2020,26,Le Mans,Away,0,AC Ajaccio,2,0
+504,France,2019-2020,26,Clermont,Home,0,Paris FC,1,0
+505,France,2019-2020,26,Paris FC,Away,1,Clermont,0,3
+506,France,2019-2020,26,Le Havre,Home,1,Orléans,2,0
+507,France,2019-2020,26,Orléans,Away,2,Le Havre,1,3
+508,France,2019-2020,26,Guingamp,Home,1,Sochaux,1,1
+509,France,2019-2020,26,Sochaux,Away,1,Guingamp,1,1
+510,France,2019-2020,26,Niort,Home,1,Valenciennes,0,3
+511,France,2019-2020,26,Valenciennes,Away,0,Niort,1,0
+512,France,2019-2020,26,Grenoble,Home,0,Châteauroux,1,0
+513,France,2019-2020,26,Châteauroux,Away,1,Grenoble,0,3
+514,France,2019-2020,26,Chambly,Home,2,Nancy,1,3
+515,France,2019-2020,26,Nancy,Away,1,Chambly,2,0
+516,France,2019-2020,26,Lens,Home,1,Caen,4,0
+517,France,2019-2020,26,Caen,Away,4,Lens,1,3
+518,France,2019-2020,26,Troyes,Home,3,Auxerre,1,3
+519,France,2019-2020,26,Auxerre,Away,1,Troyes,3,0
+520,France,2019-2020,27,Valenciennes,Home,0,AC Ajaccio,0,1
+521,France,2019-2020,27,AC Ajaccio,Away,0,Valenciennes,0,1
+522,France,2019-2020,27,Orléans,Home,0,Troyes,2,0
+523,France,2019-2020,27,Troyes,Away,2,Orléans,0,3
+524,France,2019-2020,27,Nancy,Home,1,Clermont,2,0
+525,France,2019-2020,27,Clermont,Away,2,Nancy,1,3
+526,France,2019-2020,27,Le Mans,Home,2,Guingamp,1,3
+527,France,2019-2020,27,Guingamp,Away,1,Le Mans,2,0
+528,France,2019-2020,27,Châteauroux,Home,0,Le Havre,3,0
+529,France,2019-2020,27,Le Havre,Away,3,Châteauroux,0,3
+530,France,2019-2020,27,Caen,Home,2,Grenoble,0,3
+531,France,2019-2020,27,Grenoble,Away,0,Caen,2,0
+532,France,2019-2020,27,Sochaux,Home,1,Rodez,1,1
+533,France,2019-2020,27,Rodez,Away,1,Sochaux,1,1
+534,France,2019-2020,27,Auxerre,Home,3,Niort,1,3
+535,France,2019-2020,27,Niort,Away,1,Auxerre,3,0
+536,France,2019-2020,27,Lorient,Home,1,Chambly,2,0
+537,France,2019-2020,27,Chambly,Away,2,Lorient,1,3
+538,France,2019-2020,27,Paris FC,Home,0,Lens,2,0
+539,France,2019-2020,27,Lens,Away,2,Paris FC,0,3
+540,France,2019-2020,28,Troyes,Home,1,Paris FC,1,1
+541,France,2019-2020,28,Paris FC,Away,1,Troyes,1,1
+542,France,2019-2020,28,Clermont,Home,2,Sochaux,0,3
+543,France,2019-2020,28,Sochaux,Away,0,Clermont,2,0
+544,France,2019-2020,28,Le Havre,Home,1,Auxerre,0,3
+545,France,2019-2020,28,Auxerre,Away,0,Le Havre,1,0
+546,France,2019-2020,28,Rodez,Home,2,Guingamp,1,3
+547,France,2019-2020,28,Guingamp,Away,1,Rodez,2,0
+548,France,2019-2020,28,Grenoble,Home,1,Valenciennes,3,0
+549,France,2019-2020,28,Valenciennes,Away,3,Grenoble,1,3
+550,France,2019-2020,28,Châteauroux,Home,2,Caen,1,3
+551,France,2019-2020,28,Caen,Away,1,Châteauroux,2,0
+552,France,2019-2020,28,Chambly,Home,2,Le Mans,2,1
+553,France,2019-2020,28,Le Mans,Away,2,Chambly,2,1
+554,France,2019-2020,28,Niort,Home,1,Nancy,1,1
+555,France,2019-2020,28,Nancy,Away,1,Niort,1,1
+556,France,2019-2020,28,AC Ajaccio,Home,1,Lorient,0,3
+557,France,2019-2020,28,Lorient,Away,0,AC Ajaccio,1,0
+558,France,2019-2020,28,Lens,Home,1,Orléans,0,3
+559,France,2019-2020,28,Orléans,Away,0,Lens,1,0

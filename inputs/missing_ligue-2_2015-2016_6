@@ -1,0 +1,21 @@
+,country,season,leg,team,play,goals_scored,opponent,goals_conceded,nb_points
+0,France,2015-2016,6,Laval,Home,0,Metz,1,0
+1,France,2015-2016,6,Metz,Away,1,Laval,0,3
+2,France,2015-2016,6,Nancy,Home,1,Niort,1,1
+3,France,2015-2016,6,Niort,Away,1,Nancy,1,1
+4,France,2015-2016,6,Le Havre,Home,0,Red Star,2,0
+5,France,2015-2016,6,Red Star,Away,2,Le Havre,0,3
+6,France,2015-2016,6,Tours,Home,0,Bourg-en-Bresse,1,0
+7,France,2015-2016,6,Bourg-en-Bresse,Away,1,Tours,0,3
+8,France,2015-2016,6,Clermont,Home,1,Paris FC,1,1
+9,France,2015-2016,6,Paris FC,Away,1,Clermont,1,1
+10,France,2015-2016,6,Sochaux,Home,0,Créteil,3,0
+11,France,2015-2016,6,Créteil,Away,3,Sochaux,0,3
+12,France,2015-2016,6,Thonon-Évian FC,Home,4,Auxerre,0,3
+13,France,2015-2016,6,Auxerre,Away,0,Thonon-Évian FC,4,0
+14,France,2015-2016,6,Nîmes,Home,0,AC Ajaccio,0,1
+15,France,2015-2016,6,AC Ajaccio,Away,0,Nîmes,0,1
+16,France,2015-2016,6,Valenciennes,Home,1,Dijon,3,0
+17,France,2015-2016,6,Dijon,Away,3,Valenciennes,1,3
+18,France,2015-2016,6,Brest,Home,2,Lens,1,3
+19,France,2015-2016,6,Lens,Away,1,Brest,2,0

@@ -1,0 +1,761 @@
+,country,season,leg,team,play,goals_scored,opponent,goals_conceded,nb_points
+0,England,2019-2020,1,Liverpool,Home,4,Norwich,1,3
+1,England,2019-2020,1,Norwich,Away,1,Liverpool,4,0
+2,England,2019-2020,1,West Ham,Home,0,Manchester City,5,0
+3,England,2019-2020,1,Manchester City,Away,5,West Ham,0,3
+4,England,2019-2020,1,Burnley,Home,3,Southampton,0,3
+5,England,2019-2020,1,Southampton,Away,0,Burnley,3,0
+6,England,2019-2020,1,Bournemouth,Home,1,Sheffield Utd,1,1
+7,England,2019-2020,1,Sheffield Utd,Away,1,Bournemouth,1,1
+8,England,2019-2020,1,Watford,Home,0,Brighton,3,0
+9,England,2019-2020,1,Brighton,Away,3,Watford,0,3
+10,England,2019-2020,1,Crystal Palace,Home,0,Everton,0,1
+11,England,2019-2020,1,Everton,Away,0,Crystal Palace,0,1
+12,England,2019-2020,1,Tottenham,Home,3,Aston Villa,1,3
+13,England,2019-2020,1,Aston Villa,Away,1,Tottenham,3,0
+14,England,2019-2020,1,Leicester,Home,0,Wolverhampton,0,1
+15,England,2019-2020,1,Wolverhampton,Away,0,Leicester,0,1
+16,England,2019-2020,1,Newcastle,Home,0,Arsenal,1,0
+17,England,2019-2020,1,Arsenal,Away,1,Newcastle,0,3
+18,England,2019-2020,1,Manchester United,Home,4,Chelsea,0,3
+19,England,2019-2020,1,Chelsea,Away,0,Manchester United,4,0
+20,England,2019-2020,2,Arsenal,Home,2,Burnley,1,3
+21,England,2019-2020,2,Burnley,Away,1,Arsenal,2,0
+22,England,2019-2020,2,Southampton,Home,1,Liverpool,2,0
+23,England,2019-2020,2,Liverpool,Away,2,Southampton,1,3
+24,England,2019-2020,2,Brighton,Home,1,West Ham,1,1
+25,England,2019-2020,2,West Ham,Away,1,Brighton,1,1
+26,England,2019-2020,2,Aston Villa,Home,1,Bournemouth,2,0
+27,England,2019-2020,2,Bournemouth,Away,2,Aston Villa,1,3
+28,England,2019-2020,2,Everton,Home,1,Watford,0,3
+29,England,2019-2020,2,Watford,Away,0,Everton,1,0
+30,England,2019-2020,2,Norwich,Home,3,Newcastle,1,3
+31,England,2019-2020,2,Newcastle,Away,1,Norwich,3,0
+32,England,2019-2020,2,Manchester City,Home,2,Tottenham,2,1
+33,England,2019-2020,2,Tottenham,Away,2,Manchester City,2,1
+34,England,2019-2020,2,Sheffield Utd,Home,1,Crystal Palace,0,3
+35,England,2019-2020,2,Crystal Palace,Away,0,Sheffield Utd,1,0
+36,England,2019-2020,2,Chelsea,Home,1,Leicester,1,1
+37,England,2019-2020,2,Leicester,Away,1,Chelsea,1,1
+38,England,2019-2020,2,Wolverhampton,Home,1,Manchester United,1,1
+39,England,2019-2020,2,Manchester United,Away,1,Wolverhampton,1,1
+40,England,2019-2020,3,Aston Villa,Home,2,Everton,0,3
+41,England,2019-2020,3,Everton,Away,0,Aston Villa,2,0
+42,England,2019-2020,3,Norwich,Home,2,Chelsea,3,0
+43,England,2019-2020,3,Chelsea,Away,3,Norwich,2,3
+44,England,2019-2020,3,Manchester United,Home,1,Crystal Palace,2,0
+45,England,2019-2020,3,Crystal Palace,Away,2,Manchester United,1,3
+46,England,2019-2020,3,Brighton,Home,0,Southampton,2,0
+47,England,2019-2020,3,Southampton,Away,2,Brighton,0,3
+48,England,2019-2020,3,Sheffield Utd,Home,1,Leicester,2,0
+49,England,2019-2020,3,Leicester,Away,2,Sheffield Utd,1,3
+50,England,2019-2020,3,Watford,Home,1,West Ham,3,0
+51,England,2019-2020,3,West Ham,Away,3,Watford,1,3
+52,England,2019-2020,3,Liverpool,Home,3,Arsenal,1,3
+53,England,2019-2020,3,Arsenal,Away,1,Liverpool,3,0
+54,England,2019-2020,3,Bournemouth,Home,1,Manchester City,3,0
+55,England,2019-2020,3,Manchester City,Away,3,Bournemouth,1,3
+56,England,2019-2020,3,Tottenham,Home,0,Newcastle,1,0
+57,England,2019-2020,3,Newcastle,Away,1,Tottenham,0,3
+58,England,2019-2020,3,Wolverhampton,Home,1,Burnley,1,1
+59,England,2019-2020,3,Burnley,Away,1,Wolverhampton,1,1
+60,England,2019-2020,4,Southampton,Home,1,Manchester United,1,1
+61,England,2019-2020,4,Manchester United,Away,1,Southampton,1,1
+62,England,2019-2020,4,Manchester City,Home,4,Brighton,0,3
+63,England,2019-2020,4,Brighton,Away,0,Manchester City,4,0
+64,England,2019-2020,4,Leicester,Home,3,Bournemouth,1,3
+65,England,2019-2020,4,Bournemouth,Away,1,Leicester,3,0
+66,England,2019-2020,4,Chelsea,Home,2,Sheffield Utd,2,1
+67,England,2019-2020,4,Sheffield Utd,Away,2,Chelsea,2,1
+68,England,2019-2020,4,Crystal Palace,Home,1,Aston Villa,0,3
+69,England,2019-2020,4,Aston Villa,Away,0,Crystal Palace,1,0
+70,England,2019-2020,4,West Ham,Home,2,Norwich,0,3
+71,England,2019-2020,4,Norwich,Away,0,West Ham,2,0
+72,England,2019-2020,4,Newcastle,Home,1,Watford,1,1
+73,England,2019-2020,4,Watford,Away,1,Newcastle,1,1
+74,England,2019-2020,4,Burnley,Home,0,Liverpool,3,0
+75,England,2019-2020,4,Liverpool,Away,3,Burnley,0,3
+76,England,2019-2020,4,Everton,Home,3,Wolverhampton,2,3
+77,England,2019-2020,4,Wolverhampton,Away,2,Everton,3,0
+78,England,2019-2020,4,Arsenal,Home,2,Tottenham,2,1
+79,England,2019-2020,4,Tottenham,Away,2,Arsenal,2,1
+80,England,2019-2020,5,Liverpool,Home,3,Newcastle,1,3
+81,England,2019-2020,5,Newcastle,Away,1,Liverpool,3,0
+82,England,2019-2020,5,Manchester United,Home,1,Leicester,0,3
+83,England,2019-2020,5,Leicester,Away,0,Manchester United,1,0
+84,England,2019-2020,5,Tottenham,Home,4,Crystal Palace,0,3
+85,England,2019-2020,5,Crystal Palace,Away,0,Tottenham,4,0
+86,England,2019-2020,5,Sheffield Utd,Home,0,Southampton,1,0
+87,England,2019-2020,5,Southampton,Away,1,Sheffield Utd,0,3
+88,England,2019-2020,5,Wolverhampton,Home,2,Chelsea,5,0
+89,England,2019-2020,5,Chelsea,Away,5,Wolverhampton,2,3
+90,England,2019-2020,5,Brighton,Home,1,Burnley,1,1
+91,England,2019-2020,5,Burnley,Away,1,Brighton,1,1
+92,England,2019-2020,5,Norwich,Home,3,Manchester City,2,3
+93,England,2019-2020,5,Manchester City,Away,2,Norwich,3,0
+94,England,2019-2020,5,Bournemouth,Home,3,Everton,1,3
+95,England,2019-2020,5,Everton,Away,1,Bournemouth,3,0
+96,England,2019-2020,5,Watford,Home,2,Arsenal,2,1
+97,England,2019-2020,5,Arsenal,Away,2,Watford,2,1
+98,England,2019-2020,5,Aston Villa,Home,0,West Ham,0,1
+99,England,2019-2020,5,West Ham,Away,0,Aston Villa,0,1
+100,England,2019-2020,6,Southampton,Home,1,Bournemouth,3,0
+101,England,2019-2020,6,Bournemouth,Away,3,Southampton,1,3
+102,England,2019-2020,6,Leicester,Home,2,Tottenham,1,3
+103,England,2019-2020,6,Tottenham,Away,1,Leicester,2,0
+104,England,2019-2020,6,Manchester City,Home,8,Watford,0,3
+105,England,2019-2020,6,Watford,Away,0,Manchester City,8,0
+106,England,2019-2020,6,Everton,Home,0,Sheffield Utd,2,0
+107,England,2019-2020,6,Sheffield Utd,Away,2,Everton,0,3
+108,England,2019-2020,6,Burnley,Home,2,Norwich,0,3
+109,England,2019-2020,6,Norwich,Away,0,Burnley,2,0
+110,England,2019-2020,6,Newcastle,Home,0,Brighton,0,1
+111,England,2019-2020,6,Brighton,Away,0,Newcastle,0,1
+112,England,2019-2020,6,West Ham,Home,2,Manchester United,0,3
+113,England,2019-2020,6,Manchester United,Away,0,West Ham,2,0
+114,England,2019-2020,6,Crystal Palace,Home,1,Wolverhampton,1,1
+115,England,2019-2020,6,Wolverhampton,Away,1,Crystal Palace,1,1
+116,England,2019-2020,6,Chelsea,Home,1,Liverpool,2,0
+117,England,2019-2020,6,Liverpool,Away,2,Chelsea,1,3
+118,England,2019-2020,6,Arsenal,Home,3,Aston Villa,2,3
+119,England,2019-2020,6,Aston Villa,Away,2,Arsenal,3,0
+120,England,2019-2020,7,Sheffield Utd,Home,0,Liverpool,1,0
+121,England,2019-2020,7,Liverpool,Away,1,Sheffield Utd,0,3
+122,England,2019-2020,7,Bournemouth,Home,2,West Ham,2,1
+123,England,2019-2020,7,West Ham,Away,2,Bournemouth,2,1
+124,England,2019-2020,7,Tottenham,Home,2,Southampton,1,3
+125,England,2019-2020,7,Southampton,Away,1,Tottenham,2,0
+126,England,2019-2020,7,Aston Villa,Home,2,Burnley,2,1
+127,England,2019-2020,7,Burnley,Away,2,Aston Villa,2,1
+128,England,2019-2020,7,Chelsea,Home,2,Brighton,0,3
+129,England,2019-2020,7,Brighton,Away,0,Chelsea,2,0
+130,England,2019-2020,7,Crystal Palace,Home,2,Norwich,0,3
+131,England,2019-2020,7,Norwich,Away,0,Crystal Palace,2,0
+132,England,2019-2020,7,Wolverhampton,Home,2,Watford,0,3
+133,England,2019-2020,7,Watford,Away,0,Wolverhampton,2,0
+134,England,2019-2020,7,Everton,Home,1,Manchester City,3,0
+135,England,2019-2020,7,Manchester City,Away,3,Everton,1,3
+136,England,2019-2020,7,Leicester,Home,5,Newcastle,0,3
+137,England,2019-2020,7,Newcastle,Away,0,Leicester,5,0
+138,England,2019-2020,7,Manchester United,Home,1,Arsenal,1,1
+139,England,2019-2020,7,Arsenal,Away,1,Manchester United,1,1
+140,England,2019-2020,8,Brighton,Home,3,Tottenham,0,3
+141,England,2019-2020,8,Tottenham,Away,0,Brighton,3,0
+142,England,2019-2020,8,Liverpool,Home,2,Leicester,1,3
+143,England,2019-2020,8,Leicester,Away,1,Liverpool,2,0
+144,England,2019-2020,8,Burnley,Home,1,Everton,0,3
+145,England,2019-2020,8,Everton,Away,0,Burnley,1,0
+146,England,2019-2020,8,Watford,Home,0,Sheffield Utd,0,1
+147,England,2019-2020,8,Sheffield Utd,Away,0,Watford,0,1
+148,England,2019-2020,8,Norwich,Home,1,Aston Villa,5,0
+149,England,2019-2020,8,Aston Villa,Away,5,Norwich,1,3
+150,England,2019-2020,8,West Ham,Home,1,Crystal Palace,2,0
+151,England,2019-2020,8,Crystal Palace,Away,2,West Ham,1,3
+152,England,2019-2020,8,Manchester City,Home,0,Wolverhampton,2,0
+153,England,2019-2020,8,Wolverhampton,Away,2,Manchester City,0,3
+154,England,2019-2020,8,Arsenal,Home,1,Bournemouth,0,3
+155,England,2019-2020,8,Bournemouth,Away,0,Arsenal,1,0
+156,England,2019-2020,8,Southampton,Home,1,Chelsea,4,0
+157,England,2019-2020,8,Chelsea,Away,4,Southampton,1,3
+158,England,2019-2020,8,Newcastle,Home,1,Manchester United,0,3
+159,England,2019-2020,8,Manchester United,Away,0,Newcastle,1,0
+160,England,2019-2020,9,Everton,Home,2,West Ham,0,3
+161,England,2019-2020,9,West Ham,Away,0,Everton,2,0
+162,England,2019-2020,9,Leicester,Home,2,Burnley,1,3
+163,England,2019-2020,9,Burnley,Away,1,Leicester,2,0
+164,England,2019-2020,9,Chelsea,Home,1,Newcastle,0,3
+165,England,2019-2020,9,Newcastle,Away,0,Chelsea,1,0
+166,England,2019-2020,9,Tottenham,Home,1,Watford,1,1
+167,England,2019-2020,9,Watford,Away,1,Tottenham,1,1
+168,England,2019-2020,9,Bournemouth,Home,0,Norwich,0,1
+169,England,2019-2020,9,Norwich,Away,0,Bournemouth,0,1
+170,England,2019-2020,9,Wolverhampton,Home,1,Southampton,1,1
+171,England,2019-2020,9,Southampton,Away,1,Wolverhampton,1,1
+172,England,2019-2020,9,Aston Villa,Home,2,Brighton,1,3
+173,England,2019-2020,9,Brighton,Away,1,Aston Villa,2,0
+174,England,2019-2020,9,Crystal Palace,Home,0,Manchester City,2,0
+175,England,2019-2020,9,Manchester City,Away,2,Crystal Palace,0,3
+176,England,2019-2020,9,Manchester United,Home,1,Liverpool,1,1
+177,England,2019-2020,9,Liverpool,Away,1,Manchester United,1,1
+178,England,2019-2020,9,Sheffield Utd,Home,1,Arsenal,0,3
+179,England,2019-2020,9,Arsenal,Away,0,Sheffield Utd,1,0
+180,England,2019-2020,10,Southampton,Home,0,Leicester,9,0
+181,England,2019-2020,10,Leicester,Away,9,Southampton,0,3
+182,England,2019-2020,10,Manchester City,Home,3,Aston Villa,0,3
+183,England,2019-2020,10,Aston Villa,Away,0,Manchester City,3,0
+184,England,2019-2020,10,West Ham,Home,1,Sheffield Utd,1,1
+185,England,2019-2020,10,Sheffield Utd,Away,1,West Ham,1,1
+186,England,2019-2020,10,Watford,Home,0,Bournemouth,0,1
+187,England,2019-2020,10,Bournemouth,Away,0,Watford,0,1
+188,England,2019-2020,10,Brighton,Home,3,Everton,2,3
+189,England,2019-2020,10,Everton,Away,2,Brighton,3,0
+190,England,2019-2020,10,Burnley,Home,2,Chelsea,4,0
+191,England,2019-2020,10,Chelsea,Away,4,Burnley,2,3
+192,England,2019-2020,10,Newcastle,Home,1,Wolverhampton,1,1
+193,England,2019-2020,10,Wolverhampton,Away,1,Newcastle,1,1
+194,England,2019-2020,10,Liverpool,Home,2,Tottenham,1,3
+195,England,2019-2020,10,Tottenham,Away,1,Liverpool,2,0
+196,England,2019-2020,10,Arsenal,Home,2,Crystal Palace,2,1
+197,England,2019-2020,10,Crystal Palace,Away,2,Arsenal,2,1
+198,England,2019-2020,10,Norwich,Home,1,Manchester United,3,0
+199,England,2019-2020,10,Manchester United,Away,3,Norwich,1,3
+200,England,2019-2020,11,Bournemouth,Home,1,Manchester United,0,3
+201,England,2019-2020,11,Manchester United,Away,0,Bournemouth,1,0
+202,England,2019-2020,11,Aston Villa,Home,1,Liverpool,2,0
+203,England,2019-2020,11,Liverpool,Away,2,Aston Villa,1,3
+204,England,2019-2020,11,Manchester City,Home,2,Southampton,1,3
+205,England,2019-2020,11,Southampton,Away,1,Manchester City,2,0
+206,England,2019-2020,11,Arsenal,Home,1,Wolverhampton,1,1
+207,England,2019-2020,11,Wolverhampton,Away,1,Arsenal,1,1
+208,England,2019-2020,11,Sheffield Utd,Home,3,Burnley,0,3
+209,England,2019-2020,11,Burnley,Away,0,Sheffield Utd,3,0
+210,England,2019-2020,11,West Ham,Home,2,Newcastle,3,0
+211,England,2019-2020,11,Newcastle,Away,3,West Ham,2,3
+212,England,2019-2020,11,Brighton,Home,2,Norwich,0,3
+213,England,2019-2020,11,Norwich,Away,0,Brighton,2,0
+214,England,2019-2020,11,Watford,Home,1,Chelsea,2,0
+215,England,2019-2020,11,Chelsea,Away,2,Watford,1,3
+216,England,2019-2020,11,Crystal Palace,Home,0,Leicester,2,0
+217,England,2019-2020,11,Leicester,Away,2,Crystal Palace,0,3
+218,England,2019-2020,11,Everton,Home,1,Tottenham,1,1
+219,England,2019-2020,11,Tottenham,Away,1,Everton,1,1
+220,England,2019-2020,12,Norwich,Home,0,Watford,2,0
+221,England,2019-2020,12,Watford,Away,2,Norwich,0,3
+222,England,2019-2020,12,Chelsea,Home,2,Crystal Palace,0,3
+223,England,2019-2020,12,Crystal Palace,Away,0,Chelsea,2,0
+224,England,2019-2020,12,Tottenham,Home,1,Sheffield Utd,1,1
+225,England,2019-2020,12,Sheffield Utd,Away,1,Tottenham,1,1
+226,England,2019-2020,12,Newcastle,Home,2,Bournemouth,1,3
+227,England,2019-2020,12,Bournemouth,Away,1,Newcastle,2,0
+228,England,2019-2020,12,Burnley,Home,3,West Ham,0,3
+229,England,2019-2020,12,West Ham,Away,0,Burnley,3,0
+230,England,2019-2020,12,Southampton,Home,1,Everton,2,0
+231,England,2019-2020,12,Everton,Away,2,Southampton,1,3
+232,England,2019-2020,12,Leicester,Home,2,Arsenal,0,3
+233,England,2019-2020,12,Arsenal,Away,0,Leicester,2,0
+234,England,2019-2020,12,Manchester United,Home,3,Brighton,1,3
+235,England,2019-2020,12,Brighton,Away,1,Manchester United,3,0
+236,England,2019-2020,12,Wolverhampton,Home,2,Aston Villa,1,3
+237,England,2019-2020,12,Aston Villa,Away,1,Wolverhampton,2,0
+238,England,2019-2020,12,Liverpool,Home,3,Manchester City,1,3
+239,England,2019-2020,12,Manchester City,Away,1,Liverpool,3,0
+240,England,2019-2020,13,West Ham,Home,2,Tottenham,3,0
+241,England,2019-2020,13,Tottenham,Away,3,West Ham,2,3
+242,England,2019-2020,13,Crystal Palace,Home,1,Liverpool,2,0
+243,England,2019-2020,13,Liverpool,Away,2,Crystal Palace,1,3
+244,England,2019-2020,13,Brighton,Home,0,Leicester,2,0
+245,England,2019-2020,13,Leicester,Away,2,Brighton,0,3
+246,England,2019-2020,13,Arsenal,Home,2,Southampton,2,1
+247,England,2019-2020,13,Southampton,Away,2,Arsenal,2,1
+248,England,2019-2020,13,Bournemouth,Home,1,Wolverhampton,2,0
+249,England,2019-2020,13,Wolverhampton,Away,2,Bournemouth,1,3
+250,England,2019-2020,13,Watford,Home,0,Burnley,3,0
+251,England,2019-2020,13,Burnley,Away,3,Watford,0,3
+252,England,2019-2020,13,Everton,Home,0,Norwich,2,0
+253,England,2019-2020,13,Norwich,Away,2,Everton,0,3
+254,England,2019-2020,13,Manchester City,Home,2,Chelsea,1,3
+255,England,2019-2020,13,Chelsea,Away,1,Manchester City,2,0
+256,England,2019-2020,13,Sheffield Utd,Home,3,Manchester United,3,1
+257,England,2019-2020,13,Manchester United,Away,3,Sheffield Utd,3,1
+258,England,2019-2020,13,Aston Villa,Home,2,Newcastle,0,3
+259,England,2019-2020,13,Newcastle,Away,0,Aston Villa,2,0
+260,England,2019-2020,14,Newcastle,Home,2,Manchester City,2,1
+261,England,2019-2020,14,Manchester City,Away,2,Newcastle,2,1
+262,England,2019-2020,14,Liverpool,Home,2,Brighton,1,3
+263,England,2019-2020,14,Brighton,Away,1,Liverpool,2,0
+264,England,2019-2020,14,Chelsea,Home,0,West Ham,1,0
+265,England,2019-2020,14,West Ham,Away,1,Chelsea,0,3
+266,England,2019-2020,14,Burnley,Home,0,Crystal Palace,2,0
+267,England,2019-2020,14,Crystal Palace,Away,2,Burnley,0,3
+268,England,2019-2020,14,Tottenham,Home,3,Bournemouth,2,3
+269,England,2019-2020,14,Bournemouth,Away,2,Tottenham,3,0
+270,England,2019-2020,14,Southampton,Home,2,Watford,1,3
+271,England,2019-2020,14,Watford,Away,1,Southampton,2,0
+272,England,2019-2020,14,Wolverhampton,Home,1,Sheffield Utd,1,1
+273,England,2019-2020,14,Sheffield Utd,Away,1,Wolverhampton,1,1
+274,England,2019-2020,14,Norwich,Home,2,Arsenal,2,1
+275,England,2019-2020,14,Arsenal,Away,2,Norwich,2,1
+276,England,2019-2020,14,Leicester,Home,2,Everton,1,3
+277,England,2019-2020,14,Everton,Away,1,Leicester,2,0
+278,England,2019-2020,14,Manchester United,Home,2,Aston Villa,2,1
+279,England,2019-2020,14,Aston Villa,Away,2,Manchester United,2,1
+280,England,2019-2020,15,Crystal Palace,Home,1,Bournemouth,0,3
+281,England,2019-2020,15,Bournemouth,Away,0,Crystal Palace,1,0
+282,England,2019-2020,15,Burnley,Home,1,Manchester City,4,0
+283,England,2019-2020,15,Manchester City,Away,4,Burnley,1,3
+284,England,2019-2020,15,Leicester,Home,2,Watford,0,3
+285,England,2019-2020,15,Watford,Away,0,Leicester,2,0
+286,England,2019-2020,15,Chelsea,Home,2,Aston Villa,1,3
+287,England,2019-2020,15,Aston Villa,Away,1,Chelsea,2,0
+288,England,2019-2020,15,Manchester United,Home,2,Tottenham,1,3
+289,England,2019-2020,15,Tottenham,Away,1,Manchester United,2,0
+290,England,2019-2020,15,Wolverhampton,Home,2,West Ham,0,3
+291,England,2019-2020,15,West Ham,Away,0,Wolverhampton,2,0
+292,England,2019-2020,15,Southampton,Home,2,Norwich,1,3
+293,England,2019-2020,15,Norwich,Away,1,Southampton,2,0
+294,England,2019-2020,15,Liverpool,Home,5,Everton,2,3
+295,England,2019-2020,15,Everton,Away,2,Liverpool,5,0
+296,England,2019-2020,15,Sheffield Utd,Home,0,Newcastle,2,0
+297,England,2019-2020,15,Newcastle,Away,2,Sheffield Utd,0,3
+298,England,2019-2020,15,Arsenal,Home,1,Brighton,2,0
+299,England,2019-2020,15,Brighton,Away,2,Arsenal,1,3
+300,England,2019-2020,16,Everton,Home,3,Chelsea,1,3
+301,England,2019-2020,16,Chelsea,Away,1,Everton,3,0
+302,England,2019-2020,16,Bournemouth,Home,0,Liverpool,3,0
+303,England,2019-2020,16,Liverpool,Away,3,Bournemouth,0,3
+304,England,2019-2020,16,Watford,Home,0,Crystal Palace,0,1
+305,England,2019-2020,16,Crystal Palace,Away,0,Watford,0,1
+306,England,2019-2020,16,Tottenham,Home,5,Burnley,0,3
+307,England,2019-2020,16,Burnley,Away,0,Tottenham,5,0
+308,England,2019-2020,16,Manchester City,Home,1,Manchester United,2,0
+309,England,2019-2020,16,Manchester United,Away,2,Manchester City,1,3
+310,England,2019-2020,16,Aston Villa,Home,1,Leicester,4,0
+311,England,2019-2020,16,Leicester,Away,4,Aston Villa,1,3
+312,England,2019-2020,16,Norwich,Home,1,Sheffield Utd,2,0
+313,England,2019-2020,16,Sheffield Utd,Away,2,Norwich,1,3
+314,England,2019-2020,16,Newcastle,Home,2,Southampton,1,3
+315,England,2019-2020,16,Southampton,Away,1,Newcastle,2,0
+316,England,2019-2020,16,Brighton,Home,2,Wolverhampton,2,1
+317,England,2019-2020,16,Wolverhampton,Away,2,Brighton,2,1
+318,England,2019-2020,16,West Ham,Home,1,Arsenal,3,0
+319,England,2019-2020,16,Arsenal,Away,3,West Ham,1,3
+320,England,2019-2020,17,Liverpool,Home,2,Watford,0,3
+321,England,2019-2020,17,Watford,Away,0,Liverpool,2,0
+322,England,2019-2020,17,Leicester,Home,1,Norwich,1,1
+323,England,2019-2020,17,Norwich,Away,1,Leicester,1,1
+324,England,2019-2020,17,Chelsea,Home,0,Bournemouth,1,0
+325,England,2019-2020,17,Bournemouth,Away,1,Chelsea,0,3
+326,England,2019-2020,17,Sheffield Utd,Home,2,Aston Villa,0,3
+327,England,2019-2020,17,Aston Villa,Away,0,Sheffield Utd,2,0
+328,England,2019-2020,17,Burnley,Home,1,Newcastle,0,3
+329,England,2019-2020,17,Newcastle,Away,0,Burnley,1,0
+330,England,2019-2020,17,Southampton,Home,0,West Ham,1,0
+331,England,2019-2020,17,West Ham,Away,1,Southampton,0,3
+332,England,2019-2020,17,Manchester United,Home,1,Everton,1,1
+333,England,2019-2020,17,Everton,Away,1,Manchester United,1,1
+334,England,2019-2020,17,Wolverhampton,Home,1,Tottenham,2,0
+335,England,2019-2020,17,Tottenham,Away,2,Wolverhampton,1,3
+336,England,2019-2020,17,Arsenal,Home,0,Manchester City,3,0
+337,England,2019-2020,17,Manchester City,Away,3,Arsenal,0,3
+338,England,2019-2020,17,Crystal Palace,Home,1,Brighton,1,1
+339,England,2019-2020,17,Brighton,Away,1,Crystal Palace,1,1
+340,England,2019-2020,18,Everton,Home,0,Arsenal,0,1
+341,England,2019-2020,18,Arsenal,Away,0,Everton,0,1
+342,England,2019-2020,18,Brighton,Home,0,Sheffield Utd,1,0
+343,England,2019-2020,18,Sheffield Utd,Away,1,Brighton,0,3
+344,England,2019-2020,18,Norwich,Home,1,Wolverhampton,2,0
+345,England,2019-2020,18,Wolverhampton,Away,2,Norwich,1,3
+346,England,2019-2020,18,Newcastle,Home,1,Crystal Palace,0,3
+347,England,2019-2020,18,Crystal Palace,Away,0,Newcastle,1,0
+348,England,2019-2020,18,Bournemouth,Home,0,Burnley,1,0
+349,England,2019-2020,18,Burnley,Away,1,Bournemouth,0,3
+350,England,2019-2020,18,Aston Villa,Home,1,Southampton,3,0
+351,England,2019-2020,18,Southampton,Away,3,Aston Villa,1,3
+352,England,2019-2020,18,Manchester City,Home,3,Leicester,1,3
+353,England,2019-2020,18,Leicester,Away,1,Manchester City,3,0
+354,England,2019-2020,18,Watford,Home,2,Manchester United,0,3
+355,England,2019-2020,18,Manchester United,Away,0,Watford,2,0
+356,England,2019-2020,18,Tottenham,Home,0,Chelsea,2,0
+357,England,2019-2020,18,Chelsea,Away,2,Tottenham,0,3
+358,England,2019-2020,18,West Ham,Home,0,Liverpool,2,0
+359,England,2019-2020,18,Liverpool,Away,2,West Ham,0,3
+360,England,2019-2020,19,Tottenham,Home,2,Brighton,1,3
+361,England,2019-2020,19,Brighton,Away,1,Tottenham,2,0
+362,England,2019-2020,19,Chelsea,Home,0,Southampton,2,0
+363,England,2019-2020,19,Southampton,Away,2,Chelsea,0,3
+364,England,2019-2020,19,Sheffield Utd,Home,1,Watford,1,1
+365,England,2019-2020,19,Watford,Away,1,Sheffield Utd,1,1
+366,England,2019-2020,19,Everton,Home,1,Burnley,0,3
+367,England,2019-2020,19,Burnley,Away,0,Everton,1,0
+368,England,2019-2020,19,Bournemouth,Home,1,Arsenal,1,1
+369,England,2019-2020,19,Arsenal,Away,1,Bournemouth,1,1
+370,England,2019-2020,19,Crystal Palace,Home,2,West Ham,1,3
+371,England,2019-2020,19,West Ham,Away,1,Crystal Palace,2,0
+372,England,2019-2020,19,Aston Villa,Home,1,Norwich,0,3
+373,England,2019-2020,19,Norwich,Away,0,Aston Villa,1,0
+374,England,2019-2020,19,Manchester United,Home,4,Newcastle,1,3
+375,England,2019-2020,19,Newcastle,Away,1,Manchester United,4,0
+376,England,2019-2020,19,Leicester,Home,0,Liverpool,4,0
+377,England,2019-2020,19,Liverpool,Away,4,Leicester,0,3
+378,England,2019-2020,19,Wolverhampton,Home,3,Manchester City,2,3
+379,England,2019-2020,19,Manchester City,Away,2,Wolverhampton,3,0
+380,England,2019-2020,20,Brighton,Home,2,Bournemouth,0,3
+381,England,2019-2020,20,Bournemouth,Away,0,Brighton,2,0
+382,England,2019-2020,20,Watford,Home,3,Aston Villa,0,3
+383,England,2019-2020,20,Aston Villa,Away,0,Watford,3,0
+384,England,2019-2020,20,Southampton,Home,1,Crystal Palace,1,1
+385,England,2019-2020,20,Crystal Palace,Away,1,Southampton,1,1
+386,England,2019-2020,20,Newcastle,Home,1,Everton,2,0
+387,England,2019-2020,20,Everton,Away,2,Newcastle,1,3
+388,England,2019-2020,20,West Ham,Home,1,Leicester,2,0
+389,England,2019-2020,20,Leicester,Away,2,West Ham,1,3
+390,England,2019-2020,20,Norwich,Home,2,Tottenham,2,1
+391,England,2019-2020,20,Tottenham,Away,2,Norwich,2,1
+392,England,2019-2020,20,Burnley,Home,0,Manchester United,2,0
+393,England,2019-2020,20,Manchester United,Away,2,Burnley,0,3
+394,England,2019-2020,20,Arsenal,Home,1,Chelsea,2,0
+395,England,2019-2020,20,Chelsea,Away,2,Arsenal,1,3
+396,England,2019-2020,20,Liverpool,Home,1,Wolverhampton,0,3
+397,England,2019-2020,20,Wolverhampton,Away,0,Liverpool,1,0
+398,England,2019-2020,20,Manchester City,Home,2,Sheffield Utd,0,3
+399,England,2019-2020,20,Sheffield Utd,Away,0,Manchester City,2,0
+400,England,2019-2020,21,Brighton,Home,1,Chelsea,1,1
+401,England,2019-2020,21,Chelsea,Away,1,Brighton,1,1
+402,England,2019-2020,21,Burnley,Home,1,Aston Villa,2,0
+403,England,2019-2020,21,Aston Villa,Away,2,Burnley,1,3
+404,England,2019-2020,21,Newcastle,Home,0,Leicester,3,0
+405,England,2019-2020,21,Leicester,Away,3,Newcastle,0,3
+406,England,2019-2020,21,Southampton,Home,1,Tottenham,0,3
+407,England,2019-2020,21,Tottenham,Away,0,Southampton,1,0
+408,England,2019-2020,21,Watford,Home,2,Wolverhampton,1,3
+409,England,2019-2020,21,Wolverhampton,Away,1,Watford,2,0
+410,England,2019-2020,21,Manchester City,Home,2,Everton,1,3
+411,England,2019-2020,21,Everton,Away,1,Manchester City,2,0
+412,England,2019-2020,21,Norwich,Home,1,Crystal Palace,1,1
+413,England,2019-2020,21,Crystal Palace,Away,1,Norwich,1,1
+414,England,2019-2020,21,West Ham,Home,4,Bournemouth,0,3
+415,England,2019-2020,21,Bournemouth,Away,0,West Ham,4,0
+416,England,2019-2020,21,Arsenal,Home,2,Manchester United,0,3
+417,England,2019-2020,21,Manchester United,Away,0,Arsenal,2,0
+418,England,2019-2020,21,Liverpool,Home,2,Sheffield Utd,0,3
+419,England,2019-2020,21,Sheffield Utd,Away,0,Liverpool,2,0
+420,England,2019-2020,22,Sheffield Utd,Home,1,West Ham,0,3
+421,England,2019-2020,22,West Ham,Away,0,Sheffield Utd,1,0
+422,England,2019-2020,22,Crystal Palace,Home,1,Arsenal,1,1
+423,England,2019-2020,22,Arsenal,Away,1,Crystal Palace,1,1
+424,England,2019-2020,22,Leicester,Home,1,Southampton,2,0
+425,England,2019-2020,22,Southampton,Away,2,Leicester,1,3
+426,England,2019-2020,22,Chelsea,Home,3,Burnley,0,3
+427,England,2019-2020,22,Burnley,Away,0,Chelsea,3,0
+428,England,2019-2020,22,Manchester United,Home,4,Norwich,0,3
+429,England,2019-2020,22,Norwich,Away,0,Manchester United,4,0
+430,England,2019-2020,22,Wolverhampton,Home,1,Newcastle,1,1
+431,England,2019-2020,22,Newcastle,Away,1,Wolverhampton,1,1
+432,England,2019-2020,22,Everton,Home,1,Brighton,0,3
+433,England,2019-2020,22,Brighton,Away,0,Everton,1,0
+434,England,2019-2020,22,Tottenham,Home,0,Liverpool,1,0
+435,England,2019-2020,22,Liverpool,Away,1,Tottenham,0,3
+436,England,2019-2020,22,Bournemouth,Home,0,Watford,3,0
+437,England,2019-2020,22,Watford,Away,3,Bournemouth,0,3
+438,England,2019-2020,22,Aston Villa,Home,1,Manchester City,6,0
+439,England,2019-2020,22,Manchester City,Away,6,Aston Villa,1,3
+440,England,2019-2020,23,Watford,Home,0,Tottenham,0,1
+441,England,2019-2020,23,Tottenham,Away,0,Watford,0,1
+442,England,2019-2020,23,Manchester City,Home,2,Crystal Palace,2,1
+443,England,2019-2020,23,Crystal Palace,Away,2,Manchester City,2,1
+444,England,2019-2020,23,Arsenal,Home,1,Sheffield Utd,1,1
+445,England,2019-2020,23,Sheffield Utd,Away,1,Arsenal,1,1
+446,England,2019-2020,23,Southampton,Home,2,Wolverhampton,3,0
+447,England,2019-2020,23,Wolverhampton,Away,3,Southampton,2,3
+448,England,2019-2020,23,West Ham,Home,1,Everton,1,1
+449,England,2019-2020,23,Everton,Away,1,West Ham,1,1
+450,England,2019-2020,23,Brighton,Home,1,Aston Villa,1,1
+451,England,2019-2020,23,Aston Villa,Away,1,Brighton,1,1
+452,England,2019-2020,23,Norwich,Home,1,Bournemouth,0,3
+453,England,2019-2020,23,Bournemouth,Away,0,Norwich,1,0
+454,England,2019-2020,23,Newcastle,Home,1,Chelsea,0,3
+455,England,2019-2020,23,Chelsea,Away,0,Newcastle,1,0
+456,England,2019-2020,23,Burnley,Home,2,Leicester,1,3
+457,England,2019-2020,23,Leicester,Away,1,Burnley,2,0
+458,England,2019-2020,23,Liverpool,Home,2,Manchester United,0,3
+459,England,2019-2020,23,Manchester United,Away,0,Liverpool,2,0
+460,England,2019-2020,24,Sheffield Utd,Home,0,Manchester City,1,0
+461,England,2019-2020,24,Manchester City,Away,1,Sheffield Utd,0,3
+462,England,2019-2020,24,Crystal Palace,Home,0,Southampton,2,0
+463,England,2019-2020,24,Southampton,Away,2,Crystal Palace,0,3
+464,England,2019-2020,24,Everton,Home,2,Newcastle,2,1
+465,England,2019-2020,24,Newcastle,Away,2,Everton,2,1
+466,England,2019-2020,24,Bournemouth,Home,3,Brighton,1,3
+467,England,2019-2020,24,Brighton,Away,1,Bournemouth,3,0
+468,England,2019-2020,24,Aston Villa,Home,2,Watford,1,3
+469,England,2019-2020,24,Watford,Away,1,Aston Villa,2,0
+470,England,2019-2020,24,Chelsea,Home,2,Arsenal,2,1
+471,England,2019-2020,24,Arsenal,Away,2,Chelsea,2,1
+472,England,2019-2020,24,Leicester,Home,4,West Ham,1,3
+473,England,2019-2020,24,West Ham,Away,1,Leicester,4,0
+474,England,2019-2020,24,Tottenham,Home,2,Norwich,1,3
+475,England,2019-2020,24,Norwich,Away,1,Tottenham,2,0
+476,England,2019-2020,24,Manchester United,Home,0,Burnley,2,0
+477,England,2019-2020,24,Burnley,Away,2,Manchester United,0,3
+478,England,2019-2020,24,Wolverhampton,Home,1,Liverpool,2,0
+479,England,2019-2020,24,Liverpool,Away,2,Wolverhampton,1,3
+480,England,2019-2020,25,Leicester,Home,2,Chelsea,2,1
+481,England,2019-2020,25,Chelsea,Away,2,Leicester,2,1
+482,England,2019-2020,25,Liverpool,Home,4,Southampton,0,3
+483,England,2019-2020,25,Southampton,Away,0,Liverpool,4,0
+484,England,2019-2020,25,Crystal Palace,Home,0,Sheffield Utd,1,0
+485,England,2019-2020,25,Sheffield Utd,Away,1,Crystal Palace,0,3
+486,England,2019-2020,25,Watford,Home,2,Everton,3,0
+487,England,2019-2020,25,Everton,Away,3,Watford,2,3
+488,England,2019-2020,25,Newcastle,Home,0,Norwich,0,1
+489,England,2019-2020,25,Norwich,Away,0,Newcastle,0,1
+490,England,2019-2020,25,West Ham,Home,3,Brighton,3,1
+491,England,2019-2020,25,Brighton,Away,3,West Ham,3,1
+492,England,2019-2020,25,Bournemouth,Home,2,Aston Villa,1,3
+493,England,2019-2020,25,Aston Villa,Away,1,Bournemouth,2,0
+494,England,2019-2020,25,Manchester United,Home,0,Wolverhampton,0,1
+495,England,2019-2020,25,Wolverhampton,Away,0,Manchester United,0,1
+496,England,2019-2020,25,Burnley,Home,0,Arsenal,0,1
+497,England,2019-2020,25,Arsenal,Away,0,Burnley,0,1
+498,England,2019-2020,25,Tottenham,Home,2,Manchester City,0,3
+499,England,2019-2020,25,Manchester City,Away,0,Tottenham,2,0
+500,England,2019-2020,26,Everton,Home,3,Crystal Palace,1,3
+501,England,2019-2020,26,Crystal Palace,Away,1,Everton,3,0
+502,England,2019-2020,26,Brighton,Home,1,Watford,1,1
+503,England,2019-2020,26,Watford,Away,1,Brighton,1,1
+504,England,2019-2020,26,Sheffield Utd,Home,2,Bournemouth,1,3
+505,England,2019-2020,26,Bournemouth,Away,1,Sheffield Utd,2,0
+506,England,2019-2020,26,Wolverhampton,Home,0,Leicester,0,1
+507,England,2019-2020,26,Leicester,Away,0,Wolverhampton,0,1
+508,England,2019-2020,26,Southampton,Home,1,Burnley,2,0
+509,England,2019-2020,26,Burnley,Away,2,Southampton,1,3
+510,England,2019-2020,26,Norwich,Home,0,Liverpool,1,0
+511,England,2019-2020,26,Liverpool,Away,1,Norwich,0,3
+512,England,2019-2020,26,Aston Villa,Home,2,Tottenham,3,0
+513,England,2019-2020,26,Tottenham,Away,3,Aston Villa,2,3
+514,England,2019-2020,26,Arsenal,Home,4,Newcastle,0,3
+515,England,2019-2020,26,Newcastle,Away,0,Arsenal,4,0
+516,England,2019-2020,26,Chelsea,Home,0,Manchester United,2,0
+517,England,2019-2020,26,Manchester United,Away,2,Chelsea,0,3
+518,England,2019-2020,26,Manchester City,Home,2,West Ham,0,3
+519,England,2019-2020,26,West Ham,Away,0,Manchester City,2,0
+520,England,2019-2020,27,Chelsea,Home,2,Tottenham,1,3
+521,England,2019-2020,27,Tottenham,Away,1,Chelsea,2,0
+522,England,2019-2020,27,Sheffield Utd,Home,1,Brighton,1,1
+523,England,2019-2020,27,Brighton,Away,1,Sheffield Utd,1,1
+524,England,2019-2020,27,Burnley,Home,3,Bournemouth,0,3
+525,England,2019-2020,27,Bournemouth,Away,0,Burnley,3,0
+526,England,2019-2020,27,Southampton,Home,2,Aston Villa,0,3
+527,England,2019-2020,27,Aston Villa,Away,0,Southampton,2,0
+528,England,2019-2020,27,Crystal Palace,Home,1,Newcastle,0,3
+529,England,2019-2020,27,Newcastle,Away,0,Crystal Palace,1,0
+530,England,2019-2020,27,Leicester,Home,0,Manchester City,1,0
+531,England,2019-2020,27,Manchester City,Away,1,Leicester,0,3
+532,England,2019-2020,27,Manchester United,Home,3,Watford,0,3
+533,England,2019-2020,27,Watford,Away,0,Manchester United,3,0
+534,England,2019-2020,27,Wolverhampton,Home,3,Norwich,0,3
+535,England,2019-2020,27,Norwich,Away,0,Wolverhampton,3,0
+536,England,2019-2020,27,Arsenal,Home,3,Everton,2,3
+537,England,2019-2020,27,Everton,Away,2,Arsenal,3,0
+538,England,2019-2020,27,Liverpool,Home,3,West Ham,2,3
+539,England,2019-2020,27,West Ham,Away,2,Liverpool,3,0
+540,England,2019-2020,28,Norwich,Home,1,Leicester,0,3
+541,England,2019-2020,28,Leicester,Away,0,Norwich,1,0
+542,England,2019-2020,28,Brighton,Home,0,Crystal Palace,1,0
+543,England,2019-2020,28,Crystal Palace,Away,1,Brighton,0,3
+544,England,2019-2020,28,Bournemouth,Home,2,Chelsea,2,1
+545,England,2019-2020,28,Chelsea,Away,2,Bournemouth,2,1
+546,England,2019-2020,28,Newcastle,Home,0,Burnley,0,1
+547,England,2019-2020,28,Burnley,Away,0,Newcastle,0,1
+548,England,2019-2020,28,West Ham,Home,3,Southampton,1,3
+549,England,2019-2020,28,Southampton,Away,1,West Ham,3,0
+550,England,2019-2020,28,Watford,Home,3,Liverpool,0,3
+551,England,2019-2020,28,Liverpool,Away,0,Watford,3,0
+552,England,2019-2020,28,Everton,Home,1,Manchester United,1,1
+553,England,2019-2020,28,Manchester United,Away,1,Everton,1,1
+554,England,2019-2020,28,Tottenham,Home,2,Wolverhampton,3,0
+555,England,2019-2020,28,Wolverhampton,Away,3,Tottenham,2,3
+556,England,2019-2020,28,Aston Villa,Home,0,Sheffield Utd,0,1
+557,England,2019-2020,28,Sheffield Utd,Away,0,Aston Villa,0,1
+558,England,2019-2020,28,Manchester City,Home,3,Arsenal,0,3
+559,England,2019-2020,28,Arsenal,Away,0,Manchester City,3,0
+560,England,2019-2020,29,Liverpool,Home,2,Bournemouth,1,3
+561,England,2019-2020,29,Bournemouth,Away,1,Liverpool,2,0
+562,England,2019-2020,29,Wolverhampton,Home,0,Brighton,0,1
+563,England,2019-2020,29,Brighton,Away,0,Wolverhampton,0,1
+564,England,2019-2020,29,Sheffield Utd,Home,1,Norwich,0,3
+565,England,2019-2020,29,Norwich,Away,0,Sheffield Utd,1,0
+566,England,2019-2020,29,Arsenal,Home,1,West Ham,0,3
+567,England,2019-2020,29,West Ham,Away,0,Arsenal,1,0
+568,England,2019-2020,29,Crystal Palace,Home,1,Watford,0,3
+569,England,2019-2020,29,Watford,Away,0,Crystal Palace,1,0
+570,England,2019-2020,29,Southampton,Home,0,Newcastle,1,0
+571,England,2019-2020,29,Newcastle,Away,1,Southampton,0,3
+572,England,2019-2020,29,Burnley,Home,1,Tottenham,1,1
+573,England,2019-2020,29,Tottenham,Away,1,Burnley,1,1
+574,England,2019-2020,29,Chelsea,Home,4,Everton,0,3
+575,England,2019-2020,29,Everton,Away,0,Chelsea,4,0
+576,England,2019-2020,29,Manchester United,Home,2,Manchester City,0,3
+577,England,2019-2020,29,Manchester City,Away,0,Manchester United,2,0
+578,England,2019-2020,29,Leicester,Home,4,Aston Villa,0,3
+579,England,2019-2020,29,Aston Villa,Away,0,Leicester,4,0
+580,England,2019-2020,30,Norwich,Home,0,Southampton,3,0
+581,England,2019-2020,30,Southampton,Away,3,Norwich,0,3
+582,England,2019-2020,30,Tottenham,Home,1,Manchester United,1,1
+583,England,2019-2020,30,Manchester United,Away,1,Tottenham,1,1
+584,England,2019-2020,30,Watford,Home,1,Leicester,1,1
+585,England,2019-2020,30,Leicester,Away,1,Watford,1,1
+586,England,2019-2020,30,Brighton,Home,2,Arsenal,1,3
+587,England,2019-2020,30,Arsenal,Away,1,Brighton,2,0
+588,England,2019-2020,30,West Ham,Home,0,Wolverhampton,2,0
+589,England,2019-2020,30,Wolverhampton,Away,2,West Ham,0,3
+590,England,2019-2020,30,Bournemouth,Home,0,Crystal Palace,2,0
+591,England,2019-2020,30,Crystal Palace,Away,2,Bournemouth,0,3
+592,England,2019-2020,30,Newcastle,Home,3,Sheffield Utd,0,3
+593,England,2019-2020,30,Sheffield Utd,Away,0,Newcastle,3,0
+594,England,2019-2020,30,Aston Villa,Home,1,Chelsea,2,0
+595,England,2019-2020,30,Chelsea,Away,2,Aston Villa,1,3
+596,England,2019-2020,30,Everton,Home,0,Liverpool,0,1
+597,England,2019-2020,30,Liverpool,Away,0,Everton,0,1
+598,England,2019-2020,30,Manchester City,Home,5,Burnley,0,3
+599,England,2019-2020,30,Burnley,Away,0,Manchester City,5,0
+600,England,2019-2020,31,Leicester,Home,0,Brighton,0,1
+601,England,2019-2020,31,Brighton,Away,0,Leicester,0,1
+602,England,2019-2020,31,Tottenham,Home,2,West Ham,0,3
+603,England,2019-2020,31,West Ham,Away,0,Tottenham,2,0
+604,England,2019-2020,31,Manchester United,Home,3,Sheffield Utd,0,3
+605,England,2019-2020,31,Sheffield Utd,Away,0,Manchester United,3,0
+606,England,2019-2020,31,Wolverhampton,Home,1,Bournemouth,0,3
+607,England,2019-2020,31,Bournemouth,Away,0,Wolverhampton,1,0
+608,England,2019-2020,31,Norwich,Home,0,Everton,1,0
+609,England,2019-2020,31,Everton,Away,1,Norwich,0,3
+610,England,2019-2020,31,Newcastle,Home,1,Aston Villa,1,1
+611,England,2019-2020,31,Aston Villa,Away,1,Newcastle,1,1
+612,England,2019-2020,31,Liverpool,Home,4,Crystal Palace,0,3
+613,England,2019-2020,31,Crystal Palace,Away,0,Liverpool,4,0
+614,England,2019-2020,31,Southampton,Home,0,Arsenal,2,0
+615,England,2019-2020,31,Arsenal,Away,2,Southampton,0,3
+616,England,2019-2020,31,Burnley,Home,1,Watford,0,3
+617,England,2019-2020,31,Watford,Away,0,Burnley,1,0
+618,England,2019-2020,31,Chelsea,Home,2,Manchester City,1,3
+619,England,2019-2020,31,Manchester City,Away,1,Chelsea,2,0
+620,England,2019-2020,32,Aston Villa,Home,0,Wolverhampton,1,0
+621,England,2019-2020,32,Wolverhampton,Away,1,Aston Villa,0,3
+622,England,2019-2020,32,Watford,Home,1,Southampton,3,0
+623,England,2019-2020,32,Southampton,Away,3,Watford,1,3
+624,England,2019-2020,32,Crystal Palace,Home,0,Burnley,1,0
+625,England,2019-2020,32,Burnley,Away,1,Crystal Palace,0,3
+626,England,2019-2020,32,Brighton,Home,0,Manchester United,3,0
+627,England,2019-2020,32,Manchester United,Away,3,Brighton,0,3
+628,England,2019-2020,32,Everton,Home,2,Leicester,1,3
+629,England,2019-2020,32,Leicester,Away,1,Everton,2,0
+630,England,2019-2020,32,Arsenal,Home,4,Norwich,0,3
+631,England,2019-2020,32,Norwich,Away,0,Arsenal,4,0
+632,England,2019-2020,32,Bournemouth,Home,1,Newcastle,4,0
+633,England,2019-2020,32,Newcastle,Away,4,Bournemouth,1,3
+634,England,2019-2020,32,West Ham,Home,3,Chelsea,2,3
+635,England,2019-2020,32,Chelsea,Away,2,West Ham,3,0
+636,England,2019-2020,32,Sheffield Utd,Home,3,Tottenham,1,3
+637,England,2019-2020,32,Tottenham,Away,1,Sheffield Utd,3,0
+638,England,2019-2020,32,Manchester City,Home,4,Liverpool,0,3
+639,England,2019-2020,32,Liverpool,Away,0,Manchester City,4,0
+640,England,2019-2020,33,Norwich,Home,0,Brighton,1,0
+641,England,2019-2020,33,Brighton,Away,1,Norwich,0,3
+642,England,2019-2020,33,Leicester,Home,3,Crystal Palace,0,3
+643,England,2019-2020,33,Crystal Palace,Away,0,Leicester,3,0
+644,England,2019-2020,33,Manchester United,Home,5,Bournemouth,2,3
+645,England,2019-2020,33,Bournemouth,Away,2,Manchester United,5,0
+646,England,2019-2020,33,Wolverhampton,Home,0,Arsenal,2,0
+647,England,2019-2020,33,Arsenal,Away,2,Wolverhampton,0,3
+648,England,2019-2020,33,Chelsea,Home,3,Watford,0,3
+649,England,2019-2020,33,Watford,Away,0,Chelsea,3,0
+650,England,2019-2020,33,Burnley,Home,1,Sheffield Utd,1,1
+651,England,2019-2020,33,Sheffield Utd,Away,1,Burnley,1,1
+652,England,2019-2020,33,Newcastle,Home,2,West Ham,2,1
+653,England,2019-2020,33,West Ham,Away,2,Newcastle,2,1
+654,England,2019-2020,33,Liverpool,Home,2,Aston Villa,0,3
+655,England,2019-2020,33,Aston Villa,Away,0,Liverpool,2,0
+656,England,2019-2020,33,Southampton,Home,1,Manchester City,0,3
+657,England,2019-2020,33,Manchester City,Away,0,Southampton,1,0
+658,England,2019-2020,33,Tottenham,Home,1,Everton,0,3
+659,England,2019-2020,33,Everton,Away,0,Tottenham,1,0
+660,England,2019-2020,34,Crystal Palace,Home,2,Chelsea,3,0
+661,England,2019-2020,34,Chelsea,Away,3,Crystal Palace,2,3
+662,England,2019-2020,34,Watford,Home,2,Norwich,1,3
+663,England,2019-2020,34,Norwich,Away,1,Watford,2,0
+664,England,2019-2020,34,Arsenal,Home,1,Leicester,1,1
+665,England,2019-2020,34,Leicester,Away,1,Arsenal,1,1
+666,England,2019-2020,34,Manchester City,Home,5,Newcastle,0,3
+667,England,2019-2020,34,Newcastle,Away,0,Manchester City,5,0
+668,England,2019-2020,34,Sheffield Utd,Home,1,Wolverhampton,0,3
+669,England,2019-2020,34,Wolverhampton,Away,0,Sheffield Utd,1,0
+670,England,2019-2020,34,West Ham,Home,0,Burnley,1,0
+671,England,2019-2020,34,Burnley,Away,1,West Ham,0,3
+672,England,2019-2020,34,Brighton,Home,1,Liverpool,3,0
+673,England,2019-2020,34,Liverpool,Away,3,Brighton,1,3
+674,England,2019-2020,34,Bournemouth,Home,0,Tottenham,0,1
+675,England,2019-2020,34,Tottenham,Away,0,Bournemouth,0,1
+676,England,2019-2020,34,Everton,Home,1,Southampton,1,1
+677,England,2019-2020,34,Southampton,Away,1,Everton,1,1
+678,England,2019-2020,34,Aston Villa,Home,0,Manchester United,3,0
+679,England,2019-2020,34,Manchester United,Away,3,Aston Villa,0,3
+680,England,2019-2020,35,Watford,Home,2,Newcastle,1,3
+681,England,2019-2020,35,Newcastle,Away,1,Watford,2,0
+682,England,2019-2020,35,Norwich,Home,0,West Ham,4,0
+683,England,2019-2020,35,West Ham,Away,4,Norwich,0,3
+684,England,2019-2020,35,Liverpool,Home,1,Burnley,1,1
+685,England,2019-2020,35,Burnley,Away,1,Liverpool,1,1
+686,England,2019-2020,35,Sheffield Utd,Home,3,Chelsea,0,3
+687,England,2019-2020,35,Chelsea,Away,0,Sheffield Utd,3,0
+688,England,2019-2020,35,Brighton,Home,0,Manchester City,5,0
+689,England,2019-2020,35,Manchester City,Away,5,Brighton,0,3
+690,England,2019-2020,35,Wolverhampton,Home,3,Everton,0,3
+691,England,2019-2020,35,Everton,Away,0,Wolverhampton,3,0
+692,England,2019-2020,35,Aston Villa,Home,2,Crystal Palace,0,3
+693,England,2019-2020,35,Crystal Palace,Away,0,Aston Villa,2,0
+694,England,2019-2020,35,Tottenham,Home,2,Arsenal,1,3
+695,England,2019-2020,35,Arsenal,Away,1,Tottenham,2,0
+696,England,2019-2020,35,Bournemouth,Home,4,Leicester,1,3
+697,England,2019-2020,35,Leicester,Away,1,Bournemouth,4,0
+698,England,2019-2020,35,Manchester United,Home,2,Southampton,2,1
+699,England,2019-2020,35,Southampton,Away,2,Manchester United,2,1
+700,England,2019-2020,36,Chelsea,Home,1,Norwich,0,3
+701,England,2019-2020,36,Norwich,Away,0,Chelsea,1,0
+702,England,2019-2020,36,Manchester City,Home,2,Bournemouth,1,3
+703,England,2019-2020,36,Bournemouth,Away,1,Manchester City,2,0
+704,England,2019-2020,36,Burnley,Home,1,Wolverhampton,1,1
+705,England,2019-2020,36,Wolverhampton,Away,1,Burnley,1,1
+706,England,2019-2020,36,Newcastle,Home,1,Tottenham,3,0
+707,England,2019-2020,36,Tottenham,Away,3,Newcastle,1,3
+708,England,2019-2020,36,Arsenal,Home,2,Liverpool,1,3
+709,England,2019-2020,36,Liverpool,Away,1,Arsenal,2,0
+710,England,2019-2020,36,Leicester,Home,2,Sheffield Utd,0,3
+711,England,2019-2020,36,Sheffield Utd,Away,0,Leicester,2,0
+712,England,2019-2020,36,Everton,Home,1,Aston Villa,1,1
+713,England,2019-2020,36,Aston Villa,Away,1,Everton,1,1
+714,England,2019-2020,36,Crystal Palace,Home,0,Manchester United,2,0
+715,England,2019-2020,36,Manchester United,Away,2,Crystal Palace,0,3
+716,England,2019-2020,36,Southampton,Home,1,Brighton,1,1
+717,England,2019-2020,36,Brighton,Away,1,Southampton,1,1
+718,England,2019-2020,36,West Ham,Home,3,Watford,1,3
+719,England,2019-2020,36,Watford,Away,1,West Ham,3,0
+720,England,2019-2020,37,Norwich,Home,0,Burnley,2,0
+721,England,2019-2020,37,Burnley,Away,2,Norwich,0,3
+722,England,2019-2020,37,Bournemouth,Home,0,Southampton,2,0
+723,England,2019-2020,37,Southampton,Away,2,Bournemouth,0,3
+724,England,2019-2020,37,Tottenham,Home,3,Leicester,0,3
+725,England,2019-2020,37,Leicester,Away,0,Tottenham,3,0
+726,England,2019-2020,37,Sheffield Utd,Home,0,Everton,1,0
+727,England,2019-2020,37,Everton,Away,1,Sheffield Utd,0,3
+728,England,2019-2020,37,Brighton,Home,0,Newcastle,0,1
+729,England,2019-2020,37,Newcastle,Away,0,Brighton,0,1
+730,England,2019-2020,37,Wolverhampton,Home,2,Crystal Palace,0,3
+731,England,2019-2020,37,Crystal Palace,Away,0,Wolverhampton,2,0
+732,England,2019-2020,37,Watford,Home,0,Manchester City,4,0
+733,England,2019-2020,37,Manchester City,Away,4,Watford,0,3
+734,England,2019-2020,37,Aston Villa,Home,1,Arsenal,0,3
+735,England,2019-2020,37,Arsenal,Away,0,Aston Villa,1,0
+736,England,2019-2020,37,Manchester United,Home,1,West Ham,1,1
+737,England,2019-2020,37,West Ham,Away,1,Manchester United,1,1
+738,England,2019-2020,37,Liverpool,Home,5,Chelsea,3,3
+739,England,2019-2020,37,Chelsea,Away,3,Liverpool,5,0
+740,England,2019-2020,38,Newcastle,Home,1,Liverpool,3,0
+741,England,2019-2020,38,Liverpool,Away,3,Newcastle,1,3
+742,England,2019-2020,38,Manchester City,Home,5,Norwich,0,3
+743,England,2019-2020,38,Norwich,Away,0,Manchester City,5,0
+744,England,2019-2020,38,Leicester,Home,0,Manchester United,2,0
+745,England,2019-2020,38,Manchester United,Away,2,Leicester,0,3
+746,England,2019-2020,38,Chelsea,Home,2,Wolverhampton,0,3
+747,England,2019-2020,38,Wolverhampton,Away,0,Chelsea,2,0
+748,England,2019-2020,38,Crystal Palace,Home,1,Tottenham,1,1
+749,England,2019-2020,38,Tottenham,Away,1,Crystal Palace,1,1
+750,England,2019-2020,38,Southampton,Home,3,Sheffield Utd,1,3
+751,England,2019-2020,38,Sheffield Utd,Away,1,Southampton,3,0
+752,England,2019-2020,38,Burnley,Home,1,Brighton,2,0
+753,England,2019-2020,38,Brighton,Away,2,Burnley,1,3
+754,England,2019-2020,38,Arsenal,Home,3,Watford,2,3
+755,England,2019-2020,38,Watford,Away,2,Arsenal,3,0
+756,England,2019-2020,38,Everton,Home,1,Bournemouth,3,0
+757,England,2019-2020,38,Bournemouth,Away,3,Everton,1,3
+758,England,2019-2020,38,West Ham,Home,1,Aston Villa,1,1
+759,England,2019-2020,38,Aston Villa,Away,1,West Ham,1,1

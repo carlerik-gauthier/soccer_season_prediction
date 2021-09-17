@@ -1,0 +1,21 @@
+,country,season,leg,team,play,goals_scored,opponent,goals_conceded,nb_points
+0,France,2015-2016,15,Lyon,Home,2,Montpellier,4,0
+1,France,2015-2016,15,Montpellier,Away,4,Lyon,2,3
+2,France,2015-2016,15,Paris-SG,Home,4,Troyes,1,3
+3,France,2015-2016,15,Troyes,Away,1,Paris-SG,4,0
+4,France,2015-2016,15,Toulouse,Home,2,Nice,0,3
+5,France,2015-2016,15,Nice,Away,0,Toulouse,2,0
+6,France,2015-2016,15,Angers,Home,2,Lille,0,3
+7,France,2015-2016,15,Lille,Away,0,Angers,2,0
+8,France,2015-2016,15,Reims,Home,2,Rennes,2,1
+9,France,2015-2016,15,Rennes,Away,2,Reims,2,1
+10,France,2015-2016,15,GFC Ajaccio,Home,1,Lorient,1,1
+11,France,2015-2016,15,Lorient,Away,1,GFC Ajaccio,1,1
+12,France,2015-2016,15,Nantes,Home,0,SC Bastia,0,1
+13,France,2015-2016,15,SC Bastia,Away,0,Nantes,0,1
+14,France,2015-2016,15,Saint-Étienne,Home,3,Guingamp,0,3
+15,France,2015-2016,15,Guingamp,Away,0,Saint-Étienne,3,0
+16,France,2015-2016,15,Bordeaux,Home,1,Caen,4,0
+17,France,2015-2016,15,Caen,Away,4,Bordeaux,1,3
+18,France,2015-2016,15,Marseille,Home,3,Monaco,3,1
+19,France,2015-2016,15,Monaco,Away,3,Marseille,3,1

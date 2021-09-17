@@ -1,0 +1,761 @@
+,country,season,leg,team,play,goals_scored,opponent,goals_conceded,nb_points
+0,Spain,2019-2020,1,Athletic Bilbao,Home,1,FC Barcelone,0,3
+1,Spain,2019-2020,1,FC Barcelone,Away,0,Athletic Bilbao,1,0
+2,Spain,2019-2020,1,Celta Vigo,Home,1,Real Madrid,3,0
+3,Spain,2019-2020,1,Real Madrid,Away,3,Celta Vigo,1,3
+4,Spain,2019-2020,1,Valence CF,Home,1,Real Sociedad,1,1
+5,Spain,2019-2020,1,Real Sociedad,Away,1,Valence CF,1,1
+6,Spain,2019-2020,1,Majorque,Home,2,Eibar,1,3
+7,Spain,2019-2020,1,Eibar,Away,1,Majorque,2,0
+8,Spain,2019-2020,1,Villarreal,Home,4,Grenade CF,4,1
+9,Spain,2019-2020,1,Grenade CF,Away,4,Villarreal,4,1
+10,Spain,2019-2020,1,Leganés,Home,0,Osasuna,1,0
+11,Spain,2019-2020,1,Osasuna,Away,1,Leganés,0,3
+12,Spain,2019-2020,1,Alavés,Home,1,Levante,0,3
+13,Spain,2019-2020,1,Levante,Away,0,Alavés,1,0
+14,Spain,2019-2020,1,Espanyol Barcelone,Home,0,Séville FC,2,0
+15,Spain,2019-2020,1,Séville FC,Away,2,Espanyol Barcelone,0,3
+16,Spain,2019-2020,1,Betis Séville,Home,1,Valladolid,2,0
+17,Spain,2019-2020,1,Valladolid,Away,2,Betis Séville,1,3
+18,Spain,2019-2020,1,Atlético de Madrid,Home,1,Getafe,0,3
+19,Spain,2019-2020,1,Getafe,Away,0,Atlético de Madrid,1,0
+20,Spain,2019-2020,2,Grenade CF,Home,0,Séville FC,1,0
+21,Spain,2019-2020,2,Séville FC,Away,1,Grenade CF,0,3
+22,Spain,2019-2020,2,Levante,Home,2,Villarreal,1,3
+23,Spain,2019-2020,2,Villarreal,Away,1,Levante,2,0
+24,Spain,2019-2020,2,Osasuna,Home,0,Eibar,0,1
+25,Spain,2019-2020,2,Eibar,Away,0,Osasuna,0,1
+26,Spain,2019-2020,2,Real Madrid,Home,1,Valladolid,1,1
+27,Spain,2019-2020,2,Valladolid,Away,1,Real Madrid,1,1
+28,Spain,2019-2020,2,Getafe,Home,1,Athletic Bilbao,1,1
+29,Spain,2019-2020,2,Athletic Bilbao,Away,1,Getafe,1,1
+30,Spain,2019-2020,2,Celta Vigo,Home,1,Valence CF,0,3
+31,Spain,2019-2020,2,Valence CF,Away,0,Celta Vigo,1,0
+32,Spain,2019-2020,2,Majorque,Home,0,Real Sociedad,1,0
+33,Spain,2019-2020,2,Real Sociedad,Away,1,Majorque,0,3
+34,Spain,2019-2020,2,Alavés,Home,0,Espanyol Barcelone,0,1
+35,Spain,2019-2020,2,Espanyol Barcelone,Away,0,Alavés,0,1
+36,Spain,2019-2020,2,Leganés,Home,0,Atlético de Madrid,1,0
+37,Spain,2019-2020,2,Atlético de Madrid,Away,1,Leganés,0,3
+38,Spain,2019-2020,2,FC Barcelone,Home,5,Betis Séville,2,3
+39,Spain,2019-2020,2,Betis Séville,Away,2,FC Barcelone,5,0
+40,Spain,2019-2020,3,Séville FC,Home,1,Celta Vigo,1,1
+41,Spain,2019-2020,3,Celta Vigo,Away,1,Séville FC,1,1
+42,Spain,2019-2020,3,Athletic Bilbao,Home,2,Real Sociedad,0,3
+43,Spain,2019-2020,3,Real Sociedad,Away,0,Athletic Bilbao,2,0
+44,Spain,2019-2020,3,Osasuna,Home,2,FC Barcelone,2,1
+45,Spain,2019-2020,3,FC Barcelone,Away,2,Osasuna,2,1
+46,Spain,2019-2020,3,Levante,Home,2,Valladolid,0,3
+47,Spain,2019-2020,3,Valladolid,Away,0,Levante,2,0
+48,Spain,2019-2020,3,Getafe,Home,1,Alavés,1,1
+49,Spain,2019-2020,3,Alavés,Away,1,Getafe,1,1
+50,Spain,2019-2020,3,Betis Séville,Home,2,Leganés,1,3
+51,Spain,2019-2020,3,Leganés,Away,1,Betis Séville,2,0
+52,Spain,2019-2020,3,Valence CF,Home,2,Majorque,0,3
+53,Spain,2019-2020,3,Majorque,Away,0,Valence CF,2,0
+54,Spain,2019-2020,3,Atlético de Madrid,Home,3,Eibar,2,3
+55,Spain,2019-2020,3,Eibar,Away,2,Atlético de Madrid,3,0
+56,Spain,2019-2020,3,Espanyol Barcelone,Home,0,Grenade CF,3,0
+57,Spain,2019-2020,3,Grenade CF,Away,3,Espanyol Barcelone,0,3
+58,Spain,2019-2020,3,Villarreal,Home,2,Real Madrid,2,1
+59,Spain,2019-2020,3,Real Madrid,Away,2,Villarreal,2,1
+60,Spain,2019-2020,4,Majorque,Home,0,Athletic Bilbao,0,1
+61,Spain,2019-2020,4,Athletic Bilbao,Away,0,Majorque,0,1
+62,Spain,2019-2020,4,Real Madrid,Home,3,Levante,2,3
+63,Spain,2019-2020,4,Levante,Away,2,Real Madrid,3,0
+64,Spain,2019-2020,4,Leganés,Home,0,Villarreal,3,0
+65,Spain,2019-2020,4,Villarreal,Away,3,Leganés,0,3
+66,Spain,2019-2020,4,Real Sociedad,Home,2,Atlético de Madrid,0,3
+67,Spain,2019-2020,4,Atlético de Madrid,Away,0,Real Sociedad,2,0
+68,Spain,2019-2020,4,FC Barcelone,Home,5,Valence CF,2,3
+69,Spain,2019-2020,4,Valence CF,Away,2,FC Barcelone,5,0
+70,Spain,2019-2020,4,Eibar,Home,1,Espanyol Barcelone,2,0
+71,Spain,2019-2020,4,Espanyol Barcelone,Away,2,Eibar,1,3
+72,Spain,2019-2020,4,Alavés,Home,0,Séville FC,1,0
+73,Spain,2019-2020,4,Séville FC,Away,1,Alavés,0,3
+74,Spain,2019-2020,4,Celta Vigo,Home,0,Grenade CF,2,0
+75,Spain,2019-2020,4,Grenade CF,Away,2,Celta Vigo,0,3
+76,Spain,2019-2020,4,Valladolid,Home,1,Osasuna,1,1
+77,Spain,2019-2020,4,Osasuna,Away,1,Valladolid,1,1
+78,Spain,2019-2020,4,Betis Séville,Home,1,Getafe,1,1
+79,Spain,2019-2020,4,Getafe,Away,1,Betis Séville,1,1
+80,Spain,2019-2020,5,Osasuna,Home,0,Betis Séville,0,1
+81,Spain,2019-2020,5,Betis Séville,Away,0,Osasuna,0,1
+82,Spain,2019-2020,5,Villarreal,Home,2,Valladolid,0,3
+83,Spain,2019-2020,5,Valladolid,Away,0,Villarreal,2,0
+84,Spain,2019-2020,5,Levante,Home,0,Eibar,0,1
+85,Spain,2019-2020,5,Eibar,Away,0,Levante,0,1
+86,Spain,2019-2020,5,Atlético de Madrid,Home,0,Celta Vigo,0,1
+87,Spain,2019-2020,5,Celta Vigo,Away,0,Atlético de Madrid,0,1
+88,Spain,2019-2020,5,Grenade CF,Home,2,FC Barcelone,0,3
+89,Spain,2019-2020,5,FC Barcelone,Away,0,Grenade CF,2,0
+90,Spain,2019-2020,5,Getafe,Home,4,Majorque,2,3
+91,Spain,2019-2020,5,Majorque,Away,2,Getafe,4,0
+92,Spain,2019-2020,5,Espanyol Barcelone,Home,1,Real Sociedad,3,0
+93,Spain,2019-2020,5,Real Sociedad,Away,3,Espanyol Barcelone,1,3
+94,Spain,2019-2020,5,Valence CF,Home,1,Leganés,1,1
+95,Spain,2019-2020,5,Leganés,Away,1,Valence CF,1,1
+96,Spain,2019-2020,5,Athletic Bilbao,Home,2,Alavés,0,3
+97,Spain,2019-2020,5,Alavés,Away,0,Athletic Bilbao,2,0
+98,Spain,2019-2020,5,Séville FC,Home,0,Real Madrid,1,0
+99,Spain,2019-2020,5,Real Madrid,Away,1,Séville FC,0,3
+100,Spain,2019-2020,6,Valladolid,Home,1,Grenade CF,1,1
+101,Spain,2019-2020,6,Grenade CF,Away,1,Valladolid,1,1
+102,Spain,2019-2020,6,Betis Séville,Home,3,Levante,1,3
+103,Spain,2019-2020,6,Levante,Away,1,Betis Séville,3,0
+104,Spain,2019-2020,6,FC Barcelone,Home,2,Villarreal,1,3
+105,Spain,2019-2020,6,Villarreal,Away,1,FC Barcelone,2,0
+106,Spain,2019-2020,6,Leganés,Home,1,Athletic Bilbao,1,1
+107,Spain,2019-2020,6,Athletic Bilbao,Away,1,Leganés,1,1
+108,Spain,2019-2020,6,Majorque,Home,0,Atlético de Madrid,2,0
+109,Spain,2019-2020,6,Atlético de Madrid,Away,2,Majorque,0,3
+110,Spain,2019-2020,6,Valence CF,Home,3,Getafe,3,1
+111,Spain,2019-2020,6,Getafe,Away,3,Valence CF,3,1
+112,Spain,2019-2020,6,Real Madrid,Home,2,Osasuna,0,3
+113,Spain,2019-2020,6,Osasuna,Away,0,Real Madrid,2,0
+114,Spain,2019-2020,6,Eibar,Home,3,Séville FC,2,3
+115,Spain,2019-2020,6,Séville FC,Away,2,Eibar,3,0
+116,Spain,2019-2020,6,Celta Vigo,Home,1,Espanyol Barcelone,1,1
+117,Spain,2019-2020,6,Espanyol Barcelone,Away,1,Celta Vigo,1,1
+118,Spain,2019-2020,6,Real Sociedad,Home,3,Alavés,0,3
+119,Spain,2019-2020,6,Alavés,Away,0,Real Sociedad,3,0
+120,Spain,2019-2020,7,Villarreal,Home,5,Betis Séville,1,3
+121,Spain,2019-2020,7,Betis Séville,Away,1,Villarreal,5,0
+122,Spain,2019-2020,7,Athletic Bilbao,Home,0,Valence CF,1,0
+123,Spain,2019-2020,7,Valence CF,Away,1,Athletic Bilbao,0,3
+124,Spain,2019-2020,7,Getafe,Home,0,FC Barcelone,2,0
+125,Spain,2019-2020,7,FC Barcelone,Away,2,Getafe,0,3
+126,Spain,2019-2020,7,Grenade CF,Home,1,Leganés,0,3
+127,Spain,2019-2020,7,Leganés,Away,0,Grenade CF,1,0
+128,Spain,2019-2020,7,Atlético de Madrid,Home,0,Real Madrid,0,1
+129,Spain,2019-2020,7,Real Madrid,Away,0,Atlético de Madrid,0,1
+130,Spain,2019-2020,7,Espanyol Barcelone,Home,0,Valladolid,2,0
+131,Spain,2019-2020,7,Valladolid,Away,2,Espanyol Barcelone,0,3
+132,Spain,2019-2020,7,Eibar,Home,2,Celta Vigo,0,3
+133,Spain,2019-2020,7,Celta Vigo,Away,0,Eibar,2,0
+134,Spain,2019-2020,7,Alavés,Home,2,Majorque,0,3
+135,Spain,2019-2020,7,Majorque,Away,0,Alavés,2,0
+136,Spain,2019-2020,7,Levante,Home,1,Osasuna,1,1
+137,Spain,2019-2020,7,Osasuna,Away,1,Levante,1,1
+138,Spain,2019-2020,7,Séville FC,Home,3,Real Sociedad,2,3
+139,Spain,2019-2020,7,Real Sociedad,Away,2,Séville FC,3,0
+140,Spain,2019-2020,8,Betis Séville,Home,1,Eibar,1,1
+141,Spain,2019-2020,8,Eibar,Away,1,Betis Séville,1,1
+142,Spain,2019-2020,8,Leganés,Home,1,Levante,2,0
+143,Spain,2019-2020,8,Levante,Away,2,Leganés,1,3
+144,Spain,2019-2020,8,Real Madrid,Home,4,Grenade CF,2,3
+145,Spain,2019-2020,8,Grenade CF,Away,2,Real Madrid,4,0
+146,Spain,2019-2020,8,Valence CF,Home,2,Alavés,1,3
+147,Spain,2019-2020,8,Alavés,Away,1,Valence CF,2,0
+148,Spain,2019-2020,8,Osasuna,Home,2,Villarreal,1,3
+149,Spain,2019-2020,8,Villarreal,Away,1,Osasuna,2,0
+150,Spain,2019-2020,8,Majorque,Home,2,Espanyol Barcelone,0,3
+151,Spain,2019-2020,8,Espanyol Barcelone,Away,0,Majorque,2,0
+152,Spain,2019-2020,8,Celta Vigo,Home,1,Athletic Bilbao,0,3
+153,Spain,2019-2020,8,Athletic Bilbao,Away,0,Celta Vigo,1,0
+154,Spain,2019-2020,8,Valladolid,Home,0,Atlético de Madrid,0,1
+155,Spain,2019-2020,8,Atlético de Madrid,Away,0,Valladolid,0,1
+156,Spain,2019-2020,8,Real Sociedad,Home,1,Getafe,2,0
+157,Spain,2019-2020,8,Getafe,Away,2,Real Sociedad,1,3
+158,Spain,2019-2020,8,FC Barcelone,Home,4,Séville FC,0,3
+159,Spain,2019-2020,8,Séville FC,Away,0,FC Barcelone,4,0
+160,Spain,2019-2020,9,Grenade CF,Home,1,Osasuna,0,3
+161,Spain,2019-2020,9,Osasuna,Away,0,Grenade CF,1,0
+162,Spain,2019-2020,9,Eibar,Home,0,FC Barcelone,3,0
+163,Spain,2019-2020,9,FC Barcelone,Away,3,Eibar,0,3
+164,Spain,2019-2020,9,Atlético de Madrid,Home,1,Valence CF,1,1
+165,Spain,2019-2020,9,Valence CF,Away,1,Atlético de Madrid,1,1
+166,Spain,2019-2020,9,Getafe,Home,2,Leganés,0,3
+167,Spain,2019-2020,9,Leganés,Away,0,Getafe,2,0
+168,Spain,2019-2020,9,Majorque,Home,1,Real Madrid,0,3
+169,Spain,2019-2020,9,Real Madrid,Away,0,Majorque,1,0
+170,Spain,2019-2020,9,Alavés,Home,2,Celta Vigo,0,3
+171,Spain,2019-2020,9,Celta Vigo,Away,0,Alavés,2,0
+172,Spain,2019-2020,9,Real Sociedad,Home,3,Betis Séville,1,3
+173,Spain,2019-2020,9,Betis Séville,Away,1,Real Sociedad,3,0
+174,Spain,2019-2020,9,Espanyol Barcelone,Home,0,Villarreal,1,0
+175,Spain,2019-2020,9,Villarreal,Away,1,Espanyol Barcelone,0,3
+176,Spain,2019-2020,9,Athletic Bilbao,Home,1,Valladolid,1,1
+177,Spain,2019-2020,9,Valladolid,Away,1,Athletic Bilbao,1,1
+178,Spain,2019-2020,9,Séville FC,Home,1,Levante,0,3
+179,Spain,2019-2020,9,Levante,Away,0,Séville FC,1,0
+180,Spain,2019-2020,10,Villarreal,Home,4,Alavés,1,3
+181,Spain,2019-2020,10,Alavés,Away,1,Villarreal,4,0
+182,Spain,2019-2020,10,Leganés,Home,1,Majorque,0,3
+183,Spain,2019-2020,10,Majorque,Away,0,Leganés,1,0
+184,Spain,2019-2020,10,Valladolid,Home,2,Eibar,0,3
+185,Spain,2019-2020,10,Eibar,Away,0,Valladolid,2,0
+186,Spain,2019-2020,10,Atlético de Madrid,Home,2,Athletic Bilbao,0,3
+187,Spain,2019-2020,10,Athletic Bilbao,Away,0,Atlético de Madrid,2,0
+188,Spain,2019-2020,10,Celta Vigo,Home,0,Real Sociedad,1,0
+189,Spain,2019-2020,10,Real Sociedad,Away,1,Celta Vigo,0,3
+190,Spain,2019-2020,10,Grenade CF,Home,1,Betis Séville,0,3
+191,Spain,2019-2020,10,Betis Séville,Away,0,Grenade CF,1,0
+192,Spain,2019-2020,10,Levante,Home,0,Espanyol Barcelone,1,0
+193,Spain,2019-2020,10,Espanyol Barcelone,Away,1,Levante,0,3
+194,Spain,2019-2020,10,Séville FC,Home,2,Getafe,0,3
+195,Spain,2019-2020,10,Getafe,Away,0,Séville FC,2,0
+196,Spain,2019-2020,10,Osasuna,Home,3,Valence CF,1,3
+197,Spain,2019-2020,10,Valence CF,Away,1,Osasuna,3,0
+198,Spain,2019-2020,10,FC Barcelone,Home,0,Real Madrid,0,1
+199,Spain,2019-2020,10,Real Madrid,Away,0,FC Barcelone,0,1
+200,Spain,2019-2020,11,Alavés,Home,1,Atlético de Madrid,1,1
+201,Spain,2019-2020,11,Atlético de Madrid,Away,1,Alavés,1,1
+202,Spain,2019-2020,11,FC Barcelone,Home,5,Valladolid,1,3
+203,Spain,2019-2020,11,Valladolid,Away,1,FC Barcelone,5,0
+204,Spain,2019-2020,11,Real Sociedad,Home,1,Levante,2,0
+205,Spain,2019-2020,11,Levante,Away,2,Real Sociedad,1,3
+206,Spain,2019-2020,11,Valence CF,Home,1,Séville FC,1,1
+207,Spain,2019-2020,11,Séville FC,Away,1,Valence CF,1,1
+208,Spain,2019-2020,11,Athletic Bilbao,Home,3,Espanyol Barcelone,0,3
+209,Spain,2019-2020,11,Espanyol Barcelone,Away,0,Athletic Bilbao,3,0
+210,Spain,2019-2020,11,Betis Séville,Home,2,Celta Vigo,1,3
+211,Spain,2019-2020,11,Celta Vigo,Away,1,Betis Séville,2,0
+212,Spain,2019-2020,11,Real Madrid,Home,5,Leganés,0,3
+213,Spain,2019-2020,11,Leganés,Away,0,Real Madrid,5,0
+214,Spain,2019-2020,11,Eibar,Home,2,Villarreal,1,3
+215,Spain,2019-2020,11,Villarreal,Away,1,Eibar,2,0
+216,Spain,2019-2020,11,Majorque,Home,2,Osasuna,2,1
+217,Spain,2019-2020,11,Osasuna,Away,2,Majorque,2,1
+218,Spain,2019-2020,11,Getafe,Home,3,Grenade CF,1,3
+219,Spain,2019-2020,11,Grenade CF,Away,1,Getafe,3,0
+220,Spain,2019-2020,12,Espanyol Barcelone,Home,1,Valence CF,2,0
+221,Spain,2019-2020,12,Valence CF,Away,2,Espanyol Barcelone,1,3
+222,Spain,2019-2020,12,Levante,Home,3,FC Barcelone,1,3
+223,Spain,2019-2020,12,FC Barcelone,Away,1,Levante,3,0
+224,Spain,2019-2020,12,Séville FC,Home,1,Atlético de Madrid,1,1
+225,Spain,2019-2020,12,Atlético de Madrid,Away,1,Séville FC,1,1
+226,Spain,2019-2020,12,Real Madrid,Home,0,Betis Séville,0,1
+227,Spain,2019-2020,12,Betis Séville,Away,0,Real Madrid,0,1
+228,Spain,2019-2020,12,Valladolid,Home,3,Majorque,0,3
+229,Spain,2019-2020,12,Majorque,Away,0,Valladolid,3,0
+230,Spain,2019-2020,12,Villarreal,Home,0,Athletic Bilbao,0,1
+231,Spain,2019-2020,12,Athletic Bilbao,Away,0,Villarreal,0,1
+232,Spain,2019-2020,12,Osasuna,Home,4,Alavés,2,3
+233,Spain,2019-2020,12,Alavés,Away,2,Osasuna,4,0
+234,Spain,2019-2020,12,Celta Vigo,Home,0,Getafe,1,0
+235,Spain,2019-2020,12,Getafe,Away,1,Celta Vigo,0,3
+236,Spain,2019-2020,12,Leganés,Home,1,Eibar,2,0
+237,Spain,2019-2020,12,Eibar,Away,2,Leganés,1,3
+238,Spain,2019-2020,12,Grenade CF,Home,1,Real Sociedad,2,0
+239,Spain,2019-2020,12,Real Sociedad,Away,2,Grenade CF,1,3
+240,Spain,2019-2020,13,Real Sociedad,Home,1,Leganés,1,1
+241,Spain,2019-2020,13,Leganés,Away,1,Real Sociedad,1,1
+242,Spain,2019-2020,13,Alavés,Home,3,Valladolid,0,3
+243,Spain,2019-2020,13,Valladolid,Away,0,Alavés,3,0
+244,Spain,2019-2020,13,Valence CF,Home,2,Grenade CF,0,3
+245,Spain,2019-2020,13,Grenade CF,Away,0,Valence CF,2,0
+246,Spain,2019-2020,13,Eibar,Home,0,Real Madrid,4,0
+247,Spain,2019-2020,13,Real Madrid,Away,4,Eibar,0,3
+248,Spain,2019-2020,13,FC Barcelone,Home,4,Celta Vigo,1,3
+249,Spain,2019-2020,13,Celta Vigo,Away,1,FC Barcelone,4,0
+250,Spain,2019-2020,13,Majorque,Home,3,Villarreal,1,3
+251,Spain,2019-2020,13,Villarreal,Away,1,Majorque,3,0
+252,Spain,2019-2020,13,Athletic Bilbao,Home,2,Levante,1,3
+253,Spain,2019-2020,13,Levante,Away,1,Athletic Bilbao,2,0
+254,Spain,2019-2020,13,Atlético de Madrid,Home,3,Espanyol Barcelone,1,3
+255,Spain,2019-2020,13,Espanyol Barcelone,Away,1,Atlético de Madrid,3,0
+256,Spain,2019-2020,13,Getafe,Home,0,Osasuna,0,1
+257,Spain,2019-2020,13,Osasuna,Away,0,Getafe,0,1
+258,Spain,2019-2020,13,Betis Séville,Home,1,Séville FC,2,0
+259,Spain,2019-2020,13,Séville FC,Away,2,Betis Séville,1,3
+260,Spain,2019-2020,14,Levante,Home,2,Majorque,1,3
+261,Spain,2019-2020,14,Majorque,Away,1,Levante,2,0
+262,Spain,2019-2020,14,Leganés,Home,1,FC Barcelone,2,0
+263,Spain,2019-2020,14,FC Barcelone,Away,2,Leganés,1,3
+264,Spain,2019-2020,14,Betis Séville,Home,2,Valence CF,1,3
+265,Spain,2019-2020,14,Valence CF,Away,1,Betis Séville,2,0
+266,Spain,2019-2020,14,Grenade CF,Home,1,Atlético de Madrid,1,1
+267,Spain,2019-2020,14,Atlético de Madrid,Away,1,Grenade CF,1,1
+268,Spain,2019-2020,14,Real Madrid,Home,3,Real Sociedad,1,3
+269,Spain,2019-2020,14,Real Sociedad,Away,1,Real Madrid,3,0
+270,Spain,2019-2020,14,Espanyol Barcelone,Home,1,Getafe,1,1
+271,Spain,2019-2020,14,Getafe,Away,1,Espanyol Barcelone,1,1
+272,Spain,2019-2020,14,Osasuna,Home,1,Athletic Bilbao,2,0
+273,Spain,2019-2020,14,Athletic Bilbao,Away,2,Osasuna,1,3
+274,Spain,2019-2020,14,Eibar,Home,0,Alavés,2,0
+275,Spain,2019-2020,14,Alavés,Away,2,Eibar,0,3
+276,Spain,2019-2020,14,Villarreal,Home,1,Celta Vigo,3,0
+277,Spain,2019-2020,14,Celta Vigo,Away,3,Villarreal,1,3
+278,Spain,2019-2020,14,Valladolid,Home,0,Séville FC,1,0
+279,Spain,2019-2020,14,Séville FC,Away,1,Valladolid,0,3
+280,Spain,2019-2020,15,Celta Vigo,Home,0,Valladolid,0,1
+281,Spain,2019-2020,15,Valladolid,Away,0,Celta Vigo,0,1
+282,Spain,2019-2020,15,Alavés,Home,1,Real Madrid,2,0
+283,Spain,2019-2020,15,Real Madrid,Away,2,Alavés,1,3
+284,Spain,2019-2020,15,Real Sociedad,Home,4,Eibar,1,3
+285,Spain,2019-2020,15,Eibar,Away,1,Real Sociedad,4,0
+286,Spain,2019-2020,15,Majorque,Home,1,Betis Séville,2,0
+287,Spain,2019-2020,15,Betis Séville,Away,2,Majorque,1,3
+288,Spain,2019-2020,15,Valence CF,Home,2,Villarreal,1,3
+289,Spain,2019-2020,15,Villarreal,Away,1,Valence CF,2,0
+290,Spain,2019-2020,15,Séville FC,Home,1,Leganés,0,3
+291,Spain,2019-2020,15,Leganés,Away,0,Séville FC,1,0
+292,Spain,2019-2020,15,Athletic Bilbao,Home,2,Grenade CF,0,3
+293,Spain,2019-2020,15,Grenade CF,Away,0,Athletic Bilbao,2,0
+294,Spain,2019-2020,15,Espanyol Barcelone,Home,2,Osasuna,4,0
+295,Spain,2019-2020,15,Osasuna,Away,4,Espanyol Barcelone,2,3
+296,Spain,2019-2020,15,Getafe,Home,4,Levante,0,3
+297,Spain,2019-2020,15,Levante,Away,0,Getafe,4,0
+298,Spain,2019-2020,15,Atlético de Madrid,Home,0,FC Barcelone,1,0
+299,Spain,2019-2020,15,FC Barcelone,Away,1,Atlético de Madrid,0,3
+300,Spain,2019-2020,16,Villarreal,Home,0,Atlético de Madrid,0,1
+301,Spain,2019-2020,16,Atlético de Madrid,Away,0,Villarreal,0,1
+302,Spain,2019-2020,16,Real Madrid,Home,2,Espanyol Barcelone,0,3
+303,Spain,2019-2020,16,Espanyol Barcelone,Away,0,Real Madrid,2,0
+304,Spain,2019-2020,16,Grenade CF,Home,3,Alavés,0,3
+305,Spain,2019-2020,16,Alavés,Away,0,Grenade CF,3,0
+306,Spain,2019-2020,16,Levante,Home,2,Valence CF,4,0
+307,Spain,2019-2020,16,Valence CF,Away,4,Levante,2,3
+308,Spain,2019-2020,16,FC Barcelone,Home,5,Majorque,2,3
+309,Spain,2019-2020,16,Majorque,Away,2,FC Barcelone,5,0
+310,Spain,2019-2020,16,Eibar,Home,0,Getafe,1,0
+311,Spain,2019-2020,16,Getafe,Away,1,Eibar,0,3
+312,Spain,2019-2020,16,Betis Séville,Home,3,Athletic Bilbao,2,3
+313,Spain,2019-2020,16,Athletic Bilbao,Away,2,Betis Séville,3,0
+314,Spain,2019-2020,16,Valladolid,Home,0,Real Sociedad,0,1
+315,Spain,2019-2020,16,Real Sociedad,Away,0,Valladolid,0,1
+316,Spain,2019-2020,16,Leganés,Home,3,Celta Vigo,2,3
+317,Spain,2019-2020,16,Celta Vigo,Away,2,Leganés,3,0
+318,Spain,2019-2020,16,Osasuna,Home,1,Séville FC,1,1
+319,Spain,2019-2020,16,Séville FC,Away,1,Osasuna,1,1
+320,Spain,2019-2020,17,Alavés,Home,1,Leganés,1,1
+321,Spain,2019-2020,17,Leganés,Away,1,Alavés,1,1
+322,Spain,2019-2020,17,Grenade CF,Home,1,Levante,2,0
+323,Spain,2019-2020,17,Levante,Away,2,Grenade CF,1,3
+324,Spain,2019-2020,17,Real Sociedad,Home,2,FC Barcelone,2,1
+325,Spain,2019-2020,17,FC Barcelone,Away,2,Real Sociedad,2,1
+326,Spain,2019-2020,17,Athletic Bilbao,Home,0,Eibar,0,1
+327,Spain,2019-2020,17,Eibar,Away,0,Athletic Bilbao,0,1
+328,Spain,2019-2020,17,Atlético de Madrid,Home,2,Osasuna,0,3
+329,Spain,2019-2020,17,Osasuna,Away,0,Atlético de Madrid,2,0
+330,Spain,2019-2020,17,Getafe,Home,2,Valladolid,0,3
+331,Spain,2019-2020,17,Valladolid,Away,0,Getafe,2,0
+332,Spain,2019-2020,17,Celta Vigo,Home,2,Majorque,2,1
+333,Spain,2019-2020,17,Majorque,Away,2,Celta Vigo,2,1
+334,Spain,2019-2020,17,Espanyol Barcelone,Home,2,Betis Séville,2,1
+335,Spain,2019-2020,17,Betis Séville,Away,2,Espanyol Barcelone,2,1
+336,Spain,2019-2020,17,Séville FC,Home,1,Villarreal,2,0
+337,Spain,2019-2020,17,Villarreal,Away,2,Séville FC,1,3
+338,Spain,2019-2020,17,Valence CF,Home,1,Real Madrid,1,1
+339,Spain,2019-2020,17,Real Madrid,Away,1,Valence CF,1,1
+340,Spain,2019-2020,18,Eibar,Home,3,Grenade CF,0,3
+341,Spain,2019-2020,18,Grenade CF,Away,0,Eibar,3,0
+342,Spain,2019-2020,18,Majorque,Home,0,Séville FC,2,0
+343,Spain,2019-2020,18,Séville FC,Away,2,Majorque,0,3
+344,Spain,2019-2020,18,FC Barcelone,Home,4,Alavés,1,3
+345,Spain,2019-2020,18,Alavés,Away,1,FC Barcelone,4,0
+346,Spain,2019-2020,18,Villarreal,Home,1,Getafe,0,3
+347,Spain,2019-2020,18,Getafe,Away,0,Villarreal,1,0
+348,Spain,2019-2020,18,Valladolid,Home,1,Valence CF,1,1
+349,Spain,2019-2020,18,Valence CF,Away,1,Valladolid,1,1
+350,Spain,2019-2020,18,Leganés,Home,2,Espanyol Barcelone,0,3
+351,Spain,2019-2020,18,Espanyol Barcelone,Away,0,Leganés,2,0
+352,Spain,2019-2020,18,Osasuna,Home,3,Real Sociedad,4,0
+353,Spain,2019-2020,18,Real Sociedad,Away,4,Osasuna,3,3
+354,Spain,2019-2020,18,Betis Séville,Home,1,Atlético de Madrid,2,0
+355,Spain,2019-2020,18,Atlético de Madrid,Away,2,Betis Séville,1,3
+356,Spain,2019-2020,18,Levante,Home,3,Celta Vigo,1,3
+357,Spain,2019-2020,18,Celta Vigo,Away,1,Levante,3,0
+358,Spain,2019-2020,18,Real Madrid,Home,0,Athletic Bilbao,0,1
+359,Spain,2019-2020,18,Athletic Bilbao,Away,0,Real Madrid,0,1
+360,Spain,2019-2020,19,Valladolid,Home,2,Leganés,2,1
+361,Spain,2019-2020,19,Leganés,Away,2,Valladolid,2,1
+362,Spain,2019-2020,19,Séville FC,Home,1,Athletic Bilbao,1,1
+363,Spain,2019-2020,19,Athletic Bilbao,Away,1,Séville FC,1,1
+364,Spain,2019-2020,19,Valence CF,Home,1,Eibar,0,3
+365,Spain,2019-2020,19,Eibar,Away,0,Valence CF,1,0
+366,Spain,2019-2020,19,Getafe,Home,0,Real Madrid,3,0
+367,Spain,2019-2020,19,Real Madrid,Away,3,Getafe,0,3
+368,Spain,2019-2020,19,Atlético de Madrid,Home,2,Levante,1,3
+369,Spain,2019-2020,19,Levante,Away,1,Atlético de Madrid,2,0
+370,Spain,2019-2020,19,Espanyol Barcelone,Home,2,FC Barcelone,2,1
+371,Spain,2019-2020,19,FC Barcelone,Away,2,Espanyol Barcelone,2,1
+372,Spain,2019-2020,19,Grenade CF,Home,1,Majorque,0,3
+373,Spain,2019-2020,19,Majorque,Away,0,Grenade CF,1,0
+374,Spain,2019-2020,19,Real Sociedad,Home,1,Villarreal,2,0
+375,Spain,2019-2020,19,Villarreal,Away,2,Real Sociedad,1,3
+376,Spain,2019-2020,19,Alavés,Home,1,Betis Séville,1,1
+377,Spain,2019-2020,19,Betis Séville,Away,1,Alavés,1,1
+378,Spain,2019-2020,19,Celta Vigo,Home,1,Osasuna,1,1
+379,Spain,2019-2020,19,Osasuna,Away,1,Celta Vigo,1,1
+380,Spain,2019-2020,20,Leganés,Home,0,Getafe,3,0
+381,Spain,2019-2020,20,Getafe,Away,3,Leganés,0,3
+382,Spain,2019-2020,20,Levante,Home,0,Alavés,1,0
+383,Spain,2019-2020,20,Alavés,Away,1,Levante,0,3
+384,Spain,2019-2020,20,Real Madrid,Home,2,Séville FC,1,3
+385,Spain,2019-2020,20,Séville FC,Away,1,Real Madrid,2,0
+386,Spain,2019-2020,20,Osasuna,Home,0,Valladolid,0,1
+387,Spain,2019-2020,20,Valladolid,Away,0,Osasuna,0,1
+388,Spain,2019-2020,20,Eibar,Home,2,Atlético de Madrid,0,3
+389,Spain,2019-2020,20,Atlético de Madrid,Away,0,Eibar,2,0
+390,Spain,2019-2020,20,Majorque,Home,4,Valence CF,1,3
+391,Spain,2019-2020,20,Valence CF,Away,1,Majorque,4,0
+392,Spain,2019-2020,20,Betis Séville,Home,3,Real Sociedad,0,3
+393,Spain,2019-2020,20,Real Sociedad,Away,0,Betis Séville,3,0
+394,Spain,2019-2020,20,Villarreal,Home,1,Espanyol Barcelone,2,0
+395,Spain,2019-2020,20,Espanyol Barcelone,Away,2,Villarreal,1,3
+396,Spain,2019-2020,20,Athletic Bilbao,Home,1,Celta Vigo,1,1
+397,Spain,2019-2020,20,Celta Vigo,Away,1,Athletic Bilbao,1,1
+398,Spain,2019-2020,20,FC Barcelone,Home,1,Grenade CF,0,3
+399,Spain,2019-2020,20,Grenade CF,Away,0,FC Barcelone,1,0
+400,Spain,2019-2020,21,Osasuna,Home,2,Levante,0,3
+401,Spain,2019-2020,21,Levante,Away,0,Osasuna,2,0
+402,Spain,2019-2020,21,Espanyol Barcelone,Home,1,Athletic Bilbao,1,1
+403,Spain,2019-2020,21,Athletic Bilbao,Away,1,Espanyol Barcelone,1,1
+404,Spain,2019-2020,21,Valence CF,Home,2,FC Barcelone,0,3
+405,Spain,2019-2020,21,FC Barcelone,Away,0,Valence CF,2,0
+406,Spain,2019-2020,21,Alavés,Home,1,Villarreal,2,0
+407,Spain,2019-2020,21,Villarreal,Away,2,Alavés,1,3
+408,Spain,2019-2020,21,Séville FC,Home,2,Grenade CF,0,3
+409,Spain,2019-2020,21,Grenade CF,Away,0,Séville FC,2,0
+410,Spain,2019-2020,21,Atlético de Madrid,Home,0,Leganés,0,1
+411,Spain,2019-2020,21,Leganés,Away,0,Atlético de Madrid,0,1
+412,Spain,2019-2020,21,Celta Vigo,Home,0,Eibar,0,1
+413,Spain,2019-2020,21,Eibar,Away,0,Celta Vigo,0,1
+414,Spain,2019-2020,21,Getafe,Home,1,Betis Séville,0,3
+415,Spain,2019-2020,21,Betis Séville,Away,0,Getafe,1,0
+416,Spain,2019-2020,21,Real Sociedad,Home,3,Majorque,0,3
+417,Spain,2019-2020,21,Majorque,Away,0,Real Sociedad,3,0
+418,Spain,2019-2020,21,Valladolid,Home,0,Real Madrid,1,0
+419,Spain,2019-2020,21,Real Madrid,Away,1,Valladolid,0,3
+420,Spain,2019-2020,22,Grenade CF,Home,2,Espanyol Barcelone,1,3
+421,Spain,2019-2020,22,Espanyol Barcelone,Away,1,Grenade CF,2,0
+422,Spain,2019-2020,22,Real Madrid,Home,1,Atlético de Madrid,0,3
+423,Spain,2019-2020,22,Atlético de Madrid,Away,0,Real Madrid,1,0
+424,Spain,2019-2020,22,Majorque,Home,0,Valladolid,1,0
+425,Spain,2019-2020,22,Valladolid,Away,1,Majorque,0,3
+426,Spain,2019-2020,22,Valence CF,Home,1,Celta Vigo,0,3
+427,Spain,2019-2020,22,Celta Vigo,Away,0,Valence CF,1,0
+428,Spain,2019-2020,22,Leganés,Home,2,Real Sociedad,1,3
+429,Spain,2019-2020,22,Real Sociedad,Away,1,Leganés,2,0
+430,Spain,2019-2020,22,Eibar,Home,1,Betis Séville,1,1
+431,Spain,2019-2020,22,Betis Séville,Away,1,Eibar,1,1
+432,Spain,2019-2020,22,Athletic Bilbao,Home,0,Getafe,2,0
+433,Spain,2019-2020,22,Getafe,Away,2,Athletic Bilbao,0,3
+434,Spain,2019-2020,22,Séville FC,Home,1,Alavés,1,1
+435,Spain,2019-2020,22,Alavés,Away,1,Séville FC,1,1
+436,Spain,2019-2020,22,Villarreal,Home,3,Osasuna,1,3
+437,Spain,2019-2020,22,Osasuna,Away,1,Villarreal,3,0
+438,Spain,2019-2020,22,FC Barcelone,Home,2,Levante,1,3
+439,Spain,2019-2020,22,Levante,Away,1,FC Barcelone,2,0
+440,Spain,2019-2020,23,Alavés,Home,2,Eibar,1,3
+441,Spain,2019-2020,23,Eibar,Away,1,Alavés,2,0
+442,Spain,2019-2020,23,Levante,Home,2,Leganés,0,3
+443,Spain,2019-2020,23,Leganés,Away,0,Levante,2,0
+444,Spain,2019-2020,23,Getafe,Home,3,Valence CF,0,3
+445,Spain,2019-2020,23,Valence CF,Away,0,Getafe,3,0
+446,Spain,2019-2020,23,Valladolid,Home,1,Villarreal,1,1
+447,Spain,2019-2020,23,Villarreal,Away,1,Valladolid,1,1
+448,Spain,2019-2020,23,Atlético de Madrid,Home,1,Grenade CF,0,3
+449,Spain,2019-2020,23,Grenade CF,Away,0,Atlético de Madrid,1,0
+450,Spain,2019-2020,23,Espanyol Barcelone,Home,1,Majorque,0,3
+451,Spain,2019-2020,23,Majorque,Away,0,Espanyol Barcelone,1,0
+452,Spain,2019-2020,23,Real Sociedad,Home,2,Athletic Bilbao,1,3
+453,Spain,2019-2020,23,Athletic Bilbao,Away,1,Real Sociedad,2,0
+454,Spain,2019-2020,23,Osasuna,Home,1,Real Madrid,4,0
+455,Spain,2019-2020,23,Real Madrid,Away,4,Osasuna,1,3
+456,Spain,2019-2020,23,Celta Vigo,Home,2,Séville FC,1,3
+457,Spain,2019-2020,23,Séville FC,Away,1,Celta Vigo,2,0
+458,Spain,2019-2020,23,Betis Séville,Home,2,FC Barcelone,3,0
+459,Spain,2019-2020,23,FC Barcelone,Away,3,Betis Séville,2,3
+460,Spain,2019-2020,24,Valence CF,Home,2,Atlético de Madrid,2,1
+461,Spain,2019-2020,24,Atlético de Madrid,Away,2,Valence CF,2,1
+462,Spain,2019-2020,24,Majorque,Home,1,Alavés,0,3
+463,Spain,2019-2020,24,Alavés,Away,0,Majorque,1,0
+464,Spain,2019-2020,24,FC Barcelone,Home,2,Getafe,1,3
+465,Spain,2019-2020,24,Getafe,Away,1,FC Barcelone,2,0
+466,Spain,2019-2020,24,Villarreal,Home,2,Levante,1,3
+467,Spain,2019-2020,24,Levante,Away,1,Villarreal,2,0
+468,Spain,2019-2020,24,Grenade CF,Home,2,Valladolid,1,3
+469,Spain,2019-2020,24,Valladolid,Away,1,Grenade CF,2,0
+470,Spain,2019-2020,24,Séville FC,Home,2,Espanyol Barcelone,2,1
+471,Spain,2019-2020,24,Espanyol Barcelone,Away,2,Séville FC,2,1
+472,Spain,2019-2020,24,Leganés,Home,0,Betis Séville,0,1
+473,Spain,2019-2020,24,Betis Séville,Away,0,Leganés,0,1
+474,Spain,2019-2020,24,Athletic Bilbao,Home,0,Osasuna,1,0
+475,Spain,2019-2020,24,Osasuna,Away,1,Athletic Bilbao,0,3
+476,Spain,2019-2020,24,Real Madrid,Home,2,Celta Vigo,2,1
+477,Spain,2019-2020,24,Celta Vigo,Away,2,Real Madrid,2,1
+478,Spain,2019-2020,24,Eibar,Home,1,Real Sociedad,2,0
+479,Spain,2019-2020,24,Real Sociedad,Away,2,Eibar,1,3
+480,Spain,2019-2020,25,Betis Séville,Home,3,Majorque,3,1
+481,Spain,2019-2020,25,Majorque,Away,3,Betis Séville,3,1
+482,Spain,2019-2020,25,Celta Vigo,Home,1,Leganés,0,3
+483,Spain,2019-2020,25,Leganés,Away,0,Celta Vigo,1,0
+484,Spain,2019-2020,25,FC Barcelone,Home,5,Eibar,0,3
+485,Spain,2019-2020,25,Eibar,Away,0,FC Barcelone,5,0
+486,Spain,2019-2020,25,Real Sociedad,Home,3,Valence CF,0,3
+487,Spain,2019-2020,25,Valence CF,Away,0,Real Sociedad,3,0
+488,Spain,2019-2020,25,Levante,Home,1,Real Madrid,0,3
+489,Spain,2019-2020,25,Real Madrid,Away,0,Levante,1,0
+490,Spain,2019-2020,25,Osasuna,Home,0,Grenade CF,3,0
+491,Spain,2019-2020,25,Grenade CF,Away,3,Osasuna,0,3
+492,Spain,2019-2020,25,Alavés,Home,2,Athletic Bilbao,1,3
+493,Spain,2019-2020,25,Athletic Bilbao,Away,1,Alavés,2,0
+494,Spain,2019-2020,25,Valladolid,Home,2,Espanyol Barcelone,1,3
+495,Spain,2019-2020,25,Espanyol Barcelone,Away,1,Valladolid,2,0
+496,Spain,2019-2020,25,Getafe,Home,0,Séville FC,3,0
+497,Spain,2019-2020,25,Séville FC,Away,3,Getafe,0,3
+498,Spain,2019-2020,25,Atlético de Madrid,Home,3,Villarreal,1,3
+499,Spain,2019-2020,25,Villarreal,Away,1,Atlético de Madrid,3,0
+500,Spain,2019-2020,26,Real Sociedad,Home,1,Valladolid,0,3
+501,Spain,2019-2020,26,Valladolid,Away,0,Real Sociedad,1,0
+502,Spain,2019-2020,26,Eibar,Home,3,Levante,0,3
+503,Spain,2019-2020,26,Levante,Away,0,Eibar,3,0
+504,Spain,2019-2020,26,Valence CF,Home,2,Betis Séville,1,3
+505,Spain,2019-2020,26,Betis Séville,Away,1,Valence CF,2,0
+506,Spain,2019-2020,26,Leganés,Home,1,Alavés,1,1
+507,Spain,2019-2020,26,Alavés,Away,1,Leganés,1,1
+508,Spain,2019-2020,26,Grenade CF,Home,0,Celta Vigo,0,1
+509,Spain,2019-2020,26,Celta Vigo,Away,0,Grenade CF,0,1
+510,Spain,2019-2020,26,Séville FC,Home,3,Osasuna,2,3
+511,Spain,2019-2020,26,Osasuna,Away,2,Séville FC,3,0
+512,Spain,2019-2020,26,Athletic Bilbao,Home,1,Villarreal,0,3
+513,Spain,2019-2020,26,Villarreal,Away,0,Athletic Bilbao,1,0
+514,Spain,2019-2020,26,Espanyol Barcelone,Home,1,Atlético de Madrid,1,1
+515,Spain,2019-2020,26,Atlético de Madrid,Away,1,Espanyol Barcelone,1,1
+516,Spain,2019-2020,26,Majorque,Home,0,Getafe,1,0
+517,Spain,2019-2020,26,Getafe,Away,1,Majorque,0,3
+518,Spain,2019-2020,26,Real Madrid,Home,2,FC Barcelone,0,3
+519,Spain,2019-2020,26,FC Barcelone,Away,0,Real Madrid,2,0
+520,Spain,2019-2020,27,Alavés,Home,1,Valence CF,1,1
+521,Spain,2019-2020,27,Valence CF,Away,1,Alavés,1,1
+522,Spain,2019-2020,27,Eibar,Home,1,Majorque,2,0
+523,Spain,2019-2020,27,Majorque,Away,2,Eibar,1,3
+524,Spain,2019-2020,27,Atlético de Madrid,Home,2,Séville FC,2,1
+525,Spain,2019-2020,27,Séville FC,Away,2,Atlético de Madrid,2,1
+526,Spain,2019-2020,27,FC Barcelone,Home,1,Real Sociedad,0,3
+527,Spain,2019-2020,27,Real Sociedad,Away,0,FC Barcelone,1,0
+528,Spain,2019-2020,27,Getafe,Home,0,Celta Vigo,0,1
+529,Spain,2019-2020,27,Celta Vigo,Away,0,Getafe,0,1
+530,Spain,2019-2020,27,Osasuna,Home,1,Espanyol Barcelone,0,3
+531,Spain,2019-2020,27,Espanyol Barcelone,Away,0,Osasuna,1,0
+532,Spain,2019-2020,27,Valladolid,Home,1,Athletic Bilbao,4,0
+533,Spain,2019-2020,27,Athletic Bilbao,Away,4,Valladolid,1,3
+534,Spain,2019-2020,27,Levante,Home,1,Grenade CF,1,1
+535,Spain,2019-2020,27,Grenade CF,Away,1,Levante,1,1
+536,Spain,2019-2020,27,Villarreal,Home,1,Leganés,2,0
+537,Spain,2019-2020,27,Leganés,Away,2,Villarreal,1,3
+538,Spain,2019-2020,27,Betis Séville,Home,2,Real Madrid,1,3
+539,Spain,2019-2020,27,Real Madrid,Away,1,Betis Séville,2,0
+540,Spain,2019-2020,28,Séville FC,Home,2,Betis Séville,0,3
+541,Spain,2019-2020,28,Betis Séville,Away,0,Séville FC,2,0
+542,Spain,2019-2020,28,Grenade CF,Home,2,Getafe,1,3
+543,Spain,2019-2020,28,Getafe,Away,1,Grenade CF,2,0
+544,Spain,2019-2020,28,Valence CF,Home,1,Levante,1,1
+545,Spain,2019-2020,28,Levante,Away,1,Valence CF,1,1
+546,Spain,2019-2020,28,Espanyol Barcelone,Home,2,Alavés,0,3
+547,Spain,2019-2020,28,Alavés,Away,0,Espanyol Barcelone,2,0
+548,Spain,2019-2020,28,Celta Vigo,Home,0,Villarreal,1,0
+549,Spain,2019-2020,28,Villarreal,Away,1,Celta Vigo,0,3
+550,Spain,2019-2020,28,Leganés,Home,1,Valladolid,2,0
+551,Spain,2019-2020,28,Valladolid,Away,2,Leganés,1,3
+552,Spain,2019-2020,28,Majorque,Home,0,FC Barcelone,4,0
+553,Spain,2019-2020,28,FC Barcelone,Away,4,Majorque,0,3
+554,Spain,2019-2020,28,Athletic Bilbao,Home,1,Atlético de Madrid,1,1
+555,Spain,2019-2020,28,Atlético de Madrid,Away,1,Athletic Bilbao,1,1
+556,Spain,2019-2020,28,Real Madrid,Home,3,Eibar,1,3
+557,Spain,2019-2020,28,Eibar,Away,1,Real Madrid,3,0
+558,Spain,2019-2020,28,Real Sociedad,Home,1,Osasuna,1,1
+559,Spain,2019-2020,28,Osasuna,Away,1,Real Sociedad,1,1
+560,Spain,2019-2020,29,Levante,Home,1,Séville FC,1,1
+561,Spain,2019-2020,29,Séville FC,Away,1,Levante,1,1
+562,Spain,2019-2020,29,Betis Séville,Home,2,Grenade CF,2,1
+563,Spain,2019-2020,29,Grenade CF,Away,2,Betis Séville,2,1
+564,Spain,2019-2020,29,Getafe,Home,0,Espanyol Barcelone,0,1
+565,Spain,2019-2020,29,Espanyol Barcelone,Away,0,Getafe,0,1
+566,Spain,2019-2020,29,Villarreal,Home,1,Majorque,0,3
+567,Spain,2019-2020,29,Majorque,Away,0,Villarreal,1,0
+568,Spain,2019-2020,29,FC Barcelone,Home,2,Leganés,0,3
+569,Spain,2019-2020,29,Leganés,Away,0,FC Barcelone,2,0
+570,Spain,2019-2020,29,Eibar,Home,2,Athletic Bilbao,2,1
+571,Spain,2019-2020,29,Athletic Bilbao,Away,2,Eibar,2,1
+572,Spain,2019-2020,29,Valladolid,Home,0,Celta Vigo,0,1
+573,Spain,2019-2020,29,Celta Vigo,Away,0,Valladolid,0,1
+574,Spain,2019-2020,29,Osasuna,Home,0,Atlético de Madrid,5,0
+575,Spain,2019-2020,29,Atlético de Madrid,Away,5,Osasuna,0,3
+576,Spain,2019-2020,29,Alavés,Home,2,Real Sociedad,0,3
+577,Spain,2019-2020,29,Real Sociedad,Away,0,Alavés,2,0
+578,Spain,2019-2020,29,Real Madrid,Home,3,Valence CF,0,3
+579,Spain,2019-2020,29,Valence CF,Away,0,Real Madrid,3,0
+580,Spain,2019-2020,30,Grenade CF,Home,0,Villarreal,1,0
+581,Spain,2019-2020,30,Villarreal,Away,1,Grenade CF,0,3
+582,Spain,2019-2020,30,Majorque,Home,1,Leganés,1,1
+583,Spain,2019-2020,30,Leganés,Away,1,Majorque,1,1
+584,Spain,2019-2020,30,Séville FC,Home,0,FC Barcelone,0,1
+585,Spain,2019-2020,30,FC Barcelone,Away,0,Séville FC,0,1
+586,Spain,2019-2020,30,Espanyol Barcelone,Home,1,Levante,3,0
+587,Spain,2019-2020,30,Levante,Away,3,Espanyol Barcelone,1,3
+588,Spain,2019-2020,30,Athletic Bilbao,Home,1,Betis Séville,0,3
+589,Spain,2019-2020,30,Betis Séville,Away,0,Athletic Bilbao,1,0
+590,Spain,2019-2020,30,Getafe,Home,1,Eibar,1,1
+591,Spain,2019-2020,30,Eibar,Away,1,Getafe,1,1
+592,Spain,2019-2020,30,Atlético de Madrid,Home,1,Valladolid,0,3
+593,Spain,2019-2020,30,Valladolid,Away,0,Atlético de Madrid,1,0
+594,Spain,2019-2020,30,Celta Vigo,Home,6,Alavés,0,3
+595,Spain,2019-2020,30,Alavés,Away,0,Celta Vigo,6,0
+596,Spain,2019-2020,30,Valence CF,Home,2,Osasuna,0,3
+597,Spain,2019-2020,30,Osasuna,Away,0,Valence CF,2,0
+598,Spain,2019-2020,30,Real Sociedad,Home,1,Real Madrid,2,0
+599,Spain,2019-2020,30,Real Madrid,Away,2,Real Sociedad,1,3
+600,Spain,2019-2020,31,Villarreal,Home,2,Séville FC,2,1
+601,Spain,2019-2020,31,Séville FC,Away,2,Villarreal,2,1
+602,Spain,2019-2020,31,Leganés,Home,0,Grenade CF,0,1
+603,Spain,2019-2020,31,Grenade CF,Away,0,Leganés,0,1
+604,Spain,2019-2020,31,Levante,Home,0,Atlético de Madrid,1,0
+605,Spain,2019-2020,31,Atlético de Madrid,Away,1,Levante,0,3
+606,Spain,2019-2020,31,Valladolid,Home,1,Getafe,1,1
+607,Spain,2019-2020,31,Getafe,Away,1,Valladolid,1,1
+608,Spain,2019-2020,31,FC Barcelone,Home,1,Athletic Bilbao,0,3
+609,Spain,2019-2020,31,Athletic Bilbao,Away,0,FC Barcelone,1,0
+610,Spain,2019-2020,31,Real Sociedad,Home,0,Celta Vigo,1,0
+611,Spain,2019-2020,31,Celta Vigo,Away,1,Real Sociedad,0,3
+612,Spain,2019-2020,31,Alavés,Home,0,Osasuna,1,0
+613,Spain,2019-2020,31,Osasuna,Away,1,Alavés,0,3
+614,Spain,2019-2020,31,Real Madrid,Home,2,Majorque,0,3
+615,Spain,2019-2020,31,Majorque,Away,0,Real Madrid,2,0
+616,Spain,2019-2020,31,Eibar,Home,1,Valence CF,0,3
+617,Spain,2019-2020,31,Valence CF,Away,0,Eibar,1,0
+618,Spain,2019-2020,31,Betis Séville,Home,1,Espanyol Barcelone,0,3
+619,Spain,2019-2020,31,Espanyol Barcelone,Away,0,Betis Séville,1,0
+620,Spain,2019-2020,32,Séville FC,Home,1,Valladolid,1,1
+621,Spain,2019-2020,32,Valladolid,Away,1,Séville FC,1,1
+622,Spain,2019-2020,32,Athletic Bilbao,Home,3,Majorque,1,3
+623,Spain,2019-2020,32,Majorque,Away,1,Athletic Bilbao,3,0
+624,Spain,2019-2020,32,Celta Vigo,Home,2,FC Barcelone,2,1
+625,Spain,2019-2020,32,FC Barcelone,Away,2,Celta Vigo,2,1
+626,Spain,2019-2020,32,Osasuna,Home,2,Leganés,1,3
+627,Spain,2019-2020,32,Leganés,Away,1,Osasuna,2,0
+628,Spain,2019-2020,32,Atlético de Madrid,Home,2,Alavés,1,3
+629,Spain,2019-2020,32,Alavés,Away,1,Atlético de Madrid,2,0
+630,Spain,2019-2020,32,Levante,Home,4,Betis Séville,2,3
+631,Spain,2019-2020,32,Betis Séville,Away,2,Levante,4,0
+632,Spain,2019-2020,32,Villarreal,Home,2,Valence CF,0,3
+633,Spain,2019-2020,32,Valence CF,Away,0,Villarreal,2,0
+634,Spain,2019-2020,32,Grenade CF,Home,1,Eibar,2,0
+635,Spain,2019-2020,32,Eibar,Away,2,Grenade CF,1,3
+636,Spain,2019-2020,32,Espanyol Barcelone,Home,0,Real Madrid,1,0
+637,Spain,2019-2020,32,Real Madrid,Away,1,Espanyol Barcelone,0,3
+638,Spain,2019-2020,32,Getafe,Home,2,Real Sociedad,1,3
+639,Spain,2019-2020,32,Real Sociedad,Away,1,Getafe,2,0
+640,Spain,2019-2020,33,Majorque,Home,5,Celta Vigo,1,3
+641,Spain,2019-2020,33,Celta Vigo,Away,1,Majorque,5,0
+642,Spain,2019-2020,33,Leganés,Home,0,Séville FC,3,0
+643,Spain,2019-2020,33,Séville FC,Away,3,Leganés,0,3
+644,Spain,2019-2020,33,FC Barcelone,Home,2,Atlético de Madrid,2,1
+645,Spain,2019-2020,33,Atlético de Madrid,Away,2,FC Barcelone,2,1
+646,Spain,2019-2020,33,Valence CF,Home,0,Athletic Bilbao,2,0
+647,Spain,2019-2020,33,Athletic Bilbao,Away,2,Valence CF,0,3
+648,Spain,2019-2020,33,Alavés,Home,0,Grenade CF,2,0
+649,Spain,2019-2020,33,Grenade CF,Away,2,Alavés,0,3
+650,Spain,2019-2020,33,Betis Séville,Home,0,Villarreal,2,0
+651,Spain,2019-2020,33,Villarreal,Away,2,Betis Séville,0,3
+652,Spain,2019-2020,33,Valladolid,Home,0,Levante,0,1
+653,Spain,2019-2020,33,Levante,Away,0,Valladolid,0,1
+654,Spain,2019-2020,33,Real Sociedad,Home,2,Espanyol Barcelone,1,3
+655,Spain,2019-2020,33,Espanyol Barcelone,Away,1,Real Sociedad,2,0
+656,Spain,2019-2020,33,Eibar,Home,0,Osasuna,2,0
+657,Spain,2019-2020,33,Osasuna,Away,2,Eibar,0,3
+658,Spain,2019-2020,33,Real Madrid,Home,1,Getafe,0,3
+659,Spain,2019-2020,33,Getafe,Away,0,Real Madrid,1,0
+660,Spain,2019-2020,34,Atlético de Madrid,Home,3,Majorque,0,3
+661,Spain,2019-2020,34,Majorque,Away,0,Atlético de Madrid,3,0
+662,Spain,2019-2020,34,Celta Vigo,Home,1,Betis Séville,1,1
+663,Spain,2019-2020,34,Betis Séville,Away,1,Celta Vigo,1,1
+664,Spain,2019-2020,34,Valladolid,Home,1,Alavés,0,3
+665,Spain,2019-2020,34,Alavés,Away,0,Valladolid,1,0
+666,Spain,2019-2020,34,Grenade CF,Home,2,Valence CF,2,1
+667,Spain,2019-2020,34,Valence CF,Away,2,Grenade CF,2,1
+668,Spain,2019-2020,34,Athletic Bilbao,Home,0,Real Madrid,1,0
+669,Spain,2019-2020,34,Real Madrid,Away,1,Athletic Bilbao,0,3
+670,Spain,2019-2020,34,Espanyol Barcelone,Home,0,Leganés,1,0
+671,Spain,2019-2020,34,Leganés,Away,1,Espanyol Barcelone,0,3
+672,Spain,2019-2020,34,Osasuna,Home,0,Getafe,0,1
+673,Spain,2019-2020,34,Getafe,Away,0,Osasuna,0,1
+674,Spain,2019-2020,34,Villarreal,Home,1,FC Barcelone,4,0
+675,Spain,2019-2020,34,FC Barcelone,Away,4,Villarreal,1,3
+676,Spain,2019-2020,34,Levante,Home,1,Real Sociedad,1,1
+677,Spain,2019-2020,34,Real Sociedad,Away,1,Levante,1,1
+678,Spain,2019-2020,34,Séville FC,Home,1,Eibar,0,3
+679,Spain,2019-2020,34,Eibar,Away,0,Séville FC,1,0
+680,Spain,2019-2020,35,Valence CF,Home,2,Valladolid,1,3
+681,Spain,2019-2020,35,Valladolid,Away,1,Valence CF,2,0
+682,Spain,2019-2020,35,Celta Vigo,Home,1,Atlético de Madrid,1,1
+683,Spain,2019-2020,35,Atlético de Madrid,Away,1,Celta Vigo,1,1
+684,Spain,2019-2020,35,Getafe,Home,1,Villarreal,3,0
+685,Spain,2019-2020,35,Villarreal,Away,3,Getafe,1,3
+686,Spain,2019-2020,35,Betis Séville,Home,3,Osasuna,0,3
+687,Spain,2019-2020,35,Osasuna,Away,0,Betis Séville,3,0
+688,Spain,2019-2020,35,FC Barcelone,Home,1,Espanyol Barcelone,0,3
+689,Spain,2019-2020,35,Espanyol Barcelone,Away,0,FC Barcelone,1,0
+690,Spain,2019-2020,35,Majorque,Home,2,Levante,0,3
+691,Spain,2019-2020,35,Levante,Away,0,Majorque,2,0
+692,Spain,2019-2020,35,Eibar,Home,0,Leganés,0,1
+693,Spain,2019-2020,35,Leganés,Away,0,Eibar,0,1
+694,Spain,2019-2020,35,Athletic Bilbao,Home,1,Séville FC,2,0
+695,Spain,2019-2020,35,Séville FC,Away,2,Athletic Bilbao,1,3
+696,Spain,2019-2020,35,Real Sociedad,Home,2,Grenade CF,3,0
+697,Spain,2019-2020,35,Grenade CF,Away,3,Real Sociedad,2,3
+698,Spain,2019-2020,35,Real Madrid,Home,2,Alavés,0,3
+699,Spain,2019-2020,35,Alavés,Away,0,Real Madrid,2,0
+700,Spain,2019-2020,36,Osasuna,Home,2,Celta Vigo,1,3
+701,Spain,2019-2020,36,Celta Vigo,Away,1,Osasuna,2,0
+702,Spain,2019-2020,36,Valladolid,Home,0,FC Barcelone,1,0
+703,Spain,2019-2020,36,FC Barcelone,Away,1,Valladolid,0,3
+704,Spain,2019-2020,36,Atlético de Madrid,Home,1,Betis Séville,0,3
+705,Spain,2019-2020,36,Betis Séville,Away,0,Atlético de Madrid,1,0
+706,Spain,2019-2020,36,Espanyol Barcelone,Home,0,Eibar,2,0
+707,Spain,2019-2020,36,Eibar,Away,2,Espanyol Barcelone,0,3
+708,Spain,2019-2020,36,Levante,Home,1,Athletic Bilbao,2,0
+709,Spain,2019-2020,36,Athletic Bilbao,Away,2,Levante,1,3
+710,Spain,2019-2020,36,Leganés,Home,1,Valence CF,0,3
+711,Spain,2019-2020,36,Valence CF,Away,0,Leganés,1,0
+712,Spain,2019-2020,36,Séville FC,Home,2,Majorque,0,3
+713,Spain,2019-2020,36,Majorque,Away,0,Séville FC,2,0
+714,Spain,2019-2020,36,Villarreal,Home,1,Real Sociedad,2,0
+715,Spain,2019-2020,36,Real Sociedad,Away,2,Villarreal,1,3
+716,Spain,2019-2020,36,Alavés,Home,0,Getafe,0,1
+717,Spain,2019-2020,36,Getafe,Away,0,Alavés,0,1
+718,Spain,2019-2020,36,Grenade CF,Home,1,Real Madrid,2,0
+719,Spain,2019-2020,36,Real Madrid,Away,2,Grenade CF,1,3
+720,Spain,2019-2020,37,Eibar,Home,3,Valladolid,1,3
+721,Spain,2019-2020,37,Valladolid,Away,1,Eibar,3,0
+722,Spain,2019-2020,37,Real Madrid,Home,2,Villarreal,1,3
+723,Spain,2019-2020,37,Villarreal,Away,1,Real Madrid,2,0
+724,Spain,2019-2020,37,FC Barcelone,Home,1,Osasuna,2,0
+725,Spain,2019-2020,37,Osasuna,Away,2,FC Barcelone,1,3
+726,Spain,2019-2020,37,Getafe,Home,0,Atlético de Madrid,2,0
+727,Spain,2019-2020,37,Atlético de Madrid,Away,2,Getafe,0,3
+728,Spain,2019-2020,37,Real Sociedad,Home,0,Séville FC,0,1
+729,Spain,2019-2020,37,Séville FC,Away,0,Real Sociedad,0,1
+730,Spain,2019-2020,37,Athletic Bilbao,Home,0,Leganés,2,0
+731,Spain,2019-2020,37,Leganés,Away,2,Athletic Bilbao,0,3
+732,Spain,2019-2020,37,Valence CF,Home,1,Espanyol Barcelone,0,3
+733,Spain,2019-2020,37,Espanyol Barcelone,Away,0,Valence CF,1,0
+734,Spain,2019-2020,37,Majorque,Home,1,Grenade CF,2,0
+735,Spain,2019-2020,37,Grenade CF,Away,2,Majorque,1,3
+736,Spain,2019-2020,37,Celta Vigo,Home,2,Levante,3,0
+737,Spain,2019-2020,37,Levante,Away,3,Celta Vigo,2,3
+738,Spain,2019-2020,37,Betis Séville,Home,1,Alavés,2,0
+739,Spain,2019-2020,37,Alavés,Away,2,Betis Séville,1,3
+740,Spain,2019-2020,38,Alavés,Home,0,FC Barcelone,5,0
+741,Spain,2019-2020,38,FC Barcelone,Away,5,Alavés,0,3
+742,Spain,2019-2020,38,Villarreal,Home,4,Eibar,0,3
+743,Spain,2019-2020,38,Eibar,Away,0,Villarreal,4,0
+744,Spain,2019-2020,38,Valladolid,Home,2,Betis Séville,0,3
+745,Spain,2019-2020,38,Betis Séville,Away,0,Valladolid,2,0
+746,Spain,2019-2020,38,Leganés,Home,2,Real Madrid,2,1
+747,Spain,2019-2020,38,Real Madrid,Away,2,Leganés,2,1
+748,Spain,2019-2020,38,Atlético de Madrid,Home,1,Real Sociedad,1,1
+749,Spain,2019-2020,38,Real Sociedad,Away,1,Atlético de Madrid,1,1
+750,Spain,2019-2020,38,Séville FC,Home,1,Valence CF,0,3
+751,Spain,2019-2020,38,Valence CF,Away,0,Séville FC,1,0
+752,Spain,2019-2020,38,Levante,Home,1,Getafe,0,3
+753,Spain,2019-2020,38,Getafe,Away,0,Levante,1,0
+754,Spain,2019-2020,38,Grenade CF,Home,4,Athletic Bilbao,0,3
+755,Spain,2019-2020,38,Athletic Bilbao,Away,0,Grenade CF,4,0
+756,Spain,2019-2020,38,Osasuna,Home,2,Majorque,2,1
+757,Spain,2019-2020,38,Majorque,Away,2,Osasuna,2,1
+758,Spain,2019-2020,38,Espanyol Barcelone,Home,0,Celta Vigo,0,1
+759,Spain,2019-2020,38,Celta Vigo,Away,0,Espanyol Barcelone,0,1

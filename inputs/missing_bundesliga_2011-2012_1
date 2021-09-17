@@ -1,0 +1,19 @@
+,country,season,leg,team,play,goals_scored,opponent,goals_conceded,nb_points
+0,Germany,2011-2012,1,Borussia Dortmund,Home,3,Hambourg SV,1,3
+1,Germany,2011-2012,1,Hambourg SV,Away,1,Borussia Dortmund,3,0
+2,Germany,2011-2012,1,VfB Stuttgart,Home,3,Schalke 04,0,3
+3,Germany,2011-2012,1,Schalke 04,Away,0,VfB Stuttgart,3,0
+4,Germany,2011-2012,1,Werder Brême,Home,2,Kaiserslautern,0,3
+5,Germany,2011-2012,1,Kaiserslautern,Away,0,Werder Brême,2,0
+6,Germany,2011-2012,1,FC Cologne,Home,0,Wolfsburg,3,0
+7,Germany,2011-2012,1,Wolfsburg,Away,3,FC Cologne,0,3
+8,Germany,2011-2012,1,Augsbourg,Home,2,Fribourg,2,1
+9,Germany,2011-2012,1,Fribourg,Away,2,Augsbourg,2,1
+10,Germany,2011-2012,1,Hanovre 96,Home,2,Hoffenheim,1,3
+11,Germany,2011-2012,1,Hoffenheim,Away,1,Hanovre 96,2,0
+12,Germany,2011-2012,1,Hertha Berlin,Home,0,Nuremberg,1,0
+13,Germany,2011-2012,1,Nuremberg,Away,1,Hertha Berlin,0,3
+14,Germany,2011-2012,1,Mayence,Home,2,Bayer Leverkusen,0,3
+15,Germany,2011-2012,1,Bayer Leverkusen,Away,0,Mayence,2,0
+16,Germany,2011-2012,1,Bayern Munich,Home,0,Borussia M'Gladbach,1,0
+17,Germany,2011-2012,1,Borussia M'Gladbach,Away,1,Bayern Munich,0,3

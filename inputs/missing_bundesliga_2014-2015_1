@@ -1,0 +1,19 @@
+,country,season,leg,team,play,goals_scored,opponent,goals_conceded,nb_points
+0,Germany,2014-2015,1,Bayern Munich,Home,2,Wolfsburg,1,3
+1,Germany,2014-2015,1,Wolfsburg,Away,1,Bayern Munich,2,0
+2,Germany,2014-2015,1,Eintracht Francfort,Home,1,Fribourg,0,3
+3,Germany,2014-2015,1,Fribourg,Away,0,Eintracht Francfort,1,0
+4,Germany,2014-2015,1,Hoffenheim,Home,2,Augsbourg,0,3
+5,Germany,2014-2015,1,Augsbourg,Away,0,Hoffenheim,2,0
+6,Germany,2014-2015,1,Hanovre 96,Home,2,Schalke 04,1,3
+7,Germany,2014-2015,1,Schalke 04,Away,1,Hanovre 96,2,0
+8,Germany,2014-2015,1,Hertha Berlin,Home,2,Werder Brême,2,1
+9,Germany,2014-2015,1,Werder Brême,Away,2,Hertha Berlin,2,1
+10,Germany,2014-2015,1,FC Cologne,Home,0,Hambourg SV,0,1
+11,Germany,2014-2015,1,Hambourg SV,Away,0,FC Cologne,0,1
+12,Germany,2014-2015,1,Borussia Dortmund,Home,0,Bayer Leverkusen,2,0
+13,Germany,2014-2015,1,Bayer Leverkusen,Away,2,Borussia Dortmund,0,3
+14,Germany,2014-2015,1,Paderborn,Home,2,Mayence,2,1
+15,Germany,2014-2015,1,Mayence,Away,2,Paderborn,2,1
+16,Germany,2014-2015,1,Borussia M'Gladbach,Home,1,VfB Stuttgart,1,1
+17,Germany,2014-2015,1,VfB Stuttgart,Away,1,Borussia M'Gladbach,1,1

@@ -1,0 +1,613 @@
+,country,season,leg,team,play,goals_scored,opponent,goals_conceded,nb_points
+0,Germany,2019-2020,1,Bayern Munich,Home,2,Hertha Berlin,2,1
+1,Germany,2019-2020,1,Hertha Berlin,Away,2,Bayern Munich,2,1
+2,Germany,2019-2020,1,Fribourg,Home,3,Mayence,0,3
+3,Germany,2019-2020,1,Mayence,Away,0,Fribourg,3,0
+4,Germany,2019-2020,1,Werder Brême,Home,1,Fortuna Düsseldorf,3,0
+5,Germany,2019-2020,1,Fortuna Düsseldorf,Away,3,Werder Brême,1,3
+6,Germany,2019-2020,1,Wolfsburg,Home,2,FC Cologne,1,3
+7,Germany,2019-2020,1,FC Cologne,Away,1,Wolfsburg,2,0
+8,Germany,2019-2020,1,Bayer Leverkusen,Home,3,Paderborn,2,3
+9,Germany,2019-2020,1,Paderborn,Away,2,Bayer Leverkusen,3,0
+10,Germany,2019-2020,1,Borussia Dortmund,Home,5,Augsbourg,1,3
+11,Germany,2019-2020,1,Augsbourg,Away,1,Borussia Dortmund,5,0
+12,Germany,2019-2020,1,Borussia M'Gladbach,Home,0,Schalke 04,0,1
+13,Germany,2019-2020,1,Schalke 04,Away,0,Borussia M'Gladbach,0,1
+14,Germany,2019-2020,1,Eintracht Francfort,Home,1,Hoffenheim,0,3
+15,Germany,2019-2020,1,Hoffenheim,Away,0,Eintracht Francfort,1,0
+16,Germany,2019-2020,1,Union Berlin,Home,0,RB Leipzig,4,0
+17,Germany,2019-2020,1,RB Leipzig,Away,4,Union Berlin,0,3
+18,Germany,2019-2020,2,FC Cologne,Home,1,Borussia Dortmund,3,0
+19,Germany,2019-2020,2,Borussia Dortmund,Away,3,FC Cologne,1,3
+20,Germany,2019-2020,2,Paderborn,Home,1,Fribourg,3,0
+21,Germany,2019-2020,2,Fribourg,Away,3,Paderborn,1,3
+22,Germany,2019-2020,2,Fortuna Düsseldorf,Home,1,Bayer Leverkusen,3,0
+23,Germany,2019-2020,2,Bayer Leverkusen,Away,3,Fortuna Düsseldorf,1,3
+24,Germany,2019-2020,2,Mayence,Home,1,Borussia M'Gladbach,3,0
+25,Germany,2019-2020,2,Borussia M'Gladbach,Away,3,Mayence,1,3
+26,Germany,2019-2020,2,Hoffenheim,Home,3,Werder Brême,2,3
+27,Germany,2019-2020,2,Werder Brême,Away,2,Hoffenheim,3,0
+28,Germany,2019-2020,2,Augsbourg,Home,1,Union Berlin,1,1
+29,Germany,2019-2020,2,Union Berlin,Away,1,Augsbourg,1,1
+30,Germany,2019-2020,2,Schalke 04,Home,0,Bayern Munich,3,0
+31,Germany,2019-2020,2,Bayern Munich,Away,3,Schalke 04,0,3
+32,Germany,2019-2020,2,RB Leipzig,Home,2,Eintracht Francfort,1,3
+33,Germany,2019-2020,2,Eintracht Francfort,Away,1,RB Leipzig,2,0
+34,Germany,2019-2020,2,Hertha Berlin,Home,0,Wolfsburg,3,0
+35,Germany,2019-2020,2,Wolfsburg,Away,3,Hertha Berlin,0,3
+36,Germany,2019-2020,3,Borussia M'Gladbach,Home,1,RB Leipzig,3,0
+37,Germany,2019-2020,3,RB Leipzig,Away,3,Borussia M'Gladbach,1,3
+38,Germany,2019-2020,3,Fribourg,Home,1,FC Cologne,2,0
+39,Germany,2019-2020,3,FC Cologne,Away,2,Fribourg,1,3
+40,Germany,2019-2020,3,Wolfsburg,Home,1,Paderborn,1,1
+41,Germany,2019-2020,3,Paderborn,Away,1,Wolfsburg,1,1
+42,Germany,2019-2020,3,Bayer Leverkusen,Home,0,Hoffenheim,0,1
+43,Germany,2019-2020,3,Hoffenheim,Away,0,Bayer Leverkusen,0,1
+44,Germany,2019-2020,3,Bayern Munich,Home,6,Mayence,1,3
+45,Germany,2019-2020,3,Mayence,Away,1,Bayern Munich,6,0
+46,Germany,2019-2020,3,Schalke 04,Home,3,Hertha Berlin,0,3
+47,Germany,2019-2020,3,Hertha Berlin,Away,0,Schalke 04,3,0
+48,Germany,2019-2020,3,Union Berlin,Home,3,Borussia Dortmund,1,3
+49,Germany,2019-2020,3,Borussia Dortmund,Away,1,Union Berlin,3,0
+50,Germany,2019-2020,3,Werder Brême,Home,3,Augsbourg,2,3
+51,Germany,2019-2020,3,Augsbourg,Away,2,Werder Brême,3,0
+52,Germany,2019-2020,3,Eintracht Francfort,Home,2,Fortuna Düsseldorf,1,3
+53,Germany,2019-2020,3,Fortuna Düsseldorf,Away,1,Eintracht Francfort,2,0
+54,Germany,2019-2020,4,Fortuna Düsseldorf,Home,1,Wolfsburg,1,1
+55,Germany,2019-2020,4,Wolfsburg,Away,1,Fortuna Düsseldorf,1,1
+56,Germany,2019-2020,4,Borussia Dortmund,Home,4,Bayer Leverkusen,0,3
+57,Germany,2019-2020,4,Bayer Leverkusen,Away,0,Borussia Dortmund,4,0
+58,Germany,2019-2020,4,Augsbourg,Home,2,Eintracht Francfort,1,3
+59,Germany,2019-2020,4,Eintracht Francfort,Away,1,Augsbourg,2,0
+60,Germany,2019-2020,4,FC Cologne,Home,0,Borussia M'Gladbach,1,0
+61,Germany,2019-2020,4,Borussia M'Gladbach,Away,1,FC Cologne,0,3
+62,Germany,2019-2020,4,Union Berlin,Home,1,Werder Brême,2,0
+63,Germany,2019-2020,4,Werder Brême,Away,2,Union Berlin,1,3
+64,Germany,2019-2020,4,Mayence,Home,2,Hertha Berlin,1,3
+65,Germany,2019-2020,4,Hertha Berlin,Away,1,Mayence,2,0
+66,Germany,2019-2020,4,RB Leipzig,Home,1,Bayern Munich,1,1
+67,Germany,2019-2020,4,Bayern Munich,Away,1,RB Leipzig,1,1
+68,Germany,2019-2020,4,Hoffenheim,Home,0,Fribourg,3,0
+69,Germany,2019-2020,4,Fribourg,Away,3,Hoffenheim,0,3
+70,Germany,2019-2020,4,Paderborn,Home,1,Schalke 04,5,0
+71,Germany,2019-2020,4,Schalke 04,Away,5,Paderborn,1,3
+72,Germany,2019-2020,5,Schalke 04,Home,2,Mayence,1,3
+73,Germany,2019-2020,5,Mayence,Away,1,Schalke 04,2,0
+74,Germany,2019-2020,5,Fribourg,Home,1,Augsbourg,1,1
+75,Germany,2019-2020,5,Augsbourg,Away,1,Fribourg,1,1
+76,Germany,2019-2020,5,Bayern Munich,Home,4,FC Cologne,0,3
+77,Germany,2019-2020,5,FC Cologne,Away,0,Bayern Munich,4,0
+78,Germany,2019-2020,5,Bayer Leverkusen,Home,2,Union Berlin,0,3
+79,Germany,2019-2020,5,Union Berlin,Away,0,Bayer Leverkusen,2,0
+80,Germany,2019-2020,5,Hertha Berlin,Home,2,Paderborn,1,3
+81,Germany,2019-2020,5,Paderborn,Away,1,Hertha Berlin,2,0
+82,Germany,2019-2020,5,Werder Brême,Home,0,RB Leipzig,3,0
+83,Germany,2019-2020,5,RB Leipzig,Away,3,Werder Brême,0,3
+84,Germany,2019-2020,5,Borussia M'Gladbach,Home,2,Fortuna Düsseldorf,1,3
+85,Germany,2019-2020,5,Fortuna Düsseldorf,Away,1,Borussia M'Gladbach,2,0
+86,Germany,2019-2020,5,Eintracht Francfort,Home,2,Borussia Dortmund,2,1
+87,Germany,2019-2020,5,Borussia Dortmund,Away,2,Eintracht Francfort,2,1
+88,Germany,2019-2020,5,Wolfsburg,Home,1,Hoffenheim,1,1
+89,Germany,2019-2020,5,Hoffenheim,Away,1,Wolfsburg,1,1
+90,Germany,2019-2020,6,Union Berlin,Home,1,Eintracht Francfort,2,0
+91,Germany,2019-2020,6,Eintracht Francfort,Away,2,Union Berlin,1,3
+92,Germany,2019-2020,6,RB Leipzig,Home,1,Schalke 04,3,0
+93,Germany,2019-2020,6,Schalke 04,Away,3,RB Leipzig,1,3
+94,Germany,2019-2020,6,Paderborn,Home,2,Bayern Munich,3,0
+95,Germany,2019-2020,6,Bayern Munich,Away,3,Paderborn,2,3
+96,Germany,2019-2020,6,Hoffenheim,Home,0,Borussia M'Gladbach,3,0
+97,Germany,2019-2020,6,Borussia M'Gladbach,Away,3,Hoffenheim,0,3
+98,Germany,2019-2020,6,Augsbourg,Home,0,Bayer Leverkusen,3,0
+99,Germany,2019-2020,6,Bayer Leverkusen,Away,3,Augsbourg,0,3
+100,Germany,2019-2020,6,Mayence,Home,0,Wolfsburg,1,0
+101,Germany,2019-2020,6,Wolfsburg,Away,1,Mayence,0,3
+102,Germany,2019-2020,6,Borussia Dortmund,Home,2,Werder Brême,2,1
+103,Germany,2019-2020,6,Werder Brême,Away,2,Borussia Dortmund,2,1
+104,Germany,2019-2020,6,Fortuna Düsseldorf,Home,1,Fribourg,2,0
+105,Germany,2019-2020,6,Fribourg,Away,2,Fortuna Düsseldorf,1,3
+106,Germany,2019-2020,6,FC Cologne,Home,0,Hertha Berlin,4,0
+107,Germany,2019-2020,6,Hertha Berlin,Away,4,FC Cologne,0,3
+108,Germany,2019-2020,7,Hertha Berlin,Home,3,Fortuna Düsseldorf,1,3
+109,Germany,2019-2020,7,Fortuna Düsseldorf,Away,1,Hertha Berlin,3,0
+110,Germany,2019-2020,7,Bayern Munich,Home,1,Hoffenheim,2,0
+111,Germany,2019-2020,7,Hoffenheim,Away,2,Bayern Munich,1,3
+112,Germany,2019-2020,7,Bayer Leverkusen,Home,1,RB Leipzig,1,1
+113,Germany,2019-2020,7,RB Leipzig,Away,1,Bayer Leverkusen,1,1
+114,Germany,2019-2020,7,Fribourg,Home,2,Borussia Dortmund,2,1
+115,Germany,2019-2020,7,Borussia Dortmund,Away,2,Fribourg,2,1
+116,Germany,2019-2020,7,Paderborn,Home,1,Mayence,2,0
+117,Germany,2019-2020,7,Mayence,Away,2,Paderborn,1,3
+118,Germany,2019-2020,7,Schalke 04,Home,1,FC Cologne,1,1
+119,Germany,2019-2020,7,FC Cologne,Away,1,Schalke 04,1,1
+120,Germany,2019-2020,7,Borussia M'Gladbach,Home,5,Augsbourg,1,3
+121,Germany,2019-2020,7,Augsbourg,Away,1,Borussia M'Gladbach,5,0
+122,Germany,2019-2020,7,Wolfsburg,Home,1,Union Berlin,0,3
+123,Germany,2019-2020,7,Union Berlin,Away,0,Wolfsburg,1,0
+124,Germany,2019-2020,7,Eintracht Francfort,Home,2,Werder Brême,2,1
+125,Germany,2019-2020,7,Werder Brême,Away,2,Eintracht Francfort,2,1
+126,Germany,2019-2020,8,Eintracht Francfort,Home,3,Bayer Leverkusen,0,3
+127,Germany,2019-2020,8,Bayer Leverkusen,Away,0,Eintracht Francfort,3,0
+128,Germany,2019-2020,8,RB Leipzig,Home,1,Wolfsburg,1,1
+129,Germany,2019-2020,8,Wolfsburg,Away,1,RB Leipzig,1,1
+130,Germany,2019-2020,8,Augsbourg,Home,2,Bayern Munich,2,1
+131,Germany,2019-2020,8,Bayern Munich,Away,2,Augsbourg,2,1
+132,Germany,2019-2020,8,Union Berlin,Home,2,Fribourg,0,3
+133,Germany,2019-2020,8,Fribourg,Away,0,Union Berlin,2,0
+134,Germany,2019-2020,8,Werder Brême,Home,1,Hertha Berlin,1,1
+135,Germany,2019-2020,8,Hertha Berlin,Away,1,Werder Brême,1,1
+136,Germany,2019-2020,8,Fortuna Düsseldorf,Home,1,Mayence,0,3
+137,Germany,2019-2020,8,Mayence,Away,0,Fortuna Düsseldorf,1,0
+138,Germany,2019-2020,8,Borussia Dortmund,Home,1,Borussia M'Gladbach,0,3
+139,Germany,2019-2020,8,Borussia M'Gladbach,Away,0,Borussia Dortmund,1,0
+140,Germany,2019-2020,8,FC Cologne,Home,3,Paderborn,0,3
+141,Germany,2019-2020,8,Paderborn,Away,0,FC Cologne,3,0
+142,Germany,2019-2020,8,Hoffenheim,Home,2,Schalke 04,0,3
+143,Germany,2019-2020,8,Schalke 04,Away,0,Hoffenheim,2,0
+144,Germany,2019-2020,9,Mayence,Home,3,FC Cologne,1,3
+145,Germany,2019-2020,9,FC Cologne,Away,1,Mayence,3,0
+146,Germany,2019-2020,9,Bayern Munich,Home,2,Union Berlin,1,3
+147,Germany,2019-2020,9,Union Berlin,Away,1,Bayern Munich,2,0
+148,Germany,2019-2020,9,Schalke 04,Home,0,Borussia Dortmund,0,1
+149,Germany,2019-2020,9,Borussia Dortmund,Away,0,Schalke 04,0,1
+150,Germany,2019-2020,9,Fribourg,Home,2,RB Leipzig,1,3
+151,Germany,2019-2020,9,RB Leipzig,Away,1,Fribourg,2,0
+152,Germany,2019-2020,9,Hertha Berlin,Home,2,Hoffenheim,3,0
+153,Germany,2019-2020,9,Hoffenheim,Away,3,Hertha Berlin,2,3
+154,Germany,2019-2020,9,Paderborn,Home,2,Fortuna Düsseldorf,0,3
+155,Germany,2019-2020,9,Fortuna Düsseldorf,Away,0,Paderborn,2,0
+156,Germany,2019-2020,9,Bayer Leverkusen,Home,2,Werder Brême,2,1
+157,Germany,2019-2020,9,Werder Brême,Away,2,Bayer Leverkusen,2,1
+158,Germany,2019-2020,9,Wolfsburg,Home,0,Augsbourg,0,1
+159,Germany,2019-2020,9,Augsbourg,Away,0,Wolfsburg,0,1
+160,Germany,2019-2020,9,Borussia M'Gladbach,Home,4,Eintracht Francfort,2,3
+161,Germany,2019-2020,9,Eintracht Francfort,Away,2,Borussia M'Gladbach,4,0
+162,Germany,2019-2020,10,Hoffenheim,Home,3,Paderborn,0,3
+163,Germany,2019-2020,10,Paderborn,Away,0,Hoffenheim,3,0
+164,Germany,2019-2020,10,Bayer Leverkusen,Home,1,Borussia M'Gladbach,2,0
+165,Germany,2019-2020,10,Borussia M'Gladbach,Away,2,Bayer Leverkusen,1,3
+166,Germany,2019-2020,10,Eintracht Francfort,Home,5,Bayern Munich,1,3
+167,Germany,2019-2020,10,Bayern Munich,Away,1,Eintracht Francfort,5,0
+168,Germany,2019-2020,10,Werder Brême,Home,2,Fribourg,2,1
+169,Germany,2019-2020,10,Fribourg,Away,2,Werder Brême,2,1
+170,Germany,2019-2020,10,Borussia Dortmund,Home,3,Wolfsburg,0,3
+171,Germany,2019-2020,10,Wolfsburg,Away,0,Borussia Dortmund,3,0
+172,Germany,2019-2020,10,RB Leipzig,Home,8,Mayence,0,3
+173,Germany,2019-2020,10,Mayence,Away,0,RB Leipzig,8,0
+174,Germany,2019-2020,10,Union Berlin,Home,1,Hertha Berlin,0,3
+175,Germany,2019-2020,10,Hertha Berlin,Away,0,Union Berlin,1,0
+176,Germany,2019-2020,10,Fortuna Düsseldorf,Home,2,FC Cologne,0,3
+177,Germany,2019-2020,10,FC Cologne,Away,0,Fortuna Düsseldorf,2,0
+178,Germany,2019-2020,10,Augsbourg,Home,2,Schalke 04,3,0
+179,Germany,2019-2020,10,Schalke 04,Away,3,Augsbourg,2,3
+180,Germany,2019-2020,11,FC Cologne,Home,1,Hoffenheim,2,0
+181,Germany,2019-2020,11,Hoffenheim,Away,2,FC Cologne,1,3
+182,Germany,2019-2020,11,Hertha Berlin,Home,2,RB Leipzig,4,0
+183,Germany,2019-2020,11,RB Leipzig,Away,4,Hertha Berlin,2,3
+184,Germany,2019-2020,11,Schalke 04,Home,3,Fortuna Düsseldorf,3,1
+185,Germany,2019-2020,11,Fortuna Düsseldorf,Away,3,Schalke 04,3,1
+186,Germany,2019-2020,11,Mayence,Home,2,Union Berlin,3,0
+187,Germany,2019-2020,11,Union Berlin,Away,3,Mayence,2,3
+188,Germany,2019-2020,11,Paderborn,Home,0,Augsbourg,1,0
+189,Germany,2019-2020,11,Augsbourg,Away,1,Paderborn,0,3
+190,Germany,2019-2020,11,Bayern Munich,Home,4,Borussia Dortmund,0,3
+191,Germany,2019-2020,11,Borussia Dortmund,Away,0,Bayern Munich,4,0
+192,Germany,2019-2020,11,Borussia M'Gladbach,Home,3,Werder Brême,1,3
+193,Germany,2019-2020,11,Werder Brême,Away,1,Borussia M'Gladbach,3,0
+194,Germany,2019-2020,11,Wolfsburg,Home,0,Bayer Leverkusen,2,0
+195,Germany,2019-2020,11,Bayer Leverkusen,Away,2,Wolfsburg,0,3
+196,Germany,2019-2020,11,Fribourg,Home,1,Eintracht Francfort,0,3
+197,Germany,2019-2020,11,Eintracht Francfort,Away,0,Fribourg,1,0
+198,Germany,2019-2020,12,Borussia Dortmund,Home,3,Paderborn,3,1
+199,Germany,2019-2020,12,Paderborn,Away,3,Borussia Dortmund,3,1
+200,Germany,2019-2020,12,Union Berlin,Home,2,Borussia M'Gladbach,0,3
+201,Germany,2019-2020,12,Borussia M'Gladbach,Away,0,Union Berlin,2,0
+202,Germany,2019-2020,12,Fortuna Düsseldorf,Home,0,Bayern Munich,4,0
+203,Germany,2019-2020,12,Bayern Munich,Away,4,Fortuna Düsseldorf,0,3
+204,Germany,2019-2020,12,Bayer Leverkusen,Home,1,Fribourg,1,1
+205,Germany,2019-2020,12,Fribourg,Away,1,Bayer Leverkusen,1,1
+206,Germany,2019-2020,12,Werder Brême,Home,1,Schalke 04,2,0
+207,Germany,2019-2020,12,Schalke 04,Away,2,Werder Brême,1,3
+208,Germany,2019-2020,12,Eintracht Francfort,Home,0,Wolfsburg,2,0
+209,Germany,2019-2020,12,Wolfsburg,Away,2,Eintracht Francfort,0,3
+210,Germany,2019-2020,12,RB Leipzig,Home,4,FC Cologne,1,3
+211,Germany,2019-2020,12,FC Cologne,Away,1,RB Leipzig,4,0
+212,Germany,2019-2020,12,Augsbourg,Home,4,Hertha Berlin,0,3
+213,Germany,2019-2020,12,Hertha Berlin,Away,0,Augsbourg,4,0
+214,Germany,2019-2020,12,Hoffenheim,Home,1,Mayence,5,0
+215,Germany,2019-2020,12,Mayence,Away,5,Hoffenheim,1,3
+216,Germany,2019-2020,13,Schalke 04,Home,2,Union Berlin,1,3
+217,Germany,2019-2020,13,Union Berlin,Away,1,Schalke 04,2,0
+218,Germany,2019-2020,13,Paderborn,Home,2,RB Leipzig,3,0
+219,Germany,2019-2020,13,RB Leipzig,Away,3,Paderborn,2,3
+220,Germany,2019-2020,13,Hertha Berlin,Home,1,Borussia Dortmund,2,0
+221,Germany,2019-2020,13,Borussia Dortmund,Away,2,Hertha Berlin,1,3
+222,Germany,2019-2020,13,Hoffenheim,Home,1,Fortuna Düsseldorf,1,1
+223,Germany,2019-2020,13,Fortuna Düsseldorf,Away,1,Hoffenheim,1,1
+224,Germany,2019-2020,13,FC Cologne,Home,1,Augsbourg,1,1
+225,Germany,2019-2020,13,Augsbourg,Away,1,FC Cologne,1,1
+226,Germany,2019-2020,13,Bayern Munich,Home,1,Bayer Leverkusen,2,0
+227,Germany,2019-2020,13,Bayer Leverkusen,Away,2,Bayern Munich,1,3
+228,Germany,2019-2020,13,Borussia M'Gladbach,Home,4,Fribourg,2,3
+229,Germany,2019-2020,13,Fribourg,Away,2,Borussia M'Gladbach,4,0
+230,Germany,2019-2020,13,Wolfsburg,Home,2,Werder Brême,3,0
+231,Germany,2019-2020,13,Werder Brême,Away,3,Wolfsburg,2,3
+232,Germany,2019-2020,13,Mayence,Home,2,Eintracht Francfort,1,3
+233,Germany,2019-2020,13,Eintracht Francfort,Away,1,Mayence,2,0
+234,Germany,2019-2020,14,Eintracht Francfort,Home,2,Hertha Berlin,2,1
+235,Germany,2019-2020,14,Hertha Berlin,Away,2,Eintracht Francfort,2,1
+236,Germany,2019-2020,14,Borussia M'Gladbach,Home,2,Bayern Munich,1,3
+237,Germany,2019-2020,14,Bayern Munich,Away,1,Borussia M'Gladbach,2,0
+238,Germany,2019-2020,14,RB Leipzig,Home,3,Hoffenheim,1,3
+239,Germany,2019-2020,14,Hoffenheim,Away,1,RB Leipzig,3,0
+240,Germany,2019-2020,14,Borussia Dortmund,Home,5,Fortuna Düsseldorf,0,3
+241,Germany,2019-2020,14,Fortuna Düsseldorf,Away,0,Borussia Dortmund,5,0
+242,Germany,2019-2020,14,Fribourg,Home,1,Wolfsburg,0,3
+243,Germany,2019-2020,14,Wolfsburg,Away,0,Fribourg,1,0
+244,Germany,2019-2020,14,Augsbourg,Home,2,Mayence,1,3
+245,Germany,2019-2020,14,Mayence,Away,1,Augsbourg,2,0
+246,Germany,2019-2020,14,Bayer Leverkusen,Home,2,Schalke 04,1,3
+247,Germany,2019-2020,14,Schalke 04,Away,1,Bayer Leverkusen,2,0
+248,Germany,2019-2020,14,Union Berlin,Home,2,FC Cologne,0,3
+249,Germany,2019-2020,14,FC Cologne,Away,0,Union Berlin,2,0
+250,Germany,2019-2020,14,Werder Brême,Home,0,Paderborn,1,0
+251,Germany,2019-2020,14,Paderborn,Away,1,Werder Brême,0,3
+252,Germany,2019-2020,15,Hoffenheim,Home,2,Augsbourg,4,0
+253,Germany,2019-2020,15,Augsbourg,Away,4,Hoffenheim,2,3
+254,Germany,2019-2020,15,Mayence,Home,0,Borussia Dortmund,4,0
+255,Germany,2019-2020,15,Borussia Dortmund,Away,4,Mayence,0,3
+256,Germany,2019-2020,15,Hertha Berlin,Home,1,Fribourg,0,3
+257,Germany,2019-2020,15,Fribourg,Away,0,Hertha Berlin,1,0
+258,Germany,2019-2020,15,FC Cologne,Home,2,Bayer Leverkusen,0,3
+259,Germany,2019-2020,15,Bayer Leverkusen,Away,0,FC Cologne,2,0
+260,Germany,2019-2020,15,Bayern Munich,Home,6,Werder Brême,1,3
+261,Germany,2019-2020,15,Werder Brême,Away,1,Bayern Munich,6,0
+262,Germany,2019-2020,15,Paderborn,Home,1,Union Berlin,1,1
+263,Germany,2019-2020,15,Union Berlin,Away,1,Paderborn,1,1
+264,Germany,2019-2020,15,Fortuna Düsseldorf,Home,0,RB Leipzig,3,0
+265,Germany,2019-2020,15,RB Leipzig,Away,3,Fortuna Düsseldorf,0,3
+266,Germany,2019-2020,15,Wolfsburg,Home,2,Borussia M'Gladbach,1,3
+267,Germany,2019-2020,15,Borussia M'Gladbach,Away,1,Wolfsburg,2,0
+268,Germany,2019-2020,15,Schalke 04,Home,1,Eintracht Francfort,0,3
+269,Germany,2019-2020,15,Eintracht Francfort,Away,0,Schalke 04,1,0
+270,Germany,2019-2020,16,Werder Brême,Home,0,Mayence,5,0
+271,Germany,2019-2020,16,Mayence,Away,5,Werder Brême,0,3
+272,Germany,2019-2020,16,Borussia Dortmund,Home,3,RB Leipzig,3,1
+273,Germany,2019-2020,16,RB Leipzig,Away,3,Borussia Dortmund,3,1
+274,Germany,2019-2020,16,Union Berlin,Home,0,Hoffenheim,2,0
+275,Germany,2019-2020,16,Hoffenheim,Away,2,Union Berlin,0,3
+276,Germany,2019-2020,16,Augsbourg,Home,3,Fortuna Düsseldorf,0,3
+277,Germany,2019-2020,16,Fortuna Düsseldorf,Away,0,Augsbourg,3,0
+278,Germany,2019-2020,16,Bayer Leverkusen,Home,0,Hertha Berlin,1,0
+279,Germany,2019-2020,16,Hertha Berlin,Away,1,Bayer Leverkusen,0,3
+280,Germany,2019-2020,16,Borussia M'Gladbach,Home,2,Paderborn,0,3
+281,Germany,2019-2020,16,Paderborn,Away,0,Borussia M'Gladbach,2,0
+282,Germany,2019-2020,16,Wolfsburg,Home,1,Schalke 04,1,1
+283,Germany,2019-2020,16,Schalke 04,Away,1,Wolfsburg,1,1
+284,Germany,2019-2020,16,Fribourg,Home,1,Bayern Munich,3,0
+285,Germany,2019-2020,16,Bayern Munich,Away,3,Fribourg,1,3
+286,Germany,2019-2020,16,Eintracht Francfort,Home,2,FC Cologne,4,0
+287,Germany,2019-2020,16,FC Cologne,Away,4,Eintracht Francfort,2,3
+288,Germany,2019-2020,17,Hoffenheim,Home,2,Borussia Dortmund,1,3
+289,Germany,2019-2020,17,Borussia Dortmund,Away,1,Hoffenheim,2,0
+290,Germany,2019-2020,17,RB Leipzig,Home,3,Augsbourg,1,3
+291,Germany,2019-2020,17,Augsbourg,Away,1,RB Leipzig,3,0
+292,Germany,2019-2020,17,Bayern Munich,Home,2,Wolfsburg,0,3
+293,Germany,2019-2020,17,Wolfsburg,Away,0,Bayern Munich,2,0
+294,Germany,2019-2020,17,Schalke 04,Home,2,Fribourg,2,1
+295,Germany,2019-2020,17,Fribourg,Away,2,Schalke 04,2,1
+296,Germany,2019-2020,17,Mayence,Home,0,Bayer Leverkusen,1,0
+297,Germany,2019-2020,17,Bayer Leverkusen,Away,1,Mayence,0,3
+298,Germany,2019-2020,17,FC Cologne,Home,1,Werder Brême,0,3
+299,Germany,2019-2020,17,Werder Brême,Away,0,FC Cologne,1,0
+300,Germany,2019-2020,17,Hertha Berlin,Home,0,Borussia M'Gladbach,0,1
+301,Germany,2019-2020,17,Borussia M'Gladbach,Away,0,Hertha Berlin,0,1
+302,Germany,2019-2020,17,Fortuna Düsseldorf,Home,2,Union Berlin,1,3
+303,Germany,2019-2020,17,Union Berlin,Away,1,Fortuna Düsseldorf,2,0
+304,Germany,2019-2020,17,Paderborn,Home,2,Eintracht Francfort,1,3
+305,Germany,2019-2020,17,Eintracht Francfort,Away,1,Paderborn,2,0
+306,Germany,2019-2020,18,Schalke 04,Home,2,Borussia M'Gladbach,0,3
+307,Germany,2019-2020,18,Borussia M'Gladbach,Away,0,Schalke 04,2,0
+308,Germany,2019-2020,18,FC Cologne,Home,3,Wolfsburg,1,3
+309,Germany,2019-2020,18,Wolfsburg,Away,1,FC Cologne,3,0
+310,Germany,2019-2020,18,Fortuna Düsseldorf,Home,0,Werder Brême,1,0
+311,Germany,2019-2020,18,Werder Brême,Away,1,Fortuna Düsseldorf,0,3
+312,Germany,2019-2020,18,Hoffenheim,Home,1,Eintracht Francfort,2,0
+313,Germany,2019-2020,18,Eintracht Francfort,Away,2,Hoffenheim,1,3
+314,Germany,2019-2020,18,Augsbourg,Home,3,Borussia Dortmund,5,0
+315,Germany,2019-2020,18,Borussia Dortmund,Away,5,Augsbourg,3,3
+316,Germany,2019-2020,18,Mayence,Home,1,Fribourg,2,0
+317,Germany,2019-2020,18,Fribourg,Away,2,Mayence,1,3
+318,Germany,2019-2020,18,RB Leipzig,Home,3,Union Berlin,1,3
+319,Germany,2019-2020,18,Union Berlin,Away,1,RB Leipzig,3,0
+320,Germany,2019-2020,18,Hertha Berlin,Home,0,Bayern Munich,4,0
+321,Germany,2019-2020,18,Bayern Munich,Away,4,Hertha Berlin,0,3
+322,Germany,2019-2020,18,Paderborn,Home,1,Bayer Leverkusen,4,0
+323,Germany,2019-2020,18,Bayer Leverkusen,Away,4,Paderborn,1,3
+324,Germany,2019-2020,19,Borussia Dortmund,Home,5,FC Cologne,1,3
+325,Germany,2019-2020,19,FC Cologne,Away,1,Borussia Dortmund,5,0
+326,Germany,2019-2020,19,Eintracht Francfort,Home,2,RB Leipzig,0,3
+327,Germany,2019-2020,19,RB Leipzig,Away,0,Eintracht Francfort,2,0
+328,Germany,2019-2020,19,Borussia M'Gladbach,Home,3,Mayence,1,3
+329,Germany,2019-2020,19,Mayence,Away,1,Borussia M'Gladbach,3,0
+330,Germany,2019-2020,19,Fribourg,Home,0,Paderborn,2,0
+331,Germany,2019-2020,19,Paderborn,Away,2,Fribourg,0,3
+332,Germany,2019-2020,19,Wolfsburg,Home,1,Hertha Berlin,2,0
+333,Germany,2019-2020,19,Hertha Berlin,Away,2,Wolfsburg,1,3
+334,Germany,2019-2020,19,Union Berlin,Home,2,Augsbourg,0,3
+335,Germany,2019-2020,19,Augsbourg,Away,0,Union Berlin,2,0
+336,Germany,2019-2020,19,Bayern Munich,Home,5,Schalke 04,0,3
+337,Germany,2019-2020,19,Schalke 04,Away,0,Bayern Munich,5,0
+338,Germany,2019-2020,19,Werder Brême,Home,0,Hoffenheim,3,0
+339,Germany,2019-2020,19,Hoffenheim,Away,3,Werder Brême,0,3
+340,Germany,2019-2020,19,Bayer Leverkusen,Home,3,Fortuna Düsseldorf,0,3
+341,Germany,2019-2020,19,Fortuna Düsseldorf,Away,0,Bayer Leverkusen,3,0
+342,Germany,2019-2020,20,Hertha Berlin,Home,0,Schalke 04,0,1
+343,Germany,2019-2020,20,Schalke 04,Away,0,Hertha Berlin,0,1
+344,Germany,2019-2020,20,Mayence,Home,1,Bayern Munich,3,0
+345,Germany,2019-2020,20,Bayern Munich,Away,3,Mayence,1,3
+346,Germany,2019-2020,20,Borussia Dortmund,Home,5,Union Berlin,0,3
+347,Germany,2019-2020,20,Union Berlin,Away,0,Borussia Dortmund,5,0
+348,Germany,2019-2020,20,Hoffenheim,Home,2,Bayer Leverkusen,1,3
+349,Germany,2019-2020,20,Bayer Leverkusen,Away,1,Hoffenheim,2,0
+350,Germany,2019-2020,20,Fortuna Düsseldorf,Home,1,Eintracht Francfort,1,1
+351,Germany,2019-2020,20,Eintracht Francfort,Away,1,Fortuna Düsseldorf,1,1
+352,Germany,2019-2020,20,Augsbourg,Home,2,Werder Brême,1,3
+353,Germany,2019-2020,20,Werder Brême,Away,1,Augsbourg,2,0
+354,Germany,2019-2020,20,RB Leipzig,Home,2,Borussia M'Gladbach,2,1
+355,Germany,2019-2020,20,Borussia M'Gladbach,Away,2,RB Leipzig,2,1
+356,Germany,2019-2020,20,FC Cologne,Home,4,Fribourg,0,3
+357,Germany,2019-2020,20,Fribourg,Away,0,FC Cologne,4,0
+358,Germany,2019-2020,20,Paderborn,Home,2,Wolfsburg,4,0
+359,Germany,2019-2020,20,Wolfsburg,Away,4,Paderborn,2,3
+360,Germany,2019-2020,21,Eintracht Francfort,Home,5,Augsbourg,0,3
+361,Germany,2019-2020,21,Augsbourg,Away,0,Eintracht Francfort,5,0
+362,Germany,2019-2020,21,Schalke 04,Home,1,Paderborn,1,1
+363,Germany,2019-2020,21,Paderborn,Away,1,Schalke 04,1,1
+364,Germany,2019-2020,21,Fribourg,Home,1,Hoffenheim,0,3
+365,Germany,2019-2020,21,Hoffenheim,Away,0,Fribourg,1,0
+366,Germany,2019-2020,21,Wolfsburg,Home,1,Fortuna Düsseldorf,1,1
+367,Germany,2019-2020,21,Fortuna Düsseldorf,Away,1,Wolfsburg,1,1
+368,Germany,2019-2020,21,Werder Brême,Home,0,Union Berlin,2,0
+369,Germany,2019-2020,21,Union Berlin,Away,2,Werder Brême,0,3
+370,Germany,2019-2020,21,Hertha Berlin,Home,1,Mayence,3,0
+371,Germany,2019-2020,21,Mayence,Away,3,Hertha Berlin,1,3
+372,Germany,2019-2020,21,Bayer Leverkusen,Home,4,Borussia Dortmund,3,3
+373,Germany,2019-2020,21,Borussia Dortmund,Away,3,Bayer Leverkusen,4,0
+374,Germany,2019-2020,21,Bayern Munich,Home,0,RB Leipzig,0,1
+375,Germany,2019-2020,21,RB Leipzig,Away,0,Bayern Munich,0,1
+376,Germany,2019-2020,21,Borussia M'Gladbach,Home,2,FC Cologne,1,3
+377,Germany,2019-2020,21,FC Cologne,Away,1,Borussia M'Gladbach,2,0
+378,Germany,2019-2020,22,Borussia Dortmund,Home,4,Eintracht Francfort,0,3
+379,Germany,2019-2020,22,Eintracht Francfort,Away,0,Borussia Dortmund,4,0
+380,Germany,2019-2020,22,RB Leipzig,Home,3,Werder Brême,0,3
+381,Germany,2019-2020,22,Werder Brême,Away,0,RB Leipzig,3,0
+382,Germany,2019-2020,22,Union Berlin,Home,2,Bayer Leverkusen,3,0
+383,Germany,2019-2020,22,Bayer Leverkusen,Away,3,Union Berlin,2,3
+384,Germany,2019-2020,22,Hoffenheim,Home,2,Wolfsburg,3,0
+385,Germany,2019-2020,22,Wolfsburg,Away,3,Hoffenheim,2,3
+386,Germany,2019-2020,22,Augsbourg,Home,1,Fribourg,1,1
+387,Germany,2019-2020,22,Fribourg,Away,1,Augsbourg,1,1
+388,Germany,2019-2020,22,Paderborn,Home,1,Hertha Berlin,2,0
+389,Germany,2019-2020,22,Hertha Berlin,Away,2,Paderborn,1,3
+390,Germany,2019-2020,22,Fortuna Düsseldorf,Home,1,Borussia M'Gladbach,4,0
+391,Germany,2019-2020,22,Borussia M'Gladbach,Away,4,Fortuna Düsseldorf,1,3
+392,Germany,2019-2020,22,FC Cologne,Home,1,Bayern Munich,4,0
+393,Germany,2019-2020,22,Bayern Munich,Away,4,FC Cologne,1,3
+394,Germany,2019-2020,22,Mayence,Home,0,Schalke 04,0,1
+395,Germany,2019-2020,22,Schalke 04,Away,0,Mayence,0,1
+396,Germany,2019-2020,23,Bayern Munich,Home,3,Paderborn,2,3
+397,Germany,2019-2020,23,Paderborn,Away,2,Bayern Munich,3,0
+398,Germany,2019-2020,23,Borussia M'Gladbach,Home,1,Hoffenheim,1,1
+399,Germany,2019-2020,23,Hoffenheim,Away,1,Borussia M'Gladbach,1,1
+400,Germany,2019-2020,23,Werder Brême,Home,0,Borussia Dortmund,2,0
+401,Germany,2019-2020,23,Borussia Dortmund,Away,2,Werder Brême,0,3
+402,Germany,2019-2020,23,Fribourg,Home,0,Fortuna Düsseldorf,2,0
+403,Germany,2019-2020,23,Fortuna Düsseldorf,Away,2,Fribourg,0,3
+404,Germany,2019-2020,23,Hertha Berlin,Home,0,FC Cologne,5,0
+405,Germany,2019-2020,23,FC Cologne,Away,5,Hertha Berlin,0,3
+406,Germany,2019-2020,23,Schalke 04,Home,0,RB Leipzig,5,0
+407,Germany,2019-2020,23,RB Leipzig,Away,5,Schalke 04,0,3
+408,Germany,2019-2020,23,Bayer Leverkusen,Home,2,Augsbourg,0,3
+409,Germany,2019-2020,23,Augsbourg,Away,0,Bayer Leverkusen,2,0
+410,Germany,2019-2020,23,Wolfsburg,Home,4,Mayence,0,3
+411,Germany,2019-2020,23,Mayence,Away,0,Wolfsburg,4,0
+412,Germany,2019-2020,23,Eintracht Francfort,Home,1,Union Berlin,2,0
+413,Germany,2019-2020,23,Union Berlin,Away,2,Eintracht Francfort,1,3
+414,Germany,2019-2020,24,Fortuna Düsseldorf,Home,3,Hertha Berlin,3,1
+415,Germany,2019-2020,24,Hertha Berlin,Away,3,Fortuna Düsseldorf,3,1
+416,Germany,2019-2020,24,Hoffenheim,Home,0,Bayern Munich,6,0
+417,Germany,2019-2020,24,Bayern Munich,Away,6,Hoffenheim,0,3
+418,Germany,2019-2020,24,Augsbourg,Home,2,Borussia M'Gladbach,3,0
+419,Germany,2019-2020,24,Borussia M'Gladbach,Away,3,Augsbourg,2,3
+420,Germany,2019-2020,24,Borussia Dortmund,Home,1,Fribourg,0,3
+421,Germany,2019-2020,24,Fribourg,Away,0,Borussia Dortmund,1,0
+422,Germany,2019-2020,24,Mayence,Home,2,Paderborn,0,3
+423,Germany,2019-2020,24,Paderborn,Away,0,Mayence,2,0
+424,Germany,2019-2020,24,FC Cologne,Home,3,Schalke 04,0,3
+425,Germany,2019-2020,24,Schalke 04,Away,0,FC Cologne,3,0
+426,Germany,2019-2020,24,Union Berlin,Home,2,Wolfsburg,2,1
+427,Germany,2019-2020,24,Wolfsburg,Away,2,Union Berlin,2,1
+428,Germany,2019-2020,24,RB Leipzig,Home,1,Bayer Leverkusen,1,1
+429,Germany,2019-2020,24,Bayer Leverkusen,Away,1,RB Leipzig,1,1
+430,Germany,2019-2020,24,Werder Brême,Home,0,Eintracht Francfort,3,0
+431,Germany,2019-2020,24,Eintracht Francfort,Away,3,Werder Brême,0,3
+432,Germany,2019-2020,25,Paderborn,Home,1,FC Cologne,2,0
+433,Germany,2019-2020,25,FC Cologne,Away,2,Paderborn,1,3
+434,Germany,2019-2020,25,Wolfsburg,Home,0,RB Leipzig,0,1
+435,Germany,2019-2020,25,RB Leipzig,Away,0,Wolfsburg,0,1
+436,Germany,2019-2020,25,Bayer Leverkusen,Home,4,Eintracht Francfort,0,3
+437,Germany,2019-2020,25,Eintracht Francfort,Away,0,Bayer Leverkusen,4,0
+438,Germany,2019-2020,25,Schalke 04,Home,1,Hoffenheim,1,1
+439,Germany,2019-2020,25,Hoffenheim,Away,1,Schalke 04,1,1
+440,Germany,2019-2020,25,Fribourg,Home,3,Union Berlin,1,3
+441,Germany,2019-2020,25,Union Berlin,Away,1,Fribourg,3,0
+442,Germany,2019-2020,25,Hertha Berlin,Home,2,Werder Brême,2,1
+443,Germany,2019-2020,25,Werder Brême,Away,2,Hertha Berlin,2,1
+444,Germany,2019-2020,25,Borussia M'Gladbach,Home,1,Borussia Dortmund,2,0
+445,Germany,2019-2020,25,Borussia Dortmund,Away,2,Borussia M'Gladbach,1,3
+446,Germany,2019-2020,25,Bayern Munich,Home,2,Augsbourg,0,3
+447,Germany,2019-2020,25,Augsbourg,Away,0,Bayern Munich,2,0
+448,Germany,2019-2020,25,Mayence,Home,1,Fortuna Düsseldorf,1,1
+449,Germany,2019-2020,25,Fortuna Düsseldorf,Away,1,Mayence,1,1
+450,Germany,2019-2020,26,Borussia Dortmund,Home,4,Schalke 04,0,3
+451,Germany,2019-2020,26,Schalke 04,Away,0,Borussia Dortmund,4,0
+452,Germany,2019-2020,26,RB Leipzig,Home,1,Fribourg,1,1
+453,Germany,2019-2020,26,Fribourg,Away,1,RB Leipzig,1,1
+454,Germany,2019-2020,26,Augsbourg,Home,1,Wolfsburg,2,0
+455,Germany,2019-2020,26,Wolfsburg,Away,2,Augsbourg,1,3
+456,Germany,2019-2020,26,Hoffenheim,Home,0,Hertha Berlin,3,0
+457,Germany,2019-2020,26,Hertha Berlin,Away,3,Hoffenheim,0,3
+458,Germany,2019-2020,26,Fortuna Düsseldorf,Home,0,Paderborn,0,1
+459,Germany,2019-2020,26,Paderborn,Away,0,Fortuna Düsseldorf,0,1
+460,Germany,2019-2020,26,Eintracht Francfort,Home,1,Borussia M'Gladbach,3,0
+461,Germany,2019-2020,26,Borussia M'Gladbach,Away,3,Eintracht Francfort,1,3
+462,Germany,2019-2020,26,FC Cologne,Home,2,Mayence,2,1
+463,Germany,2019-2020,26,Mayence,Away,2,FC Cologne,2,1
+464,Germany,2019-2020,26,Union Berlin,Home,0,Bayern Munich,2,0
+465,Germany,2019-2020,26,Bayern Munich,Away,2,Union Berlin,0,3
+466,Germany,2019-2020,26,Werder Brême,Home,1,Bayer Leverkusen,4,0
+467,Germany,2019-2020,26,Bayer Leverkusen,Away,4,Werder Brême,1,3
+468,Germany,2019-2020,27,Hertha Berlin,Home,4,Union Berlin,0,3
+469,Germany,2019-2020,27,Union Berlin,Away,0,Hertha Berlin,4,0
+470,Germany,2019-2020,27,Wolfsburg,Home,0,Borussia Dortmund,2,0
+471,Germany,2019-2020,27,Borussia Dortmund,Away,2,Wolfsburg,0,3
+472,Germany,2019-2020,27,Borussia M'Gladbach,Home,1,Bayer Leverkusen,3,0
+473,Germany,2019-2020,27,Bayer Leverkusen,Away,3,Borussia M'Gladbach,1,3
+474,Germany,2019-2020,27,Fribourg,Home,0,Werder Brême,1,0
+475,Germany,2019-2020,27,Werder Brême,Away,1,Fribourg,0,3
+476,Germany,2019-2020,27,Paderborn,Home,1,Hoffenheim,1,1
+477,Germany,2019-2020,27,Hoffenheim,Away,1,Paderborn,1,1
+478,Germany,2019-2020,27,Bayern Munich,Home,5,Eintracht Francfort,2,3
+479,Germany,2019-2020,27,Eintracht Francfort,Away,2,Bayern Munich,5,0
+480,Germany,2019-2020,27,Schalke 04,Home,0,Augsbourg,3,0
+481,Germany,2019-2020,27,Augsbourg,Away,3,Schalke 04,0,3
+482,Germany,2019-2020,27,Mayence,Home,0,RB Leipzig,5,0
+483,Germany,2019-2020,27,RB Leipzig,Away,5,Mayence,0,3
+484,Germany,2019-2020,27,FC Cologne,Home,2,Fortuna Düsseldorf,2,1
+485,Germany,2019-2020,27,Fortuna Düsseldorf,Away,2,FC Cologne,2,1
+486,Germany,2019-2020,28,Borussia Dortmund,Home,0,Bayern Munich,1,0
+487,Germany,2019-2020,28,Bayern Munich,Away,1,Borussia Dortmund,0,3
+488,Germany,2019-2020,28,Bayer Leverkusen,Home,1,Wolfsburg,4,0
+489,Germany,2019-2020,28,Wolfsburg,Away,4,Bayer Leverkusen,1,3
+490,Germany,2019-2020,28,Werder Brême,Home,0,Borussia M'Gladbach,0,1
+491,Germany,2019-2020,28,Borussia M'Gladbach,Away,0,Werder Brême,0,1
+492,Germany,2019-2020,28,Eintracht Francfort,Home,3,Fribourg,3,1
+493,Germany,2019-2020,28,Fribourg,Away,3,Eintracht Francfort,3,1
+494,Germany,2019-2020,28,RB Leipzig,Home,2,Hertha Berlin,2,1
+495,Germany,2019-2020,28,Hertha Berlin,Away,2,RB Leipzig,2,1
+496,Germany,2019-2020,28,Fortuna Düsseldorf,Home,2,Schalke 04,1,3
+497,Germany,2019-2020,28,Schalke 04,Away,1,Fortuna Düsseldorf,2,0
+498,Germany,2019-2020,28,Hoffenheim,Home,3,FC Cologne,1,3
+499,Germany,2019-2020,28,FC Cologne,Away,1,Hoffenheim,3,0
+500,Germany,2019-2020,28,Augsbourg,Home,0,Paderborn,0,1
+501,Germany,2019-2020,28,Paderborn,Away,0,Augsbourg,0,1
+502,Germany,2019-2020,28,Union Berlin,Home,1,Mayence,1,1
+503,Germany,2019-2020,28,Mayence,Away,1,Union Berlin,1,1
+504,Germany,2019-2020,29,Fribourg,Home,0,Bayer Leverkusen,1,0
+505,Germany,2019-2020,29,Bayer Leverkusen,Away,1,Fribourg,0,3
+506,Germany,2019-2020,29,Wolfsburg,Home,1,Eintracht Francfort,2,0
+507,Germany,2019-2020,29,Eintracht Francfort,Away,2,Wolfsburg,1,3
+508,Germany,2019-2020,29,Mayence,Home,0,Hoffenheim,1,0
+509,Germany,2019-2020,29,Hoffenheim,Away,1,Mayence,0,3
+510,Germany,2019-2020,29,Schalke 04,Home,0,Werder Brême,1,0
+511,Germany,2019-2020,29,Werder Brême,Away,1,Schalke 04,0,3
+512,Germany,2019-2020,29,Hertha Berlin,Home,2,Augsbourg,0,3
+513,Germany,2019-2020,29,Augsbourg,Away,0,Hertha Berlin,2,0
+514,Germany,2019-2020,29,Bayern Munich,Home,5,Fortuna Düsseldorf,0,3
+515,Germany,2019-2020,29,Fortuna Düsseldorf,Away,0,Bayern Munich,5,0
+516,Germany,2019-2020,29,Borussia M'Gladbach,Home,4,Union Berlin,1,3
+517,Germany,2019-2020,29,Union Berlin,Away,1,Borussia M'Gladbach,4,0
+518,Germany,2019-2020,29,Paderborn,Home,1,Borussia Dortmund,6,0
+519,Germany,2019-2020,29,Borussia Dortmund,Away,6,Paderborn,1,3
+520,Germany,2019-2020,29,FC Cologne,Home,2,RB Leipzig,4,0
+521,Germany,2019-2020,29,RB Leipzig,Away,4,FC Cologne,2,3
+522,Germany,2019-2020,30,Fribourg,Home,1,Borussia M'Gladbach,0,3
+523,Germany,2019-2020,30,Borussia M'Gladbach,Away,0,Fribourg,1,0
+524,Germany,2019-2020,30,Bayer Leverkusen,Home,2,Bayern Munich,4,0
+525,Germany,2019-2020,30,Bayern Munich,Away,4,Bayer Leverkusen,2,3
+526,Germany,2019-2020,30,RB Leipzig,Home,1,Paderborn,1,1
+527,Germany,2019-2020,30,Paderborn,Away,1,RB Leipzig,1,1
+528,Germany,2019-2020,30,Fortuna Düsseldorf,Home,2,Hoffenheim,2,1
+529,Germany,2019-2020,30,Hoffenheim,Away,2,Fortuna Düsseldorf,2,1
+530,Germany,2019-2020,30,Eintracht Francfort,Home,0,Mayence,2,0
+531,Germany,2019-2020,30,Mayence,Away,2,Eintracht Francfort,0,3
+532,Germany,2019-2020,30,Borussia Dortmund,Home,1,Hertha Berlin,0,3
+533,Germany,2019-2020,30,Hertha Berlin,Away,0,Borussia Dortmund,1,0
+534,Germany,2019-2020,30,Werder Brême,Home,0,Wolfsburg,1,0
+535,Germany,2019-2020,30,Wolfsburg,Away,1,Werder Brême,0,3
+536,Germany,2019-2020,30,Union Berlin,Home,1,Schalke 04,1,1
+537,Germany,2019-2020,30,Schalke 04,Away,1,Union Berlin,1,1
+538,Germany,2019-2020,30,Augsbourg,Home,1,FC Cologne,1,1
+539,Germany,2019-2020,30,FC Cologne,Away,1,Augsbourg,1,1
+540,Germany,2019-2020,31,Hoffenheim,Home,0,RB Leipzig,2,0
+541,Germany,2019-2020,31,RB Leipzig,Away,2,Hoffenheim,0,3
+542,Germany,2019-2020,31,Fortuna Düsseldorf,Home,0,Borussia Dortmund,1,0
+543,Germany,2019-2020,31,Borussia Dortmund,Away,1,Fortuna Düsseldorf,0,3
+544,Germany,2019-2020,31,Wolfsburg,Home,2,Fribourg,2,1
+545,Germany,2019-2020,31,Fribourg,Away,2,Wolfsburg,2,1
+546,Germany,2019-2020,31,Hertha Berlin,Home,1,Eintracht Francfort,4,0
+547,Germany,2019-2020,31,Eintracht Francfort,Away,4,Hertha Berlin,1,3
+548,Germany,2019-2020,31,FC Cologne,Home,1,Union Berlin,2,0
+549,Germany,2019-2020,31,Union Berlin,Away,2,FC Cologne,1,3
+550,Germany,2019-2020,31,Paderborn,Home,1,Werder Brême,5,0
+551,Germany,2019-2020,31,Werder Brême,Away,5,Paderborn,1,3
+552,Germany,2019-2020,31,Bayern Munich,Home,2,Borussia M'Gladbach,1,3
+553,Germany,2019-2020,31,Borussia M'Gladbach,Away,1,Bayern Munich,2,0
+554,Germany,2019-2020,31,Mayence,Home,0,Augsbourg,1,0
+555,Germany,2019-2020,31,Augsbourg,Away,1,Mayence,0,3
+556,Germany,2019-2020,31,Schalke 04,Home,1,Bayer Leverkusen,1,1
+557,Germany,2019-2020,31,Bayer Leverkusen,Away,1,Schalke 04,1,1
+558,Germany,2019-2020,32,Borussia M'Gladbach,Home,3,Wolfsburg,0,3
+559,Germany,2019-2020,32,Wolfsburg,Away,0,Borussia M'Gladbach,3,0
+560,Germany,2019-2020,32,Werder Brême,Home,0,Bayern Munich,1,0
+561,Germany,2019-2020,32,Bayern Munich,Away,1,Werder Brême,0,3
+562,Germany,2019-2020,32,Fribourg,Home,2,Hertha Berlin,1,3
+563,Germany,2019-2020,32,Hertha Berlin,Away,1,Fribourg,2,0
+564,Germany,2019-2020,32,Union Berlin,Home,1,Paderborn,0,3
+565,Germany,2019-2020,32,Paderborn,Away,0,Union Berlin,1,0
+566,Germany,2019-2020,32,Eintracht Francfort,Home,2,Schalke 04,1,3
+567,Germany,2019-2020,32,Schalke 04,Away,1,Eintracht Francfort,2,0
+568,Germany,2019-2020,32,Borussia Dortmund,Home,0,Mayence,2,0
+569,Germany,2019-2020,32,Mayence,Away,2,Borussia Dortmund,0,3
+570,Germany,2019-2020,32,RB Leipzig,Home,2,Fortuna Düsseldorf,2,1
+571,Germany,2019-2020,32,Fortuna Düsseldorf,Away,2,RB Leipzig,2,1
+572,Germany,2019-2020,32,Bayer Leverkusen,Home,3,FC Cologne,1,3
+573,Germany,2019-2020,32,FC Cologne,Away,1,Bayer Leverkusen,3,0
+574,Germany,2019-2020,32,Augsbourg,Home,1,Hoffenheim,3,0
+575,Germany,2019-2020,32,Hoffenheim,Away,3,Augsbourg,1,3
+576,Germany,2019-2020,33,Bayern Munich,Home,3,Fribourg,1,3
+577,Germany,2019-2020,33,Fribourg,Away,1,Bayern Munich,3,0
+578,Germany,2019-2020,33,RB Leipzig,Home,0,Borussia Dortmund,2,0
+579,Germany,2019-2020,33,Borussia Dortmund,Away,2,RB Leipzig,0,3
+580,Germany,2019-2020,33,Hertha Berlin,Home,2,Bayer Leverkusen,0,3
+581,Germany,2019-2020,33,Bayer Leverkusen,Away,0,Hertha Berlin,2,0
+582,Germany,2019-2020,33,Paderborn,Home,1,Borussia M'Gladbach,3,0
+583,Germany,2019-2020,33,Borussia M'Gladbach,Away,3,Paderborn,1,3
+584,Germany,2019-2020,33,Schalke 04,Home,1,Wolfsburg,4,0
+585,Germany,2019-2020,33,Wolfsburg,Away,4,Schalke 04,1,3
+586,Germany,2019-2020,33,Hoffenheim,Home,4,Union Berlin,0,3
+587,Germany,2019-2020,33,Union Berlin,Away,0,Hoffenheim,4,0
+588,Germany,2019-2020,33,FC Cologne,Home,1,Eintracht Francfort,1,1
+589,Germany,2019-2020,33,Eintracht Francfort,Away,1,FC Cologne,1,1
+590,Germany,2019-2020,33,Fortuna Düsseldorf,Home,1,Augsbourg,1,1
+591,Germany,2019-2020,33,Augsbourg,Away,1,Fortuna Düsseldorf,1,1
+592,Germany,2019-2020,33,Mayence,Home,3,Werder Brême,1,3
+593,Germany,2019-2020,33,Werder Brême,Away,1,Mayence,3,0
+594,Germany,2019-2020,34,Wolfsburg,Home,0,Bayern Munich,4,0
+595,Germany,2019-2020,34,Bayern Munich,Away,4,Wolfsburg,0,3
+596,Germany,2019-2020,34,Borussia Dortmund,Home,0,Hoffenheim,4,0
+597,Germany,2019-2020,34,Hoffenheim,Away,4,Borussia Dortmund,0,3
+598,Germany,2019-2020,34,Augsbourg,Home,1,RB Leipzig,2,0
+599,Germany,2019-2020,34,RB Leipzig,Away,2,Augsbourg,1,3
+600,Germany,2019-2020,34,Borussia M'Gladbach,Home,2,Hertha Berlin,1,3
+601,Germany,2019-2020,34,Hertha Berlin,Away,1,Borussia M'Gladbach,2,0
+602,Germany,2019-2020,34,Bayer Leverkusen,Home,1,Mayence,0,3
+603,Germany,2019-2020,34,Mayence,Away,0,Bayer Leverkusen,1,0
+604,Germany,2019-2020,34,Fribourg,Home,4,Schalke 04,0,3
+605,Germany,2019-2020,34,Schalke 04,Away,0,Fribourg,4,0
+606,Germany,2019-2020,34,Eintracht Francfort,Home,3,Paderborn,2,3
+607,Germany,2019-2020,34,Paderborn,Away,2,Eintracht Francfort,3,0
+608,Germany,2019-2020,34,Union Berlin,Home,3,Fortuna Düsseldorf,0,3
+609,Germany,2019-2020,34,Fortuna Düsseldorf,Away,0,Union Berlin,3,0
+610,Germany,2019-2020,34,Werder Brême,Home,6,FC Cologne,1,3
+611,Germany,2019-2020,34,FC Cologne,Away,1,Werder Brême,6,0

@@ -1,0 +1,21 @@
+,country,season,leg,team,play,goals_scored,opponent,goals_conceded,nb_points
+0,Spain,2011-2012,27,Malaga,Home,1,Levante,0,3
+1,Spain,2011-2012,27,Levante,Away,0,Malaga,1,0
+2,Spain,2011-2012,27,Real Sociedad,Home,3,Saragosse,0,3
+3,Spain,2011-2012,27,Saragosse,Away,0,Real Sociedad,3,0
+4,Spain,2011-2012,27,Gijon,Home,1,Séville FC,0,3
+5,Spain,2011-2012,27,Séville FC,Away,0,Gijon,1,0
+6,Spain,2011-2012,27,Betis Séville,Home,2,Real Madrid,3,0
+7,Spain,2011-2012,27,Real Madrid,Away,3,Betis Séville,2,3
+8,Spain,2011-2012,27,Espanyol Barcelone,Home,5,Rayo Vallecano,1,3
+9,Spain,2011-2012,27,Rayo Vallecano,Away,1,Espanyol Barcelone,5,0
+10,Spain,2011-2012,27,Atlético de Madrid,Home,2,Grenade CF,0,3
+11,Spain,2011-2012,27,Grenade CF,Away,0,Atlético de Madrid,2,0
+12,Spain,2011-2012,27,Valence CF,Home,2,Majorque,2,1
+13,Spain,2011-2012,27,Majorque,Away,2,Valence CF,2,1
+14,Spain,2011-2012,27,Santander,Home,0,FC Barcelone,2,0
+15,Spain,2011-2012,27,FC Barcelone,Away,2,Santander,0,3
+16,Spain,2011-2012,27,Osasuna,Home,2,Athletic Bilbao,1,3
+17,Spain,2011-2012,27,Athletic Bilbao,Away,1,Osasuna,2,0
+18,Spain,2011-2012,27,Villarreal,Home,1,Getafe,2,0
+19,Spain,2011-2012,27,Getafe,Away,2,Villarreal,1,3
