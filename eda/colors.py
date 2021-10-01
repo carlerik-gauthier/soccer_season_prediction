@@ -1,3 +1,5 @@
+from webcolors import name_to_rgb
+
 plotly_colors = '''
         aliceblue, antiquewhite, aqua, aquamarine, azure,
         beige, bisque, black, blanchedalmond, blue,
@@ -60,3 +62,10 @@ color_2_position = {1: "royalblue",
             }
 
 
+def color_name_to_rgba(name, fill=0.3):
+    """name: CSS name"""
+    assert name in plotly_colors
+    
+    values = ", ".join([str(c) for c in name_to_rgb(name)]+[str(fill)])
+    
+    return f'rgba({values})'

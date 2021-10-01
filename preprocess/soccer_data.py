@@ -1,5 +1,8 @@
+import pandas as pd
 from copy import deepcopy
+
 # functions to retrieve data
+
 def rolling_mean_n_performance(df, window=5, performance_col='goals_scored'):
     dg = df.sort_values(by=['leg'])[['season', 'team', performance_col]].groupby(
         by=['season', 'team'])[performance_col].rolling(window=window, min_periods=1).mean().reset_index()
