@@ -1,4 +1,6 @@
-def get_team_participation(df, championship):
+from pandas import DataFrame
+
+def get_team_participation(df: DataFrame, championship: str):
     nb_teams = df.team.nunique()
     nb_seasons = df.season.nunique()
     first_season = df.season.min()
@@ -20,7 +22,7 @@ def get_team_participation(df, championship):
     return participation_df.sort_values(by="nb_participation", ascending=False)
 
 
-def get_goal_scored_repartition(data_df):
+def get_goal_scored_repartition(data_df: DataFrame):
     dg = data_df[['championship', 'goals_scored', 'play']].groupby(
     by=['championship', 'goals_scored']).count()
     dg.reset_index(inplace=True)
