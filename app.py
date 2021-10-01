@@ -7,3 +7,11 @@ championship_csv = {'ligue-1': 'ligue-1_data_2002_2019',
                    'bundesliga': 'bundesliga_data_2004_2019',
                    'premier-league': 'premier-league_data_2004_2019',
                    'liga':'liga_data_2004_2019'}
+
+st.title('Soccer : what is the final ranking ?')
+
+# EDA PART
+
+# choose the championship
+
+# PREDICT PART
