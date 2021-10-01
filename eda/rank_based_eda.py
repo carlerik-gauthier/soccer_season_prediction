@@ -1,10 +1,22 @@
 import plotly.graph_objects as go
 import plotly.express as px
+import pandas as pd
 
 from copy import deepcopy
 
+from colors import color_2_position, color_name_to_rgba
+
 # plot_plotly_kpi
-def plot_kpi_evolution(df, kpi='cum_pts', show_standard_deviation=False):
+def plot_kpi_evolution(df: pd.DataFrame, kpi: str='cum_pts', show_standard_deviation: bool=False):
+    """
+    This function returns a plot average (+ standard deviation if wanted) from kpis during the course of a season.
+    Datas points are grouped according to the final rank.
+
+    :param df: Dataframe containing the preprocessed data
+    :param kpi: name of the kpi to be drawn. Admissible Kpis are : rank, cum_pts, cum_goal_diff, cum_goal_scored, goals_conceded and goals_scored
+    :param  show_standard_deviation: If True, a confidence interval is provided. Default is False
+    """
+
     admissible_kpis = {'rank', 
                        'cum_pts', 
                        'cum_goal_diff', 
@@ -25,7 +37,7 @@ def plot_kpi_evolution(df, kpi='cum_pts', show_standard_deviation=False):
     
     if kpi not in admissible_kpis:
         raise Exception(f"""
-        kpi {kpi} is not admissible. It must be part of the following set : {admissible_kpis}
+        Kpi {kpi} is not admissible. It must be part of the following set : {admissible_kpis}
         """)
     
     if not show_standard_deviation:
@@ -118,8 +130,11 @@ def plot_kpi_evolution(df, kpi='cum_pts', show_standard_deviation=False):
         fig.show()
 
 
-def compare_pts_evol_with_avg_evolution(data, team, season=None, until_leg=38, compare_with=None):
+def plot_team_pts_evol_with_competitor_avg_evolution(data: pd.DataFrame, team: str, season: str=None, until_leg: int=38, compare_with: bool=None):
     """
+    Plot a team cumulative point evolution up to a given leg for a particular season (or all seasons) with the average evolution of
+    another team
+
     :param data: pd.DataFrame: data containing the league performance
     :param team: str: name of the team we want to analyze
     :param season: str: season we're interested in
@@ -134,9 +149,9 @@ def compare_pts_evol_with_avg_evolution(data, team, season=None, until_leg=38, c
     comparator_data = deepcopy(data[data.team==compare_with])
     
     nb_season = comparator_data.season.nunique()
-    if nb_season < 4 or len(team_data)==0:
-        raise ValueError(f"""{team} has not played season {season} or {comparator_data} has played at most 
-                         4 games. Please review your inputs""")
+    if nb_season < 5 or len(team_data)==0:
+        raise ValueError(f"""{team} has not played season {season} or {comparator_data} has only played at most 
+                         4 seasons. Please review your inputs""")
         
     avg_comparator_data = comparator_data[['leg', 'cum_pts']].groupby(
         by=['leg']).mean().reset_index().rename(columns={'cum_pts':'avg_cum_pts'})
@@ -195,24 +210,25 @@ def compare_pts_evol_with_avg_evolution(data, team, season=None, until_leg=38, c
 
     fig.show() 
     
-def compare_pts_evol_time(data, team, until_leg=38):
+def plot_team_pts_evol_to_average_performance(data: pd.DataFrame, team: str, until_leg: int =38):
     """
+    Plot all cumulative points for a given team up to a given leg and compare them with the average performance going from
+    first to last game.
+
     :param data: pd.DataFrame: data containing the league performance
     :param team: str: name of the team we want to analyze
     :param until_leg: int: plot team's pts evolution from legs 1 to until leg included
-    comparison. That Team MUST have played at least 5 seasons
+    comparison. The team MUST have played at least 5 seasons
     """
     team_data = deepcopy(data[(data.team == team) & (data.leg <= until_leg)])
     comparator_data = deepcopy(data[data.team==team])
     
     nb_season = comparator_data.season.nunique()
-    if nb_season < 4:
-        raise ValueError(f"""{compare_with} has played at most 4 games in season {season}.
+    if nb_season < 5:
+        raise ValueError(f"""{team} has only played at most 4 seasons.
         Please pick a team having played at least 5 seasons. """)
-    if len(team_data)==0:
-        raise ValueError(f"""{team} has not played season {season}. 
-        Please pick a team having played at least 5 seasons """)
-        
+
+
     avg_comparator_data = comparator_data[['leg', 'cum_pts']].groupby(
         by=['leg']).mean().reset_index().rename(columns={'cum_pts':'avg_cum_pts'})
     
@@ -276,8 +292,9 @@ def compare_pts_evol_time(data, team, until_leg=38):
     #    height=800)
 
     fig.show() 
-    
-def plot_compare_team_pts_evolution_vs_final_rank(df, team, season=None, show_standard_deviation=True):
+
+
+def plot_team_pts_evol_vs_final_rank(df: pd.DataFrame, team: str, season: str=None, show_standard_deviation: bool=True):
     
     kpi='cum_pts'
     avg_col = f'avg_{kpi}'
