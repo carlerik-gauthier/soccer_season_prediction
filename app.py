@@ -14,4 +14,14 @@ st.title('Soccer : what is the final ranking ?')
 
 # choose the championship
 
+# show basic eda
+
+# show eda plots
+
 # PREDICT PART
+
+# choose the model type : regression, classification or ranking algorithm
+
+# provide the input 
+
+# show prediction
