@@ -10,8 +10,18 @@ championship_csv = {'ligue-1': 'ligue-1_data_2002_2019',
 
 st.title('Soccer : what is the final ranking ?')
 
-# EDA PART
+@st.cache
+def load_data(championship: str):
+    """extract data"""
+    pass
 
+@st.cache
+def preprocess(data_df, model_type='naive'):
+    """Preprocess data according to the choice of the model"""
+    pass
+
+# EDA PART
+st.subheader("Exploratory Data Analysis")
 # choose the championship
 
 # show basic eda
@@ -19,6 +29,9 @@ st.title('Soccer : what is the final ranking ?')
 # show eda plots
 
 # PREDICT PART
+st.subheader("Predict the ranking")
+
+# Naive model
 
 # choose the model type : regression, classification or ranking algorithm
 

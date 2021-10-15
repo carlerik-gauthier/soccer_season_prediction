@@ -3,6 +3,8 @@ import pandas as pd
 
 from copy import deepcopy
 
+from rank_predictor.utils import get_lr_parameters
+
 
 def get_season_team_data(break_leg: int, data: pd.DataFrame):
     """
@@ -35,6 +37,7 @@ def get_season_team_data(break_leg: int, data: pd.DataFrame):
     return [nb_games_at_home, coef_feat, coef_predict, pts_at_break, final_nb_pts, 
             r_score_feat, r_score_predict, breaking_cum_goal_diff, breaking_cum_goal_scored,
             roll_trend, trend]
+
 
 def build_data(historical_data: pd.DataFrame, break_leg: int):
     season_team_all = historical_data[['season', 'team']].values
