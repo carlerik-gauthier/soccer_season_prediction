@@ -7,8 +7,9 @@ from xgboost import XGBRanker
 
 # Implementation of xgb_ranker_raw (Rank-related)
 
-"""
 def get_xgboost_rank_ranker(training_data_df, validation_df, feature_cols):
+    pass
+"""
     ranker = XGBRanker()
     nb_teams = validation_df.team.nunique()
     nb_training_seasons = training_data_df.season.nunique()

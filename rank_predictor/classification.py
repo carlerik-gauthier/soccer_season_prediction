@@ -7,12 +7,14 @@ from xgboost import XGBClassifier
 
 # Implementation of xgb_class_raw (Classification)
 
-"""
 def get_gradient_boosting_classifier_ranker(training_data_df, 
                                             validation_df,
                                             feature_cols,
                                             model_type='simple_classifier'
                                            ):
+                                    
+    pass                                      
+    """
     # training_data_df = train_pivoted_df[feat_cols] 
     assert model_type in ['simple_classifier', 'rf_classifier']
     
