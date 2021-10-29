@@ -74,7 +74,8 @@ else:
         )
     loaded_data = load_data(championship=championship)
     train_data = deepcopy(loaded_data[loaded_data['season'].isin(training_seasons)]).reset_index(drop=True)
-    model = train_model(model_type=model_type_option, train_data=train_data)
+    validation_data = deepcopy(loaded_data[~loaded_data['season'].isin(training_seasons)]).reset_index(drop=True)
+    model = train_model(model_type=model_type_option, train_data=train_data, validation_data=validation_data)
     pass
 
 # provide the input

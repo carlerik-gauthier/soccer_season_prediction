@@ -9,23 +9,13 @@ from xgboost import XGBClassifier
 
 def get_gradient_boosting_classifier_ranker(training_data_df, 
                                             validation_df,
-                                            feature_cols,
-                                            model_type='simple_classifier'
+                                            feature_cols
                                            ):
-                                    
-    pass                                      
-    """
-    # training_data_df = train_pivoted_df[feat_cols] 
-    assert model_type in ['simple_classifier', 'rf_classifier']
-    
+                        
     nb_teams = validation_df.team.nunique()
     
-    if model_type == 'rf_classifier':
-        classifier = XGBRFClassifier()
-        core = 'xgb'
-    else:
-        classifier = XGBClassifier()
-        core = 'xgbrf'
+    classifier = XGBClassifier()
+    core = 'xgb_classifier'
     
     classifier.fit(X=training_data_df[feature_cols].values, y=training_data_df['final_rank'].values, 
                  eval_metric='mlogloss')
@@ -39,5 +29,23 @@ def get_gradient_boosting_classifier_ranker(training_data_df,
     
     return score_to_rank(season_df=validation_df, 
                           scores=evaluation, 
-                          col_name=f'{core}_classifier_umap')
+                          col_name=f'{core}')
+
+
+
+
 """
+get_gradient_boosting_classifier_ranker(
+        training_data_df=deepcopy(train_pivoted_df),
+        validation_df=deepcopy(valid_pivoted_df),
+        feature_cols=feat_cols,
+        model_type='simple_classifier')
+"""
+
+def score_to_rank(season_df: pd.DataFrame, scores: np.array, col_name: str):
+    tmp = pd.DataFrame(data=scores, columns=[col_name])
+
+    output_df = pd.concat([season_df[['season', 'team', 'final_rank']], tmp], axis=1)
+
+    output_df['predicted_rank'] = output_df[col_name].rank()
+    return output_df

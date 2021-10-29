@@ -32,11 +32,12 @@ def retrieve_model(module_path: str, file_name: str):
             return pickle.load(open(file_name+'.pickle', 'rb'))
     
 
-def train_model(model_type: str, championship:str, train_data: DataFrame):
+def train_model(model_type: str, championship:str, train_data: DataFrame, validation_data: DataFrame):
     """
     :param model_type: str: type of rank predicter. Must be either 'regression', 'classification' or 'ranking'
     :param championship str: name of the championship
     :param train_data pandas.DataFrame: data to be used to train the model
+    :param validation_data pandas.DataFrame: data to be used to measure the performance of the model
 
     :returns: scikit-learn model
     """
