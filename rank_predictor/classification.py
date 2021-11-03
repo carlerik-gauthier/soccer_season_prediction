@@ -7,6 +7,33 @@ from xgboost import XGBClassifier
 
 # Implementation of xgb_class_raw (Classification)
 
+class SoccerClassification:
+        def __init__(self) -> None:
+            self.model = XGBClassifier()
+        
+        def train(self, X, y, eval_metric='mlogloss') -> None:
+                self.model.fit(X=X, y=y, eval_metric=eval_metric)
+        
+        def get_ranking(self, data, teams: np.array) -> pd.DataFrame:
+                # compute the probabilities to belong to the different classes
+                nb_teams = len(teams)
+                probs = self.model.predict_proba(X=data)
+                weights = np.array([r+np.exp(np.log(100)*r/nb_teams) for r in range(1, nb_teams + 1)])
+                scores = np.array([np.dot(probs[i], weights) for i in range(len(probs))])
+                
+                output_df = pd.DataFrame(data={'team': teams, 'score': scores})
+                output_df['classification_predicted_rank'] = output_df['score'].rank()
+
+                return output_df
+
+        def get_training_performance(self, data, rank_col):
+            ...
+
+
+
+
+
+"""
 def get_gradient_boosting_classifier_ranker(training_data_df, 
                                             validation_df,
                                             feature_cols
@@ -31,7 +58,7 @@ def get_gradient_boosting_classifier_ranker(training_data_df,
                           scores=evaluation, 
                           col_name=f'{core}')
 
-
+"""
 
 
 """
@@ -41,11 +68,3 @@ get_gradient_boosting_classifier_ranker(
         feature_cols=feat_cols,
         model_type='simple_classifier')
 """
-
-def score_to_rank(season_df: pd.DataFrame, scores: np.array, col_name: str):
-    tmp = pd.DataFrame(data=scores, columns=[col_name])
-
-    output_df = pd.concat([season_df[['season', 'team', 'final_rank']], tmp], axis=1)
-
-    output_df['predicted_rank'] = output_df[col_name].rank()
-    return output_df

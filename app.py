@@ -86,9 +86,9 @@ input_data=st.download_button(
     label="""Provide your input : a csv file with the above format collecting all games played in one season until a specified leg.""")
 # input_path = st.text_input(label="Enter the path to you csv file.",
 # value="")
-# show prediction
-
-# model.predict(data=input_data)
 
 # Naive model
 
+# show prediction
+
+# model.predict(data=input_data)

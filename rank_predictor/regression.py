@@ -9,6 +9,20 @@ from sklearn.metrics import mean_squared_error as MS
 
 # Implementation of lr_6 (Regression)
 
+class SoccerRegression:
+    def __init__(self) -> None:
+        self.model = LinearRegression()
+    
+    def train(self, X, y):
+        self.model.fit(X=X, y=y)
+
+    def get_ranking(self, data, teams: np.array):
+        ...
+
+    def get_training_performance(self, data, rank_col):
+        ...
+
+
 def get_lr_parameters(data: pd.DataFrame):
     tmp_x_data = data.leg.values
     tmp_y_data = data.cum_pts.values
@@ -22,6 +36,23 @@ def get_lr_parameters(data: pd.DataFrame):
 
 
 """
+lr_6, meta = ranker(data_training=deepcopy(training_data_for_model),
+                        data_evaluation=deepcopy(validation_data_for_model),
+                        feature_cols=feature_cols,
+                        model_type='lin_reg',
+                        breaking_leg=breaking_leg,
+                        final_leg=final_leg)
+
+
+
+ naive = basic(data_training=deepcopy(training_data_for_model),
+                   data_evaluation=deepcopy(validation_data_for_model),
+                   feature_cols=feature_cols,
+                   breaking_leg=breaking_leg,
+                   final_leg=final_leg)
+
+
+
 def fit_general_model(
     data: pd.DataFrame, 
     feature_cols, 
