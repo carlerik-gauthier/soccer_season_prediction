@@ -4,33 +4,37 @@ from copy import deepcopy
 from datetime import datetime
 
 from xgboost import XGBClassifier
+from metrics.soccer_ranking import get_rank_percentage_quality
+
 
 # Implementation of xgb_class_raw (Classification)
 
 class SoccerClassification:
-        def __init__(self) -> None:
-            self.model = XGBClassifier()
-        
-        def train(self, X, y, eval_metric='mlogloss') -> None:
-                self.model.fit(X=X, y=y, eval_metric=eval_metric)
-        
-        def get_ranking(self, data, teams: np.array) -> pd.DataFrame:
-                # compute the probabilities to belong to the different classes
-                nb_teams = len(teams)
-                probs = self.model.predict_proba(X=data)
-                weights = np.array([r+np.exp(np.log(100)*r/nb_teams) for r in range(1, nb_teams + 1)])
-                scores = np.array([np.dot(probs[i], weights) for i in range(len(probs))])
-                
-                output_df = pd.DataFrame(data={'team': teams, 'score': scores})
-                output_df['classification_predicted_rank'] = output_df['score'].rank()
+    def __init__(self) -> None:
+        self.model = XGBClassifier()
 
-                return output_df
+    def train(self, X, y, eval_metric='mlogloss') -> None:
+        self.model.fit(X=X, y=y, eval_metric=eval_metric)
 
-        def get_training_performance(self, data, rank_col):
-            ...
+    def get_ranking(self,
+                    season_data: pd.DataFrame,
+                    teams: np.array,
+                    predicted_rank_col: str = "classification_predicted_rank"
+                    ) -> pd.DataFrame:
+        """ compute the probabilities to belong to the different classes """
+        nb_teams = len(teams)
+        probs = self.model.predict_proba(X=season_data)
+        weights = np.array([r + np.exp(np.log(100) * r / nb_teams) for r in range(1, nb_teams + 1)])
+        scores = np.array([np.dot(probs[i], weights) for i in range(len(probs))])
 
+        output_df = pd.DataFrame(data={'team': teams, 'score': scores})
+        output_df[predicted_rank_col] = output_df['score'].rank()
 
+        return output_df
 
+    def get_training_performance(self, test_data: pd.DataFrame, real_rank_col: str,
+                                 predicted_rank_col: str = "classification_predicted_rank"):
+        ...
 
 
 """
@@ -38,28 +42,27 @@ def get_gradient_boosting_classifier_ranker(training_data_df,
                                             validation_df,
                                             feature_cols
                                            ):
-                        
+
     nb_teams = validation_df.team.nunique()
-    
+
     classifier = XGBClassifier()
     core = 'xgb_classifier'
-    
+
     classifier.fit(X=training_data_df[feature_cols].values, y=training_data_df['final_rank'].values, 
                  eval_metric='mlogloss')
-    
+
     # compute the probabilities to belong to the different classes
     probs = classifier.predict_proba(validation_df[feature_cols].values)
-    
+
     weights = np.array([r+np.exp(np.log(100)*r/nb_teams) for r in range(1, nb_teams + 1)])
-    
+
     evaluation = np.array([np.dot(probs[i], weights) for i in range(len(probs))])
-    
+
     return score_to_rank(season_df=validation_df, 
                           scores=evaluation, 
                           col_name=f'{core}')
 
 """
-
 
 """
 get_gradient_boosting_classifier_ranker(

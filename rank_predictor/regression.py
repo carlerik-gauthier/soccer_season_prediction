@@ -3,36 +3,64 @@ import numpy as np
 from copy import deepcopy
 from datetime import datetime
 
-from sklearn.linear_model import LinearRegression 
-from sklearn.model_selection import train_test_split 
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error as MS
+
+from metrics.soccer_ranking import get_rank_percentage_quality
+
 
 # Implementation of lr_6 (Regression)
 
 class SoccerRegression:
     def __init__(self) -> None:
         self.model = LinearRegression()
-    
+
     def train(self, X, y):
         self.model.fit(X=X, y=y)
 
-    def get_ranking(self, data, teams: np.array):
-        pass
+    def get_ranking(self,
+                    season_data: pd.DataFrame,
+                    feature_cols: list,
+                    teams: np.array,
+                    championship_length: int,
+                    predicted_rank_col: str = "regression_predicted_rank"
+                    ) -> pd.DataFrame:
+        """ predict the linear slope from last known leg to end of the championship """
 
-    def get_training_performance(self, data, rank_col):
+        season_data['predicted_linear_coeff'] = season_data[feature_cols].apply(lambda feat: self.model.predict(feat))
+        # predict the number of points by the end of the season
+        cols = ['predicted_linear_coeff', 'nb_pts_at_break']
+        breaking_leg = season_data['leg'].max()
+        season_data['predicted_final_nb_pts'] = season_data[cols].apply(
+            lambda r: r[1] + r[0] * (championship_length - breaking_leg), axis=1)
+
+        # get final rank
+        rank_df = season_data.sort_values(by='predicted_final_nb_pts', ascending=False).reset_index(drop=True)
+        rank_df[predicted_rank_col] = rank_df.index + 1
+        return rank_df
+
+    def get_training_performance(self, test_data, real_rank_col: str,
+                                 predicted_rank_col: str = "regression_predicted_rank"):
         ...
+
+    def _predict(self, feature: np.array):
+        feature = feature.reshape(1, -1)
+        prediction = self.model.predict(feature)
+
+        return prediction[0]
 
 
 def get_lr_parameters(data: pd.DataFrame):
     tmp_x_data = data.leg.values
     tmp_y_data = data.cum_pts.values
-    
+
     x_data = np.array([0] + list(tmp_x_data)).reshape(-1, 1)
     y_data = np.array([0] + list(tmp_y_data)).reshape(-1, 1)
-    
+
     reg = LinearRegression(fit_intercept=False).fit(X=x_data, y=y_data)
-    
-    return reg.coef_[0][0] , reg.score(X=x_data, y=y_data)
+
+    return reg.coef_[0][0], reg.score(X=x_data, y=y_data)
 
 
 """
@@ -59,21 +87,21 @@ def fit_general_model(
     target_col, 
     test_frac = .2,
     model_type = 'lin_reg'):
-    
+
     assert model_type in ['lin_reg', 'xgboost', 'random_forest']
-    
+
     data.reset_index(drop=True, inplace=True)
-    
-    
+
+
     features = data[feature_cols].values
     target = data[target_col].values
-    
+
     # split data
     x_train, x_test, y_train, y_test = train_test_split(features, 
                                                         target,
                                                         test_size=test_frac,
                                                         random_state=42)
-    
+
     # get model
     if model_type=='random_forest':
         model = RandomForestRegressor().fit(X=x_train, y=y_train)
@@ -81,7 +109,7 @@ def fit_general_model(
         model = XGBRegressor().fit(X=x_train, y=y_train)
     else:
         model = LinearRegression().fit(X=x_train, y=y_train)
-        
+
     pred = model.predict(x_test) 
 
     # R2_score :
@@ -90,7 +118,7 @@ def fit_general_model(
 
      # RMSE Computation 
     rmse = np.sqrt(MSE(y_test, pred))
-    
+
     return model, {'r2_score_train': r2_score_train, 'r2_score_test': r2_score_test, 'rmse_test': rmse} 
 
 
@@ -98,7 +126,7 @@ def predict(scikit_model, feature: np.array):
 
     feature = feature.reshape(1, -1)
     prediction = scikit_model.predict(feature)
-    
+
     return prediction[0]
 
 
@@ -142,7 +170,7 @@ def ranker(data_training, data_evaluation, feature_cols, model_type,
         axis=1)
 
     cols = [f'predicted_{model_type}_predict_coeff', 'nb_pts_at_break']
-        
+
     data_evaluation['predicted_final_nb_pts'] = data_evaluation[cols].apply(
         lambda r: compute_expected_final_nb_points(lin_coeff=r[0],
                                                    nb_pts_at_break=r[1],
@@ -150,12 +178,12 @@ def ranker(data_training, data_evaluation, feature_cols, model_type,
                                                    final_leg=final_leg, 
                                                    basic=False), 
         axis=1)
-    
+
     rmse = np.sqrt(MSE(data_evaluation['final_nb_pts'].values,
                        data_evaluation[f'predicted_final_nb_pts'].values)
                   )
     metadata['rmse_eval'] = rmse
-    
+
     return data_evaluation, metadata
 
 def points_predicter(data_training, data_evaluation, feature_cols, target_col, model_type):
