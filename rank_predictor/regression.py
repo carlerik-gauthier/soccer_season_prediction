@@ -17,7 +17,7 @@ class SoccerRegression:
         self.model.fit(X=X, y=y)
 
     def get_ranking(self, data, teams: np.array):
-        ...
+        pass
 
     def get_training_performance(self, data, rank_col):
         ...
