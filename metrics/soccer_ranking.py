@@ -1,10 +1,13 @@
 def _get_rank_position_scoring(nb_teams):
-    bonus_position = {1: 300, 2: 280, 3: 270, 4: 260, 5: 220}
-
-    bonus_position[nb_teams] = 350
-    bonus_position[nb_teams - 1] = 340
-    bonus_position[nb_teams - 2] = 300
-    bonus_position[nb_teams - 3] = 280
+    bonus_position = {1: 300,
+                      2: 280,
+                      3: 270,
+                      4: 260,
+                      5: 220,
+                      nb_teams: 350,
+                      nb_teams - 1: 340,
+                      nb_teams - 2: 300,
+                      nb_teams - 3: 280}
 
     for rk in range(6, nb_teams - 3):
         upper = ((nb_teams / 2) - 3) ** 2

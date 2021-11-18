@@ -13,36 +13,34 @@ from metrics.soccer_ranking import get_rank_percentage_quality
 # Implementation of lr_6 (Regression)
 
 class SoccerRegression:
-    def __init__(self) -> None:
+    def __init__(self, nb_opponent) -> None:
         self.model = LinearRegression()
+        self.nb_opponent = nb_opponent
+        self.championship_length = 2 * (self.nb_opponent - 1)
 
-    def train(self, X, y):
-        self.model.fit(X=X, y=y)
+    def train(self, feature_data, y):
+        self.model.fit(X=feature_data, y=y)
 
     def get_ranking(self,
                     season_data: pd.DataFrame,
                     feature_cols: list,
-                    teams: np.array,
-                    championship_length: int,
-                    predicted_rank_col: str = "regression_predicted_rank"
+                    predicted_rank_col: str = "regression_predicted_rank",
+                    leg_col: str = 'leg',
+                    teams: np.array = None
                     ) -> pd.DataFrame:
         """ predict the linear slope from last known leg to end of the championship """
 
         season_data['predicted_linear_coeff'] = season_data[feature_cols].apply(lambda feat: self.model.predict(feat))
         # predict the number of points by the end of the season
         cols = ['predicted_linear_coeff', 'nb_pts_at_break']
-        breaking_leg = season_data['leg'].max()
+        breaking_leg = season_data[leg_col].max()
         season_data['predicted_final_nb_pts'] = season_data[cols].apply(
-            lambda r: r[1] + r[0] * (championship_length - breaking_leg), axis=1)
+            lambda r: r[1] + r[0] * (self.championship_length - breaking_leg), axis=1)
 
         # get final rank
         rank_df = season_data.sort_values(by='predicted_final_nb_pts', ascending=False).reset_index(drop=True)
         rank_df[predicted_rank_col] = rank_df.index + 1
         return rank_df
-
-    def get_training_performance(self, test_data, real_rank_col: str,
-                                 predicted_rank_col: str = "regression_predicted_rank"):
-        ...
 
     def _predict(self, feature: np.array):
         feature = feature.reshape(1, -1)
