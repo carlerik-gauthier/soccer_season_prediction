@@ -25,7 +25,7 @@ def _get_rank_scoring(nb_teams):
     return {1 + i // 2 if i % 2 == 0 else nb_teams - i // 2: max_bonus - i * 250 for i in range(nb_teams)}
 
 
-def get_rank_percentage_quality(nb_teams: int, version: int = 1):
+def get_rank_percentage_quality_dict(nb_teams: int, version: int = 1):
     if version == 1:
         return _get_rank_position_scoring(nb_teams=nb_teams)
     elif version == 2:
