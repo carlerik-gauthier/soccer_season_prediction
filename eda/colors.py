@@ -40,26 +40,26 @@ plotly_colors = '''
 
 
 color_2_position = {1: "royalblue", 
-            2: "cornflowerblue",
-            3: "aqua",
-            4: "chartreuse",
-            5: "yellowgreen",
-            6: "green",
-            7: "teal",
-            8: "purple",
-            9: "mediumturquoise",
-            10: "plum",
-            11: "khaki",
-            12: "goldenrod",
-            13: "yellow",
-            14: "chocolate",
-            15: "lightpink",
-            16: "hotpink",
-            17: "lightsalmon",
-            18: "orange",
-            19: "orangered",
-            20: "red"
-            }
+                    2: "cornflowerblue",
+                    3: "aqua",
+                    4: "chartreuse",
+                    5: "yellowgreen",
+                    6: "green",
+                    7: "teal",
+                    8: "purple",
+                    9: "mediumturquoise",
+                    10: "plum",
+                    11: "khaki",
+                    12: "goldenrod",
+                    13: "yellow",
+                    14: "chocolate",
+                    15: "lightpink",
+                    16: "hotpink",
+                    17: "lightsalmon",
+                    18: "orange",
+                    19: "orangered",
+                    20: "red"
+                    }
 
 
 def color_name_to_rgba(name, fill=0.3):

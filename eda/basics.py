@@ -1,6 +1,8 @@
 from pandas import DataFrame
 
-def get_team_participation(df: DataFrame, championship: str):
+
+def get_team_participation(df: DataFrame,
+                           championship: str):
     nb_teams = df.team.nunique()
     nb_seasons = df.season.nunique()
     first_season = df.season.min()
@@ -12,10 +14,10 @@ def get_team_participation(df: DataFrame, championship: str):
     
     end_season_df = df[df.leg==season_length].rename(columns={'rank':'final_rank'})
     participation_df = end_season_df[['team', 'final_rank']].groupby(by='team').agg('count').rename(
-    columns={"final_rank":"nb_participation"})
+        columns={"final_rank":"nb_participation"})
     
     print("{nb_all_seasons} teams played all {nb_seasons} seasons".format(
-        nb_all_seasons=len(participation_df[participation_df.nb_participation==nb_seasons]),
+        nb_all_seasons=len(participation_df[participation_df.nb_participation == nb_seasons]),
         nb_seasons=nb_seasons)
          )
     
@@ -24,7 +26,7 @@ def get_team_participation(df: DataFrame, championship: str):
 
 def get_goal_scored_repartition(data_df: DataFrame):
     dg = data_df[['championship', 'goals_scored', 'play']].groupby(
-    by=['championship', 'goals_scored']).count()
+        by=['championship', 'goals_scored']).count()
     dg.reset_index(inplace=True)
     dg.rename(columns={'play': 'quantity'}, inplace=True)
     total = data_df[['championship', 'play']].groupby(by=['championship']).count()
