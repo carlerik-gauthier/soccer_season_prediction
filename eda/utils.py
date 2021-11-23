@@ -1,3 +1,4 @@
+import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from pandas import DataFrame
@@ -39,3 +40,18 @@ def get_layout():
                           pad=4
                      )
                      )
+
+
+def get_layers_avg_kpi(x: pd.Series,
+                       avg_data: pd.Series,
+                       color: str = 'blue',
+                       width: int = 2,
+                       std_data: pd.Series = True):
+    pass
+
+
+def get_layers_cumulative_kpi(x: pd.Series,
+                              cumulative_data: pd.Series,
+                              color: str = 'blue',
+                              width: int = 2):
+    pass

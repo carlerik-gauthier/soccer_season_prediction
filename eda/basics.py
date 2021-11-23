@@ -12,9 +12,9 @@ def get_team_participation(df: DataFrame,
     
     season_length = df.leg.max()
     
-    end_season_df = df[df.leg==season_length].rename(columns={'rank':'final_rank'})
+    end_season_df = df[df.leg == season_length].rename(columns={'rank': 'final_rank'})
     participation_df = end_season_df[['team', 'final_rank']].groupby(by='team').agg('count').rename(
-        columns={"final_rank":"nb_participation"})
+        columns={"final_rank": "nb_participation"})
     
     print("{nb_all_seasons} teams played all {nb_seasons} seasons".format(
         nb_all_seasons=len(participation_df[participation_df.nb_participation == nb_seasons]),
@@ -35,3 +35,12 @@ def get_goal_scored_repartition(data_df: DataFrame):
     class_recap = dg.merge(total, how='left', on='championship')
     class_recap['percent'] = 100*class_recap['quantity'].div(class_recap['total'])
     return class_recap
+
+
+def get_nb_competitor(df: DataFrame, leg_col: str = 'leg'):
+    max_leg = df[leg_col].max()
+    return 1 + (max_leg/2)
+
+
+def get_championship_length(df: DataFrame, leg_col: str = 'leg'):
+    return df[leg_col].max()

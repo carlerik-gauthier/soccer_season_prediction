@@ -6,11 +6,13 @@ from copy import deepcopy
 
 from eda.colors import color_2_position, color_name_to_rgba
 from eda.utils import get_layout
+from eda.basics import get_nb_competitor
 
 
 # plot_plotly_kpi
 def plot_kpi_evolution(df: pd.DataFrame,
                        kpi: str = 'cum_pts',
+                       leg_col: str = 'leg',
                        show_standard_deviation: bool = False):
     """
     This function returns a plot average (+ standard deviation if wanted) from kpis during the course of a season.
@@ -19,6 +21,7 @@ def plot_kpi_evolution(df: pd.DataFrame,
     :param df: Dataframe containing the preprocessed data
     :param kpi: name of the kpi to be drawn. Admissible Kpis are : rank, cum_pts, cum_goal_diff, cum_goal_scored,
      goals_conceded and goals_scored
+    :param leg_col: name of the column containing data related to the legs
     :param  show_standard_deviation: If True, a confidence interval is provided. Default is False
     """
 
@@ -59,11 +62,12 @@ def plot_kpi_evolution(df: pd.DataFrame,
         fig.show()
     else:
         go_layers = []
+        nb_competitor = get_nb_competitor(df=df, leg_col=leg_col)
         for ranking in df.final_rank.unique()[::-1]:
             dg = df[df.final_rank == ranking]
             sublayer = [go.Scatter(
                         name=str(ranking),
-                        x=dg['leg'],
+                        x=dg[leg_col],
                         y=dg[avg_col],
                         mode='lines',
                         line=dict(color=color_2_position[ranking],
@@ -73,7 +77,7 @@ def plot_kpi_evolution(df: pd.DataFrame,
 
                         go.Scatter(
                             name=f'Upper Bound {ranking}',
-                            x=dg['leg'],
+                            x=dg[leg_col],
                             y=dg[avg_col]+dg[std_col],
                             mode='lines',
                             marker=dict(color="#444"),
@@ -83,7 +87,7 @@ def plot_kpi_evolution(df: pd.DataFrame,
 
                         go.Scatter(
                             name=f'Lower Bound {ranking}',
-                            x=dg['leg'],
+                            x=dg[leg_col],
                             y=dg[avg_col]-dg[std_col],
                             marker=dict(color="#444"),
                             line=dict(width=0),
@@ -101,7 +105,7 @@ def plot_kpi_evolution(df: pd.DataFrame,
 
         fig.update_layout(
             yaxis_title=yaxis_title_dict[kpi],
-            xaxis_title='leg',
+            xaxis_title=leg_col,
             title=f"{kpi} evolution according to final ranking",
             hovermode="x"
         )
@@ -113,6 +117,8 @@ def plot_team_pts_evol_with_competitor_avg_evolution(data: pd.DataFrame,
                                                      team: str,
                                                      until_leg: int = 38,
                                                      season: str = None,
+                                                     cum_points_col: str = 'cum_pts',
+                                                     leg_col: str = 'leg',
                                                      compare_with: bool = None):
     """
     Plot a team cumulative point evolution up to a given leg for a particular season (or all seasons) with the average
@@ -122,6 +128,9 @@ def plot_team_pts_evol_with_competitor_avg_evolution(data: pd.DataFrame,
     :param data: pd.DataFrame: data containing the league performance
     :param team: str: name of the team we want to analyze
     :param season: str: season we're interested in
+    :param cum_points_col: name of the column containing data related to the points cumulated during the season step
+    by step
+    :param leg_col: name of the column containing data related to the legs
     :param until_leg: int: plot team's pts evolution from legs 1 to until leg included
     :param compare_with: str: name of the team whose average pts evolution is computed and which is used for 
     comparison. That Team MUST have played at least 5 seasons
@@ -137,19 +146,19 @@ def plot_team_pts_evol_with_competitor_avg_evolution(data: pd.DataFrame,
         raise ValueError(f"""{team} has not played season {season} or {comparator_data} has only played at most 
                          4 seasons. Please review your inputs""")
         
-    avg_comparator_data = comparator_data[['leg', 'cum_pts']].groupby(
-        by=['leg']).mean().reset_index().rename(columns={'cum_pts': 'avg_cum_pts'})
+    avg_comparator_data = comparator_data[[leg_col, cum_points_col]].groupby(
+        by=[leg_col]).mean().reset_index().rename(columns={cum_points_col: f'avg_cum_pts'})
     
     go_layers = [go.Scatter(name=f"{compare_with} averaged",
-                            x=avg_comparator_data['leg'],
+                            x=avg_comparator_data[leg_col],
                             y=avg_comparator_data['avg_cum_pts'],
                             mode='lines',
                             line=dict(color="red",
                                       width=5)
                             ),
                  go.Scatter(name=team,
-                            x=team_data['leg'],
-                            y=team_data['cum_pts'],
+                            x=team_data[leg_col],
+                            y=team_data[cum_points_col],
                             mode='lines',
                             line=dict(color="royalblue",
                                       width=2)
@@ -171,6 +180,8 @@ def plot_team_pts_evol_with_competitor_avg_evolution(data: pd.DataFrame,
 
 def plot_team_pts_evol_to_average_performance(data: pd.DataFrame,
                                               team: str,
+                                              leg_col: str = 'leg',
+                                              cum_points_col: str = 'cum_pts',
                                               until_leg: int = 38):
     """
     Plot all cumulative points for a given team up to a given leg and compare them with the average performance going
@@ -178,6 +189,9 @@ def plot_team_pts_evol_to_average_performance(data: pd.DataFrame,
 
     :param data: pd.DataFrame: data containing the league performance
     :param team: str: name of the team we want to analyze
+    :param cum_points_col: name of the column containing data related to the points cumulated during the season step
+    by step
+    :param leg_col: name of the column containing data related to the legs
     :param until_leg: int: plot team's pts evolution from legs 1 to until leg included
     comparison. The team MUST have played at least 5 seasons
     """
@@ -189,11 +203,11 @@ def plot_team_pts_evol_to_average_performance(data: pd.DataFrame,
         raise ValueError(f"""{team} has only played at most 4 seasons.
         Please pick a team having played at least 5 seasons. """)
 
-    avg_comparator_data = comparator_data[['leg', 'cum_pts']].groupby(
-        by=['leg']).mean().reset_index().rename(columns={'cum_pts': 'avg_cum_pts'})
+    avg_comparator_data = comparator_data[[leg_col, cum_points_col]].groupby(
+        by=[leg_col]).mean().reset_index().rename(columns={cum_points_col: 'avg_cum_pts'})
     
     go_layers = [go.Scatter(name="averaged point evolution",
-                            x=avg_comparator_data['leg'],
+                            x=avg_comparator_data[leg_col],
                             y=avg_comparator_data['avg_cum_pts'],
                             mode='lines',
                             line=dict(color="red",
@@ -206,8 +220,8 @@ def plot_team_pts_evol_to_average_performance(data: pd.DataFrame,
         season = f'{season_start}-{season_start+1}'
         sublayer = [
          go.Scatter(name=season,
-                    x=team_data[team_data.season == season]['leg'],
-                    y=team_data[team_data.season == season]['cum_pts'],
+                    x=team_data[team_data.season == season][leg_col],
+                    y=team_data[team_data.season == season][cum_points_col],
                     mode='lines',
                     line=dict(color=color_2_position[i],
                               width=2)
@@ -232,6 +246,9 @@ def plot_team_pts_evol_to_average_performance(data: pd.DataFrame,
 def plot_team_pts_evol_vs_final_rank(df: pd.DataFrame,
                                      team: str,
                                      season: str = None,
+                                     leg_col: str = 'leg',
+                                     cum_points_col: str = 'cum_pts',
+                                     final_rank_col: str = 'final_rank',
                                      show_standard_deviation: bool = True):
     
     kpi = 'cum_pts'
@@ -242,11 +259,11 @@ def plot_team_pts_evol_vs_final_rank(df: pd.DataFrame,
     
     if season is None:
         tmp_df = deepcopy(df[df.team == team])
-        team_df = tmp_df[['leg', 'cum_pts']].groupby(
-            by=['leg']).mean().reset_index().rename(columns={'cum_pts': 'avg_cum_pts'})
+        team_df = tmp_df[[leg_col, cum_points_col]].groupby(
+            by=[leg_col]).mean().reset_index().rename(columns={cum_points_col: 'avg_cum_pts'})
         
         sub_layer = [go.Scatter(name=f"{team} averaged point evolution",
-                                x=team_df['leg'],
+                                x=team_df[leg_col],
                                 y=team_df['avg_cum_pts'],
                                 mode='lines',
                                 line=dict(color="silver",
@@ -256,15 +273,15 @@ def plot_team_pts_evol_vs_final_rank(df: pd.DataFrame,
     else:
         team_df = deepcopy(df[(df.team == team) & (df.season == season)])
         sub_layer = [go.Scatter(name=f"{team} point evolution",
-                                x=team_df['leg'],
-                                y=team_df['cum_pts'],
+                                x=team_df[leg_col],
+                                y=team_df[cum_points_col],
                                 mode='lines',
                                 line=dict(color="gold",
                                           width=6)
                                 )
                      ]
     
-    comparator = df.groupby(by=['final_rank', 'leg']).aggregate({'cum_pts': ['mean', 'std']})
+    comparator = df.groupby(by=[final_rank_col, leg_col]).aggregate({cum_points_col: ['mean', 'std']})
     comparator.columns = [avg_col, std_col]
     comp_final = comparator.reset_index()
     
@@ -272,7 +289,7 @@ def plot_team_pts_evol_vs_final_rank(df: pd.DataFrame,
     for ranking in comp_final.final_rank.unique()[::-1]:
         dg = comp_final[comp_final.final_rank == ranking]
         sublayer = [go.Scatter(name=str(ranking),
-                               x=dg['leg'],
+                               x=dg[leg_col],
                                y=dg[avg_col],
                                mode='lines',
                                line=dict(color=color_2_position[ranking],
@@ -280,7 +297,7 @@ def plot_team_pts_evol_vs_final_rank(df: pd.DataFrame,
                                ),
 
                     go.Scatter(name=f'Upper Bound {ranking}',
-                               x=dg['leg'],
+                               x=dg[leg_col],
                                y=dg[avg_col]+dg[std_col],
                                mode='lines',
                                marker=dict(color="#444"),
@@ -289,7 +306,7 @@ def plot_team_pts_evol_vs_final_rank(df: pd.DataFrame,
                                ),
 
                     go.Scatter(name=f'Lower Bound {ranking}',
-                               x=dg['leg'],
+                               x=dg[leg_col],
                                y=dg[avg_col]-dg[std_col],
                                marker=dict(color="#444"),
                                line=dict(width=0),
@@ -320,3 +337,9 @@ def _get_width(ranking: int, nb_competitor: int = None):
         return 2
 
     return 2 if ranking not in [3, nb_competitor - 2] else 5
+
+
+def _get_average_cumulative_points():
+    pass
+
+# refacto the sublayers parts : see eda.utils
