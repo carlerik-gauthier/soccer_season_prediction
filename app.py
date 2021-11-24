@@ -1,10 +1,15 @@
-from os import name
+"""
+Making an app based upon the streamlit package. Documentation can be found there :
+https://docs.streamlit.io/library/get-started/main-concepts
+https://docs.streamlit.io/library/api-reference
+https://docs.streamlit.io/library/get-started/create-an-app
+"""
+import os
+
 import streamlit as st
-# https://docs.streamlit.io/library/get-started/main-concepts
-# https://docs.streamlit.io/library/get-started/create-an-app 
 from copy import deepcopy
 from utils import is_available, train_model, retrieve_model
-
+from preprocess.soccer_data import prepare_data
 # TODO : 1. connection to model// 2. EDA part
 
 season_options = ['{start_year}-{end_year}'.format(start_year=year, end_year=year+1) for year in range(2004, 2019)]
@@ -14,15 +19,17 @@ championship_csv = {'ligue-1': 'ligue-1_data_2002_2019',
                     'serie-A': 'serie-a_data_2004_2019',
                     'bundesliga': 'bundesliga_data_2004_2019',
                     'premier-league': 'premier-league_data_2004_2019',
-                    'liga':'liga_data_2004_2019'}
+                    'liga': 'liga_data_2004_2019'}
 
 st.title('Soccer : what is the final ranking ?')
 
 
 @st.cache
-def load_data(championship: str):
+def load_data(league: str):
     """extract data"""
-    pass
+    csv_file = championship_csv.get(league, 'ligue-1_data_2002_2019')
+    csv_path = os.path.join(os.path.dirname(__file__), os.path.join('inputs', csv_file))
+    return prepare_data(csv_path=csv_path)
 
 
 @st.cache
@@ -38,6 +45,9 @@ see_eda = st.selectbox(label="Do you want to see some EDA ?", options=['yes', 'n
 if see_eda == 'yes':
     championship_choices_list = st.multiselect(label="Select the championship you want to see",
                                                options=championship_csv.keys())
+    # get data
+
+    championship_data = {champ: load_data(league=champ) for champ in championship_choices_list}
     # show basic eda
 
     # show eda plots
@@ -78,7 +88,11 @@ else:
     loaded_data = load_data(championship=championship)
     train_data = deepcopy(loaded_data[loaded_data['season'].isin(training_seasons)]).reset_index(drop=True)
     validation_data = deepcopy(loaded_data[~loaded_data['season'].isin(training_seasons)]).reset_index(drop=True)
-    model = train_model(model_type=model_type_option, train_data=train_data, validation_data=validation_data)
+    # function below MUST BE COMPLETED
+    model = train_model(championship=championship,
+                        model_type=model_type_option,
+                        train_data=train_data,
+                        validation_data=validation_data)
     pass
 
 # provide the input
