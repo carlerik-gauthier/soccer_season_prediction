@@ -42,16 +42,57 @@ def get_layout():
                      )
 
 
-def get_layers_avg_kpi(x: pd.Series,
+def get_layers_avg_kpi(plot_name: str,
+                       x: pd.Series,
                        avg_data: pd.Series,
                        color: str = 'blue',
                        width: int = 2,
-                       std_data: pd.Series = True):
-    pass
+                       std_data: pd.Series = None,
+                       fillcolor: str = 'green'):
+    sublayer = [go.Scatter(name=plot_name,
+                           x=x,
+                           y=avg_data,
+                           mode='lines',
+                           line=dict(color=color,
+                                     width=width
+                                     )
+                           )
+                ]
+    if std_data is None:
+        return sublayer
+
+    sublayer += [go.Scatter(name=f'Upper Bound {plot_name}',
+                            x=x,
+                            y=avg_data + std_data,
+                            mode='lines',
+                            marker=dict(color="#444"),
+                            line=dict(width=0),
+                            showlegend=False
+                        ),
+
+                 go.Scatter(name=f'Lower Bound {plot_name}',
+                            x=x,
+                            y=avg_data - std_data,
+                            marker=dict(color="#444"),
+                            line=dict(width=0),
+                            mode='lines',
+                            fillcolor=fillcolor,
+                            fill='tonexty',
+                            showlegend=False,
+                            )
+                 ]
 
 
-def get_layers_cumulative_kpi(x: pd.Series,
-                              cumulative_data: pd.Series,
-                              color: str = 'blue',
-                              width: int = 2):
-    pass
+def get_layer_cumulative_kpi(plot_name: str,
+                             x: pd.Series,
+                             y: pd.Series,
+                             color: str = "blue",
+                             width: int = 2):
+    return [go.Scatter(name=plot_name,
+                       x=x,
+                       y=y,
+                       mode='lines',
+                       line=dict(color=color,
+                                 width=width)
+                       )
+            ]

@@ -5,7 +5,7 @@ import pandas as pd
 from copy import deepcopy
 
 from eda.colors import color_2_position, color_name_to_rgba
-from eda.utils import get_layout
+from eda.utils import get_layout, get_layer_cumulative_kpi, get_layers_avg_kpi
 from eda.basics import get_nb_competitor
 
 
@@ -65,38 +65,14 @@ def plot_kpi_evolution(df: pd.DataFrame,
         nb_competitor = get_nb_competitor(df=df, leg_col=leg_col)
         for ranking in df.final_rank.unique()[::-1]:
             dg = df[df.final_rank == ranking]
-            sublayer = [go.Scatter(
-                        name=str(ranking),
-                        x=dg[leg_col],
-                        y=dg[avg_col],
-                        mode='lines',
-                        line=dict(color=color_2_position[ranking],
-                                  width=_get_width(ranking=ranking, nb_competitor=nb_competitor)
-                                  )
-                        ),
-
-                        go.Scatter(
-                            name=f'Upper Bound {ranking}',
-                            x=dg[leg_col],
-                            y=dg[avg_col]+dg[std_col],
-                            mode='lines',
-                            marker=dict(color="#444"),
-                            line=dict(width=0),
-                            showlegend=False
-                                ),
-
-                        go.Scatter(
-                            name=f'Lower Bound {ranking}',
-                            x=dg[leg_col],
-                            y=dg[avg_col]-dg[std_col],
-                            marker=dict(color="#444"),
-                            line=dict(width=0),
-                            mode='lines',
-                            fillcolor=color_name_to_rgba(name=color_2_position[ranking], fill=0.1),
-                            fill='tonexty',
-                            showlegend=False,
-                        )
-                        ]
+            sublayer = get_layers_avg_kpi(plot_name=str(ranking),
+                                          x=dg[leg_col],
+                                          avg_data=dg[avg_col],
+                                          std_data=dg[std_col],
+                                          color=color_2_position[ranking],
+                                          width=_get_width(ranking=ranking, nb_competitor=nb_competitor),
+                                          fillcolor=color_name_to_rgba(name=color_2_position[ranking], fill=0.1)
+                                          )
             go_layers += sublayer
 
         layout = get_layout()
@@ -149,22 +125,18 @@ def plot_team_pts_evol_with_competitor_avg_evolution(data: pd.DataFrame,
     avg_comparator_data = comparator_data[[leg_col, cum_points_col]].groupby(
         by=[leg_col]).mean().reset_index().rename(columns={cum_points_col: f'avg_cum_pts'})
     
-    go_layers = [go.Scatter(name=f"{compare_with} averaged",
-                            x=avg_comparator_data[leg_col],
-                            y=avg_comparator_data['avg_cum_pts'],
-                            mode='lines',
-                            line=dict(color="red",
-                                      width=5)
-                            ),
-                 go.Scatter(name=team,
-                            x=team_data[leg_col],
-                            y=team_data[cum_points_col],
-                            mode='lines',
-                            line=dict(color="royalblue",
-                                      width=2)
-                            )
-                 ]
-
+    go_layers = get_layer_cumulative_kpi(plot_name=f"{compare_with} averaged",
+                                         x=avg_comparator_data[leg_col],
+                                         y=avg_comparator_data['avg_cum_pts'],
+                                         color="red",
+                                         width=5
+                                         )
+    go_layers += get_layer_cumulative_kpi(plot_name=team,
+                                          x=team_data[leg_col],
+                                          y=team_data[cum_points_col],
+                                          color="royalblue",
+                                          width=2
+                                          )
     layout = get_layout()
 
     fig = go.Figure(data=go_layers, layout=layout)
@@ -205,29 +177,21 @@ def plot_team_pts_evol_to_average_performance(data: pd.DataFrame,
 
     avg_comparator_data = comparator_data[[leg_col, cum_points_col]].groupby(
         by=[leg_col]).mean().reset_index().rename(columns={cum_points_col: 'avg_cum_pts'})
-    
-    go_layers = [go.Scatter(name="averaged point evolution",
-                            x=avg_comparator_data[leg_col],
-                            y=avg_comparator_data['avg_cum_pts'],
-                            mode='lines',
-                            line=dict(color="red",
-                                      width=5)
-                            )
-                 ]
+
+    go_layers = get_layer_cumulative_kpi(plot_name="averaged point evolution",
+                                         x=avg_comparator_data[leg_col],
+                                         y=avg_comparator_data['avg_cum_pts'],
+                                         color="red",
+                                         width=5)
     i = 0
     for season_start in range(2004, 2019):
         i += 1
         season = f'{season_start}-{season_start+1}'
-        sublayer = [
-         go.Scatter(name=season,
-                    x=team_data[team_data.season == season][leg_col],
-                    y=team_data[team_data.season == season][cum_points_col],
-                    mode='lines',
-                    line=dict(color=color_2_position[i],
-                              width=2)
-                    )
-        ]
-        
+        sublayer = get_layer_cumulative_kpi(plot_name=season,
+                                            x=team_data[team_data.season == season][leg_col],
+                                            y=team_data[team_data.season == season][cum_points_col],
+                                            color=color_2_position[i],
+                                            width=2)
         go_layers += sublayer
     
     layout = get_layout()
@@ -262,24 +226,18 @@ def plot_team_pts_evol_vs_final_rank(df: pd.DataFrame,
         team_df = tmp_df[[leg_col, cum_points_col]].groupby(
             by=[leg_col]).mean().reset_index().rename(columns={cum_points_col: 'avg_cum_pts'})
         
-        sub_layer = [go.Scatter(name=f"{team} averaged point evolution",
-                                x=team_df[leg_col],
-                                y=team_df['avg_cum_pts'],
-                                mode='lines',
-                                line=dict(color="silver",
-                                          width=6)
-                                )
-                     ]
+        sub_layer = get_layer_cumulative_kpi(plot_name=f"{team} averaged point evolution",
+                                             x=team_df[leg_col],
+                                             y=team_df['avg_cum_pts'],
+                                             color="silver",
+                                             width=6)
     else:
         team_df = deepcopy(df[(df.team == team) & (df.season == season)])
-        sub_layer = [go.Scatter(name=f"{team} point evolution",
-                                x=team_df[leg_col],
-                                y=team_df[cum_points_col],
-                                mode='lines',
-                                line=dict(color="gold",
-                                          width=6)
-                                )
-                     ]
+        sub_layer = get_layer_cumulative_kpi(plot_name=f"{team} point evolution",
+                                             x=team_df[leg_col],
+                                             y=team_df[cum_points_col],
+                                             color="gold",
+                                             width=6)
     
     comparator = df.groupby(by=[final_rank_col, leg_col]).aggregate({cum_points_col: ['mean', 'std']})
     comparator.columns = [avg_col, std_col]
@@ -288,35 +246,15 @@ def plot_team_pts_evol_vs_final_rank(df: pd.DataFrame,
     go_layers += sub_layer
     for ranking in comp_final.final_rank.unique()[::-1]:
         dg = comp_final[comp_final.final_rank == ranking]
-        sublayer = [go.Scatter(name=str(ranking),
-                               x=dg[leg_col],
-                               y=dg[avg_col],
-                               mode='lines',
-                               line=dict(color=color_2_position[ranking],
-                                         width=_get_width(ranking=ranking))
-                               ),
-
-                    go.Scatter(name=f'Upper Bound {ranking}',
-                               x=dg[leg_col],
-                               y=dg[avg_col]+dg[std_col],
-                               mode='lines',
-                               marker=dict(color="#444"),
-                               line=dict(width=0),
-                               showlegend=False
-                               ),
-
-                    go.Scatter(name=f'Lower Bound {ranking}',
-                               x=dg[leg_col],
-                               y=dg[avg_col]-dg[std_col],
-                               marker=dict(color="#444"),
-                               line=dict(width=0),
-                               mode='lines',
-                               fillcolor=color_name_to_rgba(name=color_2_position[ranking],
-                                                            fill=0.1*show_standard_deviation),
-                               fill='tonexty',
-                               showlegend=False,
-                               )
-                    ]
+        sublayer = get_layers_avg_kpi(plot_name=str(ranking),
+                                      x=dg[leg_col],
+                                      avg_data=dg[avg_col],
+                                      std_data=dg[std_col],
+                                      color=color_2_position[ranking],
+                                      width=_get_width(ranking=ranking),
+                                      fillcolor=color_name_to_rgba(name=color_2_position[ranking],
+                                                                   fill=0.1*show_standard_deviation)
+                                      )
         go_layers += sublayer
 
     layout = get_layout()
@@ -337,9 +275,3 @@ def _get_width(ranking: int, nb_competitor: int = None):
         return 2
 
     return 2 if ranking not in [3, nb_competitor - 2] else 5
-
-
-def _get_average_cumulative_points():
-    pass
-
-# refacto the sublayers parts : see eda.utils
