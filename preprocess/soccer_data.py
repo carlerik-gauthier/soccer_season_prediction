@@ -30,8 +30,10 @@ def get_past_feature(df, feat_col, team=True):
     return df
 
 
-def prepare_data(csv_path, rolling=5):
+def prepare_data(csv_path, rolling=5, raw=False):
     df = pd.read_csv(csv_path).drop(columns='Unnamed: 0')
+    if raw:
+        return df
     df['goal_diff'] = df['goals_scored'] - df['goals_conceded']
     # cumulative
     df['cum_pts'] = df[['season', 'team', 'nb_points']].groupby(by=['season', 'team']).cumsum()

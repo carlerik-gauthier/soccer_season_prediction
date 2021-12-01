@@ -57,11 +57,11 @@ def train_model(model_type: str,
         model = ...
         pass
     elif model_type == 'classification':
-        from rank_predictor.classification import get_gradient_boosting_classifier_ranker
+        # from rank_predictor.classification import get_gradient_boosting_classifier_ranker
         model = ...
         pass
     else:
-        from rank_predictor.ranking import get_xgboost_rank_ranker 
+        # from rank_predictor.ranking import get_xgboost_rank_ranker
         model = ...
 
     
