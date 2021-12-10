@@ -6,10 +6,12 @@ https://docs.streamlit.io/library/get-started/create-an-app
 """
 import os
 
+import pandas as pd
 import streamlit as st
 from copy import deepcopy
 from utils import is_available, train_model, retrieve_model
 from preprocess.soccer_data import prepare_data
+from preprocess.predictor_preprocess import build_data, get_pivoted
 # TODO : 1. connection to model// 2. EDA part
 
 season_options = ['{start_year}-{end_year}'.format(start_year=year, end_year=year+1) for year in range(2004, 2019)]
@@ -33,9 +35,17 @@ def load_data(league: str):
 
 
 @st.cache
-def preprocess(data_df, model_type='naive'):
+def preprocess(data_df: pd.DataFrame, model_type: str = 'naive', breaking_leg: int = 27):
     """Preprocess data according to the choice of the model"""
-    pass
+    if model_type == 'classification':
+        return get_pivoted(data=data_df, break_leg=breaking_leg)
+    elif model_type == 'regression':
+        return build_data(historical_data=data_df, break_leg=breaking_leg)
+    elif model_type == 'ranking':
+        return get_pivoted(data=data_df, break_leg=breaking_leg)
+    else:
+        # will process Naive model
+        return build_data(historical_data=data_df, break_leg=breaking_leg)
 
 
 st.markdown("## Data comes from l'Équipe website and runs from season 2004-2005 to 2018-2019")
@@ -82,9 +92,18 @@ if start_prediction == 'yes':
         label="Please choose the type of algorithm used by the ranker. More than one can be selected",
         options=['regression', 'classification', 'ranking']
         )
+
+    # get break leg
+    break_leg = st.sidebar.slider(label="How many legs have been played so far ?",
+                                  min_value=1,
+                                  max_value=34 if championship == 'bundesliga' else 38,
+                                  step=1,
+                                  value=27)
     # Get model :
     use_pretrained = False
-    model_name = "{model_type}_{championship}_ranker".format(model_type=model_type_option, championship=championship)
+    model_name = "{model_type}_{championship}_leg{break_leg}_ranker".format(model_type=model_type_option,
+                                                                            championship=championship,
+                                                                            break_leg=break_leg)
     #  --- check if pretrained model is available
     model_available = is_available(module_path='saved_models', file_name=model_name)
 
@@ -100,15 +119,20 @@ if start_prediction == 'yes':
             label="Select the seasons on which the model should train. Uncheck 3 seasons",
             options=season_options,
             )
+
         loaded_data = load_data(league=championship)
         train_data = deepcopy(loaded_data[loaded_data['season'].isin(training_seasons)]).reset_index(drop=True)
         validation_data = deepcopy(loaded_data[~loaded_data['season'].isin(training_seasons)]).reset_index(drop=True)
         # function below MUST BE COMPLETED
         model = train_model(championship=championship,
                             model_type=model_type_option,
-                            train_data=train_data,
-                            validation_data=validation_data)
-        pass
+                            train_data=preprocess(data_df=train_data,
+                                                  model_type=model_type_option,
+                                                  breaking_leg=break_leg),
+                            validation_data=preprocess(data_df=validation_data,
+                                                       model_type=model_type_option,
+                                                       breaking_leg=break_leg)
+                            )
 
     # provide the input
     # -- show the head of expected input dataframe

@@ -5,6 +5,7 @@ from sklearn.linear_model import LinearRegression
 
 # Implementation of lr_6 (Regression)
 
+
 class SoccerRegression:
     def __init__(self, nb_opponent) -> None:
         self.model = LinearRegression()
