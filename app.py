@@ -9,7 +9,7 @@ import os
 import pandas as pd
 import streamlit as st
 from copy import deepcopy
-from utils import is_available, train_model, retrieve_model
+from utils import is_available, train_model, retrieve_model, get_model_performance
 from preprocess.soccer_data import prepare_data
 from preprocess.predictor_preprocess import build_data, get_pivoted
 # TODO : 1. connection to model// 2. EDA part
@@ -38,14 +38,16 @@ def load_data(league: str):
 def preprocess(data_df: pd.DataFrame, model_type: str = 'naive', breaking_leg: int = 27):
     """Preprocess data according to the choice of the model"""
     if model_type == 'classification':
-        return get_pivoted(data=data_df, break_leg=breaking_leg)
+        df = get_pivoted(data=data_df, break_leg=breaking_leg)
     elif model_type == 'regression':
-        return build_data(historical_data=data_df, break_leg=breaking_leg)
+        df = build_data(historical_data=data_df, break_leg=breaking_leg)
     elif model_type == 'ranking':
-        return get_pivoted(data=data_df, break_leg=breaking_leg)
+        df = get_pivoted(data=data_df, break_leg=breaking_leg)
     else:
         # will process Naive model
-        return build_data(historical_data=data_df, break_leg=breaking_leg)
+        df = build_data(historical_data=data_df, break_leg=breaking_leg)
+
+    return df.sort_values(by='season').reset_index(drop=True)
 
 
 st.markdown("## Data comes from l'Équipe website and runs from season 2004-2005 to 2018-2019")
@@ -126,14 +128,17 @@ if start_prediction == 'yes':
         # function below MUST BE COMPLETED
         model = train_model(championship=championship,
                             model_type=model_type_option,
+                            nb_opponent=18 if championship == 'bundesliga' else 20,
                             train_data=preprocess(data_df=train_data,
                                                   model_type=model_type_option,
-                                                  breaking_leg=break_leg),
-                            validation_data=preprocess(data_df=validation_data,
-                                                       model_type=model_type_option,
-                                                       breaking_leg=break_leg)
+                                                  breaking_leg=break_leg)
                             )
 
+        perf = get_model_performance(test_data=preprocess(data_df=validation_data,
+                                                          model_type=model_type_option,
+                                                          breaking_leg=break_leg),
+                                     model=model
+                                     )
     # provide the input
     # -- show the head of expected input dataframe
     sample_example_df = load_data(league='premier-league')

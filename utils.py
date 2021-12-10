@@ -3,9 +3,15 @@
 import os
 import pickle
 from pandas import DataFrame
-from copy import deepcopy
+# from copy import deepcopy
+from rank_predictor.ranker import Ranker
 
 MODEL_TYPE = ('regression', 'classification', 'ranking')
+RANKING_WEIGHT_VERSION = 1
+SEASON_COL = 'season'
+REAL_RANK_COL = 'final_rank'
+REAL_FINAL_POINTS_COL = 'final_nb_pts'
+PREDICTED_RANK_COL = 'predicted_rank'
 
 
 def is_available(module_path: str, file_name: str):
@@ -27,8 +33,7 @@ def retrieve_model(module_path: str, file_name: str):
     :returns bool: True if the file exists in module else False
     """
     if not is_available(module_path=module_path, file_name=file_name):
-        raise ValueError("{name} is not available in {module}".format(name=file_name, module=module_path)
-        )
+        raise ValueError("{name} is not available in {module}".format(name=file_name, module=module_path))
     # load model
     for f in list_files(module_path=module_path):
         if f == file_name:
@@ -37,15 +42,14 @@ def retrieve_model(module_path: str, file_name: str):
 
 def train_model(model_type: str,
                 championship: str,
-                # break_leg: int,
-                train_data: DataFrame,
-                validation_data: DataFrame):
+                nb_opponent: int,
+                train_data: DataFrame
+                ):
     """
     :param model_type: str: type of rank predicter. Must be either 'regression', 'classification' or 'ranking'
     :param championship: str: name of the championship
-    :param break_leg: int: number of legs that have already been played
+    :param nb_opponent: int: number of teams taking part to the competition
     :param train_data: DataFrame: data to be used to train the model
-    :param validation_data: DataFrame: data to be used to measure the performance of the model
 
     :returns: scikit-learn model
     """
@@ -55,22 +59,33 @@ def train_model(model_type: str,
     # save model
     model_name = "{model_type}_{championship}_ranker".format(model_type=model_type, championship=championship)
     feature_colums = _get_feature_columns(data_df=train_data, model_type=model_type)
-    if model_type == 'regression':
-        # from rank_predictor.regression import
-        model = ...
-        pass
-    elif model_type == 'classification':
-        # from rank_predictor.classification import get_gradient_boosting_classifier_ranker
-        model = ...
-        pass
+    model = Ranker(feature_columns=feature_colums, ranker_type=model_type, nb_opponent=nb_opponent)
+    if model_type in ['ranking', 'classification', 'regression']:
+        model.train(train_data=train_data, target_column=_get_target_col(model_type=model_type))
+    # if model_type == 'regression':
+    #     model.train(train_data=train_data, target_column=...)
+    # elif model_type == 'classification':
+    #     model = ...
+    # elif model_type == 'ranking':
+    #     model = ...
     else:
-        # from rank_predictor.ranking import get_xgboost_rank_ranker
-        model = ...
+        model = None
 
     # save model
-    pickle.dump(model, open(model_name+'.pickle', 'wb'))
+    if model_type in ['ranking', 'classification', 'regression']:
+        pickle.dump(model, open(model_name+'.pickle', 'wb'))
 
     return model
+
+
+def get_model_performance(test_data: DataFrame, model: Ranker):
+    return model.get_performance(test_data=test_data,
+                                 season_col=SEASON_COL,
+                                 real_rank_col=REAL_RANK_COL,
+                                 real_final_points_col=REAL_FINAL_POINTS_COL,
+                                 predicted_rank_col=PREDICTED_RANK_COL,
+                                 ranking_weight_version=RANKING_WEIGHT_VERSION
+                                 )
 
 
 def list_files(module_path):
@@ -83,12 +98,24 @@ def _get_feature_columns(data_df: DataFrame, model_type='naive'):
     if model_type == 'classification':
         # on pivoted data
         return ['leg', 'play'] + [c for c in data_df.columns if c.startswith('previous') and c not in no_use_cols]
-    elif model_type == 'regression':
-        return ['lr_feat_coeff', 'nb_pts_at_break', 'cumulative_goal_diff_at_break',
-                'rolling_5_avg_pts_at_break', 'nb_games_to_play_at_home']
     elif model_type == 'ranking':
         # on pivoted data
-        return [...]
+        feat_cols = [c for c in data_df.columns if c.startswith('leg')]
+        feat_cols += ['rolling_5_games_avg_nb_points', 'avg_cum_pts_since_season_start',
+                      'cum_goal_diff', 'cum_goals_scored']
+        return feat_cols
     else:
-        # will process Naive model
-        return [...]
+        # for naive and regression model_type
+        return ['lr_feat_coeff', 'nb_pts_at_break', 'cumulative_goal_diff_at_break',
+                'rolling_5_avg_pts_at_break', 'nb_games_to_play_at_home']
+
+
+def _get_target_col(model_type='naive'):
+    if model_type == 'regression':
+        return 'lr_predict_coeff'
+    elif model_type == 'classification':
+        return 'final_rank'
+    elif model_type == 'ranking':
+        return 'final_rank'
+    else:
+        return None

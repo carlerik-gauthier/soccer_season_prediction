@@ -36,7 +36,6 @@ class Ranker:
             return SoccerNaive(nb_opponent=self.nb_opponent)
 
     def train(self, train_data: DataFrame, target_column, eval_metric=None):
-
         eval_metric = None if self.ranker_type != 'classification' else eval_metric
 
         if eval_metric is not None:
