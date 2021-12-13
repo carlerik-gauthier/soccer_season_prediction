@@ -53,6 +53,8 @@ def preprocess(data_df: pd.DataFrame, model_type: str = 'naive', breaking_leg: i
 st.markdown("## Data comes from l'Équipe website and runs from season 2004-2005 to 2018-2019")
 placeholder = st.empty()
 placeholder_1 = st.empty()
+placeholder_1b = st.empty()
+placeholder_1c = st.empty()
 placeholder_2 = st.empty()
 # EDA PART
 st.sidebar.markdown("#### EDA")
@@ -63,16 +65,73 @@ if see_eda == 'yes':
     championship_choices_list = st.sidebar.multiselect(label="Select the championship you want to see",
                                                        options=championship_csv.keys())
     # get data
-
     championship_data = {champ: load_data(league=champ) for champ in championship_choices_list}
     # show basic eda
     placeholder_1.write("Basic EDA")
+    col1, space1, col2 = st.columns((10, 1, 10))
+    # team participation : get_team_participation
+    # Home-Away effect : nb points and goal scored -- hist_aggregator
+    # Leg effect : nb points and goals scored -- hist_aggregator
+    with col1:
+        # nb points
+        ...
+
+    with col2:
+        # goal scored
+        ...
+
     # show eda plots
-    option_1 = st.sidebar.selectbox(label="     Do you want to see 1st plot ?", options=['yes', 'no'], index=1)
-    option_2 = st.sidebar.selectbox(label="     Do you want to see 2nd plot ?", options=['yes', 'no'], index=1)
-    option_3 = st.sidebar.selectbox(label="     Do you want to see 3rd plot ?", options=['yes', 'no'], index=1)
-    option_4 = st.sidebar.selectbox(label="     Do you want to see 4th plot ?", options=['yes', 'no'], index=1)
-    option_5 = st.sidebar.selectbox(label="     Do you want to see 5th plot ?", options=['yes', 'no'], index=1)
+
+    # Based on the final ranking, are you interested to see the evolution from one the following kpis ... ?
+    # --> plot_kpi_evolution
+    # See how your team performs wrt to the average evolution from another one
+    # (which must have played at least 5 seasons). Pick one the following teams ?
+    # --> compare_pts_evol_with_avg_evolution
+    # How does a team perform in one season compared to its own history ?
+    # compare_pts_evol_time
+    #
+    # How is a team performing compared to the final rank's requirements ?
+    # plot_compare_team_pts_evolution_vs_final_rank
+
+    placeholder_1b.write("EDA questions according to general ranking performances")
+    option_1 = st.sidebar.selectbox(label="""   Based on the final ranking, are you interested to see the evolution 
+    from one the following kpis ... ?""", options=['yes', 'no'], index=1)
+    if option_1 == 'yes':
+        ...
+    option_2 = st.sidebar.selectbox(label="""   Do you to want to see how your team performs wrt to the average 
+    evolution from another one (which must have played at least 5 seasons) ?""", options=['yes', 'no'], index=1)
+    if option_2 == 'yes':
+        ...
+    option_3 = st.sidebar.selectbox(label="""   Do you want to see how a team perform in one season compared to its own 
+    history ?""", options=['yes', 'no'], index=1)
+    if option_3 == "yes":
+        ...
+    option_4 = st.sidebar.selectbox(label="""   Do you want to see how a team is performing compared to the final 
+    rank's requirements ? ?""", options=['yes', 'no'], index=1)
+    if option_4 == 'yes':
+        ...
+    option_5 = st.sidebar.selectbox(label="""  Do you want to see an EDA on goal scoring performance ?""",
+                                    options=['yes', 'no'], index=1)
+    if option_5 == 'yes':
+        placeholder_1c.write("EDA on goal scoring performance")
+        # # Goals
+        col3, space2, col4 = st.columns((10, 1, 10))
+        with col3:
+            # team
+            ...
+        with col4:
+            # opponent
+            ...
+        #  Team  vs Opponent:
+        #  Season average : Scored / opponent conceded
+        #
+        #  Average 5 last game : goals scored / opponent avg goals conceded on number goals scored
+        #
+        #  Last game performance
+        #  Scored vs opponent conceded
+        #
+        #  Outcome : 5 rolling games
+        #  Outcome : Last game
 
 # PREDICT PART
 st.sidebar.empty()
@@ -112,6 +171,7 @@ if start_prediction == 'yes':
     if model_available:
         choice = st.sidebar.selectbox(label="Do you want to use an already trained model ?", options=['yes', 'no'])
         use_pretrained = choice == 'yes'
+        placeholder_3 = st.empty()
     # -- retrieve a pretrained model if requested and available else train the model
     if use_pretrained:
         model = retrieve_model(module_path="saved_models", file_name=model_name)
@@ -139,6 +199,7 @@ if start_prediction == 'yes':
                                                           breaking_leg=break_leg),
                                      model=model
                                      )
+        placeholder_3 = st.write(f"Model Training Performance is {perf}")
     # provide the input
     # -- show the head of expected input dataframe
     sample_example_df = load_data(league='premier-league')
