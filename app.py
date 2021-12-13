@@ -5,13 +5,17 @@ https://docs.streamlit.io/library/api-reference
 https://docs.streamlit.io/library/get-started/create-an-app
 """
 import os
-
 import pandas as pd
 import streamlit as st
 from copy import deepcopy
+
+# Custom modules
+import eda.basics as edab
+
 from utils import is_available, train_model, retrieve_model, get_model_performance
 from preprocess.soccer_data import prepare_data
 from preprocess.predictor_preprocess import build_data, get_pivoted
+
 # TODO : 1. connection to model// 2. EDA part
 
 season_options = ['{start_year}-{end_year}'.format(start_year=year, end_year=year+1) for year in range(2004, 2019)]
@@ -25,6 +29,7 @@ championship_csv = {'ligue-1': 'ligue-1_data_2002_2019',
 
 st.title('Soccer : what is the final ranking ?')
 
+SEASONS = [f"{year}-{year+1}" for year in range(2004, 2019)]
 
 @st.cache
 def load_data(league: str):
@@ -62,31 +67,32 @@ see_eda = st.sidebar.selectbox(label="Do you want to see some EDA ?", options=['
 # choose the championship
 if see_eda == 'yes':
     placeholder.markdown("#### Exploratory Data Analysis")
-    championship_choices_list = st.sidebar.multiselect(label="Select the championship you want to see",
-                                                       options=championship_csv.keys())
+    championship_choice = st.sidebar.selectbox(label="Select the championship you want to see",
+                                               options=championship_csv.keys())
     # get data
-    championship_data = {champ: load_data(league=champ) for champ in championship_choices_list}
+    # championship_data = {champ: load_data(league=champ) for champ in championship_choices_list}
+    championship_data = load_data(league=championship_choice)
     # show basic eda
     placeholder_1.write("Basic EDA")
     col1, space1, col2 = st.columns((10, 1, 10))
+
     # team participation : get_team_participation
+    participation_df = edab.get_team_participation(df=championship_data, championship=championship_choice)
     # Home-Away effect : nb points and goal scored -- hist_aggregator
     # Leg effect : nb points and goals scored -- hist_aggregator
     with col1:
-        # nb points
+        # Home-Away
+        st.write("Home-Away Benefit on team performance")
+        st.write("Home-Away Benefit on the number of goals the team scores")
         ...
 
     with col2:
-        # goal scored
+        # Leg
+        st.write("Leg Benefit on team performance")
+        st.write("Leg Benefit on the number of goals the team scores")
         ...
 
     # show eda plots
-
-    # Based on the final ranking, are you interested to see the evolution from one the following kpis ... ?
-    # --> plot_kpi_evolution
-    # See how your team performs wrt to the average evolution from another one
-    # (which must have played at least 5 seasons). Pick one the following teams ?
-    # --> compare_pts_evol_with_avg_evolution
     # How does a team perform in one season compared to its own history ?
     # compare_pts_evol_time
     #
@@ -95,20 +101,50 @@ if see_eda == 'yes':
 
     placeholder_1b.write("EDA questions according to general ranking performances")
     option_1 = st.sidebar.selectbox(label="""   Based on the final ranking, are you interested to see the evolution 
-    from one the following kpis ... ?""", options=['yes', 'no'], index=1)
+    from one the following kpis : cum_pts, cum_goal_diff, cum_goals_scored, goals_conceded, goals_scored,  rank ?""",
+                                    options=['yes', 'no'], index=1)
     if option_1 == 'yes':
+        kpi_choice = st.selectbox(label="Please choose the kpi :",
+                                  options=['cum_pts',
+                                           'cum_goal_diff',
+                                           'cum_goals_scored',
+                                           'goals_conceded',
+                                           'goals_scored',
+                                           'rank']
+                                  )
+        # --> plot_kpi_evolution
         ...
     option_2 = st.sidebar.selectbox(label="""   Do you to want to see how your team performs wrt to the average 
     evolution from another one (which must have played at least 5 seasons) ?""", options=['yes', 'no'], index=1)
     if option_2 == 'yes':
+        team = st.selectbox(label="Please choose your team",
+                            options=...)
+        season_selected = st.selectbox(label="Choose a specific season if wanted",
+                                       options=['']+SEASONS)
+        season_selected = None if season_selected == '' else season_selected
+        team_to_compare = st.selectbox(label="Pick the team you want to compare with",
+                                       options=...)
+        # --> compare_pts_evol_with_avg_evolution
         ...
     option_3 = st.sidebar.selectbox(label="""   Do you want to see how a team perform in one season compared to its own 
     history ?""", options=['yes', 'no'], index=1)
     if option_3 == "yes":
+        team = st.selectbox(label="Please choose your team",
+                            options=...)
+        # --> compare_pts_evol_time
         ...
     option_4 = st.sidebar.selectbox(label="""   Do you want to see how a team is performing compared to the final 
     rank's requirements ? ?""", options=['yes', 'no'], index=1)
     if option_4 == 'yes':
+        team = st.selectbox(label="Please choose your team",
+                            options=...)
+        season_selected = st.selectbox(label="Choose a specific season if wanted",
+                                       options=[''] + SEASONS)
+        season_selected = None if season_selected == '' else season_selected
+        show_std = st.selectbox(label="Do you want the standard deviation area to be shown ?",
+                                options=['yes', 'no'], index=1)
+        show_std = show_std == 'yes'
+        # --> plot_compare_team_pts_evolution_vs_final_rank
         ...
     option_5 = st.sidebar.selectbox(label="""  Do you want to see an EDA on goal scoring performance ?""",
                                     options=['yes', 'no'], index=1)
