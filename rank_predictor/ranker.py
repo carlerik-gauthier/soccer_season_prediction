@@ -4,10 +4,10 @@ import numpy as np
 from pandas import DataFrame
 from copy import deepcopy
 
-from naive import SoccerNaive
-from classification import SoccerClassification
-from ranking import SoccerRanking
-from regression import SoccerRegression
+from .naive import SoccerNaive
+from .classification import SoccerClassification
+from .ranking import SoccerRanking
+from .regression import SoccerRegression
 from metrics.soccer_ranking import get_rank_percentage_quality_dict
 
 LOGLEVEL = os.environ.get("LOGLEVEL", "INFO").upper()

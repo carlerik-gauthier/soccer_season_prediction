@@ -1,19 +1,11 @@
-"""
-Making an app based upon the streamlit package. Documentation can be found there :
-https://docs.streamlit.io/library/get-started/main-concepts
-https://docs.streamlit.io/library/api-reference
-https://docs.streamlit.io/library/get-started/create-an-app
-"""
 import os
 import pandas as pd
 import streamlit as st
-from copy import deepcopy
 
 # Custom modules
 import eda.basics as edab
 
 from eda.goals_related_eda import hist_aggregator
-from utils import is_available, train_model, retrieve_model, get_model_performance
 from preprocess.soccer_data import prepare_data
 from preprocess.predictor_preprocess import build_data, get_pivoted
 
@@ -57,38 +49,26 @@ def preprocess(data_df: pd.DataFrame, model_type: str = 'naive', breaking_leg: i
     return df.sort_values(by='season').reset_index(drop=True)
 
 
-st.markdown("## Data comes from l'Équipe website and runs from season 2004-2005 to 2018-2019")
+st.markdown("#### Data comes from l'Équipe website and runs from season 2004-2005 to 2018-2019")
 placeholder = st.empty()
-placeholder_1 = st.empty()
-placeholder_1c = st.empty()
-placeholder_2 = st.empty()
-# EDA PART
-st.sidebar.markdown("# EDA")
-see_eda = st.sidebar.selectbox(label="Do you want to see some EDA ?", options=['yes', 'no'], index=1)
-# choose the championship
-if see_eda == 'yes':
-    placeholder.markdown("## Exploratory Data Analysis")
+
+
+def app():
+    placeholder.markdown("# Exploratory Data Analysis")
     championship_choice = st.sidebar.selectbox(label="Select the championship you want to see",
                                                options=championship_csv.keys())
     # get data
     # championship_data = {champ: load_data(league=champ) for champ in championship_choices_list}
     championship_data = load_data(league=championship_choice, raw=False)
     # show basic eda
-    placeholder_1.markdown("### Basic EDA")
+    st.markdown("## Basic EDA")
     col1, space1, col2 = st.columns((10, 3, 10))
-
-    # team participation : get_team_participation
     participation_df = edab.get_team_participation(df=championship_data)
     st.write(f"""{championship_data.team.nunique()} teams have played in {championship_choice} 
-    from season {championship_data.season.min()} to season {championship_data.season.max()}, 
-    i.e over {championship_data.season.nunique()} seasons. \n By descending order, one has : """)
-
-    st.dataframe(data=participation_df)
-
-    st.write("\n {nb_all_seasons} teams played all {nb_seasons} seasons".format(
-        nb_all_seasons=len(participation_df[participation_df.nb_participation == championship_data.season.nunique()]),
-        nb_seasons=championship_data.season.nunique())
-    )
+        from season {championship_data.season.min()} to season {championship_data.season.max()}, 
+        i.e over {championship_data.season.nunique()} seasons. \n By descending order, one has : """)
+    _, col3, _ = st.columns((4, 20, 4))
+    # team participation : get_team_participation
     # Home-Away effect : nb points and goal scored -- hist_aggregator
     # Leg effect : nb points and goals scored -- hist_aggregator
     with col1:
@@ -115,6 +95,15 @@ if see_eda == 'yes':
 
         leg_goals = hist_aggregator(df=championship_data, column_to_describe='goals_scored', aggreg_column='leg')
         st.dataframe(data=leg_goals)
+
+    with col3:
+
+        st.dataframe(data=participation_df)
+
+        st.write("\n {nb_all_seasons} teams played all {nb_seasons} seasons".format(
+            nb_all_seasons=len(participation_df[participation_df.nb_participation == championship_data.season.nunique()]),
+            nb_seasons=championship_data.season.nunique())
+        )
     # show eda plots
     # How does a team perform in one season compared to its own history ?
     # compare_pts_evol_time
@@ -178,7 +167,7 @@ if see_eda == 'yes':
                                     options=['yes', 'no'], index=1)
     if option_5 == 'yes':
         placeholder_1b2.empty()
-        placeholder_1c.write("EDA on goal scoring performance")
+        st.write("EDA on goal scoring performance")
         # # Goals
         col3, space2, col4 = st.columns((10, 1, 10))
         with col3:
@@ -197,90 +186,3 @@ if see_eda == 'yes':
         #
         #  Outcome : 5 rolling games
         #  Outcome : Last game
-
-# PREDICT PART
-st.sidebar.empty()
-st.sidebar.markdown("### Prediction")
-start_prediction = st.sidebar.selectbox(label="Are you ready to predict the next champion ?",
-                                        options=["yes", "no"],
-                                        index=1)
-if start_prediction == 'yes':
-    sea_eda = 'no'
-    placeholder_1.empty()
-    placeholder_2.empty()
-    placeholder.markdown("##### Predict the ranking")
-
-    st.sidebar.markdown("#### Naive model is included")
-    # choose championship
-    championship = st.sidebar.selectbox(label="Choose your championship you want to predict on",
-                                        options=championship_csv.keys())
-    # choose the model type : regression, classification or ranking algorithm
-    model_type_option = st.sidebar.selectbox(
-        label="Please choose the type of algorithm used by the ranker. More than one can be selected",
-        options=['regression', 'classification', 'ranking']
-        )
-
-    # get break leg
-    break_leg = st.sidebar.slider(label="How many legs have been played so far ?",
-                                  min_value=1,
-                                  max_value=34 if championship == 'bundesliga' else 38,
-                                  step=1,
-                                  value=27)
-    # Get model :
-    use_pretrained = False
-    model_name = "{model_type}_{championship}_leg{break_leg}_ranker".format(model_type=model_type_option,
-                                                                            championship=championship,
-                                                                            break_leg=break_leg)
-    #  --- check if pretrained model is available
-    model_available = is_available(module_path='saved_models', file_name=model_name)
-
-    if model_available:
-        choice = st.sidebar.selectbox(label="Do you want to use an already trained model ?", options=['yes', 'no'])
-        use_pretrained = choice == 'yes'
-        placeholder_3 = st.empty()
-    # -- retrieve a pretrained model if requested and available else train the model
-    if use_pretrained:
-        model = retrieve_model(module_path="saved_models", file_name=model_name)
-    else:
-        # train model
-        training_seasons = st.sidebar.multiselect(
-            label="Select the seasons on which the model should train. Uncheck 3 seasons",
-            options=season_options,
-            )
-
-        loaded_data = load_data(league=championship)
-        train_data = deepcopy(loaded_data[loaded_data['season'].isin(training_seasons)]).reset_index(drop=True)
-        validation_data = deepcopy(loaded_data[~loaded_data['season'].isin(training_seasons)]).reset_index(drop=True)
-        # function below MUST BE COMPLETED
-        model = train_model(championship=championship,
-                            model_type=model_type_option,
-                            nb_opponent=18 if championship == 'bundesliga' else 20,
-                            train_data=preprocess(data_df=train_data,
-                                                  model_type=model_type_option,
-                                                  breaking_leg=break_leg)
-                            )
-
-        perf = get_model_performance(test_data=preprocess(data_df=validation_data,
-                                                          model_type=model_type_option,
-                                                          breaking_leg=break_leg),
-                                     model=model
-                                     )
-        placeholder_3 = st.write(f"Model Training Performance is {perf}")
-    # provide the input
-    # -- show the head of expected input dataframe
-    sample_example_df = load_data(league='premier-league', raw=True)
-    st.dataframe(data=sample_example_df.head(), height=500, width=800)
-    input_data = st.file_uploader(
-        label="""\n\nProvide your input : a csv file with the above format collecting all games played 
-        in one season until a specified leg.""")
-    # input_path = st.text_input(label="Enter the path to you csv file.",
-    # value="")
-    start_prediction = st.button("Go for the prediction")
-    if input_data is not None:
-        if start_prediction:
-            # Naive model
-            st.markdown("#### Naive Prediction")
-            # show prediction
-
-            st.markdown(f"#### \n{model_type_option} model Prediction")
-            # model.predict(data=input_data)
