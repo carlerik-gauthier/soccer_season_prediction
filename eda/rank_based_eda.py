@@ -59,7 +59,7 @@ def plot_kpi_evolution(df: pd.DataFrame,
             width=800,
             height=800)
 
-        fig.show()
+        return fig
     else:
         go_layers = []
         nb_competitor = get_nb_competitor(df=df, leg_col=leg_col)
@@ -86,7 +86,7 @@ def plot_kpi_evolution(df: pd.DataFrame,
             hovermode="x"
         )
 
-        fig.show()
+        return fig
 
 
 def plot_team_pts_evol_with_competitor_avg_evolution(data: pd.DataFrame,
@@ -95,7 +95,7 @@ def plot_team_pts_evol_with_competitor_avg_evolution(data: pd.DataFrame,
                                                      season: str = None,
                                                      cum_points_col: str = 'cum_pts',
                                                      leg_col: str = 'leg',
-                                                     compare_with: bool = None):
+                                                     compare_with: str = None):
     """
     Plot a team cumulative point evolution up to a given leg for a particular season (or all seasons) with the average
     evolution of
@@ -147,7 +147,7 @@ def plot_team_pts_evol_with_competitor_avg_evolution(data: pd.DataFrame,
         hovermode="x"
     )
 
-    fig.show() 
+    return fig
 
 
 def plot_team_pts_evol_to_average_performance(data: pd.DataFrame,
@@ -156,8 +156,8 @@ def plot_team_pts_evol_to_average_performance(data: pd.DataFrame,
                                               cum_points_col: str = 'cum_pts',
                                               until_leg: int = 38):
     """
-    Plot all cumulative points for a given team up to a given leg and compare them with the average performance going
-     from first to last game.
+    Plot all cumulative points for a given team up to a given leg and compare them with the team's average performance
+    going from first to last game.
 
     :param data: pd.DataFrame: data containing the league performance
     :param team: str: name of the team we want to analyze
@@ -204,7 +204,7 @@ def plot_team_pts_evol_to_average_performance(data: pd.DataFrame,
         hovermode="x"
     )
 
-    fig.show() 
+    return fig
 
 
 def plot_team_pts_evol_vs_final_rank(df: pd.DataFrame,
@@ -267,7 +267,7 @@ def plot_team_pts_evol_vs_final_rank(df: pd.DataFrame,
         hovermode="x"
     )
 
-    fig.show()
+    return fig
 
 
 def _get_width(ranking: int, nb_competitor: int = None):

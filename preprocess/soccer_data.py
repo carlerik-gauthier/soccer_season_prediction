@@ -81,3 +81,25 @@ def prepare_data(csv_path, rolling=5, raw=False):
             data = get_past_feature(df=data, feat_col=col, team=is_team)
     
     return data
+
+
+def get_final_rank_performance_evolution(data: pd.DataFrame):
+    final_rank_perf_evolution = data[
+        ['final_rank', 'leg', 'cum_pts', 'goals_scored', 'goals_conceded', 'cum_goal_diff', 'cum_goals_scored', 'rank']
+    ].groupby(by=['final_rank', 'leg']).aggregate({'rank': ['mean', 'std'],
+                                                   'cum_pts': ['mean', 'std'],
+                                                   'cum_goal_diff': ['mean', 'std'],
+                                                   'cum_goals_scored': ['mean', 'std'],
+                                                   'goals_scored': ['mean', 'std'],
+                                                   'goals_conceded': ['mean', 'std'],
+                                                   })
+
+    final_rank_perf_evolution.columns = ['avg_rank', 'std_rank',
+                                         'avg_cum_pts', 'std_cum_pts',
+                                         'avg_cum_goal_diff', 'std_cum_goal_diff',
+                                         'avg_cum_goals_scored', 'std_cum_goal_scored',
+                                         'avg_goals_scored', 'std_goals_scored',
+                                         'avg_goals_conceded', 'std_goals_conceded']
+
+    df = final_rank_perf_evolution.reset_index()
+    return df

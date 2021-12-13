@@ -11,13 +11,13 @@ def draw_scatterplot(df: DataFrame,
                      size_col: str,
                      title: str):
     fig = px.scatter(df, x=x, y=y, size=size_col, title=title)
-    fig.show()
+    return fig
 
 
 # line on mean
 def draw_line(df: DataFrame, x: str, y: str, title: str):
     fig = px.line(df, x=x, y=y, title=title)
-    fig.show()
+    return fig
 
 
 def get_layout():
@@ -81,6 +81,7 @@ def get_layers_avg_kpi(plot_name: str,
                             showlegend=False,
                             )
                  ]
+    return sublayer
 
 
 def get_layer_cumulative_kpi(plot_name: str,

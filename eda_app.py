@@ -1,15 +1,16 @@
 import os
 import pandas as pd
 import streamlit as st
-
+from copy import deepcopy
 # Custom modules
 import eda.basics as edab
 
 from eda.goals_related_eda import hist_aggregator
-from preprocess.soccer_data import prepare_data
-from preprocess.predictor_preprocess import build_data, get_pivoted
-
-# TODO : 1. connection to model// 2. EDA part
+from eda.rank_based_eda import plot_kpi_evolution, plot_team_pts_evol_with_competitor_avg_evolution, \
+    plot_team_pts_evol_to_average_performance, plot_team_pts_evol_vs_final_rank
+from eda.utils import draw_line
+from eda.goals_related_eda import mean_aggregator
+from preprocess.soccer_data import prepare_data, get_final_rank_performance_evolution
 
 season_options = ['{start_year}-{end_year}'.format(start_year=year, end_year=year+1) for year in range(2004, 2019)]
 
@@ -24,8 +25,21 @@ st.title('Soccer : what is the final ranking ?')
 
 SEASONS = [f"{year}-{year+1}" for year in range(2004, 2019)]
 
+OPTIONS = {'Not interested :(': 0,
+           """   Based on the final ranking, are you interested to see the evolution 
+               from one the following kpis : cum_pts, cum_goal_diff, cum_goals_scored, goals_conceded, goals_scored, 
+               rank ?""": 1,
+           """   Do you to want to see how your team performs wrt to the average 
+               evolution from another one (which must have played at least 5 seasons) ?""": 2,
+           """   Do you want to see how a team perform in one season compared to its own 
+           history ?""": 3,
+           """   Do you want to see how a team is performing compared to the final 
+           rank's requirements ?""": 4,
+           """  Do you want to see an EDA on goal scoring performance ?""": 5
+           }
 
-@st.cache
+
+@st.cache(allow_output_mutation=True)
 def load_data(league: str, raw: bool = True):
     """extract data"""
     csv_file = championship_csv.get(league, 'ligue-1_data_2002_2019')
@@ -34,19 +48,8 @@ def load_data(league: str, raw: bool = True):
 
 
 @st.cache
-def preprocess(data_df: pd.DataFrame, model_type: str = 'naive', breaking_leg: int = 27):
-    """Preprocess data according to the choice of the model"""
-    if model_type == 'classification':
-        df = get_pivoted(data=data_df, break_leg=breaking_leg)
-    elif model_type == 'regression':
-        df = build_data(historical_data=data_df, break_leg=breaking_leg)
-    elif model_type == 'ranking':
-        df = get_pivoted(data=data_df, break_leg=breaking_leg)
-    else:
-        # will process Naive model
-        df = build_data(historical_data=data_df, break_leg=breaking_leg)
-
-    return df.sort_values(by='season').reset_index(drop=True)
+def get_final_ranking_performance(data_df: pd.DataFrame):
+    return get_final_rank_performance_evolution(data=data_df)
 
 
 st.markdown("#### Data comes from l'Équipe website and runs from season 2004-2005 to 2018-2019")
@@ -60,6 +63,7 @@ def app():
     # get data
     # championship_data = {champ: load_data(league=champ) for champ in championship_choices_list}
     championship_data = load_data(league=championship_choice, raw=False)
+    championship_data_final_rank_df = get_final_ranking_performance(data_df=championship_data)
     # show basic eda
     st.markdown("## Basic EDA")
     col1, space1, col2 = st.columns((10, 3, 10))
@@ -101,7 +105,8 @@ def app():
         st.dataframe(data=participation_df)
 
         st.write("\n {nb_all_seasons} teams played all {nb_seasons} seasons".format(
-            nb_all_seasons=len(participation_df[participation_df.nb_participation == championship_data.season.nunique()]),
+            nb_all_seasons=len(participation_df[participation_df.nb_participation == championship_data.season.nunique()]
+                               ),
             nb_seasons=championship_data.season.nunique())
         )
     # show eda plots
@@ -110,14 +115,24 @@ def app():
     #
     # How is a team performing compared to the final rank's requirements ?
     # plot_compare_team_pts_evolution_vs_final_rank
-    placeholder_1b = st.markdown("# EDA questions according to general ranking performances")
-    placeholder_1b2 = st.write(
-        "Please answer 'yes' to one of the EDA question in the sidebar to go further with the EDA")
-    option_1 = st.sidebar.selectbox(label="""   Based on the final ranking, are you interested to see the evolution 
-    from one the following kpis : cum_pts, cum_goal_diff, cum_goals_scored, goals_conceded, goals_scored,  rank ?""",
-                                    options=['yes', 'no'], index=1)
-    if option_1 == 'yes':
-        placeholder_1b2.empty()
+    st.markdown("# EDA questions according to general ranking performances")
+    st.write("Please answer 'yes' to one of the EDA question in the sidebar to go further with the EDA")
+    eda_option = st.sidebar.radio(label="Please select of the EDA question in the sidebar to go further with the EDA",
+                                  options=OPTIONS.keys())
+    # option_1 = st.sidebar.selectbox(label="""   Based on the final ranking, are you interested to see the evolution
+    # from one the following kpis : cum_pts, cum_goal_diff, cum_goals_scored, goals_conceded, goals_scored,  rank ?""",
+    #                                 options=['yes', 'no'], index=1)
+    # option_2 = st.sidebar.selectbox(label="""   Do you to want to see how your team performs wrt to the average
+    #     evolution from another one (which must have played at least 5 seasons) ?""", options=['yes', 'no'], index=1)
+    # option_3 = st.sidebar.selectbox(label="""   Do you want to see how a team perform in one season compared to its own
+    #     history ?""", options=['yes', 'no'], index=1)
+    # option_4 = st.sidebar.selectbox(label="""   Do you want to see how a team is performing compared to the final
+    #     rank's requirements ? ?""", options=['yes', 'no'], index=1)
+    # option_5 = st.sidebar.selectbox(label="""  Do you want to see an EDA on goal scoring performance ?""",
+    #                                 options=['yes', 'no'], index=1)
+
+    if OPTIONS[eda_option] == 1:
+        # placeholder_1b2.empty()
         kpi_choice = st.selectbox(label="Please choose the kpi :",
                                   options=['cum_pts',
                                            'cum_goal_diff',
@@ -126,63 +141,197 @@ def app():
                                            'goals_scored',
                                            'rank']
                                   )
+        std_choice = st.selectbox(label="Do you want to see the standard deviation shadow ?",
+                                  options=['yes', 'no']
+                                  )
         # --> plot_kpi_evolution
-        ...
-    option_2 = st.sidebar.selectbox(label="""   Do you to want to see how your team performs wrt to the average 
-    evolution from another one (which must have played at least 5 seasons) ?""", options=['yes', 'no'], index=1)
-    if option_2 == 'yes':
-        placeholder_1b2.empty()
-        team = st.selectbox(label="Please choose your team",
-                            options=...)
-        season_selected = st.selectbox(label="Choose a specific season if wanted",
-                                       options=['']+SEASONS)
-        season_selected = None if season_selected == '' else season_selected
-        team_to_compare = st.selectbox(label="Pick the team you want to compare with",
-                                       options=...)
-        # --> compare_pts_evol_with_avg_evolution
-        ...
-    option_3 = st.sidebar.selectbox(label="""   Do you want to see how a team perform in one season compared to its own 
-    history ?""", options=['yes', 'no'], index=1)
-    if option_3 == "yes":
-        placeholder_1b2.empty()
-        team = st.selectbox(label="Please choose your team",
-                            options=...)
-        # --> compare_pts_evol_time
-        ...
-    option_4 = st.sidebar.selectbox(label="""   Do you want to see how a team is performing compared to the final 
-    rank's requirements ? ?""", options=['yes', 'no'], index=1)
-    if option_4 == 'yes':
-        placeholder_1b2.empty()
-        team = st.selectbox(label="Please choose your team",
-                            options=...)
+        st.plotly_chart(figure_or_data=plot_kpi_evolution(df=championship_data_final_rank_df,
+                                                          kpi=kpi_choice,
+                                                          show_standard_deviation=std_choice == 'yes')
+                        )
+
+    if OPTIONS[eda_option] == 2:
+        # placeholder_1b2.empty()
         season_selected = st.selectbox(label="Choose a specific season if wanted",
                                        options=[''] + SEASONS)
         season_selected = None if season_selected == '' else season_selected
+
+        team_df = deepcopy(championship_data[championship_data.season == season_selected]) if season_selected else \
+            deepcopy(championship_data)
+        team = st.selectbox(label="Please choose your team",
+                            options=team_df.team.unique())
+
+        team_to_compare = st.selectbox(label="Pick the team you want to compare with",
+                                       options=participation_df[participation_df.nb_participation >= 5].index)
+        # --> compare_pts_evol_with_avg_evolution
+        st.plotly_chart(figure_or_data=plot_team_pts_evol_with_competitor_avg_evolution(
+            data=championship_data,
+            team=team,
+            season=season_selected,
+            compare_with=team_to_compare)
+        )
+    if OPTIONS[eda_option] == 3:
+        # placeholder_1b2.empty()
+        team = st.selectbox(label="Please choose your team",
+                            options=participation_df[participation_df.nb_participation >= 3].index)
+        # --> compare_pts_evol_time
+        st.plotly_chart(figure_or_data=plot_team_pts_evol_to_average_performance(
+            data=championship_data,
+            team=team)
+        )
+    if OPTIONS[eda_option] == 4:
+        # placeholder_1b2.empty()
+        season_selected = st.selectbox(label="Choose a specific season if wanted",
+                                       options=[''] + SEASONS)
+        season_selected = None if season_selected == '' else season_selected
+
+        team_df = deepcopy(championship_data[championship_data.season == season_selected]) if season_selected else \
+            deepcopy(championship_data)
+
+        team = st.selectbox(label="Please choose your team",
+                            options=team_df.team.unique())
         show_std = st.selectbox(label="Do you want the standard deviation area to be shown ?",
                                 options=['yes', 'no'], index=1)
         show_std = show_std == 'yes'
         # --> plot_compare_team_pts_evolution_vs_final_rank
-        ...
-    option_5 = st.sidebar.selectbox(label="""  Do you want to see an EDA on goal scoring performance ?""",
-                                    options=['yes', 'no'], index=1)
-    if option_5 == 'yes':
-        placeholder_1b2.empty()
+        st.plotly_chart(figure_or_data=plot_team_pts_evol_vs_final_rank(df=championship_data,
+                                                                        team=team,
+                                                                        season=season_selected,
+                                                                        show_standard_deviation=show_std)
+                        )
+    if OPTIONS[eda_option] == 5:
+        # placeholder_1b2.empty()
         st.write("EDA on goal scoring performance")
         # # Goals
-        col3, space2, col4 = st.columns((10, 1, 10))
+        col3, space2, col4 = st.columns((40, 40, 40))
         with col3:
-            # team
-            ...
+            st.markdown("## Team")
+            st.markdown("#### Average number of goals scored by the team in the season so far vs goals to be scored")
+            team_season_perf_on_goals_mean = mean_aggregator(
+                df=championship_data,
+                column_to_describe='goals_scored',
+                aggreg_column='previous_team_avg_goals_scored_since_season_start',
+                bin_step=.1)
+            st.plotly_chart(figure_or_data=draw_line(
+                df=team_season_perf_on_goals_mean,
+                x='previous_team_avg_goals_scored_since_season_start_binned',
+                y='avg_goals_scored',
+                title='Team avg goals scored since season start vs avg goals to be scored')
+            )
+
+            st.markdown("#### Average number of goals scored by the team in the last 5 games vs goals to be scored")
+            team_last5_perf_on_goals_mean = mean_aggregator(
+                df=championship_data,
+                column_to_describe='goals_scored',
+                aggreg_column='previous_team_rolling_5_games_avg_goals_scored',
+                bin_step=.1)
+
+            st.plotly_chart(figure_or_data=draw_line(
+                df=team_last5_perf_on_goals_mean,
+                x='previous_team_rolling_5_games_avg_goals_scored_binned',
+                y='avg_goals_scored',
+                title='5 leg Avg on Team goals scored vs avg goals to be scored')
+            )
+            st.markdown("#### Last game number of goals scored by the team vs goals to be scored")
+            last_game_team_goals_scored_mean = mean_aggregator(
+                df=championship_data,
+                column_to_describe='goals_scored',
+                aggreg_column='previous_team_goals_scored',
+                bin_step=None)
+
+            st.plotly_chart(figure_or_data=draw_line(
+                df=last_game_team_goals_scored_mean,
+                x='previous_team_goals_scored',
+                y='avg_goals_scored',
+                title='Team previous game goals scored vs avg goals to be scored')
+            )
+
+            st.markdown("#### Average number of points won by the team in the last 5 games vs goals to be scored")
+            last_5games_team_outcome_mean = mean_aggregator(df=championship_data,
+                                                            column_to_describe='goals_scored',
+                                                            aggreg_column='previous_team_rolling_5_games_avg_nb_points',
+                                                            bin_step=None)
+            st.plotly_chart(figure_or_data=draw_line(
+                df=last_5games_team_outcome_mean,
+                x='previous_team_rolling_5_games_avg_nb_points',
+                y='avg_goals_scored',
+                title='Team last 5 games outcome conceded vs avg goals to be scored')
+            )
+            st.markdown("#### Last game number of points won by the team vs goals to be scored")
+            last_game_team_outcome_mean = mean_aggregator(df=championship_data,
+                                                          column_to_describe='goals_scored',
+                                                          aggreg_column='previous_team_nb_points',
+                                                          bin_step=None)
+            st.plotly_chart(figure_or_data=draw_line(
+                df=last_game_team_outcome_mean,
+                x='previous_team_nb_points',
+                y='avg_goals_scored',
+                title='Team game outcome conceded vs avg goals to be scored')
+            )
         with col4:
             # opponent
-            ...
-        #  Team  vs Opponent:
-        #  Season average : Scored / opponent conceded
-        #
-        #  Average 5 last game : goals scored / opponent avg goals conceded on number goals scored
-        #
-        #  Last game performance
-        #  Scored vs opponent conceded
-        #
-        #  Outcome : 5 rolling games
-        #  Outcome : Last game
+            st.markdown("## Opponent")
+            st.markdown("""#### Average number of goals conceded by the opponent in the season so far vs goals to 
+                        be scored""")
+            opponent_season_perf_on_goals_mean = mean_aggregator(
+                df=championship_data,
+                column_to_describe='goals_scored',
+                aggreg_column='previous_opponent_avg_goals_conceded_since_season_start',
+                bin_step=.1)
+
+            st.plotly_chart(figure_or_data=draw_line(
+                df=opponent_season_perf_on_goals_mean,
+                x='previous_opponent_avg_goals_conceded_since_season_start_binned',
+                y='avg_goals_scored',
+                title='Opponent avg goals conceded since season start vs avg goals to be scored')
+            )
+            st.markdown("""#### Average number of goals conceded by the opponent in the last 5 games vs goals to be 
+                        scored""")
+            opponent_last5_perf_on_goals_mean = mean_aggregator(
+                df=championship_data,
+                column_to_describe='goals_scored',
+                aggreg_column='previous_opponent_rolling_5_games_avg_goals_conceded',
+                bin_step=.1)
+            st.plotly_chart(figure_or_data=draw_line(
+                df=opponent_last5_perf_on_goals_mean,
+                x='previous_opponent_rolling_5_games_avg_goals_conceded_binned',
+                y='avg_goals_scored',
+                title='5 leg Avg on opponents goals conceded vs avg goals to be scored')
+            )
+            st.markdown("#### Last game number of goals conceded by the opponent vs goals to be scored")
+            last_game_opponent_goals_conceded_mean = mean_aggregator(df=championship_data,
+                                                                     column_to_describe='goals_scored',
+                                                                     aggreg_column='previous_opponent_goals_conceded',
+                                                                     bin_step=None)
+
+            st.plotly_chart(figure_or_data=draw_line(
+                df=last_game_opponent_goals_conceded_mean,
+                x='previous_opponent_goals_conceded',
+                y='avg_goals_scored',
+                title='Opponent previous game goals conceded vs avg goals to be scored')
+            )
+
+            st.markdown("""#### Average number of of points won by the opponent in the last 5 games vs goals to be 
+            scored""")
+            last_5games_opponent_outcome_mean = mean_aggregator(
+                df=championship_data,
+                column_to_describe='goals_scored',
+                aggreg_column='previous_opponent_rolling_5_games_avg_nb_points',
+                bin_step=None)
+            st.plotly_chart(figure_or_data=draw_line(
+                df=last_5games_opponent_outcome_mean,
+                x='previous_opponent_rolling_5_games_avg_nb_points',
+                y='avg_goals_scored',
+                title='Opponent last 5 games outcome conceded vs avg goals to be scored')
+            )
+            st.markdown("#### Last game number of points won by the opponent vs goals to be scored")
+            last_game_opponent_outcome_mean = mean_aggregator(df=championship_data,
+                                                              column_to_describe='goals_scored',
+                                                              aggreg_column='previous_opponent_nb_points',
+                                                              bin_step=None)
+            st.plotly_chart(figure_or_data=draw_line(
+                df=last_game_opponent_outcome_mean,
+                x='previous_opponent_nb_points',
+                y='avg_goals_scored',
+                title='Opponent game outcome conceded vs avg goals to be scored')
+            )
