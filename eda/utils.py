@@ -20,6 +20,23 @@ def draw_line(df: DataFrame, x: str, y: str, title: str):
     return fig
 
 
+def draw_pie_chart(df, values, names, title):
+    if isinstance(names, list):
+        name = '_'.join(names)
+        df[name] = df[names].apply(lambda r: '_'.join([str(_) for _ in r]), axis=1)
+    else:
+        name = names
+
+    fig = go.Figure(data=[go.Pie(labels=df[name], values=df[values])])
+    fig.update_traces(title_text=title, textposition='inside', textinfo='percent+label')
+    return fig
+
+
+def draw_sunburst(df, path, values, color=None):
+    fig = px.sunburst(df, path=path, values=values, color=color)
+    return fig
+
+
 def get_layout():
     return go.Layout(autosize=True,
                      width=800,
