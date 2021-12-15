@@ -21,8 +21,6 @@ championship_csv = {'ligue-1': 'ligue-1_data_2002_2019',
                     'premier-league': 'premier-league_data_2004_2019',
                     'liga': 'liga_data_2004_2019'}
 
-st.title('Soccer : what is the final ranking ?')
-
 SEASONS = [f"{year}-{year+1}" for year in range(2004, 2019)]
 
 
@@ -50,11 +48,12 @@ def preprocess(data_df: pd.DataFrame, model_type: str = 'naive', breaking_leg: i
     return df.sort_values(by='season').reset_index(drop=True)
 
 
-st.markdown("## Data comes from l'Équipe website and runs from season 2004-2005 to 2018-2019")
-placeholder = st.empty()
-
-
 def app():
+    # st.title('Soccer : what is the final ranking ?')
+
+    # st.markdown(" Data comes from l'Équipe website and runs from season 2004-2005 to 2018-2019")
+    placeholder = st.empty()
+
     placeholder.markdown("##### Predict the ranking")
 
     st.sidebar.markdown("#### Naive model is included")
