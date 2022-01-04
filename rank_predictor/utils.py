@@ -14,7 +14,7 @@ def get_lr_parameters(data: pd.DataFrame):
     
     reg = LinearRegression(fit_intercept=False).fit(X=x_data, y=y_data)
     
-    return reg.coef_[0][0] , reg.score(X=x_data, y=y_data)
+    return reg.coef_[0][0], reg.score(X=x_data, y=y_data)
 
 
 def get_season_team_data(break_leg: int, data: pd.DataFrame):
@@ -29,7 +29,7 @@ def get_season_team_data(break_leg: int, data: pd.DataFrame):
     breaking_cum_goal_diff = data.loc[break_leg-1, 'cum_goal_diff']
     breaking_cum_goal_scored = data.loc[break_leg-1, 'cum_goals_scored']
     roll_trend = data.loc[break_leg-1, 'rolling_5_games_avg_nb_points']
-    trend = data.loc[break_leg-1,'avg_cum_pts_since_season_start']
+    trend = data.loc[break_leg-1, 'avg_cum_pts_since_season_start']
     
     train_data = deepcopy(data[data.leg <= break_leg])
     eval_data = deepcopy(data[data.leg > break_leg])
@@ -43,7 +43,7 @@ def get_season_team_data(break_leg: int, data: pd.DataFrame):
     
     final_nb_pts = data.loc[len(data)-1, 'cum_pts']
     
-    nb_games_at_home = len(eval_data[eval_data.play=='Home'])
+    nb_games_at_home = len(eval_data[eval_data.play == 'Home'])
     
     return [nb_games_at_home, coef_feat, coef_predict, pts_at_break, final_nb_pts, 
             r_score_feat, r_score_predict, breaking_cum_goal_diff, breaking_cum_goal_scored,

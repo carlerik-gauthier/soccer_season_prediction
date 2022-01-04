@@ -17,12 +17,12 @@ logger = logging.getLogger()
 
 
 class Ranker:
-    def __init__(self, feature_columns, ranker_type, nb_opponent) -> None:
+    def __init__(self, feature_columns, ranker_type, nb_opponent):
         self.feature_columns = feature_columns
         self.ranker_type = ranker_type if ranker_type in ['naive', 'regression', 'classification', 'ranking'] \
             else 'naive'
-        self.model = self._get_base_model()
         self.nb_opponent = nb_opponent
+        self.model = self._get_base_model()
 
     def _get_base_model(self):
         if self.ranker_type == 'classification':
@@ -45,7 +45,7 @@ class Ranker:
                 eval_metric=eval_metric  # 'mlogloss'
             )
         elif self.ranker_type == 'ranking':
-            nb_training_season = train_data.shape[0]/self.nb_opponent
+            nb_training_season = int(train_data.shape[0]/self.nb_opponent)
             group = np.array([self.nb_opponent] * nb_training_season)
             self.model.train(feature_data=train_data[self.feature_columns].values,
                              y=train_data[target_column].values,
@@ -66,9 +66,8 @@ class Ranker:
 
         performance_ll = []
         for season in test_data[season_col].unique():
-            test_data = deepcopy(test_data[test_data[season_col] == season])
-
-            perf_score = self.compute_ranking_quality(test_data=test_data,
+            season_test_data = deepcopy(test_data[test_data[season_col] == season]).reset_index(drop=True)
+            perf_score = self.compute_ranking_quality(test_data=season_test_data,
                                                       real_rank_col=real_rank_col,
                                                       real_final_points_col=real_final_points_col,
                                                       predicted_rank_col=predicted_rank_col,
@@ -90,7 +89,6 @@ class Ranker:
             season_data=test_data,
             feature_cols=self.feature_columns,
             predicted_rank_col=predicted_rank_col)
-
         rank_weight = get_rank_percentage_quality_dict(nb_teams=self.nb_opponent, version=ranking_weight_version)
         base_val = deepcopy(test_data)[
             ['season', 'team', real_rank_col, real_final_points_col]].drop_duplicates().reset_index(drop=True)
@@ -104,7 +102,7 @@ class Ranker:
         base_val.reset_index(drop=True, inplace=True)
         base_val['inverse_position_discount'] = base_val.index + 1
 
-        base_val['gain'] = base_val[['base_gain', 'position_discount']].apply(
+        base_val['gain'] = base_val[['base_gain', 'inverse_position_discount']].apply(
             lambda r: r[0] / np.log2(1 + r[1]), axis=1)
 
         rank_to_inv_discount = {rk: pos_disc for rk, pos_disc in zip(base_val.final_rank,
@@ -123,8 +121,7 @@ class Ranker:
         truth_score = base_val.gain.sum()
         return round(100*prediction_score/truth_score, 2) if truth_score > 0 else 100
 
-    def get_ranking(self, data, predicted_rank_col, teams=None):
+    def get_ranking(self, data, predicted_rank_col):
         return self.model.get_ranking(season_data=data,
                                       feature_cols=self.feature_columns,
-                                      predicted_rank_col=predicted_rank_col,
-                                      teams=teams)
+                                      predicted_rank_col=predicted_rank_col)

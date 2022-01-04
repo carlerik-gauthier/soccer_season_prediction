@@ -1,5 +1,5 @@
 import pandas as pd
-import numpy as np
+# import numpy as np
 
 from xgboost import XGBRanker
 
@@ -22,14 +22,11 @@ class SoccerRanking:
 
     def get_ranking(self, season_data: pd.DataFrame,
                     feature_cols: list,
-                    predicted_rank_col: str = "ranking_predicted_rank",
-                    teams: np.array = None,
-                    leg_col: str = 'leg'):
-        # TBD
+                    predicted_rank_col: str = "ranking_predicted_rank"):
+
         ranker_vals = self.model.predict(X=season_data[feature_cols].values)
         # the lower the better
         tmp = pd.DataFrame(data=ranker_vals, columns=['xgb_ranker'])
         output_df = pd.concat([season_data[['season', 'team', 'final_rank']], tmp], axis=1)
         output_df[predicted_rank_col] = output_df['xgb_ranker'].rank()
-
         return output_df

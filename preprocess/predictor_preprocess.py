@@ -68,6 +68,7 @@ def build_data(historical_data: pd.DataFrame, break_leg: int):
                            )
 
     ids_df = pd.DataFrame(columns=['season', 'team'], data=np.array(ids_data))
+    ids_df['break_leg'] = break_leg
 
     return pd.concat([ids_df, data_df], axis=1)
 

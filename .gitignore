@@ -130,3 +130,6 @@ dmypy.json
 
 # test file
 test.py
+
+# saved models
+saved_models/*

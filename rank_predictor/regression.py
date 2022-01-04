@@ -18,18 +18,20 @@ class SoccerRegression:
     def get_ranking(self,
                     season_data: pd.DataFrame,
                     feature_cols: list,
-                    predicted_rank_col: str = "regression_predicted_rank",
-                    leg_col: str = 'leg',
-                    teams: np.array = None
+                    predicted_rank_col: str = "regression_predicted_rank"
                     ) -> pd.DataFrame:
         """ predict the linear slope from last known leg to end of the championship """
-
-        season_data['predicted_linear_coeff'] = season_data[feature_cols].apply(lambda feat: self.model.predict(feat))
+        try:
+            season_data['predicted_linear_coeff'] = season_data[feature_cols].apply(
+                lambda feat: self.model.predict(np.array(feat)), axis=1)
+        except ValueError as v:
+            season_data['predicted_linear_coeff'] = season_data[feature_cols].apply(
+                lambda feat: self.model.predict(np.array(feat).reshape(1, -1)), axis=1)
         # predict the number of points by the end of the season
-        cols = ['predicted_linear_coeff', 'nb_pts_at_break']
-        breaking_leg = season_data[leg_col].max()
+        cols = ['predicted_linear_coeff', 'nb_pts_at_break', 'break_leg']
+
         season_data['predicted_final_nb_pts'] = season_data[cols].apply(
-            lambda r: r[1] + r[0] * (self.championship_length - breaking_leg), axis=1)
+            lambda r: r[1] + r[0] * (self.championship_length - r[2]), axis=1)
 
         # get final rank
         rank_df = season_data.sort_values(by='predicted_final_nb_pts', ascending=False).reset_index(drop=True)

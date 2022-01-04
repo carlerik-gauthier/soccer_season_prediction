@@ -10,7 +10,7 @@ from preprocess.soccer_data import prepare_data
 from preprocess.predictor_preprocess import build_data, get_pivoted
 
 
-# TODO : 1. connection to model// 2. EDA part
+# TODO : 1. connection to model
 
 season_options = ['{start_year}-{end_year}'.format(start_year=year, end_year=year+1) for year in range(2004, 2019)]
 
@@ -30,6 +30,14 @@ def load_data(league: str, raw: bool = True):
     csv_file = championship_csv.get(league, 'ligue-1_data_2002_2019')
     csv_path = os.path.join(os.path.dirname(__file__), os.path.join('inputs', csv_file))
     return prepare_data(csv_path=csv_path, raw=raw)
+
+
+@st.cache
+def extract_final_perf(data_df: pd.DataFrame,
+                       final_rank_col: str = 'final_rank',
+                       final_nb_points: str = 'final_cum_pts'):
+    dg = data_df[['season', 'team', final_rank_col, final_nb_points]].drop_duplicates().reset_index(drop=True)
+    return dg
 
 
 @st.cache
@@ -62,7 +70,7 @@ def app():
                                         options=championship_csv.keys())
     # choose the model type : regression, classification or ranking algorithm
     model_type_option = st.sidebar.selectbox(
-        label="Please choose the type of algorithm used by the ranker. More than one can be selected",
+        label="Please choose the type of algorithm used by the ranker.",
         options=['regression', 'classification', 'ranking']
     )
 
@@ -79,54 +87,78 @@ def app():
                                                                             break_leg=break_leg)
     #  --- check if pretrained model is available
     model_available = is_available(module_path='saved_models', file_name=model_name)
-
+    has_model = False
     if model_available:
         choice = st.sidebar.selectbox(label="Do you want to use an already trained model ?", options=['yes', 'no'])
         use_pretrained = choice == 'yes'
-        placeholder_3 = st.empty()
     # -- retrieve a pretrained model if requested and available else train the model
     if use_pretrained:
         model = retrieve_model(module_path="saved_models", file_name=model_name)
+        has_model = True
     else:
         # train model
-        training_seasons = st.sidebar.multiselect(
+        form = st.sidebar.form(key="training seasons")
+        key = 0
+        training_seasons = form.multiselect(
             label="Select the seasons on which the model should train. Uncheck 3 seasons",
             options=season_options,
+            default=season_options,
+            key=key
         )
+        submit = form.form_submit_button(label="Go for training !!!")
+        if submit and len(season_options)-len(training_seasons) != 3:
+            st.write("""{val_length} seasons have been unchecked instead of the required 3.
+                 Select the seasons on which the model should train. Uncheck 3 seasons.
+                 """.format(val_length=len(season_options)-len(training_seasons)))
+        elif submit:
+            loaded_data = load_data(league=championship, raw=False)
+            train_data = deepcopy(loaded_data[loaded_data['season'].isin(training_seasons)]).reset_index(drop=True)
+            validation_data = deepcopy(loaded_data[~loaded_data['season'].isin(training_seasons)]).reset_index(
+                drop=True)
 
-        loaded_data = load_data(league=championship)
-        train_data = deepcopy(loaded_data[loaded_data['season'].isin(training_seasons)]).reset_index(drop=True)
-        validation_data = deepcopy(loaded_data[~loaded_data['season'].isin(training_seasons)]).reset_index(drop=True)
-        # function below MUST BE COMPLETED
-        model = train_model(championship=championship,
-                            model_type=model_type_option,
-                            nb_opponent=18 if championship == 'bundesliga' else 20,
-                            train_data=preprocess(data_df=train_data,
-                                                  model_type=model_type_option,
-                                                  breaking_leg=break_leg)
-                            )
+            preprocessed_train_data = preprocess(data_df=train_data,
+                                                 model_type=model_type_option,
+                                                 breaking_leg=break_leg)
+            st.dataframe(preprocessed_train_data)
+            model = train_model(championship=championship,
+                                model_type=model_type_option,
+                                nb_opponent=18 if championship == 'bundesliga' else 20,
+                                train_data=preprocessed_train_data,
+                                model_name=model_name
+                                )
+            has_model = True
+            preprocessed_validation_data = preprocess(data_df=validation_data,
+                                                      model_type=model_type_option,
+                                                      breaking_leg=break_leg)
+            if model_type_option == 'regression':
+                final_perf_validation = extract_final_perf(data_df=validation_data)
+                preprocessed_validation_data = pd.merge(final_perf_validation, preprocessed_validation_data, how='left',
+                                                        on=['season', 'team'])
+            placeholder2 = st.empty()
+            placeholder2.write("getting model performance ...")
+            perf = get_model_performance(test_data=preprocessed_validation_data,
+                                         model=model
+                                         )
+            placeholder2.write(f"Model Training Performance is {perf}%")
+    if has_model:
+        predict_button = st.button("Let's predict !!!")
+        # provide the input
+        # -- show the head of expected input dataframe
+        if predict_button:
+            st.markdown("##### Example of expected input")
+            sample_example_df = load_data(league='premier-league', raw=True)
+            st.dataframe(data=sample_example_df.head(), height=500, width=800)
+            input_data = st.file_uploader(
+                label="""\n\nProvide your input : a csv file with the above format collecting all games played 
+                    in one season until a specified leg.""")
+            # input_path = st.text_input(label="Enter the path to you csv file.",
+            # value="")
+            start_prediction = st.button("Go for the prediction")
+            if input_data is not None:
+                if start_prediction:
+                    # Naive model
+                    st.markdown("#### Naive Prediction")
+                    # show prediction
 
-        perf = get_model_performance(test_data=preprocess(data_df=validation_data,
-                                                          model_type=model_type_option,
-                                                          breaking_leg=break_leg),
-                                     model=model
-                                     )
-        placeholder_3 = st.write(f"Model Training Performance is {perf}")
-    # provide the input
-    # -- show the head of expected input dataframe
-    sample_example_df = load_data(league='premier-league', raw=True)
-    st.dataframe(data=sample_example_df.head(), height=500, width=800)
-    input_data = st.file_uploader(
-        label="""\n\nProvide your input : a csv file with the above format collecting all games played 
-            in one season until a specified leg.""")
-    # input_path = st.text_input(label="Enter the path to you csv file.",
-    # value="")
-    start_prediction = st.button("Go for the prediction")
-    if input_data is not None:
-        if start_prediction:
-            # Naive model
-            st.markdown("#### Naive Prediction")
-            # show prediction
-
-            st.markdown(f"#### \n{model_type_option} model Prediction")
-            # model.predict(data=input_data)
+                    st.markdown(f"#### \n{model_type_option} model Prediction")
+                    # model.predict(data=input_data)
