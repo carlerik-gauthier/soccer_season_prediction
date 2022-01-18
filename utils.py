@@ -38,7 +38,7 @@ def retrieve_model(module_path: str, file_name: str):
     # load model
     for f in list_files(module_path=module_path):
         if f == file_name:
-            return pickle.load(open(file_name+'.pickle', 'rb'))
+            return pickle.load(open(os.path.join(module_path, file_name+'.pickle'), 'rb'))
     return None
 
 

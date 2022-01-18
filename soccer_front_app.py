@@ -4,6 +4,7 @@ import streamlit as st
 from multipage import MultiPage
 import eda_app
 import prediction_app
+import eda_new_app
 import empty_front
 # Create Streamlit Application
 app = MultiPage()
@@ -21,6 +22,7 @@ st.markdown(" Data comes from l'Équipe website and runs from season 2004-2005 t
 # Add all your applications (pages) here
 app.add_page("Menu", empty_front.app)
 app.add_page("EDA", eda_app.app)
+app.add_page("EDA with ongoing season", eda_new_app.app)
 app.add_page("Prediction", prediction_app.app)
 
 # The main my_app

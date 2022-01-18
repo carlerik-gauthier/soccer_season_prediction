@@ -270,6 +270,57 @@ def plot_team_pts_evol_vs_final_rank(df: pd.DataFrame,
     return fig
 
 
+def plot_team_pts_evol_vs_history(history_df,
+                                  df,
+                                  team,
+                                  leg_col: str = 'leg',
+                                  cum_points_col: str = 'cum_pts',
+                                  final_rank_col: str = 'final_rank',
+                                  show_standard_deviation: bool = True):
+    kpi = 'cum_pts'
+    avg_col = f'avg_{kpi}'
+    std_col = f'std_{kpi}'
+
+    go_layers = []
+
+    team_df = deepcopy(df[(df.team == team)])
+    sub_layer = get_layer_cumulative_kpi(plot_name=f"{team} point evolution",
+                                         x=team_df[leg_col],
+                                         y=team_df[cum_points_col],
+                                         color="gold",
+                                         width=8)
+
+    comparator = history_df.groupby(by=[final_rank_col, leg_col]).aggregate({cum_points_col: ['mean', 'std']})
+    comparator.columns = [avg_col, std_col]
+    comp_final = comparator.reset_index()
+
+    go_layers += sub_layer
+    for ranking in comp_final.final_rank.unique()[::-1]:
+        dg = comp_final[comp_final.final_rank == ranking]
+        sublayer = get_layers_avg_kpi(plot_name=str(ranking),
+                                      x=dg[leg_col],
+                                      avg_data=dg[avg_col],
+                                      std_data=dg[std_col],
+                                      color=color_2_position[ranking],
+                                      width=_get_width(ranking=ranking),
+                                      fillcolor=color_name_to_rgba(name=color_2_position[ranking],
+                                                                   fill=0.1 * show_standard_deviation)
+                                      )
+        go_layers += sublayer
+
+    layout = get_layout()
+
+    fig = go.Figure(data=go_layers, layout=layout)
+
+    fig.update_layout(
+        yaxis_title='Number of points',
+        title=f"{kpi} Evolution according to historical final ranking",
+        hovermode="x"
+    )
+
+    return fig
+
+
 def _get_width(ranking: int, nb_competitor: int = None):
     if nb_competitor is None:
         return 2

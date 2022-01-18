@@ -32,6 +32,15 @@ def load_data(league: str, raw: bool = True):
     return prepare_data(csv_path=csv_path, raw=raw)
 
 
+@st.cache(allow_output_mutation=True)
+def load_input_data(input_csv: str):
+    """extract data"""
+    # csv_path = os.path.join(os.path.dirname(__file__), os.path.join('inputs', csv_file))
+    df = prepare_data(csv_path=input_csv, raw=False)
+    df = deepcopy(df.dropna(subset=['goals_scored'])).reset_index(drop=True)
+    return df
+
+
 @st.cache
 def extract_final_perf(data_df: pd.DataFrame,
                        final_rank_col: str = 'final_rank',
@@ -141,24 +150,28 @@ def app():
                                          )
             placeholder2.write(f"Model Training Performance is {perf}%")
     if has_model:
-        predict_button = st.button("Let's predict !!!")
+        # predict_button = st.button("Let's predict !!!")
         # provide the input
         # -- show the head of expected input dataframe
-        if predict_button:
-            st.markdown("##### Example of expected input")
-            sample_example_df = load_data(league='premier-league', raw=True)
-            st.dataframe(data=sample_example_df.head(), height=500, width=800)
-            input_data = st.file_uploader(
-                label="""\n\nProvide your input : a csv file with the above format collecting all games played 
-                    in one season until a specified leg.""")
-            # input_path = st.text_input(label="Enter the path to you csv file.",
-            # value="")
-            start_prediction = st.button("Go for the prediction")
-            if input_data is not None:
-                if start_prediction:
-                    # Naive model
-                    st.markdown("#### Naive Prediction")
-                    # show prediction
+        # if predict_button:
+        st.markdown("##### Example of expected input")
+        sample_example_df = load_data(league='premier-league', raw=True)
+        st.dataframe(data=sample_example_df.head(), height=500, width=800)
+        input_data = st.file_uploader(
+            label="""\n\nProvide your input : a csv file with the above format collecting all games played 
+                in one season until a specified leg.""")
+        # input_path = st.text_input(label="Enter the path to you csv file.",
+        # value="")
+        # start_prediction = st.button("Go for the prediction")
+        if input_data is not None:
+            input_df = load_input_data(input_csv=input_data)
+            cleaned_input_df = deepcopy(input_df[input_df.leg <= break_leg]).reset_index()
+            # if start_prediction:
+            # Naive model
+            st.markdown("#### Naive Prediction")
+            # show prediction
 
-                    st.markdown(f"#### \n{model_type_option} model Prediction")
-                    # model.predict(data=input_data)
+            st.text("dfdfd")
+            st.markdown(f"#### {model_type_option} model Prediction")
+            st.text("dfdfdUIO")
+            model.predict(data=input_data)
