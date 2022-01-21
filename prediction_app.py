@@ -7,7 +7,8 @@ from copy import deepcopy
 
 from utils import is_available, train_model, retrieve_model, get_model_performance
 from preprocess.soccer_data import prepare_data
-from preprocess.predictor_preprocess import build_data, get_pivoted
+from rank_predictor.utils import get_lr_parameters, get_season_team_data
+from preprocess.predictor_preprocess import build_data, get_pivoted # , build_season_data
 
 
 # TODO : 1. connection to model
@@ -165,13 +166,21 @@ def app():
         # start_prediction = st.button("Go for the prediction")
         if input_data is not None:
             input_df = load_input_data(input_csv=input_data)
+            st.text("input with extra looks like")
+            st.dataframe(input_df.head())
             cleaned_input_df = deepcopy(input_df[input_df.leg <= break_leg]).reset_index()
             # if start_prediction:
             # Naive model
             st.markdown("#### Naive Prediction")
+            # st.dataframe(get_lr_parameters(data=cleaned_input_df))
+            naive_df = preprocess(data_df=cleaned_input_df,
+                                  model_type='naive',
+                                  breaking_leg=break_leg)
             # show prediction
 
-            st.text("dfdfd")
             st.markdown(f"#### {model_type_option} model Prediction")
-            st.text("dfdfdUIO")
-            model.predict(data=input_data)
+            preprocessed_df = preprocess(data_df=cleaned_input_df,
+                                         model_type=model_type_option,
+                                         breaking_leg=break_leg)
+            model.get_ranking(season_data=cleaned_input_df,
+                              predicted_rank_col=f"{model_type_option}_predicted_rank")

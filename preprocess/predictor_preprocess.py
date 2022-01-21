@@ -72,7 +72,11 @@ def build_data(historical_data: pd.DataFrame, break_leg: int):
 
     return pd.concat([ids_df, data_df], axis=1)
 
-    
+#
+# def build_season_data(historical_data: pd.DataFrame, break_leg: int):
+#     pass
+#
+
 def get_pivoted(data: pd.DataFrame, break_leg: int, value_col: str = 'cum_pts'):
     
     df = deepcopy(data[data.leg <= break_leg])

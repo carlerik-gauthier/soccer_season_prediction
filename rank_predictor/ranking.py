@@ -20,7 +20,8 @@ class SoccerRanking:
         #            group=group)
         self.model.fit(X=feature_data, y=y, group=group)
 
-    def get_ranking(self, season_data: pd.DataFrame,
+    def get_ranking(self,
+                    season_data: pd.DataFrame,
                     feature_cols: list,
                     predicted_rank_col: str = "ranking_predicted_rank"):
 

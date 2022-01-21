@@ -24,7 +24,7 @@ class SoccerRegression:
         try:
             season_data['predicted_linear_coeff'] = season_data[feature_cols].apply(
                 lambda feat: self.model.predict(np.array(feat)), axis=1)
-        except ValueError as v:
+        except ValueError:
             season_data['predicted_linear_coeff'] = season_data[feature_cols].apply(
                 lambda feat: self.model.predict(np.array(feat).reshape(1, -1)), axis=1)
         # predict the number of points by the end of the season

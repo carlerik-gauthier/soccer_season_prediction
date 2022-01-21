@@ -121,7 +121,7 @@ class Ranker:
         truth_score = base_val.gain.sum()
         return round(100*prediction_score/truth_score, 2) if truth_score > 0 else 100
 
-    def get_ranking(self, data, predicted_rank_col):
-        return self.model.get_ranking(season_data=data,
+    def get_ranking(self, season_data, predicted_rank_col):
+        return self.model.get_ranking(season_data=season_data,
                                       feature_cols=self.feature_columns,
                                       predicted_rank_col=predicted_rank_col)

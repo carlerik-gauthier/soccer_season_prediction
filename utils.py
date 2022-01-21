@@ -100,8 +100,8 @@ def list_files(module_path):
 
 
 def _get_feature_columns(data_df: DataFrame, model_type='naive'):
-    no_use_cols = ['index', 'country', 'season', 'team', 'opponent',
-                   'previous_team_rolling_5_games_avg_goals_scored_binned']
+    # no_use_cols = ['index', 'country', 'season', 'team', 'opponent',
+    #                'previous_team_rolling_5_games_avg_goals_scored_binned']
     if model_type == 'classification':
         # on pivoted data
         feat_cols = [c for c in data_df.columns if c.startswith('leg')]
