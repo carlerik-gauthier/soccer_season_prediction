@@ -43,14 +43,12 @@ def retrieve_model(module_path: str, file_name: str):
 
 
 def train_model(model_type: str,
-                championship: str,
                 nb_opponent: int,
                 train_data: DataFrame,
                 model_name: str
                 ):
     """
     :param model_type: str: type of rank predictor. Must be either 'regression', 'classification' or 'ranking'
-    :param championship: str: name of the championship
     :param nb_opponent: int: number of teams taking part to the competition
     :param train_data: DataFrame: data to be used to train the model
     :param model_name: str : model name. It contains the type of model, the championship and the breaking leg
@@ -60,7 +58,7 @@ def train_model(model_type: str,
     if model_type not in MODEL_TYPE:
         raise ValueError("model_type MUST be one the following values : {values}".format(values=', '.join(MODEL_TYPE)))
     
-    feature_columns = _get_feature_columns(data_df=train_data, model_type=model_type)
+    feature_columns = get_feature_columns(data_df=train_data, model_type=model_type)
     model = Ranker(feature_columns=feature_columns, ranker_type=model_type, nb_opponent=nb_opponent)
     if model_type in ['ranking', 'classification', 'regression']:
         model.train(train_data=train_data, target_column=_get_target_col(model_type=model_type))
@@ -69,18 +67,8 @@ def train_model(model_type: str,
         model_name = model_name + '.pickle'
         location = os.path.join(SAVE_FOLDER, model_name)
         pickle.dump(model, open(location, 'wb'))
-    # if model_type == 'regression':
-    #     model.train(train_data=train_data, target_column=...)
-    # elif model_type == 'classification':
-    #     model = ...
-    # elif model_type == 'ranking':
-    #     model = ...
     else:
         model = None
-
-    # # save model
-    # if model_type in ['ranking', 'classification', 'regression']:
-    #     pickle.dump(model, open(model_name+'.pickle', 'wb'))
 
     return model
 
@@ -99,7 +87,7 @@ def list_files(module_path):
     return [f.split('.')[0] for f in os.listdir(module_path) if os.path.isfile(os.path.join(module_path, f))]
 
 
-def _get_feature_columns(data_df: DataFrame, model_type='naive'):
+def get_feature_columns(data_df: DataFrame, model_type='naive'):
     # no_use_cols = ['index', 'country', 'season', 'team', 'opponent',
     #                'previous_team_rolling_5_games_avg_goals_scored_binned']
     if model_type == 'classification':

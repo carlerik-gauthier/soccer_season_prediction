@@ -26,16 +26,16 @@ class SoccerRegression:
                 lambda feat: self.model.predict(np.array(feat)), axis=1)
         except ValueError:
             season_data['predicted_linear_coeff'] = season_data[feature_cols].apply(
-                lambda feat: self.model.predict(np.array(feat).reshape(1, -1)), axis=1)
+                lambda feat: self.model.predict(np.array(feat).reshape(1, -1))[0], axis=1)
         # predict the number of points by the end of the season
         cols = ['predicted_linear_coeff', 'nb_pts_at_break', 'break_leg']
 
         season_data['predicted_final_nb_pts'] = season_data[cols].apply(
             lambda r: r[1] + r[0] * (self.championship_length - r[2]), axis=1)
-
         # get final rank
         rank_df = season_data.sort_values(by='predicted_final_nb_pts', ascending=False).reset_index(drop=True)
         rank_df[predicted_rank_col] = rank_df.index + 1
+
         return rank_df
 
     def _predict(self, feature: np.array):
