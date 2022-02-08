@@ -13,7 +13,7 @@ class SoccerNaive:
     def get_ranking(self,
                     season_data: DataFrame,
                     feature_cols: list,
-                    predicted_rank_col: str = "naive_predicted_rank"):
+                    predicted_rank_col: str = "naive_predicted_rank") -> DataFrame:
         # get the predicted number of points by the end of the season
         season_data['predicted_final_nb_pts'] = season_data[feature_cols].apply(
             lambda r: r*self.championship_length, axis=1)

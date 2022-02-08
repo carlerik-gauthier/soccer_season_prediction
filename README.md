@@ -26,24 +26,28 @@ TBD
 Evolution of several kpis based upon final rank
 TBD 
 
+# EDA for 2019-2020 season
+
+TODO
+
 # Models
 
-## The naive one
+### The naive one
 TBD 
 
-## Regression type
+### Regression type
 TBD 
 
-## Classification type
+### Classification type
 TBD 
 
-## Ranking type
+### Ranking type
 TBD 
 
-## What metrics ?
+### What metrics ?
 TBD 
 
-## Results
+### Results
 TBD 
 
 # Notebooks to scripts
@@ -52,7 +56,7 @@ TBD
 # The app
 TBD 
 
-# Miscellanous
+# Miscellaneous
 
 As an additional way to achieve my objective to predict final ranking, I wanted to predict the number of goals a team would score at its next game.
 
@@ -61,6 +65,17 @@ TBD
 
 # Conclusion
 
-In no way, this project is aimed to be used for any claim in front of courts; it was just for my fun. That being said, the fact that results are not as good as expected at the start is a good thing for soccer. Indeed, the incertainty about games' outcome makes ir an exciting sport to follow and argue with friends (and other fans).
+In no way, this project is aimed to be used for any claim in front of courts; it was just for my fun. 
+That being said, the fact that results are not as good as expected at the start is a good thing for soccer. Indeed, the uncertainty about games' outcome makes ir an exciting sport to follow and argue with friends (and other fans).
+
+Went through an entire experimental project from scrapping the data, exploring and prototyping in notebooks, translating 
+those to scripts and displaying insight and results in a Streamlit app.
+
+## Side note
+I consider my notebooks as rough drafts before turning to .py script with content I deem sufficient; so notebooks are not very user-friendly.
+
+Best practises requires providing docstrings and variable typing. As it is personal and been written over the course of several months (when I had free time and motivation to go on)
+and not meant to be used widely by the public, it didn't seem to me to be as important.
+
 
 
