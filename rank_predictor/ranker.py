@@ -35,7 +35,7 @@ class Ranker:
             # will process Naive model
             return SoccerNaive(nb_opponent=self.nb_opponent)
 
-    def train(self, train_data: DataFrame, target_column, eval_metric=None):
+    def train(self, train_data: DataFrame, target_column, eval_metric=None) -> None:
         eval_metric = None if self.ranker_type != 'classification' else eval_metric
 
         if eval_metric is not None:
@@ -83,7 +83,7 @@ class Ranker:
                                 real_rank_col: str = 'final_rank',
                                 real_final_points_col: str = 'final_cum_pts',
                                 ranking_weight_version: int = 1
-                                ):
+                                ) -> float:
 
         predicted_ranking_df = self.model.get_ranking(
             season_data=test_data,

@@ -26,11 +26,12 @@ class SoccerClassification:
                     ) -> pd.DataFrame:
         """ compute the probabilities to belong to the different classes """
         teams = season_data['team'].values
+        season = season_data.loc[0, 'season']
         prob = self.model.predict_proba(X=season_data[feature_cols].values)
         weights = np.array([r + np.exp(np.log(100) * r / self.nb_opponent) for r in range(1, self.nb_opponent + 1)])
         scores = np.array([np.dot(prob[i], weights) for i in range(len(prob))])
 
-        output_df = pd.DataFrame(data={'team': teams, 'score': scores})
+        output_df = pd.DataFrame(data={'season': [season]*len(teams), 'team': teams, 'score': scores})
         output_df[predicted_rank_col] = output_df['score'].rank()
 
-        return output_df
+        return output_df.sort_values(by=predicted_rank_col, ascending=True).reset_index(drop=True)

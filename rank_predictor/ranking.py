@@ -30,4 +30,5 @@ class SoccerRanking:
         tmp = pd.DataFrame(data=ranker_vals, columns=['xgb_ranker'])
         output_df = pd.concat([season_data[['season', 'team', 'final_rank']], tmp], axis=1)
         output_df[predicted_rank_col] = output_df['xgb_ranker'].rank()
-        return output_df
+        output_df[predicted_rank_col] = output_df[predicted_rank_col].astype(int)
+        return output_df.sort_values(by=predicted_rank_col, ascending=True).reset_index(drop=True)

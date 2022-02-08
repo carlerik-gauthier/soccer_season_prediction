@@ -287,7 +287,7 @@ def plot_team_pts_evol_vs_history(history_df,
     sub_layer = get_layer_cumulative_kpi(plot_name=f"{team} point evolution",
                                          x=team_df[leg_col],
                                          y=team_df[cum_points_col],
-                                         color="gold",
+                                         color="darkviolet",
                                          width=8)
 
     comparator = history_df.groupby(by=[final_rank_col, leg_col]).aggregate({cum_points_col: ['mean', 'std']})
@@ -300,7 +300,7 @@ def plot_team_pts_evol_vs_history(history_df,
         sublayer = get_layers_avg_kpi(plot_name=str(ranking),
                                       x=dg[leg_col],
                                       avg_data=dg[avg_col],
-                                      std_data=dg[std_col],
+                                      std_data=dg[std_col] if show_standard_deviation else None,
                                       color=color_2_position[ranking],
                                       width=_get_width(ranking=ranking),
                                       fillcolor=color_name_to_rgba(name=color_2_position[ranking],

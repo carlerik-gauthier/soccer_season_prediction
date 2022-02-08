@@ -77,6 +77,7 @@ def build_data(historical_data: pd.DataFrame, break_leg: int):
 #     pass
 #
 
+
 def get_pivoted(data: pd.DataFrame, break_leg: int, value_col: str = 'cum_pts'):
     
     df = deepcopy(data[data.leg <= break_leg])

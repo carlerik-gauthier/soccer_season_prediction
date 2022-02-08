@@ -61,7 +61,8 @@ def preprocess(data_df: pd.DataFrame, model_type: str = 'naive', breaking_leg: i
         df = get_pivoted(data=data_df, break_leg=breaking_leg)
     else:
         # will process Naive model
-        df = build_data(historical_data=data_df, break_leg=breaking_leg)
+        df = deepcopy(data_df[data_df['leg'] == breaking_leg]).reset_index(drop=True)
+        # build_data(historical_data=data_df, break_leg=breaking_leg)
 
     return df.sort_values(by='season').reset_index(drop=True)
 
@@ -179,12 +180,14 @@ def app():
             naive_df = preprocess(data_df=cleaned_input_df,
                                   model_type='naive',
                                   breaking_leg=break_leg)
-            st.dataframe(naive_df)
+            # st.dataframe(naive_df)
             naive_ranker = Ranker(feature_columns=get_feature_columns(data_df=naive_df),
                                   ranker_type="naive",
                                   nb_opponent=18 if championship == 'bundesliga' else 20)
+
             naive_ranking_df = naive_ranker.get_ranking(season_data=naive_df,
-                                                        feature_cols=["avg_cum_pts_since_season_start"], # ['lr_feat_coeff'],
+                                                        feature_cols=["avg_cum_pts_since_season_start"],
+                                                        # ['lr_feat_coeff'],
                                                         predicted_rank_col="naive_predicted_rank")
 
             st.text(f"""According to the naive ranking model, the final ranking at the end of the season 
@@ -198,7 +201,7 @@ def app():
             # st.text('Clean input df')
             # st.dataframe(cleaned_input_df)
             #
-            # st.text('preprocessed df')
+            # st.text(preprocessed_df.columns)
             # st.dataframe(preprocessed_df)
             ml_ranking_df = model.get_ranking(season_data=preprocessed_df,
                                               predicted_rank_col=f"{model_type_option}_predicted_rank")
