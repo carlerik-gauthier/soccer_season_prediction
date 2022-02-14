@@ -104,7 +104,7 @@ def get_feature_columns(data_df: DataFrame, model_type='naive'):
         return feat_cols
     else:
         # for naive and regression model_type
-        return ['lr_feat_coeff', 'nb_pts_at_break', 'cumulative_goal_diff_at_break',
+        return ['lr_feat_coeff', 'nb_pts_at_break', 'cumulative_goal_diff_at_break', 'cumulative_goal_scored_at_break',
                 'rolling_5_avg_pts_at_break', 'nb_games_to_play_at_home']
 
 

@@ -136,7 +136,6 @@ def app():
                                 train_data=preprocessed_train_data,
                                 model_name=model_name
                                 )
-            has_model = True
             preprocessed_validation_data = preprocess(data_df=validation_data,
                                                       model_type=model_type_option,
                                                       breaking_leg=break_leg)
@@ -150,6 +149,8 @@ def app():
                                          model=model
                                          )
             placeholder2.write(f"Model Training Performance is {perf}%")
+            model_available = True
+
     if has_model:
         # predict_button = st.button("Let's predict !!!")
         # provide the input
@@ -209,3 +210,8 @@ def app():
             st.text(f"""According to the {model_type_option} ranking model, the final ranking at the end of the season 
             will be :""")
             st.dataframe(ml_ranking_df)
+
+    else:
+        st.text(f"""Your model is {'ready' if model_available else 'not trained yet'}. 
+                {'Turn the answer from question ""Do you want to use an already trained model ?"" to "Yes" in order to'
+                 'use it' if model_available else ''}""")
