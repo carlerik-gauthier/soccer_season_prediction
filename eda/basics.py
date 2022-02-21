@@ -1,14 +1,16 @@
 from pandas import DataFrame
+from copy import deepcopy
 
 
 def get_team_participation(df: DataFrame):
 
     season_length = df.leg.max()
     
-    end_season_df = df[df.leg == season_length]  # .rename(columns={'rank': 'final_rank'})
-    participation_df = end_season_df[['team', 'final_rank']].groupby(by='team').agg('count').rename(
-        columns={"final_rank": "nb_participation"})
-    print(end_season_df[['team', 'final_rank']].groupby(by='team').agg('count').head())
+    end_season_df = deepcopy(df[df.leg == season_length])  # .rename(columns={'rank': 'final_rank'})
+    end_season_df['is_champion'] = end_season_df['final_rank'].apply(lambda x: int(x == 1))
+    participation_df = end_season_df[['team', 'final_rank', 'is_champion']].groupby(by='team').aggregate(
+        {'final_rank': 'count', 'is_champion': 'sum'}).rename(
+        columns={"final_rank": "nb_participation", "is_champion": "nb_titles"})
     return participation_df.sort_values(by="nb_participation", ascending=False)
 
 

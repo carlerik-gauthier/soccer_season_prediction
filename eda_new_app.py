@@ -31,6 +31,8 @@ OPTIONS = {'0. Not interested :(': 0,
            """ 5.  Do you want to see an EDA on goal scoring performance ?""": 5
            }
 
+KPI_TRANSLATOR = {'points': 'cum_pts', 'goal differences': 'cum_goal_diff', 'goals scored': 'cum_goals_scored'}
+
 
 @st.cache(allow_output_mutation=True)
 def load_data(league: str, raw: bool = True):
@@ -89,8 +91,11 @@ def app():
     # show_trends = st.button("Show for the trends")
     if input_data is not None:
         # --> plot_compare_team_pts_evolution_vs_final_rank
+        kpi = st.selectbox(label="What kpi to you to see the evolution ?",
+                           options=['points', 'goal differences', 'goals scored'], index=0)
         st.plotly_chart(figure_or_data=plot_team_pts_evol_vs_history(history_df=championship_data,
                                                                      df=input_df,
                                                                      team=team,
+                                                                     cum_points_col=KPI_TRANSLATOR[kpi],
                                                                      show_standard_deviation=show_std)
                         )

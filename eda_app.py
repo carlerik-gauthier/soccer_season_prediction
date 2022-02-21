@@ -72,62 +72,77 @@ def app():
     # team participation : get_team_participation
     # Home-Away effect : nb points and goal scored -- hist_aggregator
     # Leg effect : nb points and goals scored -- hist_aggregator
-    with col1:
-        # Home-Away
-        st.markdown("#### Home-Away Benefit on team performance")
-        st.write("Please expand the figures for the details 😉")
-        home_pts = hist_aggregator(df=championship_data[championship_data.play == 'Home'],
-                                   column_to_describe='nb_points',
-                                   aggreg_column='play')
-        st.dataframe(data=home_pts)
-        st.plotly_chart(figure_or_data=draw_pie_chart(
-            df=home_pts,
-            values='cnt',
-            names='nb_points',
-            title='Home performance'),
-            use_container_width=True
-        )
-        st.markdown("#### Home-Away Benefit on the number of goals the team scores")
-        home_away_goals_scored = hist_aggregator(df=championship_data,
-                                                 column_to_describe='goals_scored',
-                                                 aggreg_column='play')
-        st.dataframe(data=home_away_goals_scored)
-        st.plotly_chart(figure_or_data=draw_sunburst(
-            df=home_away_goals_scored,
-            values='cnt',
-            path=['play', 'goals_scored']),
-            use_container_width=True
-        )
-    with col2:
-        # Leg
-        st.markdown("#### Leg Benefit on team performance")
-        leg_on_perf_at_home = hist_aggregator(df=championship_data[championship_data.play == 'Home'],
-                                              column_to_describe='nb_points',
-                                              aggreg_column='leg')
-        st.dataframe(data=leg_on_perf_at_home)
-        st.plotly_chart(figure_or_data=draw_sunburst(df=leg_on_perf_at_home,
-                                                     path=['leg', 'nb_points'],
-                                                     values='cnt'),
-                        use_container_width=True
-                        )
-        st.markdown("#### Leg Benefit on the number of goals the team scores")
-
-        leg_goals = hist_aggregator(df=championship_data, column_to_describe='goals_scored', aggreg_column='leg')
-        st.dataframe(data=leg_goals)
-        st.plotly_chart(figure_or_data=draw_sunburst(df=leg_goals,
-                        path=['leg', 'goals_scored'],
-                        values='cnt'),
-                        use_container_width=True
-                        )
+    st.markdown("#### Home-Away Benefit on team performance")
+    st.write("Please expand the figures for the details 😉")
+    home_pts = hist_aggregator(df=championship_data[championship_data.play == 'Home'],
+                               column_to_describe='nb_points',
+                               aggreg_column='play')
+    st.dataframe(data=home_pts)
+    st.plotly_chart(figure_or_data=draw_pie_chart(
+        df=home_pts,
+        values='cnt',
+        names='nb_points',
+        title='Home performance'),
+        use_container_width=True
+    )
+    # with col1:
+    #     # Home-Away
+    #     st.markdown("#### Home-Away Benefit on team performance")
+    #     st.write("Please expand the figures for the details 😉")
+    #     home_pts = hist_aggregator(df=championship_data[championship_data.play == 'Home'],
+    #                                column_to_describe='nb_points',
+    #                                aggreg_column='play')
+    #     st.dataframe(data=home_pts)
+    #     st.plotly_chart(figure_or_data=draw_pie_chart(
+    #         df=home_pts,
+    #         values='cnt',
+    #         names='nb_points',
+    #         title='Home performance'),
+    #         use_container_width=True
+    #     )
+    #     st.markdown("#### Home-Away Benefit on the number of goals the team scores")
+    #     home_away_goals_scored = hist_aggregator(df=championship_data,
+    #                                              column_to_describe='goals_scored',
+    #                                              aggreg_column='play')
+    #     st.dataframe(data=home_away_goals_scored)
+    #     st.plotly_chart(figure_or_data=draw_sunburst(
+    #         df=home_away_goals_scored,
+    #         values='cnt',
+    #         path=['play', 'goals_scored']),
+    #         use_container_width=True
+    #     )
+    # with col2:
+    #     # Leg
+    #     st.markdown("#### Leg Benefit on team performance")
+    #     leg_on_perf_at_home = hist_aggregator(df=championship_data[championship_data.play == 'Home'],
+    #                                           column_to_describe='nb_points',
+    #                                           aggreg_column='leg')
+    #     st.dataframe(data=leg_on_perf_at_home)
+    #     st.plotly_chart(figure_or_data=draw_sunburst(df=leg_on_perf_at_home,
+    #                                                  path=['leg', 'nb_points'],
+    #                                                  values='cnt'),
+    #                     use_container_width=True
+    #                     )
+    #     st.markdown("#### Leg Benefit on the number of goals the team scores")
+    #
+    #     leg_goals = hist_aggregator(df=championship_data, column_to_describe='goals_scored', aggreg_column='leg')
+    #     st.dataframe(data=leg_goals)
+    #     st.plotly_chart(figure_or_data=draw_sunburst(df=leg_goals,
+    #                     path=['leg', 'goals_scored'],
+    #                     values='cnt'),
+    #                     use_container_width=True
+    #                     )
 
     with col3:
 
         st.dataframe(data=participation_df)
 
-        st.write("\n {nb_all_seasons} teams played all {nb_seasons} seasons".format(
+        st.write("""\n {nb_all_seasons} teams played all {nb_seasons} seasons. {nb_champion} of them won it at least 
+        once""".format(
             nb_all_seasons=len(participation_df[participation_df.nb_participation == championship_data.season.nunique()]
                                ),
-            nb_seasons=championship_data.season.nunique())
+            nb_seasons=championship_data.season.nunique(),
+            nb_champion=len(participation_df[participation_df.nb_titles > 0]))
         )
     # show eda plots
     # How does a team perform in one season compared to its own history ?
@@ -201,6 +216,10 @@ def app():
         show_std = st.selectbox(label="Do you want the standard deviation area to be shown ?",
                                 options=['yes', 'no'], index=1)
         show_std = show_std == 'yes'
+        if season_selected:
+            tmp_df = deepcopy(team_df[team_df.team == team]).reset_index(drop=True)
+            final_rank = tmp_df.loc[0, 'final_rank']
+            st.text(f"{team}'s final rank for season {season_selected}: {final_rank}")
         # --> plot_compare_team_pts_evolution_vs_final_rank
         st.plotly_chart(figure_or_data=plot_team_pts_evol_vs_final_rank(df=championship_data,
                                                                         team=team,
