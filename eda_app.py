@@ -137,8 +137,8 @@ def app():
 
         st.dataframe(data=participation_df)
 
-        st.write("""\n {nb_all_seasons} teams played all {nb_seasons} seasons. {nb_champion} of them won it at least 
-        once""".format(
+        st.write("""\n {nb_all_seasons} teams played all {nb_seasons} seasons. There have been {nb_champion} different
+        champions""".format(
             nb_all_seasons=len(participation_df[participation_df.nb_participation == championship_data.season.nunique()]
                                ),
             nb_seasons=championship_data.season.nunique(),
