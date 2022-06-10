@@ -4,7 +4,7 @@ import streamlit as st
 from copy import deepcopy
 # Custom modules
 
-from eda.rank_based_eda import plot_team_pts_evol_vs_history
+from eda.figures_eda import plot_team_pts_evol_vs_history
 from preprocess.soccer_data import prepare_data, get_final_rank_performance_evolution
 
 season_options = ['{start_year}-{end_year}'.format(start_year=year, end_year=year+1) for year in range(2004, 2019)]

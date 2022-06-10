@@ -6,7 +6,7 @@ from copy import deepcopy
 import eda.basics as edab
 
 from eda.goals_related_eda import hist_aggregator
-from eda.rank_based_eda import plot_kpi_evolution, plot_team_pts_evol_with_competitor_avg_evolution, \
+from eda.figures_eda import plot_kpi_evolution, plot_team_pts_evol_with_competitor_avg_evolution, \
     plot_team_pts_evol_to_average_performance, plot_team_pts_evol_vs_final_rank
 from eda.utils import draw_line, draw_pie_chart
 from eda.goals_related_eda import mean_aggregator
