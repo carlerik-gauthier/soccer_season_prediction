@@ -1,5 +1,6 @@
 """
-Making an app based upon the streamlit package. Documentation can be found there :
+DEPRECATED
+Making a streamlit_app based upon the streamlit package. Documentation can be found there :
 https://docs.streamlit.io/library/get-started/main-concepts
 https://docs.streamlit.io/library/api-reference
 https://docs.streamlit.io/library/get-started/create-an-app
@@ -16,8 +17,6 @@ from eda.goals_related_eda import hist_aggregator
 from utils import is_available, train_model, retrieve_model, get_model_performance
 from preprocess.soccer_data import prepare_data
 from preprocess.predictor_preprocess import build_data, get_pivoted
-
-# TODO : 1. connection to model// 2. EDA part
 
 season_options = ['{start_year}-{end_year}'.format(start_year=year, end_year=year+1) for year in range(2004, 2019)]
 

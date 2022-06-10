@@ -8,7 +8,7 @@ import eda.basics as edab
 from eda.goals_related_eda import hist_aggregator
 from eda.rank_based_eda import plot_kpi_evolution, plot_team_pts_evol_with_competitor_avg_evolution, \
     plot_team_pts_evol_to_average_performance, plot_team_pts_evol_vs_final_rank
-from eda.utils import draw_line, draw_pie_chart, draw_sunburst
+from eda.utils import draw_line, draw_pie_chart
 from eda.goals_related_eda import mean_aggregator
 from preprocess.soccer_data import prepare_data, get_final_rank_performance_evolution
 
@@ -85,53 +85,6 @@ def app():
         title='Home performance'),
         use_container_width=True
     )
-    # with col1:
-    #     # Home-Away
-    #     st.markdown("#### Home-Away Benefit on team performance")
-    #     st.write("Please expand the figures for the details 😉")
-    #     home_pts = hist_aggregator(df=championship_data[championship_data.play == 'Home'],
-    #                                column_to_describe='nb_points',
-    #                                aggreg_column='play')
-    #     st.dataframe(data=home_pts)
-    #     st.plotly_chart(figure_or_data=draw_pie_chart(
-    #         df=home_pts,
-    #         values='cnt',
-    #         names='nb_points',
-    #         title='Home performance'),
-    #         use_container_width=True
-    #     )
-    #     st.markdown("#### Home-Away Benefit on the number of goals the team scores")
-    #     home_away_goals_scored = hist_aggregator(df=championship_data,
-    #                                              column_to_describe='goals_scored',
-    #                                              aggreg_column='play')
-    #     st.dataframe(data=home_away_goals_scored)
-    #     st.plotly_chart(figure_or_data=draw_sunburst(
-    #         df=home_away_goals_scored,
-    #         values='cnt',
-    #         path=['play', 'goals_scored']),
-    #         use_container_width=True
-    #     )
-    # with col2:
-    #     # Leg
-    #     st.markdown("#### Leg Benefit on team performance")
-    #     leg_on_perf_at_home = hist_aggregator(df=championship_data[championship_data.play == 'Home'],
-    #                                           column_to_describe='nb_points',
-    #                                           aggreg_column='leg')
-    #     st.dataframe(data=leg_on_perf_at_home)
-    #     st.plotly_chart(figure_or_data=draw_sunburst(df=leg_on_perf_at_home,
-    #                                                  path=['leg', 'nb_points'],
-    #                                                  values='cnt'),
-    #                     use_container_width=True
-    #                     )
-    #     st.markdown("#### Leg Benefit on the number of goals the team scores")
-    #
-    #     leg_goals = hist_aggregator(df=championship_data, column_to_describe='goals_scored', aggreg_column='leg')
-    #     st.dataframe(data=leg_goals)
-    #     st.plotly_chart(figure_or_data=draw_sunburst(df=leg_goals,
-    #                     path=['leg', 'goals_scored'],
-    #                     values='cnt'),
-    #                     use_container_width=True
-    #                     )
 
     with col3:
 
@@ -146,8 +99,7 @@ def app():
         )
     # show eda plots
     # How does a team perform in one season compared to its own history ?
-    # compare_pts_evol_time
-    #
+
     # How is a team performing compared to the final rank's requirements ?
     # plot_compare_team_pts_evolution_vs_final_rank
     st.markdown("# EDA questions according to general ranking performances")

@@ -2,10 +2,10 @@ import os
 import logging
 import streamlit as st
 from multipage import MultiPage
-import eda_app
-import prediction_app
-import eda_new_app
-import empty_front
+import eda_app as eda_app
+import prediction_app as prediction_app
+import eda_new_app as eda_new_app
+import empty_front as empty_front
 # Create Streamlit Application
 app = MultiPage()
 
