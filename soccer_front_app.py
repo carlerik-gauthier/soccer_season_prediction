@@ -17,7 +17,7 @@ logger = logging.getLogger()
 
 # Title of the main page
 st.title('Soccer : what is the final ranking ?')
-st.markdown(" Data comes from l'Équipe website and runs from season 2004-2005 to 2018-2019")
+st.markdown(" Data comes from l'Équipe website and goes from season 2004-2005 to 2018-2019")
 
 # Add all your applications (pages) here
 app.add_page("Menu", empty_front.app)
