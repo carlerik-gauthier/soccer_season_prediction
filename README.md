@@ -79,3 +79,5 @@ and not meant to be used widely by the public, it didn't seem to me to be as imp
 
 
 
+## NB : 
+https://stackoverflow.com/questions/72032032/importerror-cannot-import-name-iterable-from-collections-in-python

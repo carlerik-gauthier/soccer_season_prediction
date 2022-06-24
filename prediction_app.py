@@ -10,9 +10,6 @@ from preprocess.soccer_data import prepare_data
 from preprocess.predictor_preprocess import build_data, get_pivoted
 from rank_predictor.ranker import Ranker
 
-
-# TODO : 1. connection to model
-
 season_options = ['{start_year}-{end_year}'.format(start_year=year, end_year=year+1) for year in range(2004, 2019)]
 
 championship_csv = {'ligue-1': 'ligue-1_data_2002_2019',
@@ -123,6 +120,7 @@ def app():
                  """.format(val_length=len(season_options)-len(training_seasons)))
         elif submit:
             loaded_data = load_data(league=championship, raw=False)
+            print("Yeah")
             train_data = deepcopy(loaded_data[loaded_data['season'].isin(training_seasons)]).reset_index(drop=True)
             validation_data = deepcopy(loaded_data[~loaded_data['season'].isin(training_seasons)]).reset_index(
                 drop=True)
@@ -130,7 +128,7 @@ def app():
             preprocessed_train_data = preprocess(data_df=train_data,
                                                  model_type=model_type_option,
                                                  breaking_leg=break_leg)
-            st.dataframe(preprocessed_train_data)
+            # st.dataframe(preprocessed_train_data)
             model = train_model(model_type=model_type_option,
                                 nb_opponent=18 if championship == 'bundesliga' else 20,
                                 train_data=preprocessed_train_data,
@@ -168,7 +166,7 @@ def app():
         if input_data is not None:
             input_df = load_input_data(input_csv=input_data)
             # st.text("input with extra looks like")
-            st.dataframe(input_df.head())
+            # st.dataframe(input_df.head())
             current_ranking_df = input_df[input_df.leg == break_leg][["season", "team", "cum_pts", "rank"]].rename(
                 columns={'cum_pts': 'pts'}).sort_values(by='rank').reset_index(drop=True)
             st.text(f"After {break_leg} championship legs, the ranking is")
@@ -213,5 +211,6 @@ def app():
 
     else:
         st.text(f"""Your model is {'ready' if model_available else 'not trained yet'}. 
-                {'Turn the answer from question ""Do you want to use an already trained model ?"" to "Yes" in order to'
+                {'Click again on any button and make sure to turn the answer from question ""Do you want to use an '
+                 'already trained model ?"" to "Yes" in order to'
                  'use it' if model_available else ''}""")

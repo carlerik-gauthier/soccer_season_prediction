@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from sklearn.preprocessing import LabelEncoder
 # from copy import deepcopy
 # from datetime import datetime
 
@@ -17,7 +18,10 @@ class SoccerClassification:
 
     def train(self, feature_data, y, eval_metric='mlogloss') -> None:
         eval_metric = 'mlogloss' if eval_metric is None else eval_metric
-        self.model.fit(X=feature_data, y=y, eval_metric=eval_metric)
+        le = LabelEncoder()
+        y = le.fit_transform(y)
+        self.model.set_params(eval_metric=eval_metric)
+        self.model.fit(X=feature_data, y=y)
 
     def get_ranking(self,
                     season_data: pd.DataFrame,
