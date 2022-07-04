@@ -120,7 +120,6 @@ def app():
                  """.format(val_length=len(season_options)-len(training_seasons)))
         elif submit:
             loaded_data = load_data(league=championship, raw=False)
-            print("Yeah")
             train_data = deepcopy(loaded_data[loaded_data['season'].isin(training_seasons)]).reset_index(drop=True)
             validation_data = deepcopy(loaded_data[~loaded_data['season'].isin(training_seasons)]).reset_index(
                 drop=True)

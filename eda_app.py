@@ -148,7 +148,7 @@ def app():
     if OPTIONS[eda_option] == 3:
         # placeholder_1b2.empty()
         team = st.selectbox(label="Please choose your team",
-                            options=participation_df[participation_df.nb_participation >= 3].index)
+                            options=participation_df[participation_df.nb_participation >= 5].index)
         # --> compare_pts_evol_time
         st.plotly_chart(figure_or_data=plot_team_pts_evol_to_average_performance(
             data=championship_data,

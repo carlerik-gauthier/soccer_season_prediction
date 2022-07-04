@@ -1,4 +1,4 @@
-def _get_rank_position_scoring(nb_teams):
+def _get_rank_position_scoring(nb_teams: int):
     bonus_position = {1: 300,
                       2: 280,
                       3: 270,
@@ -20,7 +20,7 @@ def _get_rank_position_scoring(nb_teams):
     return bonus_position
 
 
-def _get_rank_scoring(nb_teams):
+def _get_rank_scoring(nb_teams: int):
     max_bonus = 250 * nb_teams
     return {1 + i // 2 if i % 2 == 0 else nb_teams - i // 2: max_bonus - i * 250 for i in range(nb_teams)}
 

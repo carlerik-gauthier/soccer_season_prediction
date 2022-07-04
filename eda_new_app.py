@@ -32,6 +32,8 @@ OPTIONS = {'0. Not interested :(': 0,
            }
 
 KPI_TRANSLATOR = {'points': 'cum_pts', 'goal differences': 'cum_goal_diff', 'goals scored': 'cum_goals_scored'}
+NAME_TRANSLATOR = {'points': 'Number of points', 'goal differences': 'Goal difference',
+                   'goals scored': 'Goals scored'}
 
 
 @st.cache(allow_output_mutation=True)
@@ -97,5 +99,6 @@ def app():
                                                                      df=input_df,
                                                                      team=team,
                                                                      cum_points_col=KPI_TRANSLATOR[kpi],
+                                                                     yaxis_name=NAME_TRANSLATOR[kpi],
                                                                      show_standard_deviation=show_std)
                         )

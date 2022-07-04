@@ -276,6 +276,7 @@ def plot_team_pts_evol_vs_history(history_df,
                                   leg_col: str = 'leg',
                                   cum_points_col: str = 'cum_pts',
                                   final_rank_col: str = 'final_rank',
+                                  yaxis_name: str = 'Number of points',
                                   show_standard_deviation: bool = True):
     kpi = 'cum_pts'
     avg_col = f'avg_{kpi}'
@@ -284,7 +285,7 @@ def plot_team_pts_evol_vs_history(history_df,
     go_layers = []
 
     team_df = deepcopy(df[(df.team == team)])
-    sub_layer = get_layer_cumulative_kpi(plot_name=f"{team} point evolution",
+    sub_layer = get_layer_cumulative_kpi(plot_name=f"{team} evolution",
                                          x=team_df[leg_col],
                                          y=team_df[cum_points_col],
                                          color="darkviolet",
@@ -313,7 +314,7 @@ def plot_team_pts_evol_vs_history(history_df,
     fig = go.Figure(data=go_layers, layout=layout)
 
     fig.update_layout(
-        yaxis_title='Number of points',
+        yaxis_title=yaxis_name,
         title=f"{kpi} Evolution according to historical final ranking",
         hovermode="x"
     )

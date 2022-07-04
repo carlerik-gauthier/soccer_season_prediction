@@ -12,7 +12,7 @@ from xgboost import XGBClassifier
 
 class SoccerClassification:
     def __init__(self, nb_opponent) -> None:
-        self.model = XGBClassifier()
+        self.model = XGBClassifier(use_label_encoder=False)
         self.nb_opponent = nb_opponent
         self.championship_length = 2*(self.nb_opponent - 1)
 
