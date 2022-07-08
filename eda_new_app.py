@@ -63,12 +63,13 @@ def app():
     # st.markdown(" Data comes from l'Équipe website and runs from season 2004-2005 to 2018-2019")
     placeholder = st.empty()
     placeholder.markdown("### Exploratory Data Analysis with your new input")
-    championship_choice = st.sidebar.selectbox(label="Select the championship you want to see",
-                                               options=championship_csv.keys())
     # get data
     # championship_data = {champ: load_data(league=champ) for champ in championship_choices_list}
     sample_example_df = load_data(league='premier-league', raw=True)
     st.dataframe(data=sample_example_df.head(), height=500, width=800)
+
+    championship_choice = st.selectbox(label="Select the championship you would like to be compared with",
+                                       options=championship_csv.keys())
 
     championship_data = load_data(league=championship_choice, raw=False)
 
@@ -82,14 +83,20 @@ def app():
     team = ''
     show_std = False
     if input_data is not None:
-        input_df = load_input_data(input_csv=input_data)
+        tmp_input_df = load_input_data(input_csv=input_data)
         team = st.selectbox(label="Please choose your team",
-                            options=input_df.sort_values('team').team.unique())
+                            options=tmp_input_df.sort_values('team').team.unique())
 
         show_std = st.selectbox(label="Do you want the standard deviation area to be shown ?",
                                 options=['yes', 'no'], index=1)
         show_std = show_std == 'yes'
 
+        break_leg = st.slider(label="How many legs have been played so far ?",
+                              min_value=1,
+                              max_value=int(tmp_input_df.leg.max()),
+                              step=1,
+                              value=27)
+        input_df = deepcopy(tmp_input_df[tmp_input_df.leg <= break_leg]).reset_index(drop=True)
     # show_trends = st.button("Show for the trends")
     if input_data is not None:
         # --> plot_compare_team_pts_evolution_vs_final_rank

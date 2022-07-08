@@ -14,11 +14,15 @@ The project is decomposed in 5 steps :
 - moving the workflow from notebooks to scripts 
 - writing an app with Streamlit.
 
+A more detailed description from this project can be found here.
 
 # Getting the data
 
-(data was scrapped from L'Équipe, a french newspaper focused on sports --> full soccer data available from season 2004-2005)
-TBD 
+The data used in this project had been scrapped from the website of "L'Équipe", a French newspaper focused on sports.
+In particular, one can find all soccer games results since season 2004-2005 for the main championships
+(England, Germany, Italy, Spain and France).
+
+The code used for that can be found in the notebook located in the 'notebooks' folder.
 
 # Exploratory Data Analysis
 
