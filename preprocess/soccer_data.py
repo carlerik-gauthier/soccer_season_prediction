@@ -97,7 +97,7 @@ def get_final_rank_performance_evolution(data: pd.DataFrame):
     final_rank_perf_evolution.columns = ['avg_rank', 'std_rank',
                                          'avg_cum_pts', 'std_cum_pts',
                                          'avg_cum_goal_diff', 'std_cum_goal_diff',
-                                         'avg_cum_goals_scored', 'std_cum_goal_scored',
+                                         'avg_cum_goals_scored', 'std_cum_goals_scored',
                                          'avg_goals_scored', 'std_goals_scored',
                                          'avg_goals_conceded', 'std_goals_conceded']
 
