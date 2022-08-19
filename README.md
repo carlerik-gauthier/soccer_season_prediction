@@ -22,38 +22,26 @@ The data used in this project had been scrapped from the website of "L'Équipe",
 In particular, one can find all soccer games results since season 2004-2005 for the main championships
 (England, Germany, Italy, Spain and France).
 
-The code used for that can be found in the notebook located in the 'notebooks' folder.
+In a second step, data from the 2019-2020 season was gathered and set apart since it is only meant as 'new data'.
 
 # Exploratory Data Analysis
 
-Evolution of several kpis based upon final rank
-TBD 
-List the questions
+In order to get a sense if the data, this project contains an EDA part where the user can explore the 
+evolution of some soccer kpis depending on the final rank.
 
 # EDA for 2019-2020 season
 
-TODO
+Here the user cans see how teams were performing until the championships were paused due to the first Covid-19 
+lockdowns. Hence, the user could guess how teams would have performed under "normal circumstances".
 
 # Models
-give a small description of the ideas
+There are several ways one could try to build a model to predict the final ranking. In this work, I tested my ideas
+with 1+3 different approaches : naive, regression on points, classification on points evolutions and ranking design 
+algorithms (XGBoost Ranker).
 
-### The naive one
-TBD 
+SPECIFY THE MAIN IDEAS
 
-### Regression type
-TBD 
-
-### Classification type
-TBD 
-
-### Ranking type
-TBD 
-
-### What metrics ?
-TBD 
-
-### Results
-TBD
+For more details on my choices, readers are encouraged to have a look here.
 
 # Notebooks to scripts
 Scrapping, first analysis and model building were made in Jupyter Notebooks. Once I deemed the project mature enough, I 
@@ -64,16 +52,6 @@ In order to illustrate the work done in this project, I made a Streamlit app. I 
 so that EDA and ML parts are independents but easy to use.
 
 To start the app, one will have to run the following command : streamlit run soccer_front_app.py
-# Miscellaneous
-As part of this project, a document where all details from the project can be found has been written.
-
-# Side note
-I consider my notebooks as rough drafts before turning to .py script with content I deem sufficient; so notebooks are 
-not very user-friendly.
-
-Best practises requires providing docstrings and variable typing. As it is personal and been written over the course of several months (when I had free time and motivation to go on)
-and not meant to be used widely by the public, it didn't seem to me to be as important.
-
 
 
 ## NB : 
