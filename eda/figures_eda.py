@@ -270,15 +270,15 @@ def plot_team_pts_evol_vs_final_rank(df: pd.DataFrame,
     return fig
 
 
-def plot_team_pts_evol_vs_history(history_df,
-                                  df,
-                                  team,
-                                  leg_col: str = 'leg',
-                                  cum_points_col: str = 'cum_pts',
-                                  final_rank_col: str = 'final_rank',
-                                  yaxis_name: str = 'Number of points',
-                                  show_standard_deviation: bool = True):
-    kpi = 'cum_pts'
+def plot_team_evol_vs_history(history_df,
+                              df,
+                              team,
+                              leg_col: str = 'leg',
+                              cum_points_col: str = 'cum_pts',
+                              final_rank_col: str = 'final_rank',
+                              yaxis_name: str = 'Number of points',
+                              show_standard_deviation: bool = True):
+    kpi = yaxis_name
     avg_col = f'avg_{kpi}'
     std_col = f'std_{kpi}'
 

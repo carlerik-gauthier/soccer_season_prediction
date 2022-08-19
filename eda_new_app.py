@@ -4,7 +4,7 @@ import streamlit as st
 from copy import deepcopy
 # Custom modules
 
-from eda.figures_eda import plot_team_pts_evol_vs_history
+from eda.figures_eda import plot_team_evol_vs_history
 from preprocess.soccer_data import prepare_data, get_final_rank_performance_evolution
 
 season_options = ['{start_year}-{end_year}'.format(start_year=year, end_year=year+1) for year in range(2004, 2019)]
@@ -102,10 +102,10 @@ def app():
         # --> plot_compare_team_pts_evolution_vs_final_rank
         kpi = st.selectbox(label="What kpi to you to see the evolution ?",
                            options=['points', 'goal differences', 'goals scored'], index=0)
-        st.plotly_chart(figure_or_data=plot_team_pts_evol_vs_history(history_df=championship_data,
-                                                                     df=input_df,
-                                                                     team=team,
-                                                                     cum_points_col=KPI_TRANSLATOR[kpi],
-                                                                     yaxis_name=NAME_TRANSLATOR[kpi],
-                                                                     show_standard_deviation=show_std)
+        st.plotly_chart(figure_or_data=plot_team_evol_vs_history(history_df=championship_data,
+                                                                 df=input_df,
+                                                                 team=team,
+                                                                 cum_points_col=KPI_TRANSLATOR[kpi],
+                                                                 yaxis_name=NAME_TRANSLATOR[kpi],
+                                                                 show_standard_deviation=show_std)
                         )
