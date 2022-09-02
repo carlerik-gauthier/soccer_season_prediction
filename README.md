@@ -1,5 +1,5 @@
 # soccer_season_prediction
-The goal of this project is to predict a soccer final ranking based on what happened until some leg
+The main goal of this project is to predict a soccer final ranking based on what happened until some leg.
 
 # Introduction
 
@@ -29,9 +29,16 @@ In a second step, data from the 2019-2020 season was gathered and set apart sinc
 In order to get a sense if the data, this project contains an EDA part where the user can explore the 
 evolution of some soccer kpis depending on the final rank.
 
+Initial exploratory analysis was performed in a Jupyter Notebook in order to get a sense of the data and find out the 
+best charts.
+
+Now, a user can simply navigate in the app.
+
+PICT
+
 # EDA for 2019-2020 season
 
-Here the user cans see how teams were performing until the championships were paused due to the first Covid-19 
+Here user can see how teams were performing until the championships were paused due to the first Covid-19 
 lockdowns. Hence, the user could guess how teams would have performed under "normal circumstances".
 
 # Models
@@ -48,8 +55,8 @@ Scrapping, first analysis and model building were made in Jupyter Notebooks. Onc
 moved to Python files and finally to a Streamlit app 
 
 # The app
-In order to illustrate the work done in this project, I made a Streamlit app. I designed it as multipage app
-so that EDA and ML parts are independents but easy to use.
+In order to illustrate the work done in this project and allow an user-friendly interface for someone else to explore,
+I made a Streamlit app. I designed it as a multipage app so that EDA and ML parts are independents but easy to use.
 
 To start the app, one will have to run the following command : streamlit run soccer_front_app.py
 
