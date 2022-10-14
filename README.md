@@ -37,6 +37,8 @@ best charts.
 Now, a user can simply navigate in the app and choose one of the five options to make his own investigation.
 
 PICT
+!["ssds"](https://github.com/carlerik-gauthier/soccer_season_prediction/documents/img/eda_page.png 
+"My title")
 
 # EDA for 2019-2020 season
 
