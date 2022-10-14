@@ -36,9 +36,8 @@ best charts.
 
 Now, a user can simply navigate in the app and choose one of the five options to make his own investigation.
 
-PICT
-!["ssds"](https://github.com/carlerik-gauthier/soccer_season_prediction/documents/img/eda_page.png 
-"My title")
+!["EDA homepage](documents/img/eda_page.png)
+_Screenshot from the EDA Homepage_
 
 # EDA for 2019-2020 season
 
@@ -62,7 +61,12 @@ It is the classification approach
 3. Last idea is to use the fact that after every leg, one has an updated ranking. So, the idea is to use the ranking 
 structure of the data. This axis was named ... the ranking approach. 
 
-For more details on my choices, readers are encouraged to have a look here.
+For more details on my choices, readers are encouraged to have a look at the article.
+!["EDA homepage](documents/img/prediction_page.png)
+_Screenshot from the prediction page when no model from the expected type is available_
+
+!["EDA homepage](documents/img/prediction_page-2.png)
+_Screenshot from the prediction page when a model from the expected type is available_
 
 # Notebooks to scripts
 Scrapping, first analysis and model building were made in Jupyter Notebooks. Once I deemed the project mature enough, I 
@@ -72,7 +76,9 @@ moved to Python files and finally to a Streamlit app
 In order to illustrate the work done in this project and allow an user-friendly interface for someone else to explore,
 I made a Streamlit app. I designed it as a multipage app so that EDA and ML parts are independents but easy to use.
 
-
-
 To start the app, one will have to run the following command : streamlit run soccer_front_app.py. Depending on your 
 position in your terminal, you may need to update the path to the app script.
+
+Once run, you should land on the following page
+!["EDA homepage](documents/img/main_page.png)
+_Screenshot from the Homepage_
