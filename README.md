@@ -76,7 +76,11 @@ moved to Python files and finally to a Streamlit app
 In order to illustrate the work done in this project and allow an user-friendly interface for someone else to explore,
 I made a Streamlit app. I designed it as a multipage app so that EDA and ML parts are independents but easy to use.
 
-To start the app, one will have to run the following command : streamlit run soccer_front_app.py. Depending on your 
+To start the app, one will have to run the following command : 
+```commandline
+streamlit run soccer_front_app.py
+```
+Depending on your 
 position in your terminal, you may need to update the path to the app script.
 
 Once run, you should land on the following page
